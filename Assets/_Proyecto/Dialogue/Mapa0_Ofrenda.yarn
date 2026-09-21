@@ -1,0 +1,63 @@
+title: M0_Prologo
+---
+Ámbar: Tranquilo, Tizne. Ese pan no es para ti... ¿verdad que no, don Aurelio?
+Don Aurelio: ¿Quién eres, muchacha? Yo nomás venía siguiendo los pétalos... y ahora no sé para qué vine.
+Ámbar: Soy Ámbar, guía de ánimas. A veces las almas llegan con la luz incompleta. Algo se le quedó atrás.
+Don Aurelio: Este pan... siempre horneaba dos piezas. Una para mí y otra para... no me acuerdo.
+Ámbar: Entonces vamos a buscarlo. Mientras arda la vela, sus recuerdos siguen abiertos.
+Ámbar: (Muévete con W, A, S, D o las flechas. Acércate a lo que brilla y presiona E para examinarlo.)
+===
+
+title: M0_TutorialVela
+---
+Ámbar: Aquí no se ve nada... La niebla gris es el Olvido: lo que don Aurelio no quiere mirar.
+Ámbar: (Mantén F para alzar el farol. La Luz de vela revela los recuerdos escondidos.)
+===
+
+title: M0_TutorialNiebla
+---
+Don Aurelio: No puedo pasar por ahí. Es como si esa parte de la casa nunca hubiera existido.
+Ámbar: Cada recuerdo que encontremos va a despejar un poco la niebla.
+===
+
+title: M0_Frag_Foto
+---
+Ámbar: Una fotografía de usted, joven, con el delantal de La Espiga.
+Don Aurelio: Mi primer día a cargo del horno. Qué orgulloso estaba... y qué solo me veo en esa foto.
+===
+
+title: M0_Frag_Delantal
+---
+Ámbar: Su delantal. Todavía huele a anís y a leña.
+Don Aurelio: Cincuenta años lo usé. Mi padre decía que un panadero se conoce por las manos... y yo nunca quise ver las suyas.
+===
+
+title: M0_Frag_Petalos
+---
+Ámbar: El camino de pétalos llega hasta el patio... pero se abre en dos.
+Don Aurelio: ¿Dos caminos? Lucía siempre pone uno solo. ¿Para quién será el otro?
+===
+
+title: M0_Frag_Sombrero
+---
+Ámbar: Un sombrero de palma. Es de niño... muy pequeño para usted.
+Don Aurelio: Ese no era mío. Era de... alguien que me cuidaba del sol en el campo.
+===
+
+title: M0_Memento_Bloqueado
+---
+Don Aurelio: El pan de muerto de dos piezas... siento que falta algo antes de poder entenderlo.
+Ámbar: (Reúne los cuatro fragmentos de la ofrenda.)
+===
+
+title: M0_Memento_Activar
+---
+Don Aurelio: Ya me acuerdo de la charola. La última vez que horneé, aparté dos piezas... como cada año.
+Ámbar: Entonces empecemos por ese día. Sujete mi mano, don Aurelio.
+===
+
+title: M0_Lucia
+---
+Ámbar: Lucía, su nieta. Se quedó dormida cuidando la vela.
+Don Aurelio: Igualita a su abuela. Siempre la primera en recordar.
+===

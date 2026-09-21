@@ -1,0 +1,17 @@
+MIENTRAS ARDA LA VELA
+Diseño, programación e integración: Fortino Romero Mantilla
+Universidad Tecnológica de Puebla — Ingeniería de Software
+
+Motor: Unity 6 (Unity Personal)
+Diálogos: Yarn Spinner para Unity (licencia MIT)
+
+RECURSOS DE TERCEROS
+(Registrar cada recurso al importarlo: nombre, autor(es), licencia, URL de origen y cambios realizados.)
+
+Personajes: Universal LPC Spritesheet Character Generator — Liberated Pixel Cup.
+  Licencia: CC-BY-SA 3.0 / GPL 3.0 (según cada capa). Copiar aquí el texto de créditos que exporta el generador.
+Tilesets: [pendiente]
+Interfaz y sonidos de interfaz: Kenney (kenney.nl) — CC0. [pendiente]
+Ambientes y efectos: Freesound.org (CC0). [pendiente]
+Música: [pendiente]
+Tipografía: [pendiente] — SIL Open Font License.
