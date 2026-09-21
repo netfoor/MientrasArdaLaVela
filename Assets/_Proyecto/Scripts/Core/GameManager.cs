@@ -29,7 +29,9 @@ namespace MientrasArdaLaVela
         {
             if (Instance != null && Instance != this) { Destroy(gameObject); return; }
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad lanza InvalidOperationException fuera de Play Mode; el guardia
+            // permite instanciar el GameManager en pruebas EditMode sin cambiar nada en juego.
+            if (Application.isPlaying) DontDestroyOnLoad(gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
 
