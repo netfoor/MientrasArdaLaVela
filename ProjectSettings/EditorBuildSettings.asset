@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Proyecto/Scenes/MainMenu.unity
+    guid: 13d5afb32d9f78a3e85c5363853adcd8
+  - enabled: 1
     path: Assets/_Proyecto/Scenes/Mapa0_Ofrenda.unity
     guid: f4892b6df8ff9055a92c2d38afbf7657
   m_configObjects:

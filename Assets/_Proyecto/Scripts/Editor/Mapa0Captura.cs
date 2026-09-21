@@ -85,7 +85,7 @@ namespace MientrasArdaLaVela.EditorTools
                 Debug.LogWarning("[Captura] No se encontraron UpdateMesh/UpdateBoundingSphere en Light2D.");
                 return;
             }
-            foreach (var luz in Object.FindObjectsByType<Light2D>(FindObjectsSortMode.None))
+            foreach (var luz in Object.FindObjectsByType<Light2D>(FindObjectsInactive.Exclude))
             {
                 if (luz.lightType == Light2D.LightType.Global) continue;
                 updateMesh.Invoke(luz, new object[] { true });
