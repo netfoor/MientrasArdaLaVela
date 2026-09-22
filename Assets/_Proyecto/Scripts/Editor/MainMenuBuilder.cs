@@ -39,7 +39,7 @@ namespace MientrasArdaLaVela.EditorTools
             var canvas = ConstruirCanvas();
             var title = ConstruirTitlePanel(canvas.transform);
             var (menuPanel, btnNueva, btnContinuar) = ConstruirMenuPanel(canvas.transform, menu);
-            var credits = ConstruirPanelTexto(canvas.transform, "CreditsPanel", "Créditos", LeerCreditos(), menu);
+            var credits = ConstruirCreditsPanel(canvas.transform, menu);
             var options = ConstruirPanelTexto(canvas.transform, "OptionsPanel", "Opciones",
                 "Volumen, tamaño de texto y controles se agregan en el Sprint 2 (F17).", menu);
 
@@ -147,6 +147,139 @@ namespace MientrasArdaLaVela.EditorTools
             // Navegación explícita con gamepad/teclado
             Encadenar(new[] { nueva, continuar, opciones, creditos, salir });
             return (panel, nueva, continuar);
+        }
+
+
+        /// <summary>
+        /// Panel de créditos con ScrollRect. CREDITOS.txt ronda los 73 000 caracteres y un
+        /// TextMeshPro no puede con eso de una pieza: el búfer de índices de una submalla es de
+        /// 16 bits, o sea ~16 000 caracteres. Por eso el texto se reparte en bloques apilados
+        /// dentro del contenido desplazable.
+        /// </summary>
+        static GameObject ConstruirCreditsPanel(Transform padre, MainMenu menu)
+        {
+            var panel = Panel(padre, "CreditsPanel");
+            Texto(panel.transform, "Titulo", "Créditos", 72f, ColAcento,
+                  new Vector2(0f, 430f), new Vector2(1600f, 120f), TextAlignmentOptions.Center);
+
+            // --- ScrollRect ---
+            var scroll = Hijo(panel.transform, "Scroll");
+            var srt = Comp<RectTransform>(scroll);
+            srt.anchorMin = srt.anchorMax = new Vector2(0.5f, 0.5f);
+            srt.pivot = new Vector2(0.5f, 0.5f);
+            srt.anchoredPosition = new Vector2(0f, 10f);
+            srt.sizeDelta = new Vector2(1500f, 700f);
+            var fondo = Comp<Image>(scroll);
+            fondo.color = new Color(0f, 0f, 0f, 0.25f);   // además hace de blanco para la rueda del ratón
+
+            var rect = Comp<ScrollRect>(scroll);
+            rect.horizontal = false;
+            rect.vertical = true;
+            rect.movementType = ScrollRect.MovementType.Clamped;
+            rect.scrollSensitivity = 40f;
+
+            // --- Viewport ---
+            var viewport = Hijo(scroll.transform, "Viewport");
+            var vrt = Comp<RectTransform>(viewport);
+            vrt.anchorMin = Vector2.zero; vrt.anchorMax = Vector2.one;
+            vrt.offsetMin = new Vector2(16f, 16f);
+            vrt.offsetMax = new Vector2(-46f, -16f);      // hueco para la barra
+            vrt.pivot = new Vector2(0f, 1f);
+            Comp<RectMask2D>(viewport);
+
+            // --- Contenido ---
+            var content = Hijo(viewport.transform, "Content");
+            var crt = Comp<RectTransform>(content);
+            crt.anchorMin = new Vector2(0f, 1f); crt.anchorMax = new Vector2(1f, 1f);
+            crt.pivot = new Vector2(0.5f, 1f);
+            crt.offsetMin = new Vector2(0f, 0f); crt.offsetMax = new Vector2(0f, 0f);
+            var vlg = Comp<VerticalLayoutGroup>(content);
+            vlg.childControlHeight = true; vlg.childControlWidth = true;
+            vlg.childForceExpandHeight = false; vlg.childForceExpandWidth = true;
+            vlg.spacing = 0f;
+            var fitter = Comp<ContentSizeFitter>(content);
+            fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+            fitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
+
+            // Limpiar bloques de una construcción anterior
+            for (int i = content.transform.childCount - 1; i >= 0; i--)
+                Undo.DestroyObjectImmediate(content.transform.GetChild(i).gameObject);
+
+            var bloques = PartirTexto(LeerCreditos(), 6000);
+            for (int i = 0; i < bloques.Count; i++)
+            {
+                var t = Hijo(content.transform, $"Bloque{i:D2}");
+                Comp<RectTransform>(t);
+                var tmp = Comp<TextMeshProUGUI>(t);
+                tmp.text = bloques[i];
+                tmp.fontSize = 24f;
+                tmp.color = ColTexto;
+                tmp.alignment = TextAlignmentOptions.TopLeft;
+                tmp.textWrappingMode = TextWrappingModes.Normal;
+                tmp.overflowMode = TextOverflowModes.Overflow;
+            }
+
+            // --- Barra de desplazamiento ---
+            var barra = Hijo(scroll.transform, "Scrollbar");
+            var brt = Comp<RectTransform>(barra);
+            brt.anchorMin = new Vector2(1f, 0f); brt.anchorMax = new Vector2(1f, 1f);
+            brt.pivot = new Vector2(1f, 1f);
+            brt.offsetMin = new Vector2(-38f, 16f); brt.offsetMax = new Vector2(-8f, -16f);
+            var bimg = Comp<Image>(barra);
+            bimg.color = new Color(1f, 1f, 1f, 0.10f);
+            var sb = Comp<Scrollbar>(barra);
+            sb.direction = Scrollbar.Direction.BottomToTop;
+
+            var area = Hijo(barra.transform, "Sliding Area");
+            var art = Comp<RectTransform>(area);
+            art.anchorMin = Vector2.zero; art.anchorMax = Vector2.one;
+            art.offsetMin = Vector2.zero; art.offsetMax = Vector2.zero;
+
+            var handle = Hijo(area.transform, "Handle");
+            var hrt = Comp<RectTransform>(handle);
+            hrt.anchorMin = Vector2.zero; hrt.anchorMax = Vector2.one;
+            hrt.offsetMin = Vector2.zero; hrt.offsetMax = Vector2.zero;
+            var himg = Comp<Image>(handle);
+            himg.color = ColAcento;
+            sb.handleRect = hrt;
+            sb.targetGraphic = himg;
+
+            rect.content = crt;
+            rect.viewport = vrt;
+            rect.verticalScrollbar = sb;
+            rect.verticalScrollbarVisibility = ScrollRect.ScrollbarVisibility.Permanent;
+
+            var volver = Boton(panel.transform, "BtnVolver", "Volver", new Vector2(0f, -450f), menu.OnBack);
+            // Con gamepad: del botón se sube a la barra y desde ahí se desplaza el texto.
+            var nav = volver.navigation;
+            nav.mode = Navigation.Mode.Explicit;
+            nav.selectOnUp = sb;
+            volver.navigation = nav;
+            var navSb = sb.navigation;
+            navSb.mode = Navigation.Mode.Explicit;
+            navSb.selectOnDown = volver;
+            sb.navigation = navSb;
+
+            Debug.Log($"[MainMenu] Créditos: {LeerCreditos().Length} caracteres en {bloques.Count} bloques.");
+            return panel;
+        }
+
+        /// <summary>Parte el texto en trozos de como mucho `maximo` caracteres, cortando por línea.</summary>
+        static List<string> PartirTexto(string texto, int maximo)
+        {
+            var bloques = new List<string>();
+            var actual = new System.Text.StringBuilder();
+            foreach (var linea in texto.Replace("\r\n", "\n").Split('\n'))
+            {
+                if (actual.Length + linea.Length + 1 > maximo && actual.Length > 0)
+                {
+                    bloques.Add(actual.ToString());
+                    actual.Clear();
+                }
+                actual.Append(linea).Append('\n');
+            }
+            if (actual.Length > 0) bloques.Add(actual.ToString());
+            return bloques;
         }
 
         static GameObject ConstruirPanelTexto(Transform padre, string nombre, string titulo, string cuerpo, MainMenu menu)

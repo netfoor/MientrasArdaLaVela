@@ -72,6 +72,7 @@ namespace MientrasArdaLaVela.EditorTools
             ConstruirMemento();
             ConstruirLucia();
             ConstruirTriggers();
+            ConstruirDecorado();
             ConstruirHUD();
 
             Undo.SetCurrentGroupName("Construir jerarquía Mapa 0");
@@ -124,11 +125,20 @@ namespace MientrasArdaLaVela.EditorTools
             var muebles = CapaTilemap(grid, "Muebles", OrdenMueble, conCollider: true);
             var deco = CapaTilemap(grid, "Decoracion", OrdenDeco, conCollider: false);
 
-            var tSueloCasa = PlaceholderArt.Tile("suelo_casa", ColSuelo);
-            var tSueloPatio = PlaceholderArt.Tile("suelo_patio", ColPatio);
-            var tPared = PlaceholderArt.Tile("pared", ColPared);
-            var tMueble = PlaceholderArt.Tile("mueble", ColMueble);
-            var tDeco = PlaceholderArt.Tile("petalo", ColDeco);
+            // Arte real de los tilesets LPC; si todavía no está importado, cuadros de color.
+            bool hayArte = TilesetLPC.HayArte();
+            if (hayArte) TilesetLPC.Preparar();
+
+            TileBase T(string clave, Color relleno, bool collider = false)
+                => (hayArte ? TilesetLPC.Tile(clave, collider) : null) ?? PlaceholderArt.Tile(clave, relleno);
+
+            var tSueloCasa  = T("suelo_casa",  ColSuelo);
+            var tSueloPatio = T("suelo_patio", ColPatio);
+            var tMuroArriba = T("muro_arriba", ColPared);
+            var tMuroCara   = T("muro_cara",   ColPared);
+            var tMueble     = T("mueble",      ColMueble);
+            var tDeco       = T("petalos",     ColDeco);
+            var tDecoRalo   = hayArte ? T("petalos_ralo", ColDeco) : tDeco;
 
             // --- Suelo: interior + patio ---
             var transitable = new HashSet<Vector2Int>();
@@ -154,7 +164,13 @@ namespace MientrasArdaLaVela.EditorTools
                 var v = new Vector2Int(18, y);
                 if (!transitable.Contains(v)) muro.Add(v);
             }
-            foreach (var v in muro) paredes.SetTile((Vector3Int)v, tPared);
+            // Un muro con suelo transitable justo debajo es el muro del fondo de la habitación:
+            // el jugador le ve la cara. El resto muestra la textura de la coronación.
+            foreach (var v in muro)
+            {
+                bool esCara = transitable.Contains(new Vector2Int(v.x, v.y - 1));
+                paredes.SetTile((Vector3Int)v, esCara ? tMuroCara : tMuroArriba);
+            }
 
             // --- Muebles: mesa de la cocina y repisa de la sala ---
             Undo.RegisterCompleteObjectUndo(muebles, "Muebles Mapa 0");
@@ -165,12 +181,13 @@ namespace MientrasArdaLaVela.EditorTools
             // En el patio se bifurca: es lo que Ámbar señala en el nodo M0_Frag_Petalos
             // ("llega hasta el patio... pero se abre en dos").
             Undo.RegisterCompleteObjectUndo(deco, "Decoracion Mapa 0");
-            for (int x = 5; x <= 17; x++) deco.SetTile(new Vector3Int(x, 18, 0), tDeco);   // ofrenda -> centro
-            for (int y = 4; y <= 17; y++) deco.SetTile(new Vector3Int(17, y, 0), tDeco);   // sala, pasillo y patio
-            for (int i = 1; i <= 5; i++)                                                    // bifurcación en el patio
+            TileBase Petalo(int n) => n % 2 == 0 ? tDeco : tDecoRalo;   // alterna para que no se note el patrón
+            for (int x = 5; x <= 17; x++) deco.SetTile(new Vector3Int(x, 18, 0), Petalo(x));   // ofrenda -> centro
+            for (int y = 4; y <= 17; y++) deco.SetTile(new Vector3Int(17, y, 0), Petalo(y));   // sala, pasillo y patio
+            for (int i = 1; i <= 5; i++)                                                        // bifurcación en el patio
             {
-                deco.SetTile(new Vector3Int(17 - i, 4 - i > 1 ? 4 - i : 2, 0), tDeco);
-                deco.SetTile(new Vector3Int(17 + i, 4 - i > 1 ? 4 - i : 2, 0), tDeco);
+                deco.SetTile(new Vector3Int(17 - i, 4 - i > 1 ? 4 - i : 2, 0), Petalo(i));
+                deco.SetTile(new Vector3Int(17 + i, 4 - i > 1 ? 4 - i : 2, 0), Petalo(i + 1));
             }
         }
 
@@ -306,6 +323,42 @@ namespace MientrasArdaLaVela.EditorTools
             return PlaceholderArt.Sprite("ambar", ColAmbar);
         }
 
+
+        /// <summary>
+        /// Cuadro de reposo mirando al frente de una hoja de personaje. Devuelve null si la hoja
+        /// todavía no está cortada en sprites (sólo Ámbar lo está, vía AmbarAnimator).
+        /// </summary>
+        static Sprite SpriteDeHoja(string hoja, string sprite)
+        {
+            foreach (var o in AssetDatabase.LoadAllAssetsAtPath($"Assets/_Proyecto/Art/Personajes/{hoja}.png"))
+                if (o is Sprite s && s.name == sprite) return s;
+            return null;
+        }
+
+        /// <summary>Decorado ambiental con los objetos recortados de los tilesets LPC.</summary>
+        static void ConstruirDecorado()
+        {
+            if (!TilesetLPC.HayArte()) return;
+            var padre = Raiz("Decorado");
+
+            Adorno(padre.transform, "Candelabro",  "velas",  new Vector3( 3.5f, 19.5f, 0f));
+            Adorno(padre.transform, "Candelabro2", "velas",  new Vector3( 6.5f, 19.5f, 0f));
+            Adorno(padre.transform, "Fogon",       "estufa", new Vector3(21.5f, 19.5f, 0f));
+            Adorno(padre.transform, "Maceta",      "maceta", new Vector3( 9.5f,  3.5f, 0f));
+            Adorno(padre.transform, "Maceta2",     "maceta", new Vector3(26.5f,  3.5f, 0f));
+        }
+
+        static void Adorno(Transform padre, string nombre, string clave, Vector3 pos)
+        {
+            var sp = TilesetLPC.Sprite(clave);
+            if (sp == null) return;
+            var go = Hijo(padre, nombre);
+            go.transform.position = pos;
+            var sr = Comp<SpriteRenderer>(go);
+            sr.sprite = sp;
+            sr.sortingOrder = OrdenMueble + 1;
+        }
+
         // ============================ Cámara ============================
         static void ConstruirCamara(GameObject objetivo)
         {
@@ -438,7 +491,8 @@ namespace MientrasArdaLaVela.EditorTools
             go.layer = LayerMask.NameToLayer("Interactable");
 
             var sr = Comp<SpriteRenderer>(go);
-            sr.sprite = PlaceholderArt.Sprite("memento", ColMementoC);
+            sr.sprite = (TilesetLPC.HayArte() ? TilesetLPC.Sprite("pan") : null)
+                        ?? PlaceholderArt.Sprite("memento", ColMementoC);
             sr.sortingOrder = OrdenObjeto;
 
             var col = Comp<BoxCollider2D>(go);
@@ -470,7 +524,8 @@ namespace MientrasArdaLaVela.EditorTools
             go.layer = LayerMask.NameToLayer("Interactable");
 
             var sr = Comp<SpriteRenderer>(go);
-            sr.sprite = PlaceholderArt.Sprite("lucia", ColLucia);
+            sr.sprite = SpriteDeHoja("lucia_19_walk", "lucia_19_down_0")
+                        ?? PlaceholderArt.Sprite("lucia", ColLucia);
             sr.sortingOrder = OrdenObjeto;
 
             var col = Comp<BoxCollider2D>(go);
