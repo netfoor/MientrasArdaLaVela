@@ -13,7 +13,8 @@
         "Unity.Cinemachine",
         "Unity.Cinemachine.Editor",
         "YarnSpinner.Unity",
-        "YarnSpinner.Unity.Editor"
+        "YarnSpinner.Unity.Editor",
+        "Unity.2D.Sprite.Editor"
     ],
     "includePlatforms": [
         "Editor"
