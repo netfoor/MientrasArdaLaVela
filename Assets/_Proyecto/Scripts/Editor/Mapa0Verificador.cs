@@ -37,6 +37,7 @@ namespace MientrasArdaLaVela.EditorTools
             VerificarLucia();
             VerificarTriggers();
             VerificarHUD();
+            VerificarDialogueSystem();
             VerificarNodosYarn();
 
             Debug.Log($"### RESULTADO: {fallos} fallos, {avisos} avisos ###");
@@ -127,6 +128,9 @@ namespace MientrasArdaLaVela.EditorTools
             var cc = vcam.GetComponent<CinemachineCamera>();
             Ok("Cinemachine Camera sigue a Ámbar",
                cc != null && cc.Target.TrackingTarget != null && cc.Target.TrackingTarget.name == "Ambar");
+            Ok("Cinemachine Camera con el mismo tamaño ortográfico que la Main Camera (5.625)",
+               cc != null && Mathf.Approximately(cc.Lens.OrthographicSize, 5.625f),
+               cc != null ? $"{cc.Lens.OrthographicSize}" : "sin vcam");
             var conf = vcam.GetComponent<CinemachineConfiner2D>();
             Ok("Confiner 2D con PolygonCollider2D",
                conf != null && conf.BoundingShape2D is PolygonCollider2D);
@@ -251,6 +255,20 @@ namespace MientrasArdaLaVela.EditorTools
             for (int i = 0; i < slots.arraySize; i++)
                 if (slots.GetArrayElementAtIndex(i).objectReferenceValue == null) todos = false;
             Ok("HUD: los 4 rombos asignados", todos);
+        }
+
+        static void VerificarDialogueSystem()
+        {
+            var runner = Object.FindAnyObjectByType<Yarn.Unity.DialogueRunner>();
+            if (!Ok("Dialogue System en la escena", runner != null)) return;
+            Ok("  DialogueRunner con Yarn Project asignado", runner.YarnProject != null);
+            Ok("  DialogueBridge en el mismo objeto",
+               runner.GetComponent<DialogueBridge>() != null);
+            Ok("  el Yarn Project es el del proyecto",
+               runner.YarnProject != null &&
+               AssetDatabase.GetAssetPath(runner.YarnProject) == "Assets/_Proyecto/Dialogue/MientrasArdaLaVela.yarnproject");
+            Ok("  hay un EventSystem para la interfaz de diálogo",
+               Object.FindAnyObjectByType<UnityEngine.EventSystems.EventSystem>() != null);
         }
 
         static void VerificarNodosYarn()
