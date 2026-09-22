@@ -225,8 +225,24 @@ namespace MientrasArdaLaVela.EditorTools
             go.transform.position = PosAmbar;
 
             var sr = Comp<SpriteRenderer>(go);
-            sr.sprite = PlaceholderArt.Sprite("ambar", ColAmbar);
+            sr.sprite = SpriteDeAmbar();          // arte real si ya está importado; si no, relleno
             sr.sortingOrder = OrdenAmbar;
+
+            // Animator (F02): Blend Trees 2D con MoveX/MoveY/Speed, generados por AmbarAnimator.
+            var ctrl = AssetDatabase.LoadAssetAtPath<RuntimeAnimatorController>(
+                "Assets/_Proyecto/Animations/Ambar/Ambar.controller");
+            if (ctrl != null)
+            {
+                var anim = Comp<Animator>(go);
+                anim.runtimeAnimatorController = ctrl;
+                anim.applyRootMotion = false;
+                anim.updateMode = AnimatorUpdateMode.Normal;
+                anim.cullingMode = AnimatorCullingMode.AlwaysAnimate;
+            }
+            else
+            {
+                Debug.LogWarning("[Mapa0] Falta Ambar.controller. Corre 'Generar Animator de Ámbar' antes.");
+            }
 
             var rb = Comp<Rigidbody2D>(go);
             rb.bodyType = RigidbodyType2D.Dynamic;
@@ -235,14 +251,16 @@ namespace MientrasArdaLaVela.EditorTools
             rb.interpolation = RigidbodyInterpolation2D.Interpolate;
             rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
 
-            var cap = Comp<CapsuleCollider2D>(go);          // pequeño, a los pies
+            // El sprite LPC tiene el pivote en los pies, así que el origen del transform está
+            // en el suelo y el collider va justo encima de él.
+            var cap = Comp<CapsuleCollider2D>(go);
             cap.direction = CapsuleDirection2D.Horizontal;
-            cap.size = new Vector2(0.55f, 0.30f);
-            cap.offset = new Vector2(0f, -0.34f);
+            cap.size = new Vector2(0.55f, 0.28f);
+            cap.offset = new Vector2(0f, 0.14f);
 
             // Farol: hijo con Light2D de tipo Point, color ámbar
             var farol = Hijo(go.transform, "Farol");
-            farol.transform.localPosition = new Vector3(0f, 0.1f, 0f);
+            farol.transform.localPosition = new Vector3(0f, 0.75f, 0f);   // altura de la mano
             var luz = Comp<Light2D>(farol);
             luz.lightType = Light2D.LightType.Point;
             luz.color = new Color(1f, 0.78f, 0.42f);
@@ -263,19 +281,29 @@ namespace MientrasArdaLaVela.EditorTools
             aviso.SetActive(false);
 
             var mov = Comp<PlayerMovement>(go);
-            Set(mov, ("speed", 3.2f));
+            Set(mov, ("speed", 3.2f), ("animator", go.GetComponent<Animator>()));
 
             var inter = Comp<PlayerInteractor>(go);
             Set(inter,
                 ("radius", 0.9f),
                 ("interactableMask", (LayerMask)(1 << LayerMask.NameToLayer("Interactable"))),
                 ("prompt", tmp),
-                ("promptOffset", new Vector3(0f, 0.9f, 0f)));
+                ("promptOffset", new Vector3(0f, 1.1f, 0f)));
 
             var vela = Comp<CandleLight>(go);
             Set(vela, ("lanternLight", luz));
 
             return go;
+        }
+
+
+        /// <summary>Primer cuadro de reposo mirando al frente; si no hay arte, un cuadro de color.</summary>
+        static Sprite SpriteDeAmbar()
+        {
+            const string hoja = "Assets/_Proyecto/Art/Personajes/ambar_walk.png";
+            foreach (var o in AssetDatabase.LoadAllAssetsAtPath(hoja))
+                if (o is Sprite s && s.name == "ambar_down_0") return s;
+            return PlaceholderArt.Sprite("ambar", ColAmbar);
         }
 
         // ============================ Cámara ============================

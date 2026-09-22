@@ -84,8 +84,13 @@ namespace MientrasArdaLaVela.EditorTools
             Ok("Ámbar: Rigidbody2D Dynamic", rb != null && rb.bodyType == RigidbodyType2D.Dynamic);
             Ok("Ámbar: gravityScale 0", rb != null && rb.gravityScale == 0f);
             Ok("Ámbar: Interpolate", rb != null && rb.interpolation == RigidbodyInterpolation2D.Interpolate);
-            Ok("Ámbar: CapsuleCollider2D a los pies",
-               go.GetComponent<CapsuleCollider2D>() is { } c && c.offset.y < 0f);
+            // "A los pies" = pequeño y en la parte baja del sprite. Con el arte LPC el pivote
+            // está en los pies (offset positivo); con el cuadro de relleno está al centro
+            // (offset negativo). La comprobación no debe depender de eso.
+            var cap = go.GetComponent<CapsuleCollider2D>();
+            Ok("Ámbar: CapsuleCollider2D pequeño y a la altura de los pies",
+               cap != null && cap.size.y <= 0.4f && cap.offset.y + cap.size.y * 0.5f < 0.5f,
+               cap != null ? $"offset.y={cap.offset.y}, size.y={cap.size.y}" : "sin collider");
             Ok("Ámbar: PlayerMovement", go.GetComponent<PlayerMovement>() != null);
 
             var pi = go.GetComponent<PlayerInteractor>();

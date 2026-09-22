@@ -1,0 +1,2368 @@
+fileFormatVersion: 2
+guid: c60dd70c0767fbae099fb49be0462c04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3332974686841372479
+    second: ambar_walk_0
+  - first:
+      213: -4077568035769014523
+    second: ambar_walk_1
+  - first:
+      213: 5832190632606674185
+    second: ambar_walk_2
+  - first:
+      213: 8537436431777795141
+    second: ambar_walk_3
+  - first:
+      213: -3454879074699290726
+    second: ambar_walk_4
+  - first:
+      213: -154985078704679226
+    second: ambar_walk_5
+  - first:
+      213: 2335125080453337493
+    second: ambar_walk_6
+  - first:
+      213: -5071046597641095452
+    second: ambar_walk_7
+  - first:
+      213: 9065403033165000110
+    second: ambar_walk_8
+  - first:
+      213: -8712395655797471435
+    second: ambar_walk_9
+  - first:
+      213: -3181264964270784299
+    second: ambar_walk_10
+  - first:
+      213: -5663461147947688787
+    second: ambar_walk_11
+  - first:
+      213: 3959124739596113233
+    second: ambar_walk_12
+  - first:
+      213: -2827299768425067998
+    second: ambar_walk_13
+  - first:
+      213: -4767390000269798239
+    second: ambar_walk_14
+  - first:
+      213: -8627604775212429746
+    second: ambar_walk_15
+  - first:
+      213: 1985202805655683514
+    second: ambar_walk_16
+  - first:
+      213: -2186964227630355262
+    second: ambar_walk_17
+  - first:
+      213: -5707945386836714564
+    second: ambar_walk_18
+  - first:
+      213: 1078924678294282218
+    second: ambar_walk_19
+  - first:
+      213: 6144887737578937700
+    second: ambar_walk_20
+  - first:
+      213: -8938877473018840065
+    second: ambar_walk_21
+  - first:
+      213: -965719001896710136
+    second: ambar_walk_22
+  - first:
+      213: 1493288194458070716
+    second: ambar_walk_23
+  - first:
+      213: 7171361096475073411
+    second: ambar_walk_24
+  - first:
+      213: -1185152382450490823
+    second: ambar_walk_25
+  - first:
+      213: -6934535346600944937
+    second: ambar_walk_26
+  - first:
+      213: 1551961474701979847
+    second: ambar_walk_27
+  - first:
+      213: -6590743859903140702
+    second: ambar_walk_28
+  - first:
+      213: -8816317939080771206
+    second: ambar_walk_29
+  - first:
+      213: -7982526350045912669
+    second: ambar_walk_30
+  - first:
+      213: -8662718025998348123
+    second: ambar_walk_31
+  - first:
+      213: 1990937239872773061
+    second: ambar_walk_32
+  - first:
+      213: -8695384561835752319
+    second: ambar_walk_33
+  - first:
+      213: -7353984158841666644
+    second: ambar_walk_34
+  - first:
+      213: 8418592008487796179
+    second: ambar_walk_35
+  - first:
+      213: -4036453739812195032
+    second: ambar_walk_36
+  - first:
+      213: 4556990396450356731
+    second: ambar_walk_37
+  - first:
+      213: -5024174678316307918
+    second: ambar_walk_38
+  - first:
+      213: 8833588829543530199
+    second: ambar_walk_39
+  - first:
+      213: -7524426407796222343
+    second: ambar_walk_40
+  - first:
+      213: 4493897961679409410
+    second: ambar_walk_41
+  - first:
+      213: -5231308898567163863
+    second: ambar_walk_42
+  - first:
+      213: 6160009841529838883
+    second: ambar_walk_43
+  - first:
+      213: 8460541088494728568
+    second: ambar_walk_44
+  - first:
+      213: 3384237830309830254
+    second: ambar_walk_45
+  - first:
+      213: -2846666188073886478
+    second: ambar_walk_46
+  - first:
+      213: 296306934161370812
+    second: ambar_walk_47
+  - first:
+      213: 5937148405889330
+    second: ambar_walk_48
+  - first:
+      213: 9097749918195350808
+    second: ambar_walk_49
+  - first:
+      213: -3850555995204911698
+    second: ambar_walk_50
+  - first:
+      213: 2712231231620520477
+    second: ambar_walk_51
+  - first:
+      213: -377085037591610657
+    second: ambar_walk_52
+  - first:
+      213: 4758341717796474640
+    second: ambar_walk_53
+  - first:
+      213: -7893154356479544548
+    second: ambar_walk_54
+  - first:
+      213: -4695603013483905940
+    second: ambar_walk_55
+  - first:
+      213: 2712213620462241031
+    second: ambar_walk_56
+  - first:
+      213: 3147966675277350363
+    second: ambar_walk_57
+  - first:
+      213: 4332848723930141256
+    second: ambar_walk_58
+  - first:
+      213: -6113866650147368345
+    second: ambar_walk_59
+  - first:
+      213: -2619923882494854444
+    second: ambar_walk_60
+  - first:
+      213: 4003279243823604022
+    second: ambar_walk_61
+  - first:
+      213: -8931138446108588281
+    second: ambar_walk_62
+  - first:
+      213: -1728914987074410879
+    second: ambar_walk_63
+  - first:
+      213: 6556984923696193090
+    second: ambar_walk_64
+  - first:
+      213: -7462069077949099347
+    second: ambar_walk_65
+  - first:
+      213: -3989089227956233136
+    second: ambar_walk_66
+  - first:
+      213: -4421569022456641360
+    second: ambar_walk_67
+  - first:
+      213: -3092227915036402522
+    second: ambar_walk_68
+  - first:
+      213: -2683470359382380429
+    second: ambar_walk_69
+  - first:
+      213: 2429083649341766273
+    second: ambar_walk_70
+  - first:
+      213: 4783936386544778004
+    second: ambar_walk_71
+  - first:
+      213: 4726413487849166434
+    second: ambar_walk_72
+  - first:
+      213: -540301918057450353
+    second: ambar_walk_73
+  - first:
+      213: 975039715896242951
+    second: ambar_walk_74
+  - first:
+      213: -3424812606044376151
+    second: ambar_walk_75
+  - first:
+      213: 980225179191190668
+    second: ambar_walk_76
+  - first:
+      213: 6679185493268064865
+    second: ambar_walk_77
+  - first:
+      213: -8584004597366636033
+    second: ambar_walk_78
+  - first:
+      213: -1847125762878735285
+    second: ambar_walk_79
+  - first:
+      213: -5132846620273193290
+    second: ambar_walk_80
+  - first:
+      213: 8688456835874223490
+    second: ambar_walk_81
+  - first:
+      213: -1172726792973689969
+    second: ambar_walk_82
+  - first:
+      213: -8071579145713803124
+    second: ambar_walk_83
+  - first:
+      213: -358466401047199258
+    second: ambar_walk_84
+  - first:
+      213: 8100658302525370038
+    second: ambar_walk_85
+  - first:
+      213: 7400429987436261515
+    second: ambar_walk_86
+  - first:
+      213: -4638100511949383593
+    second: ambar_walk_87
+  - first:
+      213: 6447592253056531194
+    second: ambar_walk_88
+  - first:
+      213: 5383127375266631760
+    second: ambar_walk_89
+  - first:
+      213: 7388947448237643988
+    second: ambar_walk_90
+  - first:
+      213: -4664431699642132043
+    second: ambar_walk_91
+  - first:
+      213: -934190703916499835
+    second: ambar_walk_92
+  - first:
+      213: -2979253830484993211
+    second: ambar_walk_93
+  - first:
+      213: 2741461278555684785
+    second: ambar_walk_94
+  - first:
+      213: 8812284768366732151
+    second: ambar_walk_95
+  - first:
+      213: -3447729648899456680
+    second: ambar_walk_96
+  - first:
+      213: -6589677325205864900
+    second: ambar_walk_97
+  - first:
+      213: 7676923636198340909
+    second: ambar_walk_98
+  - first:
+      213: 9114235615694032260
+    second: ambar_walk_99
+  - first:
+      213: -8732941561418518275
+    second: ambar_walk_100
+  - first:
+      213: 8903286179181200847
+    second: ambar_walk_101
+  - first:
+      213: 3236683789494605966
+    second: ambar_walk_102
+  - first:
+      213: -8289323248287306408
+    second: ambar_walk_103
+  - first:
+      213: -3009507221893114211
+    second: ambar_walk_104
+  - first:
+      213: 6637612190802397820
+    second: ambar_walk_105
+  - first:
+      213: -3209776590631172000
+    second: ambar_walk_106
+  - first:
+      213: 5385539061111494160
+    second: ambar_walk_107
+  - first:
+      213: 890053936678422405
+    second: ambar_walk_108
+  - first:
+      213: 9112739371428079127
+    second: ambar_walk_109
+  - first:
+      213: 4130038235949832076
+    second: ambar_walk_110
+  - first:
+      213: 6627062052375518811
+    second: ambar_walk_111
+  - first:
+      213: -1072074834200791129
+    second: ambar_walk_112
+  - first:
+      213: 1524846378238563012
+    second: ambar_walk_113
+  - first:
+      213: -8425504806078672313
+    second: ambar_walk_114
+  - first:
+      213: 2508193723896978392
+    second: ambar_walk_115
+  - first:
+      213: 7792569631390496814
+    second: ambar_walk_116
+  - first:
+      213: -5872924056058321392
+    second: ambar_walk_117
+  - first:
+      213: -7872654309714262558
+    second: ambar_walk_118
+  - first:
+      213: 6698157086880061589
+    second: ambar_walk_119
+  - first:
+      213: 2304470111929096629
+    second: ambar_walk_120
+  - first:
+      213: 1011386392524806055
+    second: ambar_walk_121
+  - first:
+      213: -8007393046994394200
+    second: ambar_walk_122
+  - first:
+      213: -3278768200611896849
+    second: ambar_walk_123
+  - first:
+      213: -6194103424688049484
+    second: ambar_walk_124
+  - first:
+      213: 3162792446560644168
+    second: ambar_walk_125
+  - first:
+      213: -8384026652518072131
+    second: ambar_walk_126
+  - first:
+      213: -2527125253956125562
+    second: ambar_walk_127
+  - first:
+      213: -7722063290675027482
+    second: ambar_walk_128
+  - first:
+      213: 1485654852064757416
+    second: ambar_walk_129
+  - first:
+      213: -5421312688148640707
+    second: ambar_walk_130
+  - first:
+      213: -4457655648924975896
+    second: ambar_walk_131
+  - first:
+      213: -2968388802936924301
+    second: ambar_walk_132
+  - first:
+      213: -8697184015933909732
+    second: ambar_walk_133
+  - first:
+      213: 1477672969620855184
+    second: ambar_walk_134
+  - first:
+      213: -4044380993610909158
+    second: ambar_walk_135
+  - first:
+      213: 1585004088567933790
+    second: ambar_walk_136
+  - first:
+      213: 3385090013776113083
+    second: ambar_walk_137
+  - first:
+      213: -46747565172601902
+    second: ambar_walk_138
+  - first:
+      213: 6760998647534069664
+    second: ambar_walk_139
+  - first:
+      213: -458437012059625907
+    second: ambar_walk_140
+  - first:
+      213: -6922805278790164859
+    second: ambar_walk_141
+  - first:
+      213: 316117843012771023
+    second: ambar_walk_142
+  - first:
+      213: -7057265689801673412
+    second: ambar_walk_143
+  - first:
+      213: 439583089636375392
+    second: ambar_walk_144
+  - first:
+      213: 4492078670089492236
+    second: ambar_walk_145
+  - first:
+      213: -5807427132438813137
+    second: ambar_walk_146
+  - first:
+      213: 8561898367792770950
+    second: ambar_walk_147
+  - first:
+      213: 964310842221001920
+    second: ambar_walk_148
+  - first:
+      213: 8739846214712086440
+    second: ambar_walk_149
+  - first:
+      213: -7587524445981021349
+    second: ambar_walk_150
+  - first:
+      213: -1784909203513846843
+    second: ambar_walk_151
+  - first:
+      213: -3263978513404274120
+    second: ambar_walk_152
+  - first:
+      213: 5423226185969501260
+    second: ambar_walk_153
+  - first:
+      213: -7870868375181180605
+    second: ambar_walk_154
+  - first:
+      213: 7427891732978687673
+    second: ambar_walk_155
+  - first:
+      213: -4711818398764946165
+    second: ambar_walk_156
+  - first:
+      213: -343740443698560563
+    second: ambar_walk_157
+  - first:
+      213: 1457213839162860797
+    second: ambar_walk_158
+  - first:
+      213: -304134204828195068
+    second: ambar_walk_159
+  - first:
+      213: 9186662685390110535
+    second: ambar_walk_160
+  - first:
+      213: -3353762239475777192
+    second: ambar_walk_161
+  - first:
+      213: 3736944180482313338
+    second: ambar_walk_162
+  - first:
+      213: 5856414525499391536
+    second: ambar_walk_163
+  - first:
+      213: -3812142870546402221
+    second: ambar_walk_164
+  - first:
+      213: -5055900743211124439
+    second: ambar_walk_165
+  - first:
+      213: -940828203798665391
+    second: ambar_walk_166
+  - first:
+      213: -8941263205811322342
+    second: ambar_walk_167
+  - first:
+      213: -8791151683184117777
+    second: ambar_walk_168
+  - first:
+      213: 8600162561438480571
+    second: ambar_walk_169
+  - first:
+      213: 6523152755044975274
+    second: ambar_walk_170
+  - first:
+      213: -1972266130091020964
+    second: ambar_walk_171
+  - first:
+      213: 8558135051611497835
+    second: ambar_walk_172
+  - first:
+      213: -8004665265483670705
+    second: ambar_walk_173
+  - first:
+      213: 2068318869036886584
+    second: ambar_walk_174
+  - first:
+      213: 205119120738758552
+    second: ambar_walk_175
+  - first:
+      213: 7347182131610538343
+    second: ambar_walk_176
+  - first:
+      213: 5110126776608597115
+    second: ambar_walk_177
+  - first:
+      213: -4282844338042608389
+    second: ambar_walk_178
+  - first:
+      213: 3352537543693992391
+    second: ambar_walk_179
+  - first:
+      213: 6406571849043416683
+    second: ambar_walk_180
+  - first:
+      213: 5683690982327840277
+    second: ambar_walk_181
+  - first:
+      213: 6563493102694282595
+    second: ambar_walk_182
+  - first:
+      213: 3426262529527126815
+    second: ambar_walk_183
+  - first:
+      213: -5706504954040180920
+    second: ambar_walk_184
+  - first:
+      213: -5117903669321945594
+    second: ambar_walk_185
+  - first:
+      213: 4299324618961867658
+    second: ambar_walk_186
+  - first:
+      213: -1627437374177271236
+    second: ambar_walk_187
+  - first:
+      213: 6160780766864708993
+    second: ambar_walk_188
+  - first:
+      213: 3019792686729426849
+    second: ambar_walk_189
+  - first:
+      213: 8842298850304667964
+    second: ambar_walk_190
+  - first:
+      213: 2101443735064512602
+    second: ambar_walk_191
+  - first:
+      213: -8276241972045049701
+    second: ambar_walk_192
+  - first:
+      213: 4568678470316222861
+    second: ambar_walk_193
+  - first:
+      213: 2174691000945533954
+    second: ambar_walk_194
+  - first:
+      213: 1982202560015131477
+    second: ambar_walk_195
+  - first:
+      213: -9191781250484287151
+    second: ambar_walk_196
+  - first:
+      213: -196218921760916440
+    second: ambar_walk_197
+  - first:
+      213: 8840317677081723900
+    second: ambar_walk_198
+  - first:
+      213: -4303675488731556875
+    second: ambar_walk_199
+  - first:
+      213: 1146056177347757974
+    second: ambar_walk_200
+  - first:
+      213: -1770807558378154577
+    second: ambar_walk_201
+  - first:
+      213: 6080116258211198726
+    second: ambar_walk_202
+  - first:
+      213: -7332534210220092010
+    second: ambar_walk_203
+  - first:
+      213: 4800324378746414021
+    second: ambar_walk_204
+  - first:
+      213: -5267961307985648726
+    second: ambar_walk_205
+  - first:
+      213: 5712526793589251351
+    second: ambar_walk_206
+  - first:
+      213: 2048308998628460003
+    second: ambar_walk_207
+  - first:
+      213: 5158564263970569674
+    second: ambar_walk_208
+  - first:
+      213: 5349800379155619782
+    second: ambar_walk_209
+  - first:
+      213: 1291102411253401423
+    second: ambar_walk_210
+  - first:
+      213: -3687485088259050185
+    second: ambar_walk_211
+  - first:
+      213: 1409587096041244509
+    second: ambar_walk_212
+  - first:
+      213: 8735955076159542404
+    second: ambar_walk_213
+  - first:
+      213: -7226416535002121839
+    second: ambar_walk_214
+  - first:
+      213: 15299160626783118
+    second: ambar_walk_215
+  - first:
+      213: 887065430310839068
+    second: ambar_walk_216
+  - first:
+      213: -7860807246097201026
+    second: ambar_walk_217
+  - first:
+      213: 9050713043916096118
+    second: ambar_walk_218
+  - first:
+      213: 4159157222725852652
+    second: ambar_walk_219
+  - first:
+      213: -7681997734334005708
+    second: ambar_walk_220
+  - first:
+      213: -6908181129789515044
+    second: ambar_walk_221
+  - first:
+      213: 603455759370713877
+    second: ambar_walk_222
+  - first:
+      213: 5147353257800470269
+    second: ambar_walk_223
+  - first:
+      213: 2125021766339882992
+    second: ambar_walk_224
+  - first:
+      213: -5649296363657666624
+    second: ambar_walk_225
+  - first:
+      213: -3306103258589623994
+    second: ambar_walk_226
+  - first:
+      213: 383071836934240929
+    second: ambar_walk_227
+  - first:
+      213: 1753730156499980809
+    second: ambar_walk_228
+  - first:
+      213: 5456766519788364075
+    second: ambar_walk_229
+  - first:
+      213: 6241706493242836372
+    second: ambar_walk_230
+  - first:
+      213: -1095379422580562898
+    second: ambar_walk_231
+  - first:
+      213: -896209170455833845
+    second: ambar_walk_232
+  - first:
+      213: -7621148367571294194
+    second: ambar_walk_233
+  - first:
+      213: -3433750970459102792
+    second: ambar_walk_234
+  - first:
+      213: 6340693240949024886
+    second: ambar_walk_235
+  - first:
+      213: 4177476126356614454
+    second: ambar_walk_236
+  - first:
+      213: 6778356218099184899
+    second: ambar_walk_237
+  - first:
+      213: 7692603836533895055
+    second: ambar_walk_238
+  - first:
+      213: -5368040759607592960
+    second: ambar_walk_239
+  - first:
+      213: 1234520987897594520
+    second: ambar_walk_240
+  - first:
+      213: 1113369817476882833
+    second: ambar_walk_241
+  - first:
+      213: -455636924673314985
+    second: ambar_walk_242
+  - first:
+      213: 4279834199130579080
+    second: ambar_walk_243
+  - first:
+      213: 6471512811289955230
+    second: ambar_walk_244
+  - first:
+      213: 2082277053451791952
+    second: ambar_walk_245
+  - first:
+      213: -3143886666059869958
+    second: ambar_walk_246
+  - first:
+      213: -8939726223309879375
+    second: ambar_walk_247
+  - first:
+      213: 7953475155928305655
+    second: ambar_walk_248
+  - first:
+      213: 1459136653928273404
+    second: ambar_walk_249
+  - first:
+      213: 5542979583787682734
+    second: ambar_walk_250
+  - first:
+      213: 7844594785727780648
+    second: ambar_walk_251
+  - first:
+      213: 6707941056348937597
+    second: ambar_walk_252
+  - first:
+      213: 2557485017716464096
+    second: ambar_walk_253
+  - first:
+      213: 7986793519449309136
+    second: ambar_walk_254
+  - first:
+      213: 2394671224022600897
+    second: ambar_walk_255
+  - first:
+      213: -813823970616517196
+    second: ambar_walk_256
+  - first:
+      213: 4444800019183049921
+    second: ambar_walk_257
+  - first:
+      213: 3912930902741642951
+    second: ambar_walk_258
+  - first:
+      213: -1310924719249036629
+    second: ambar_walk_259
+  - first:
+      213: -8422724345377981030
+    second: ambar_walk_260
+  - first:
+      213: 5994218836360350482
+    second: ambar_walk_261
+  - first:
+      213: 6733379442527776613
+    second: ambar_walk_262
+  - first:
+      213: -5518751615747361547
+    second: ambar_walk_263
+  - first:
+      213: 7906663269895388970
+    second: ambar_walk_264
+  - first:
+      213: 1788740836696943340
+    second: ambar_walk_265
+  - first:
+      213: 3311980980961582211
+    second: ambar_walk_266
+  - first:
+      213: -4182752150851384200
+    second: ambar_walk_267
+  - first:
+      213: -6306322011543699870
+    second: ambar_walk_268
+  - first:
+      213: -8683610858728587060
+    second: ambar_walk_269
+  - first:
+      213: 1332424864304237132
+    second: ambar_walk_270
+  - first:
+      213: -8446323603260743838
+    second: ambar_walk_271
+  - first:
+      213: 8666308111841444377
+    second: ambar_walk_272
+  - first:
+      213: -7040577978244984924
+    second: ambar_walk_273
+  - first:
+      213: -5187162338362192845
+    second: ambar_walk_274
+  - first:
+      213: 4740571682961565912
+    second: ambar_walk_275
+  - first:
+      213: 5004875503478131845
+    second: ambar_walk_276
+  - first:
+      213: 2665440442587114728
+    second: ambar_walk_277
+  - first:
+      213: -8912610084721956950
+    second: ambar_walk_278
+  - first:
+      213: -1648939254099282671
+    second: ambar_walk_279
+  - first:
+      213: 8559913295653313274
+    second: ambar_walk_280
+  - first:
+      213: -2868351945881268226
+    second: ambar_walk_281
+  - first:
+      213: -3615732189643065165
+    second: ambar_walk_282
+  - first:
+      213: 3199101144721127384
+    second: ambar_walk_283
+  - first:
+      213: 8745838981319934090
+    second: ambar_walk_284
+  - first:
+      213: 4234137366900389674
+    second: ambar_walk_285
+  - first:
+      213: -7558409821489408864
+    second: ambar_walk_286
+  - first:
+      213: -4135116711108686958
+    second: ambar_walk_287
+  - first:
+      213: 4963434536880413249
+    second: ambar_walk_288
+  - first:
+      213: -3947684276712049778
+    second: ambar_walk_289
+  - first:
+      213: 7489244677945346539
+    second: ambar_walk_290
+  - first:
+      213: 4233559696281685731
+    second: ambar_walk_291
+  - first:
+      213: -5431004298763852877
+    second: ambar_walk_292
+  - first:
+      213: 393420013906754816
+    second: ambar_walk_293
+  - first:
+      213: -2022706726356034752
+    second: ambar_walk_294
+  - first:
+      213: 7578384524792331397
+    second: ambar_walk_295
+  - first:
+      213: 1393290491605223516
+    second: ambar_walk_296
+  - first:
+      213: -1979660089048052038
+    second: ambar_walk_297
+  - first:
+      213: 3893628214066216727
+    second: ambar_walk_298
+  - first:
+      213: -9135466126971443711
+    second: ambar_walk_299
+  - first:
+      213: 6728438675391448416
+    second: ambar_walk_300
+  - first:
+      213: -1177961807353247061
+    second: ambar_walk_301
+  - first:
+      213: 1620926153520808477
+    second: ambar_walk_302
+  - first:
+      213: 7096099090611320806
+    second: ambar_walk_303
+  - first:
+      213: -7463258384372384389
+    second: ambar_walk_304
+  - first:
+      213: 7398117267728501784
+    second: ambar_walk_305
+  - first:
+      213: -6014788514987059901
+    second: ambar_walk_306
+  - first:
+      213: -6552557482081534373
+    second: ambar_walk_307
+  - first:
+      213: -7961789581112065177
+    second: ambar_walk_308
+  - first:
+      213: 6790558335784174040
+    second: ambar_walk_309
+  - first:
+      213: -6420260311006353097
+    second: ambar_walk_310
+  - first:
+      213: 5543038904467313856
+    second: ambar_walk_311
+  - first:
+      213: 7657294184215829276
+    second: ambar_walk_312
+  - first:
+      213: -255047276208359355
+    second: ambar_walk_313
+  - first:
+      213: -5360331535530636956
+    second: ambar_walk_314
+  - first:
+      213: -4237453705471858254
+    second: ambar_walk_315
+  - first:
+      213: 6628067314194985703
+    second: ambar_walk_316
+  - first:
+      213: 6111668197392344871
+    second: ambar_walk_317
+  - first:
+      213: 7090834447888103809
+    second: ambar_walk_318
+  - first:
+      213: 5420594220012597566
+    second: ambar_walk_319
+  - first:
+      213: 5523425423155476124
+    second: ambar_walk_320
+  - first:
+      213: -9185373531257122994
+    second: ambar_walk_321
+  - first:
+      213: -6908505688282109280
+    second: ambar_walk_322
+  - first:
+      213: 7817860958219483951
+    second: ambar_walk_323
+  - first:
+      213: -2251617078498499062
+    second: ambar_walk_324
+  - first:
+      213: 4020108673357104993
+    second: ambar_walk_325
+  - first:
+      213: -6461234376409610258
+    second: ambar_walk_326
+  - first:
+      213: 3052644287848205522
+    second: ambar_walk_327
+  - first:
+      213: -831839270809667282
+    second: ambar_walk_328
+  - first:
+      213: -7955486888987131729
+    second: ambar_walk_329
+  - first:
+      213: -8000539084293132724
+    second: ambar_walk_330
+  - first:
+      213: -3315921921943957969
+    second: ambar_walk_331
+  - first:
+      213: -2627452073141998321
+    second: ambar_walk_332
+  - first:
+      213: 2720800057631276239
+    second: ambar_walk_333
+  - first:
+      213: -7108481406753562715
+    second: ambar_walk_334
+  - first:
+      213: 6188701385376232217
+    second: ambar_walk_335
+  - first:
+      213: -2858418305589675343
+    second: ambar_walk_336
+  - first:
+      213: 1921413076936321948
+    second: ambar_walk_337
+  - first:
+      213: 1182140694387728934
+    second: ambar_walk_338
+  - first:
+      213: 6499269192274490128
+    second: ambar_walk_339
+  - first:
+      213: 5836766882057337975
+    second: ambar_walk_340
+  - first:
+      213: -4289397724216086610
+    second: ambar_walk_341
+  - first:
+      213: -2911623624152050493
+    second: ambar_walk_342
+  - first:
+      213: -4986790685854827469
+    second: ambar_walk_343
+  - first:
+      213: 2680124151997266585
+    second: ambar_walk_344
+  - first:
+      213: 7150281974444877869
+    second: ambar_walk_345
+  - first:
+      213: 620447754374432667
+    second: ambar_walk_346
+  - first:
+      213: -797464572079703070
+    second: ambar_walk_347
+  - first:
+      213: -8600345952253281021
+    second: ambar_walk_348
+  - first:
+      213: -1982655580828281724
+    second: ambar_walk_349
+  - first:
+      213: -4448854249405323623
+    second: ambar_walk_350
+  - first:
+      213: 4918669876465445464
+    second: ambar_walk_351
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ambar_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a83d27786ad2f97f9890e1b5b4a24d2
+      internalID: -1832663811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_up_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab944b33e34fa7cde8dade96a0bc2b15
+      internalID: 370116896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_up_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11aad0ce366a0bcc832f8fcc6b42a80
+      internalID: 1810001261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_up_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31c56d1a3f66c58d8ba7e336ff74092
+      internalID: -1112322789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_up_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d72b5a1714225ca39b45e2a6fb6418a
+      internalID: 831034323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_up_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4f2bb6f371df650a77cced45cfc85d
+      internalID: -72711847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_up_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c614692f38be979b9ca25a295b9e889
+      internalID: -946652322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_up_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584555190d95863f29105ec444f0d50a
+      internalID: -1979260985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_up_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6979b9dcaf08a2e958f0e447480660
+      internalID: -142878655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82085612b504e1c03b51d0e32e57c4c3
+      internalID: 438315222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_left_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386d521346457cfc2a6673993c3fb86c
+      internalID: 1831938754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_left_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54b509df6fb49c29a8c2be07173e379
+      internalID: 1352212470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_left_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eecd63662a6b8aee9206e27ad506041
+      internalID: -989648051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_left_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bc11911384a78a2995ecae489b2cec
+      internalID: -918351716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_left_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0895f195259ae5322a466cbb744e3106
+      internalID: -779563217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_left_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c926363cb9751a519b6cecd9b5830026
+      internalID: 654172113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_left_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501cfaab4444da5a683abbe4ae88a1d2
+      internalID: -337361551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_left_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3c979eaa5393628b50d05bbe699ac4
+      internalID: -1920318496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0301aeb628ce1948daf1a6955a4c4795
+      internalID: -350581602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_down_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24342261113ad960bcd44061bd6aef9
+      internalID: 1875764911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_down_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b079c2cd62766c4629493222202f86ee
+      internalID: 1489485529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_down_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04b44652b61ce10991915f339c80069
+      internalID: 2068878099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_down_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b69795e2355fa487a1c1c73817b735a
+      internalID: 1509929725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_down_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37bc4cf24b64b20a88574b3d87a0d32
+      internalID: -1906164543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_down_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c910cbab2f383fb1e8b017a120b2b3cb
+      internalID: -1668152470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_down_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd61d6e3ce8ab16180d103f8d697069
+      internalID: 624483294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_down_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4794dbf262ddae4ea685d3ba177ec91
+      internalID: -239967305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195eff64ee111e66aa90c1974b7d0031
+      internalID: -67988307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_right_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b6a6aaae17a64c49566ad5364ae084
+      internalID: -152620939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_right_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165b4c1b29766b6259826584040b6457
+      internalID: -2141406226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_right_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c6db1e66d02a477a1994d8eb4fdcdc
+      internalID: -1572438681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_right_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdfb17c74116b3afba61b2639a0b70c
+      internalID: -1427975604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_right_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663e798da1de8bbc08483b227dd348a3
+      internalID: -109724157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_right_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2356f6d58b383b15a8a9a9feb286be4f
+      internalID: -1478216661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_right_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175cb82dbd238ef16a5bd942eeb289b8
+      internalID: 2029449350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ambar_right_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7d4b70663449957bbfb609f0576ead
+      internalID: -1105214185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dc6cc3850180c0e63bc34cc553ebfa88
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ambar_down_0: -350581602
+      ambar_down_1: 1875764911
+      ambar_down_2: 1489485529
+      ambar_down_3: 2068878099
+      ambar_down_4: 1509929725
+      ambar_down_5: -1906164543
+      ambar_down_6: -1668152470
+      ambar_down_7: 624483294
+      ambar_down_8: -239967305
+      ambar_left_0: 438315222
+      ambar_left_1: 1831938754
+      ambar_left_2: 1352212470
+      ambar_left_3: -989648051
+      ambar_left_4: -918351716
+      ambar_left_5: -779563217
+      ambar_left_6: 654172113
+      ambar_left_7: -337361551
+      ambar_left_8: -1920318496
+      ambar_right_0: -67988307
+      ambar_right_1: -152620939
+      ambar_right_2: -2141406226
+      ambar_right_3: -1572438681
+      ambar_right_4: -1427975604
+      ambar_right_5: -109724157
+      ambar_right_6: -1478216661
+      ambar_right_7: 2029449350
+      ambar_right_8: -1105214185
+      ambar_up_0: -1832663811
+      ambar_up_1: 370116896
+      ambar_up_2: 1810001261
+      ambar_up_3: -1112322789
+      ambar_up_4: 831034323
+      ambar_up_5: -72711847
+      ambar_up_6: -946652322
+      ambar_up_7: -1979260985
+      ambar_up_8: -142878655
+      ambar_walk_0: 3332974686841372479
+      ambar_walk_1: -4077568035769014523
+      ambar_walk_10: -3181264964270784299
+      ambar_walk_100: -8732941561418518275
+      ambar_walk_101: 8903286179181200847
+      ambar_walk_102: 3236683789494605966
+      ambar_walk_103: -8289323248287306408
+      ambar_walk_104: -3009507221893114211
+      ambar_walk_105: 6637612190802397820
+      ambar_walk_106: -3209776590631172000
+      ambar_walk_107: 5385539061111494160
+      ambar_walk_108: 890053936678422405
+      ambar_walk_109: 9112739371428079127
+      ambar_walk_11: -5663461147947688787
+      ambar_walk_110: 4130038235949832076
+      ambar_walk_111: 6627062052375518811
+      ambar_walk_112: -1072074834200791129
+      ambar_walk_113: 1524846378238563012
+      ambar_walk_114: -8425504806078672313
+      ambar_walk_115: 2508193723896978392
+      ambar_walk_116: 7792569631390496814
+      ambar_walk_117: -5872924056058321392
+      ambar_walk_118: -7872654309714262558
+      ambar_walk_119: 6698157086880061589
+      ambar_walk_12: 3959124739596113233
+      ambar_walk_120: 2304470111929096629
+      ambar_walk_121: 1011386392524806055
+      ambar_walk_122: -8007393046994394200
+      ambar_walk_123: -3278768200611896849
+      ambar_walk_124: -6194103424688049484
+      ambar_walk_125: 3162792446560644168
+      ambar_walk_126: -8384026652518072131
+      ambar_walk_127: -2527125253956125562
+      ambar_walk_128: -7722063290675027482
+      ambar_walk_129: 1485654852064757416
+      ambar_walk_13: -2827299768425067998
+      ambar_walk_130: -5421312688148640707
+      ambar_walk_131: -4457655648924975896
+      ambar_walk_132: -2968388802936924301
+      ambar_walk_133: -8697184015933909732
+      ambar_walk_134: 1477672969620855184
+      ambar_walk_135: -4044380993610909158
+      ambar_walk_136: 1585004088567933790
+      ambar_walk_137: 3385090013776113083
+      ambar_walk_138: -46747565172601902
+      ambar_walk_139: 6760998647534069664
+      ambar_walk_14: -4767390000269798239
+      ambar_walk_140: -458437012059625907
+      ambar_walk_141: -6922805278790164859
+      ambar_walk_142: 316117843012771023
+      ambar_walk_143: -7057265689801673412
+      ambar_walk_144: 439583089636375392
+      ambar_walk_145: 4492078670089492236
+      ambar_walk_146: -5807427132438813137
+      ambar_walk_147: 8561898367792770950
+      ambar_walk_148: 964310842221001920
+      ambar_walk_149: 8739846214712086440
+      ambar_walk_15: -8627604775212429746
+      ambar_walk_150: -7587524445981021349
+      ambar_walk_151: -1784909203513846843
+      ambar_walk_152: -3263978513404274120
+      ambar_walk_153: 5423226185969501260
+      ambar_walk_154: -7870868375181180605
+      ambar_walk_155: 7427891732978687673
+      ambar_walk_156: -4711818398764946165
+      ambar_walk_157: -343740443698560563
+      ambar_walk_158: 1457213839162860797
+      ambar_walk_159: -304134204828195068
+      ambar_walk_16: 1985202805655683514
+      ambar_walk_160: 9186662685390110535
+      ambar_walk_161: -3353762239475777192
+      ambar_walk_162: 3736944180482313338
+      ambar_walk_163: 5856414525499391536
+      ambar_walk_164: -3812142870546402221
+      ambar_walk_165: -5055900743211124439
+      ambar_walk_166: -940828203798665391
+      ambar_walk_167: -8941263205811322342
+      ambar_walk_168: -8791151683184117777
+      ambar_walk_169: 8600162561438480571
+      ambar_walk_17: -2186964227630355262
+      ambar_walk_170: 6523152755044975274
+      ambar_walk_171: -1972266130091020964
+      ambar_walk_172: 8558135051611497835
+      ambar_walk_173: -8004665265483670705
+      ambar_walk_174: 2068318869036886584
+      ambar_walk_175: 205119120738758552
+      ambar_walk_176: 7347182131610538343
+      ambar_walk_177: 5110126776608597115
+      ambar_walk_178: -4282844338042608389
+      ambar_walk_179: 3352537543693992391
+      ambar_walk_18: -5707945386836714564
+      ambar_walk_180: 6406571849043416683
+      ambar_walk_181: 5683690982327840277
+      ambar_walk_182: 6563493102694282595
+      ambar_walk_183: 3426262529527126815
+      ambar_walk_184: -5706504954040180920
+      ambar_walk_185: -5117903669321945594
+      ambar_walk_186: 4299324618961867658
+      ambar_walk_187: -1627437374177271236
+      ambar_walk_188: 6160780766864708993
+      ambar_walk_189: 3019792686729426849
+      ambar_walk_19: 1078924678294282218
+      ambar_walk_190: 8842298850304667964
+      ambar_walk_191: 2101443735064512602
+      ambar_walk_192: -8276241972045049701
+      ambar_walk_193: 4568678470316222861
+      ambar_walk_194: 2174691000945533954
+      ambar_walk_195: 1982202560015131477
+      ambar_walk_196: -9191781250484287151
+      ambar_walk_197: -196218921760916440
+      ambar_walk_198: 8840317677081723900
+      ambar_walk_199: -4303675488731556875
+      ambar_walk_2: 5832190632606674185
+      ambar_walk_20: 6144887737578937700
+      ambar_walk_200: 1146056177347757974
+      ambar_walk_201: -1770807558378154577
+      ambar_walk_202: 6080116258211198726
+      ambar_walk_203: -7332534210220092010
+      ambar_walk_204: 4800324378746414021
+      ambar_walk_205: -5267961307985648726
+      ambar_walk_206: 5712526793589251351
+      ambar_walk_207: 2048308998628460003
+      ambar_walk_208: 5158564263970569674
+      ambar_walk_209: 5349800379155619782
+      ambar_walk_21: -8938877473018840065
+      ambar_walk_210: 1291102411253401423
+      ambar_walk_211: -3687485088259050185
+      ambar_walk_212: 1409587096041244509
+      ambar_walk_213: 8735955076159542404
+      ambar_walk_214: -7226416535002121839
+      ambar_walk_215: 15299160626783118
+      ambar_walk_216: 887065430310839068
+      ambar_walk_217: -7860807246097201026
+      ambar_walk_218: 9050713043916096118
+      ambar_walk_219: 4159157222725852652
+      ambar_walk_22: -965719001896710136
+      ambar_walk_220: -7681997734334005708
+      ambar_walk_221: -6908181129789515044
+      ambar_walk_222: 603455759370713877
+      ambar_walk_223: 5147353257800470269
+      ambar_walk_224: 2125021766339882992
+      ambar_walk_225: -5649296363657666624
+      ambar_walk_226: -3306103258589623994
+      ambar_walk_227: 383071836934240929
+      ambar_walk_228: 1753730156499980809
+      ambar_walk_229: 5456766519788364075
+      ambar_walk_23: 1493288194458070716
+      ambar_walk_230: 6241706493242836372
+      ambar_walk_231: -1095379422580562898
+      ambar_walk_232: -896209170455833845
+      ambar_walk_233: -7621148367571294194
+      ambar_walk_234: -3433750970459102792
+      ambar_walk_235: 6340693240949024886
+      ambar_walk_236: 4177476126356614454
+      ambar_walk_237: 6778356218099184899
+      ambar_walk_238: 7692603836533895055
+      ambar_walk_239: -5368040759607592960
+      ambar_walk_24: 7171361096475073411
+      ambar_walk_240: 1234520987897594520
+      ambar_walk_241: 1113369817476882833
+      ambar_walk_242: -455636924673314985
+      ambar_walk_243: 4279834199130579080
+      ambar_walk_244: 6471512811289955230
+      ambar_walk_245: 2082277053451791952
+      ambar_walk_246: -3143886666059869958
+      ambar_walk_247: -8939726223309879375
+      ambar_walk_248: 7953475155928305655
+      ambar_walk_249: 1459136653928273404
+      ambar_walk_25: -1185152382450490823
+      ambar_walk_250: 5542979583787682734
+      ambar_walk_251: 7844594785727780648
+      ambar_walk_252: 6707941056348937597
+      ambar_walk_253: 2557485017716464096
+      ambar_walk_254: 7986793519449309136
+      ambar_walk_255: 2394671224022600897
+      ambar_walk_256: -813823970616517196
+      ambar_walk_257: 4444800019183049921
+      ambar_walk_258: 3912930902741642951
+      ambar_walk_259: -1310924719249036629
+      ambar_walk_26: -6934535346600944937
+      ambar_walk_260: -8422724345377981030
+      ambar_walk_261: 5994218836360350482
+      ambar_walk_262: 6733379442527776613
+      ambar_walk_263: -5518751615747361547
+      ambar_walk_264: 7906663269895388970
+      ambar_walk_265: 1788740836696943340
+      ambar_walk_266: 3311980980961582211
+      ambar_walk_267: -4182752150851384200
+      ambar_walk_268: -6306322011543699870
+      ambar_walk_269: -8683610858728587060
+      ambar_walk_27: 1551961474701979847
+      ambar_walk_270: 1332424864304237132
+      ambar_walk_271: -8446323603260743838
+      ambar_walk_272: 8666308111841444377
+      ambar_walk_273: -7040577978244984924
+      ambar_walk_274: -5187162338362192845
+      ambar_walk_275: 4740571682961565912
+      ambar_walk_276: 5004875503478131845
+      ambar_walk_277: 2665440442587114728
+      ambar_walk_278: -8912610084721956950
+      ambar_walk_279: -1648939254099282671
+      ambar_walk_28: -6590743859903140702
+      ambar_walk_280: 8559913295653313274
+      ambar_walk_281: -2868351945881268226
+      ambar_walk_282: -3615732189643065165
+      ambar_walk_283: 3199101144721127384
+      ambar_walk_284: 8745838981319934090
+      ambar_walk_285: 4234137366900389674
+      ambar_walk_286: -7558409821489408864
+      ambar_walk_287: -4135116711108686958
+      ambar_walk_288: 4963434536880413249
+      ambar_walk_289: -3947684276712049778
+      ambar_walk_29: -8816317939080771206
+      ambar_walk_290: 7489244677945346539
+      ambar_walk_291: 4233559696281685731
+      ambar_walk_292: -5431004298763852877
+      ambar_walk_293: 393420013906754816
+      ambar_walk_294: -2022706726356034752
+      ambar_walk_295: 7578384524792331397
+      ambar_walk_296: 1393290491605223516
+      ambar_walk_297: -1979660089048052038
+      ambar_walk_298: 3893628214066216727
+      ambar_walk_299: -9135466126971443711
+      ambar_walk_3: 8537436431777795141
+      ambar_walk_30: -7982526350045912669
+      ambar_walk_300: 6728438675391448416
+      ambar_walk_301: -1177961807353247061
+      ambar_walk_302: 1620926153520808477
+      ambar_walk_303: 7096099090611320806
+      ambar_walk_304: -7463258384372384389
+      ambar_walk_305: 7398117267728501784
+      ambar_walk_306: -6014788514987059901
+      ambar_walk_307: -6552557482081534373
+      ambar_walk_308: -7961789581112065177
+      ambar_walk_309: 6790558335784174040
+      ambar_walk_31: -8662718025998348123
+      ambar_walk_310: -6420260311006353097
+      ambar_walk_311: 5543038904467313856
+      ambar_walk_312: 7657294184215829276
+      ambar_walk_313: -255047276208359355
+      ambar_walk_314: -5360331535530636956
+      ambar_walk_315: -4237453705471858254
+      ambar_walk_316: 6628067314194985703
+      ambar_walk_317: 6111668197392344871
+      ambar_walk_318: 7090834447888103809
+      ambar_walk_319: 5420594220012597566
+      ambar_walk_32: 1990937239872773061
+      ambar_walk_320: 5523425423155476124
+      ambar_walk_321: -9185373531257122994
+      ambar_walk_322: -6908505688282109280
+      ambar_walk_323: 7817860958219483951
+      ambar_walk_324: -2251617078498499062
+      ambar_walk_325: 4020108673357104993
+      ambar_walk_326: -6461234376409610258
+      ambar_walk_327: 3052644287848205522
+      ambar_walk_328: -831839270809667282
+      ambar_walk_329: -7955486888987131729
+      ambar_walk_33: -8695384561835752319
+      ambar_walk_330: -8000539084293132724
+      ambar_walk_331: -3315921921943957969
+      ambar_walk_332: -2627452073141998321
+      ambar_walk_333: 2720800057631276239
+      ambar_walk_334: -7108481406753562715
+      ambar_walk_335: 6188701385376232217
+      ambar_walk_336: -2858418305589675343
+      ambar_walk_337: 1921413076936321948
+      ambar_walk_338: 1182140694387728934
+      ambar_walk_339: 6499269192274490128
+      ambar_walk_34: -7353984158841666644
+      ambar_walk_340: 5836766882057337975
+      ambar_walk_341: -4289397724216086610
+      ambar_walk_342: -2911623624152050493
+      ambar_walk_343: -4986790685854827469
+      ambar_walk_344: 2680124151997266585
+      ambar_walk_345: 7150281974444877869
+      ambar_walk_346: 620447754374432667
+      ambar_walk_347: -797464572079703070
+      ambar_walk_348: -8600345952253281021
+      ambar_walk_349: -1982655580828281724
+      ambar_walk_35: 8418592008487796179
+      ambar_walk_350: -4448854249405323623
+      ambar_walk_351: 4918669876465445464
+      ambar_walk_36: -4036453739812195032
+      ambar_walk_37: 4556990396450356731
+      ambar_walk_38: -5024174678316307918
+      ambar_walk_39: 8833588829543530199
+      ambar_walk_4: -3454879074699290726
+      ambar_walk_40: -7524426407796222343
+      ambar_walk_41: 4493897961679409410
+      ambar_walk_42: -5231308898567163863
+      ambar_walk_43: 6160009841529838883
+      ambar_walk_44: 8460541088494728568
+      ambar_walk_45: 3384237830309830254
+      ambar_walk_46: -2846666188073886478
+      ambar_walk_47: 296306934161370812
+      ambar_walk_48: 5937148405889330
+      ambar_walk_49: 9097749918195350808
+      ambar_walk_5: -154985078704679226
+      ambar_walk_50: -3850555995204911698
+      ambar_walk_51: 2712231231620520477
+      ambar_walk_52: -377085037591610657
+      ambar_walk_53: 4758341717796474640
+      ambar_walk_54: -7893154356479544548
+      ambar_walk_55: -4695603013483905940
+      ambar_walk_56: 2712213620462241031
+      ambar_walk_57: 3147966675277350363
+      ambar_walk_58: 4332848723930141256
+      ambar_walk_59: -6113866650147368345
+      ambar_walk_6: 2335125080453337493
+      ambar_walk_60: -2619923882494854444
+      ambar_walk_61: 4003279243823604022
+      ambar_walk_62: -8931138446108588281
+      ambar_walk_63: -1728914987074410879
+      ambar_walk_64: 6556984923696193090
+      ambar_walk_65: -7462069077949099347
+      ambar_walk_66: -3989089227956233136
+      ambar_walk_67: -4421569022456641360
+      ambar_walk_68: -3092227915036402522
+      ambar_walk_69: -2683470359382380429
+      ambar_walk_7: -5071046597641095452
+      ambar_walk_70: 2429083649341766273
+      ambar_walk_71: 4783936386544778004
+      ambar_walk_72: 4726413487849166434
+      ambar_walk_73: -540301918057450353
+      ambar_walk_74: 975039715896242951
+      ambar_walk_75: -3424812606044376151
+      ambar_walk_76: 980225179191190668
+      ambar_walk_77: 6679185493268064865
+      ambar_walk_78: -8584004597366636033
+      ambar_walk_79: -1847125762878735285
+      ambar_walk_8: 9065403033165000110
+      ambar_walk_80: -5132846620273193290
+      ambar_walk_81: 8688456835874223490
+      ambar_walk_82: -1172726792973689969
+      ambar_walk_83: -8071579145713803124
+      ambar_walk_84: -358466401047199258
+      ambar_walk_85: 8100658302525370038
+      ambar_walk_86: 7400429987436261515
+      ambar_walk_87: -4638100511949383593
+      ambar_walk_88: 6447592253056531194
+      ambar_walk_89: 5383127375266631760
+      ambar_walk_9: -8712395655797471435
+      ambar_walk_90: 7388947448237643988
+      ambar_walk_91: -4664431699642132043
+      ambar_walk_92: -934190703916499835
+      ambar_walk_93: -2979253830484993211
+      ambar_walk_94: 2741461278555684785
+      ambar_walk_95: 8812284768366732151
+      ambar_walk_96: -3447729648899456680
+      ambar_walk_97: -6589677325205864900
+      ambar_walk_98: 7676923636198340909
+      ambar_walk_99: 9114235615694032260
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
