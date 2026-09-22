@@ -74,14 +74,13 @@ namespace MientrasArdaLaVela.EditorTools
             ConstruirTriggers();
             ConstruirDecorado();
             ConstruirHUD();
+            ConstruirDialogueSystem();
 
             Undo.SetCurrentGroupName("Construir jerarquía Mapa 0");
             Undo.CollapseUndoOperations(grupo);
             EditorSceneManager.MarkSceneDirty(escena);
 
-            Debug.Log("[Mapa0] Jerarquía construida. FALTA a mano: arrastra el prefab 'Dialogue System' " +
-                      "de Yarn Spinner a la escena, asígnale el Yarn Project " +
-                      "(Assets/_Proyecto/Dialogue/MientrasArdaLaVela.yarnproject) y agrégale el script DialogueBridge.");
+            Debug.Log("[Mapa0] Jerarquía construida, Dialogue System incluido.");
         }
 
         /// <summary>
@@ -393,11 +392,56 @@ namespace MientrasArdaLaVela.EditorTools
             var vcamGo = Raiz("Cinemachine Camera");
             var vcam = Comp<CinemachineCamera>(vcamGo);
             vcam.Target.TrackingTarget = objetivo.transform;
+            // El lente del vcam DEBE coincidir con el de la Main Camera: el Confiner 2D calcula
+            // el recorte con este valor, y el brain se lo impone a la cámara. Con el 10 que trae
+            // por defecto, el encuadre calculado mide casi todo el mapa y la cámara deja de seguir
+            // a Ámbar, además de pelearse con el Pixel Perfect Camera.
+            var lente = vcam.Lens;
+            lente.OrthographicSize = 5.625f;          // 360 / 2 / 32 PPU
+            vcam.Lens = lente;
             var follow = Comp<CinemachineFollow>(vcamGo);
             follow.FollowOffset = new Vector3(0f, 0f, -10f);
             var confiner = Comp<CinemachineConfiner2D>(vcamGo);
             confiner.BoundingShape2D = poly;
             EditorUtility.SetDirty(vcam);
+        }
+
+
+        // ============================ Dialogue System ============================
+        /// <summary>
+        /// Instancia el prefab "Dialogue System" de Yarn Spinner, le asigna el Yarn Project
+        /// y le añade el DialogueBridge (LEEME §4.2.5).
+        ///
+        /// El P3 original decía dejar esto para hacerlo a mano, pero Yarn Spinner expone
+        /// Yarn.Unity.Editor.CreateDialogueRunnerMenuItem.CreateDialogueRunner() como público:
+        /// es exactamente lo que ejecuta el menú GameObject > Yarn Spinner > Dialogue System.
+        /// </summary>
+        static void ConstruirDialogueSystem()
+        {
+            const string rutaProyecto = "Assets/_Proyecto/Dialogue/MientrasArdaLaVela.yarnproject";
+
+            var existente = Object.FindAnyObjectByType<Yarn.Unity.DialogueRunner>();
+            if (existente == null)
+            {
+                existente = Yarn.Unity.Editor.CreateDialogueRunnerMenuItem.CreateDialogueRunner();
+                if (existente == null) { Debug.LogError("[Mapa0] No se pudo crear el Dialogue System."); return; }
+                Undo.RegisterCreatedObjectUndo(existente.gameObject, "Crear Dialogue System");
+                existente.gameObject.name = "Dialogue System";
+            }
+
+            var proyecto = AssetDatabase.LoadAssetAtPath<Yarn.Unity.YarnProject>(rutaProyecto);
+            if (proyecto == null)
+            {
+                Debug.LogError($"[Mapa0] Falta el Yarn Project en {rutaProyecto}. " +
+                               "Corre 'Setup > Crear Yarn Project' antes.");
+            }
+            else
+            {
+                // Por SerializedObject para que quede registrado en la escena y en el Undo.
+                Set(existente, ("yarnProject", proyecto));
+            }
+
+            Comp<DialogueBridge>(existente.gameObject);
         }
 
         // ============================ MemoryMap ============================
