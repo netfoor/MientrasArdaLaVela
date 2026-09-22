@@ -12,7 +12,7 @@ Ambientes y efectos: [pendiente]
 Música: [pendiente]
 
 CREDITOS — Arte abierto (F01)
-Generado el 2026-09-21 (v3: ojos cafés en todos los personajes; Rosa y Lucía en piel bronze; Cuco con Jewfro en las tres edades; credits.txt oficial de House interior).
+Generado el 2026-09-21, revisado el 2026-09-22 (v3: ojos cafés en todos los personajes; Rosa y Lucía en piel bronze; Cuco con Jewfro en las tres edades; credits.txt oficial de House interior).
 Nota: las hojas LPC combinan capas de distintos autores; cada capa conserva su propia licencia (ver el texto literal de cada personaje).
 Los tilesets de la Parte B están dentro de tilesets_OGA.zip en carpetas tileset_interior/, tileset_flores/ y tileset_altar/ (también se descargaron sueltos como tileset_xxx__archivo).
 
@@ -173,6 +173,7 @@ Licencia: MIXTA por capa (no hay una sola licencia común a todas las capas; hay
   Licencias presentes en las capas: OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0, CC-BY 3.0, CC0, GPL 2.0
 Fuente: https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/#?sex=male&body=Body_Color_bronze&head=Human_Male_Elderly_bronze&expression=Neutral_bronze&wrinkles=Wrinkles_bronze&hair=Plain_white&mustache=Walrus_Mustache_white&clothes=Longsleeve_white&apron=Apron_white&legs=Pants_brown&shoes=Basic_Shoes_brown&hat=Formal_Bowler_Hat_tan&eyes=Eye_Color_brown
 Modificación propia: el generador no aplica el color de ojos a la cara "elderly"; los píxeles de ojo azul se recolorearon a café a mano (paleta café del propio generador).
+Modificación propia (2026-09-22): ese recoloreado dejó 336 px del rabillo de cada ojo en cian (108,220,231); se sustituyeron por el blanco de ojo de la propia paleta LPC (242,247,248), que es el color que el generador pone en ese mismo píxel en las caras no "elderly".
 Créditos literales del generador/página:
 body/bodies/male/walk.png
 	- Note: see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)
@@ -336,6 +337,7 @@ Licencia: MIXTA por capa (no hay una sola licencia común a todas las capas; hay
   Licencias presentes en las capas: OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0, CC-BY 3.0, CC0, GPL 2.0
 Fuente: https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/#?sex=male&body=Body_Color_bronze&head=Human_Male_Elderly_bronze&expression=Neutral_bronze&wrinkles=Wrinkles_bronze&hair=Plain_gray&clothes=Longsleeve_white&apron=Apron_white&legs=Pants_brown&shoes=Basic_Shoes_brown&eyes=Eye_Color_brown
 Modificación propia: el generador no aplica el color de ojos a la cara "elderly"; los píxeles de ojo azul se recolorearon a café a mano (paleta café del propio generador).
+Modificación propia (2026-09-22): ese recoloreado dejó 336 px del rabillo de cada ojo en cian (108,220,231); se sustituyeron por el blanco de ojo de la propia paleta LPC (242,247,248), que es el color que el generador pone en ese mismo píxel en las caras no "elderly".
 Créditos literales del generador/página:
 body/bodies/male/walk.png
 	- Note: see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)

@@ -127,111 +127,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: interior_0
+      name: suelo_casa
       rect:
         serializedVersion: 2
         x: 0
-        y: 159
-        width: 417
-        height: 353
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f456b88fda49b1940800000000000000
-      internalID: 5267967664060065103
+      spriteID: fd0c388837d5b2a21a3895da0f2cdd99
+      internalID: 1424767565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: interior_1
+      name: suelo_patio
       rect:
         serializedVersion: 2
-        x: 415
-        y: 415
-        width: 66
-        height: 97
+        x: 32
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 226d75ea24bc05dc0800000000000000
-      internalID: -3652195810544200158
+      spriteID: c2c6ecf03686e7f76aaa95e1f9124e96
+      internalID: 760241941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: interior_2
+      name: mueble
       rect:
         serializedVersion: 2
         x: 0
-        y: 95
-        width: 115
-        height: 64
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9068811381b063530800000000000000
-      internalID: 3834264331283367433
+      spriteID: 38f87351630c6899ab74b5a477f7bf20
+      internalID: -1573689801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: interior_3
+      name: pan
       rect:
         serializedVersion: 2
-        x: 63
-        y: 129
-        width: 34
-        height: 64
+        x: 192
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bd568bffcb9b39ad0800000000000000
-      internalID: -2696607530469530149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: interior_4
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 95
-        width: 18
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5169456033ddc75d0800000000000000
-      internalID: -3063330435299502571
+      spriteID: c33a91ba911413402b6b1c49a53681d4
+      internalID: 1667940259
       vertices: []
       indices: 
       edges: []
@@ -240,7 +218,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1d0f8027bd03623a7ba94943e0543fa6
     internalID: 0
     vertices: []
     indices: 
@@ -255,6 +233,10 @@ TextureImporter:
       interior_2: 3834264331283367433
       interior_3: -2696607530469530149
       interior_4: -3063330435299502571
+      mueble: -1573689801
+      pan: 1667940259
+      suelo_casa: 1424767565
+      suelo_patio: 760241941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

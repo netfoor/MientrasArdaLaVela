@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEditor.Animations;
-using UnityEditor.U2D.Sprites;
 using UnityEngine;
 
 namespace MientrasArdaLaVela.EditorTools
@@ -67,65 +66,8 @@ namespace MientrasArdaLaVela.EditorTools
         }
 
         // ---------------- corte de la hoja ----------------
-        static List<Sprite> CortarHoja()
-        {
-            var imp = (TextureImporter)AssetImporter.GetAtPath(RutaHoja);
-            imp.textureType = TextureImporterType.Sprite;
-            imp.spriteImportMode = SpriteImportMode.Multiple;
-            imp.spritePixelsPerUnit = Lado / 2;      // 32 PPU: el cuadro de 64 px mide 2 unidades
-            imp.filterMode = FilterMode.Point;
-            imp.textureCompression = TextureImporterCompression.Uncompressed;
-            imp.mipmapEnabled = false;
-            imp.alphaIsTransparency = true;
-            imp.maxTextureSize = 4096;
-            imp.SaveAndReimport();
-
-            var textura = AssetDatabase.LoadAssetAtPath<Texture2D>(RutaHoja);
-            int alto = textura.height;
-
-            var factoria = new SpriteDataProviderFactories();
-            factoria.Init();
-            var proveedor = factoria.GetSpriteEditorDataProviderFromObject(imp);
-            proveedor.InitSpriteEditorDataProvider();
-
-            var rects = new List<SpriteRect>();
-            foreach (var (nombre, _) in Direcciones)
-            {
-                int fila = FilaWalk + System.Array.FindIndex(Direcciones, t => t.nombre == nombre);
-                for (int c = 0; c < Cuadros; c++)
-                {
-                    rects.Add(new SpriteRect
-                    {
-                        name = $"ambar_{nombre.ToLower()}_{c}",
-                        // La hoja se cuenta desde arriba; Unity desde abajo.
-                        rect = new Rect(c * Lado, alto - (fila + 1) * Lado, Lado, Lado),
-                        alignment = SpriteAlignment.Custom,
-                        pivot = new Vector2(0.5f, PivoteY),
-                        spriteID = GUID.Generate(),
-                    });
-                }
-            }
-            proveedor.SetSpriteRects(rects.ToArray());
-            proveedor.Apply();
-            imp.SaveAndReimport();
-
-            // Recuperar los sprites ya importados, en el mismo orden de los rects
-            var porNombre = new Dictionary<string, Sprite>();
-            foreach (var o in AssetDatabase.LoadAllAssetsAtPath(RutaHoja))
-                if (o is Sprite s) porNombre[s.name] = s;
-
-            var orden = new List<Sprite>();
-            foreach (var r in rects)
-            {
-                if (!porNombre.TryGetValue(r.name, out var s))
-                {
-                    Debug.LogError($"[Ámbar] No se importó el sprite '{r.name}'.");
-                    return null;
-                }
-                orden.Add(s);
-            }
-            return orden;
-        }
+        // La lógica vive en HojaLPC, que corta cualquier hoja del generador LPC.
+        static List<Sprite> CortarHoja() => HojaLPC.Cortar(RutaHoja, "ambar");
 
         // ---------------- clips ----------------
         static AnimationClip CrearClip(string nombre, Sprite[] cuadros, bool repetir)
