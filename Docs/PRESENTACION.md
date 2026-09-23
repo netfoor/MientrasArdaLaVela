@@ -5,12 +5,19 @@
 16 diapositivas, 16:9. Se pasan con las flechas; desde el menú de la página se
 puede presentar a pantalla completa y descargar en PDF o PowerPoint.
 
-## Antes de presentar: colocar 4 imágenes
+## Tres formas de presentarla
 
-Las diapositivas tienen los marcos hechos y a la medida, pero **vacíos**: no pude
-subir los archivos desde la terminal. Se arrastran dentro del editor de la
-presentación, o con el botón *Add image…*. Los archivos están en
-`Docs/presentacion/`:
+| Archivo | Cuándo usarlo |
+|---|---|
+| **`Docs/presentacion/presentacion.html`** | **La recomendada.** Se abre en cualquier navegador, con las 4 imágenes ya dentro. No necesita internet ni cuenta. Flechas para cambiar, `N` para las notas del orador, `F` para pantalla completa. |
+| **`Docs/presentacion/MientrasArdaLaVela_presentacion.pdf`** | Respaldo. 16 páginas en 1920 × 1080. Para una USB o para subirlo a la plataforma de la asignatura. |
+| El enlace de arriba | Versión en línea. Se descarga en PowerPoint desde su menú. **Le faltan las 4 imágenes**, hay que arrastrarlas en el editor. |
+
+### Por qué al enlace le faltan las imágenes
+
+La herramienta con la que publico no me deja subir archivos como imágenes en esta
+versión, así que en esa copia quedaron los marcos vacíos, a la medida exacta. Si
+prefieres usarla, arrastra dentro del editor los archivos de `Docs/presentacion/`:
 
 | Diapositiva | Marco | Archivo |
 |---|---|---|
@@ -19,8 +26,8 @@ presentación, o con el botón *Add image…*. Los archivos están en
 | **Mapa 0 funcionando** (14) | recuadro izquierdo | `mapa0_trazado.png` |
 | **Mapa 0 funcionando** (14) | recuadro derecho | `mapa0_juego.png` |
 
-(`ambar_walk.png`, el ciclo de caminata, queda de repuesto por si quieres añadir
-una diapositiva de animación.)
+`ambar_walk.png` (el ciclo de caminata) queda de repuesto por si quieres añadir una
+diapositiva de animación.
 
 ## Estructura
 
