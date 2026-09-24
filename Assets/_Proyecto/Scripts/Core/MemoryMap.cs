@@ -26,6 +26,12 @@ namespace MientrasArdaLaVela
             GameManager.Ensure();
         }
 
+        /// <summary>Evita que Current apunte a un mapa ya destruido mientras se está en el menú.</summary>
+        void OnDestroy()
+        {
+            if (Current == this) Current = null;
+        }
+
         public int Collected => GameManager.Instance.CountFragments(fragmentPrefix);
         public bool AllFragments => Collected >= requiredFragments;
     }

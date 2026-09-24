@@ -6,24 +6,35 @@ namespace MientrasArdaLaVela
     /// <summary>
     /// Acciones de entrada definidas por código (teclado, mouse y gamepad),
     /// según la tabla de Controles del Documento de Diseño.
+    ///
+    /// Las acciones se CONSTRUYEN DE CERO en cada entrada a Play Mode. Es a propósito:
+    /// con "Enter Play Mode Options > Reload Domain" desactivado (que es como está este
+    /// proyecto) los campos estáticos sobreviven de una partida a la siguiente, pero el
+    /// Input System deshabilita todas las acciones al salir de Play. Si sólo se
+    /// configuraran una vez, la segunda partida se quedaría sin controles.
     /// </summary>
     public static class GameInput
     {
-        public static readonly InputAction Move = new InputAction("Move", InputActionType.Value);
-        public static readonly InputAction Interact = new InputAction("Interact", InputActionType.Button);
-        public static readonly InputAction Candle = new InputAction("Candle", InputActionType.Button);
-        public static readonly InputAction Hint = new InputAction("Hint", InputActionType.Button);
-        public static readonly InputAction Journal = new InputAction("Journal", InputActionType.Button);
-        public static readonly InputAction Pause = new InputAction("Pause", InputActionType.Button);
-        public static readonly InputAction AnyKey = new InputAction("AnyKey", InputActionType.Button);
-
-        static bool initialized;
+        public static InputAction Move    { get; private set; }
+        public static InputAction Interact{ get; private set; }
+        public static InputAction Candle  { get; private set; }
+        public static InputAction Hint    { get; private set; }
+        public static InputAction Journal { get; private set; }
+        public static InputAction Pause   { get; private set; }
+        public static InputAction AnyKey  { get; private set; }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         static void Init()
         {
-            if (initialized) return;
-            initialized = true;
+            Liberar();
+
+            Move     = new InputAction("Move",     InputActionType.Value);
+            Interact = new InputAction("Interact", InputActionType.Button);
+            Candle   = new InputAction("Candle",   InputActionType.Button);
+            Hint     = new InputAction("Hint",     InputActionType.Button);
+            Journal  = new InputAction("Journal",  InputActionType.Button);
+            Pause    = new InputAction("Pause",    InputActionType.Button);
+            AnyKey   = new InputAction("AnyKey",   InputActionType.Button);
 
             Move.AddCompositeBinding("2DVector")
                 .With("Up", "<Keyboard>/w").With("Down", "<Keyboard>/s")
@@ -58,6 +69,17 @@ namespace MientrasArdaLaVela
 
             Move.Enable(); Interact.Enable(); Candle.Enable(); Hint.Enable();
             Journal.Enable(); Pause.Enable(); AnyKey.Enable();
+        }
+
+        /// <summary>Desecha las acciones de la partida anterior, si las hubiera.</summary>
+        static void Liberar()
+        {
+            foreach (var a in new[] { Move, Interact, Candle, Hint, Journal, Pause, AnyKey })
+            {
+                if (a == null) continue;
+                a.Disable();
+                a.Dispose();
+            }
         }
     }
 }
