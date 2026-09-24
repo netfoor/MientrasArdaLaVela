@@ -28,7 +28,9 @@ namespace MientrasArdaLaVela
                 prompt.gameObject.SetActive(show);
                 if (show)
                 {
-                    prompt.text = current.PromptText;
+                    // <mark> pinta una banda oscura detrás: el aviso va sobre el mapa,
+                    // que cambia de color, y en blanco solo se lee a ratos.
+                    prompt.text = $"<mark=#140F20DD padding=\"12,12,4,4\">{current.PromptText}</mark>";
                     prompt.transform.position = current.transform.position + promptOffset;
                 }
             }
