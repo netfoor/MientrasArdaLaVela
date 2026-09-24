@@ -13,10 +13,19 @@ namespace MientrasArdaLaVela
     public class DialogueBridge : MonoBehaviour
     {
         public static DialogueBridge Instance { get; private set; }
-        public static bool IsBusy => Instance != null && Instance.runner.IsDialogueRunning;
+        /// <summary>
+        /// Incluye el hueco entre Play() y el arranque real del diálogo. En Yarn Spinner 3.x,
+        /// StartDialogue es asíncrono y sólo llama a Dialogue.Continue() al final, tras esperar
+        /// a los presentadores: hasta entonces IsDialogueRunning sigue en false y el jugador
+        /// podía seguir caminando e incluso lanzar otra interacción.
+        /// </summary>
+        public static bool IsBusy => Instance != null &&
+                                     (Instance.arrancando || Instance.runner.IsDialogueRunning);
 
         DialogueRunner runner;
         Action pendingOnComplete;
+        bool arrancando;
+        float esperandoDesde;
 
         void Awake()
         {
@@ -46,13 +55,31 @@ namespace MientrasArdaLaVela
             }
             if (!runner.Dialogue.NodeExists(node)) { Debug.LogWarning($"[Dialogue] No existe el nodo '{node}'."); onComplete?.Invoke(); return false; }
             pendingOnComplete = onComplete;
+            arrancando = true;                 // se marca YA, de forma síncrona
+            esperandoDesde = Time.unscaledTime;
             // StartDialogue devuelve YarnTask en 3.x (antes era void): se lanza sin esperar.
             _ = runner.StartDialogue(node);
             return true;
         }
 
+        void Update()
+        {
+            if (!arrancando) return;
+            // El diálogo ya arrancó de verdad: a partir de aquí manda IsDialogueRunning.
+            if (runner.IsDialogueRunning) { arrancando = false; return; }
+            // Red de seguridad: si StartDialogue se rindió sin avisar (por ejemplo, un Yarn
+            // Project sin programa), sin esto el jugador quedaría congelado para siempre.
+            if (Time.unscaledTime - esperandoDesde > 1f)
+            {
+                Debug.LogWarning("[Dialogue] El diálogo no arrancó en 1 s; se libera al jugador.");
+                arrancando = false;
+                OnComplete();
+            }
+        }
+
         void OnComplete()
         {
+            arrancando = false;
             var cb = pendingOnComplete;
             pendingOnComplete = null;
             cb?.Invoke();

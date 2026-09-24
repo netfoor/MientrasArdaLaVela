@@ -75,7 +75,8 @@ namespace MientrasArdaLaVela.EditorTools
             var go = Buscar("Global Light 2D"); if (go == null) return;
             var l = go.GetComponent<Light2D>();
             Ok("Luz global: tipo Global", l != null && l.lightType == Light2D.LightType.Global);
-            Ok("Luz global: intensidad 0.25", l != null && Mathf.Approximately(l.intensity, 0.25f), $"={l?.intensity}");
+            Ok("Luz global: intensidad de noche (0.14)",
+               l != null && Mathf.Approximately(l.intensity, 0.14f), $"={l?.intensity}");
         }
 
         static void VerificarAmbar()
