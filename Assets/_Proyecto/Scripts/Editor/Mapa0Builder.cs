@@ -679,9 +679,15 @@ namespace MientrasArdaLaVela.EditorTools
                 var r = Hijo(panel.transform, $"Rombo{i}");
                 var rrt = Comp<RectTransform>(r);
                 rrt.anchorMin = rrt.anchorMax = new Vector2(0f, 1f);
-                rrt.pivot = new Vector2(0f, 1f);
-                rrt.anchoredPosition = new Vector2(110f + i * 50f, -62f);
-                rrt.sizeDelta = new Vector2(40f, 40f);
+                // Pivote al centro: el giro de 45° es sobre el pivote, y con el pivote en la
+                // esquina el rombo se desplazaba en vez de girar en su sitio.
+                rrt.pivot = new Vector2(0.5f, 0.5f);
+                // El contador ocupa de -70 a -126: su centro está en -98, y ahí van los rombos.
+                rrt.anchoredPosition = new Vector2(127f + i * 50f, -98f);
+                rrt.sizeDelta = new Vector2(34f, 34f);
+                // El LEEME §4.2.12 pide rombos y el sprite de relleno es cuadrado: se gira 45°.
+                // A 34 px la diagonal mide 48 y aún cabe en la separación de 50.
+                rrt.localRotation = Quaternion.Euler(0f, 0f, 45f);
                 var img = Comp<Image>(r);
                 img.sprite = vacio;
                 rombos[i] = img;

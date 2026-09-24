@@ -18,7 +18,7 @@ set -uo pipefail
 PROYECTO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 UNITY="$HOME/Unity/Hub/Editor/6000.6.0f1/Editor/Unity"
 NS="MientrasArdaLaVela.EditorTools"
-LOGS="$PROYECTO/Temp/cli-logs"; mkdir -p "$LOGS"
+LOGS="$PROYECTO/Logs/cli"; mkdir -p "$LOGS"   # Temp/ no sirve: Unity lo vacía al arrancar
 
 [[ -x "$UNITY" ]] || { echo "No encuentro el editor en $UNITY"; exit 127; }
 
@@ -40,8 +40,12 @@ correr() {                       # correr <nombre> <método> [extra...]
   "$UNITY" -batchmode -nographics -quit -projectPath "$PROYECTO" -logFile "$log" \
            -executeMethod "$NS.$metodo" "$@" >/dev/null 2>&1
   local code=$?
+  if [[ ! -s "$log" ]]; then
+    echo "  ✗ Unity no generó log (salida=$code). ¿Arrancó siquiera?"
+    return 1
+  fi
   local fallos
-  fallos=$(grep -cE "^FALLA|error CS" "$log" 2>/dev/null || true)
+  fallos=$(grep -cE "^FALLA|error CS" "$log" 2>/dev/null); fallos=${fallos:-0}
   if (( code != 0 )) || (( fallos > 0 )); then
     echo "  ✗ salida=$code, $fallos problemas. Detalle:"
     grep -E "error CS|^FALLA|Exception" "$log" | sort -u | head -12 | sed 's/^/     /'
@@ -82,7 +86,7 @@ PY
   cortar-hojas)    correr cortar-hojas    HojaLPC.CortarTodas ;;
   capturar)
     command -v xvfb-run >/dev/null || { echo "✗ falta xvfb-run"; exit 127; }
-    dir="${CAPTURA_DIR:-$PROYECTO/Temp/capturas}"; mkdir -p "$dir"
+    dir="${CAPTURA_DIR:-$PROYECTO/Logs/capturas}"; mkdir -p "$dir"
     for par in "cap-mapa0:Mapa0Captura.Capturar" "cap-menu:MainMenuCaptura.Capturar"; do
       n="${par%%:*}"; m="${par#*:}"; echo "→ $n"
       CAPTURA_DIR="$dir" xvfb-run -a --server-args="-screen 0 1920x1080x24" \
