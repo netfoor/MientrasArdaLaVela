@@ -127,7 +127,7 @@ arrancar en vez de dejar la `Library` a medias.
 ```
 
 Devuelve código de salida distinto de cero si algo falla, así que sirve para un hook
-de pre-commit o para integración continua. Los logs quedan en `Temp/cli-logs/`.
+de pre-commit o para integración continua. Los logs quedan en `Logs/cli/`.
 
 ## Ojo con los comandos del menú del editor
 

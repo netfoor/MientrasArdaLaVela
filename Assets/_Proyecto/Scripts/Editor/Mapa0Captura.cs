@@ -45,6 +45,20 @@ namespace MientrasArdaLaVela.EditorTools
             var rtPrevia = cam.targetTexture;
             cam.transform.position = new Vector3(centro.x, centro.y, -10f);
 
+            // El HUD es un Canvas en Overlay y no se vuelca a una RenderTexture:
+            // se pasa a Camera un momento para que salga en la captura.
+            var hud = GameObject.Find("HUD")?.GetComponent<Canvas>();
+            RenderMode modoHud = RenderMode.ScreenSpaceOverlay;
+            Camera camHud = null;
+            if (hud != null)
+            {
+                modoHud = hud.renderMode; camHud = hud.worldCamera;
+                hud.renderMode = RenderMode.ScreenSpaceCamera;
+                hud.worldCamera = cam;
+                hud.planeDistance = 1f;
+                Canvas.ForceUpdateCanvases();
+            }
+
             const int ancho = 1280, alto = 720;
             RefrescarLuces2D();
             var rt = new RenderTexture(ancho, alto, 24, RenderTextureFormat.ARGB32);
@@ -61,6 +75,7 @@ namespace MientrasArdaLaVela.EditorTools
 
             cam.targetTexture = rtPrevia;
             cam.transform.position = posPrevia;
+            if (hud != null) { hud.renderMode = modoHud; hud.worldCamera = camHud; }
             Object.DestroyImmediate(tex);
             rt.Release();
             Object.DestroyImmediate(rt);
