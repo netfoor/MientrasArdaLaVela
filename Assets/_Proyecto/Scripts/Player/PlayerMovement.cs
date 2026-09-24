@@ -26,6 +26,14 @@ namespace MientrasArdaLaVela
         /// <summary>Bloqueos externos (diálogo, puzle, pausa).</summary>
         public static bool Locked { get; set; }
 
+        /// <summary>
+        /// Con "Reload Domain" desactivado los estáticos sobreviven al salir de Play Mode.
+        /// Sin esto, salir con el jugador bloqueado dejaría a Ámbar congelada en la
+        /// siguiente partida, sin nada que la desbloquee.
+        /// </summary>
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        static void ReiniciarEstado() => Locked = false;
+
         void Awake()
         {
             rb = GetComponent<Rigidbody2D>();

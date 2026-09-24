@@ -25,10 +25,23 @@ namespace MientrasArdaLaVela
         public static void Register(Revealable r) { if (!revealables.Contains(r)) revealables.Add(r); }
         public static void Unregister(Revealable r) => revealables.Remove(r);
 
+        /// <summary>La lista es estática: sin "Reload Domain" arrastraría objetos ya destruidos.</summary>
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        static void ReiniciarEstado()
+        {
+            revealables.Clear();
+            Instance = null;
+        }
+
         void Awake()
         {
             Instance = this;
             CurrentRadius = idleRadius;
+        }
+
+        void OnDestroy()
+        {
+            if (Instance == this) Instance = null;
         }
 
         void Update()
