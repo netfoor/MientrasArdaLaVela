@@ -105,3 +105,33 @@ Mientras arda la vela > Capturar MainMenu
 
 # Pruebas: Window > General > Test Runner > EditMode > Run All   (12 pruebas)
 ```
+
+---
+
+## Línea de comandos de Unity (`tools/unity.sh`)
+
+Envoltorio del editor en batchmode. **Requiere que el editor esté cerrado**: Unity no
+admite dos instancias sobre el mismo proyecto, y el script lo comprueba antes de
+arrancar en vez de dejar la `Library` a medias.
+
+```bash
+./tools/unity.sh verificar         # los tres verificadores
+./tools/unity.sh pruebas           # pruebas EditMode
+./tools/unity.sh todo              # verificar + pruebas
+./tools/unity.sh construir-mapa0   # reconstruye y guarda Mapa0_Ofrenda
+./tools/unity.sh construir-menu    # reconstruye y guarda MainMenu
+./tools/unity.sh capturar          # renderiza ambas escenas a PNG
+./tools/unity.sh animator          # regenera los clips de Ámbar
+./tools/unity.sh cortar-hojas      # corta las 13 hojas de personaje
+./tools/unity.sh metodo Clase.Metodo
+```
+
+Devuelve código de salida distinto de cero si algo falla, así que sirve para un hook
+de pre-commit o para integración continua. Los logs quedan en `Temp/cli-logs/`.
+
+## Ojo con los comandos del menú del editor
+
+`Construir jerarquía Mapa 0` y `Construir MainMenu` trabajan sobre **la escena que
+tengas abierta**. Desde el 2026-09-24 comprueban cuál es y, si no es la suya, te
+ofrecen abrir la correcta. Aun así, la costumbre sana es abrir primero la escena que
+vas a reconstruir.

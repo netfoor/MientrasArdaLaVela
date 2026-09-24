@@ -53,9 +53,55 @@ namespace MientrasArdaLaVela.EditorTools
         static readonly Color ColMementoC  = new Color(0.90f, 0.70f, 0.35f);
         static readonly Color ColNiebla    = new Color(0.55f, 0.55f, 0.58f);
 
+        /// <summary>
+        /// Intensidad de la luz global (noche). El LEEME §4.2.2 fija 0.25, valor pensado cuando
+        /// los tiles eran cuadros de color oscuros; con la duela y la piedra definitivas, que son
+        /// mucho más claras, a 0.25 la escena se lee como una habitación iluminada y el charco
+        /// del farol se pierde. Si el Documento de Diseño ha de mandar, vuelve a poner 0.25f.
+        /// </summary>
+        const float LuzNocturna = 0.14f;
+
         const int OrdenSuelo = 0, OrdenDeco = 1, OrdenMueble = 2, OrdenObjeto = 5, OrdenAmbar = 10, OrdenNiebla = 20;
 
+        const string RutaEscena = "Assets/_Proyecto/Scenes/Mapa0_Ofrenda.unity";
+
+        /// <summary>
+        /// Punto de entrada del menú. Construye SIEMPRE en la escena abierta, así que primero
+        /// comprueba que sea la correcta: ejecutarlo con MainMenu abierta metía el mapa entero
+        /// dentro del menú.
+        /// </summary>
         [MenuItem("Mientras arda la vela/Construir jerarquía Mapa 0")]
+        public static void ConstruirDesdeMenu()
+        {
+            if (!EscenaCorrecta()) return;
+            Construir();
+            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+            Debug.Log("[Mapa0] Escena reconstruida y guardada.");
+        }
+
+        static bool EscenaCorrecta()
+        {
+            var activa = EditorSceneManager.GetActiveScene();
+            if (activa.path == RutaEscena) return true;
+
+            string abierta = string.IsNullOrEmpty(activa.path) ? "una escena sin guardar" : activa.path;
+            if (Application.isBatchMode)
+            {
+                Debug.LogError($"[Mapa0] La escena abierta es {abierta}, no {RutaEscena}.");
+                return false;
+            }
+            bool abrir = EditorUtility.DisplayDialog(
+                "Escena equivocada",
+                $"Este comando construye dentro de la escena que esté abierta, y ahora mismo lo está {abierta}.\n\n" +
+                "Si continúas ahí, el Mapa 0 se metería dentro de esa escena.\n\n" +
+                "¿Abrir Mapa0_Ofrenda y construir ahí?",
+                "Abrir Mapa 0 y construir", "Cancelar");
+            if (!abrir) return false;
+            if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return false;
+            EditorSceneManager.OpenScene(RutaEscena, OpenSceneMode.Single);
+            return true;
+        }
+
         public static void Construir()
         {
             var escena = EditorSceneManager.GetActiveScene();
@@ -89,7 +135,7 @@ namespace MientrasArdaLaVela.EditorTools
         /// </summary>
         public static void CrearEscenaYConstruir()
         {
-            const string ruta = "Assets/_Proyecto/Scenes/Mapa0_Ofrenda.unity";
+            const string ruta = RutaEscena;
             System.IO.Directory.CreateDirectory("Assets/_Proyecto/Scenes");
 
             var escena = System.IO.File.Exists(ruta)
@@ -229,7 +275,7 @@ namespace MientrasArdaLaVela.EditorTools
             var go = Raiz("Global Light 2D");
             var luz = Comp<Light2D>(go);
             luz.lightType = Light2D.LightType.Global;
-            luz.intensity = 0.25f;                                  // noche (LEEME §4.2.2)
+            luz.intensity = LuzNocturna;
             luz.color = new Color(0.65f, 0.70f, 0.95f);
             EditorUtility.SetDirty(luz);
         }

@@ -26,7 +26,27 @@ namespace MientrasArdaLaVela.EditorTools
         static readonly Color ColTexto = new Color(0.96f, 0.92f, 0.85f);
         static readonly Color ColAcento = new Color(0.95f, 0.62f, 0.22f);   // ámbar de la vela
 
+        /// <summary>Igual que en el Mapa 0: construye en la escena abierta, así que la comprueba.</summary>
         [MenuItem("Mientras arda la vela/Construir MainMenu")]
+        public static void ConstruirDesdeMenu()
+        {
+            var activa = EditorSceneManager.GetActiveScene();
+            if (activa.path != RutaEscena)
+            {
+                string abierta = string.IsNullOrEmpty(activa.path) ? "una escena sin guardar" : activa.path;
+                if (Application.isBatchMode) { Debug.LogError($"[MainMenu] La escena abierta es {abierta}."); return; }
+                if (!EditorUtility.DisplayDialog("Escena equivocada",
+                        $"Este comando construye dentro de la escena abierta, y ahora lo está {abierta}.\n\n" +
+                        "¿Abrir MainMenu y construir ahí?",
+                        "Abrir MainMenu y construir", "Cancelar")) return;
+                if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+                EditorSceneManager.OpenScene(RutaEscena, OpenSceneMode.Single);
+            }
+            Construir();
+            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+            Debug.Log("[MainMenu] Escena reconstruida y guardada.");
+        }
+
         public static void Construir()
         {
             Undo.IncrementCurrentGroup();

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -41,7 +42,21 @@ namespace MientrasArdaLaVela
         {
             SetPanels(menu: true);
             if (continueButton != null) continueButton.interactable = SaveSystem.HasSave;
-            if (firstSelected != null) EventSystem.current?.SetSelectedGameObject(firstSelected.gameObject);
+            // La selección se pospone un cuadro a propósito: Espacio y Enter también son
+            // "Submit" para la interfaz, y seleccionar el botón en el mismo cuadro en que se
+            // pulsa la tecla hacía que se activara solo (se saltaba el menú y empezaba partida).
+            if (firstSelected != null)
+            {
+                EventSystem.current?.SetSelectedGameObject(null);
+                if (isActiveAndEnabled) StartCoroutine(SeleccionarSiguienteCuadro());
+            }
+        }
+
+        IEnumerator SeleccionarSiguienteCuadro()
+        {
+            yield return null;
+            if (firstSelected != null && menuPanel != null && menuPanel.activeSelf)
+                EventSystem.current?.SetSelectedGameObject(firstSelected.gameObject);
         }
 
         public void OnNewGame() => GameManager.Instance.NewGame();

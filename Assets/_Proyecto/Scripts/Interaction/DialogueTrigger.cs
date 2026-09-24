@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace MientrasArdaLaVela
@@ -20,7 +21,26 @@ namespace MientrasArdaLaVela
         {
             GetComponent<Collider2D>().isTrigger = true;
             if (!string.IsNullOrEmpty(saveId) && GameManager.Ensure().IsRevealed(saveId)) done = true;
-            if (playOnStart) Invoke(nameof(Fire), 0.3f);
+            if (playOnStart) StartCoroutine(DispararCuandoHayaDialogo());
+        }
+
+        /// <summary>
+        /// Espera a que exista el DialogueBridge en vez de apostar a un retraso fijo. Ámbar
+        /// nace DENTRO del trigger del prólogo, así que OnTriggerEnter2D nunca se dispara:
+        /// si este intento fallaba, el prólogo no se reproducía nunca y sin error visible.
+        /// </summary>
+        IEnumerator DispararCuandoHayaDialogo()
+        {
+            float limite = Time.time + 5f;
+            while (DialogueBridge.Instance == null && Time.time < limite) yield return null;
+            if (DialogueBridge.Instance == null)
+            {
+                Debug.LogError($"[DialogueTrigger] No apareció ningún DialogueBridge; '{yarnNode}' no se reproducirá.", this);
+                yield break;
+            }
+            // Un cuadro más para que el DialogueRunner termine de montar sus presentadores.
+            yield return null;
+            Fire();
         }
 
         void OnTriggerEnter2D(Collider2D other)
