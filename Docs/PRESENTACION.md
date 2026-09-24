@@ -2,7 +2,7 @@
 
 **Enlace:** https://claude.ai/artifact/JXzF6Q1uKo6ybWCZa1twm7
 
-16 diapositivas, 16:9. Se pasan con las flechas; desde el menú de la página se
+17 diapositivas, 16:9. Se pasan con las flechas; desde el menú de la página se
 puede presentar a pantalla completa y descargar en PDF o PowerPoint.
 
 ## Tres formas de presentarla
@@ -22,7 +22,8 @@ prefieres usarla, arrastra dentro del editor los archivos de `Docs/presentacion/
 | Diapositiva | Marco | Archivo |
 |---|---|---|
 | **Personajes** (9) | banda ancha bajo el título | `personajes.png` |
-| **Dirección de arte e interfaces** (10) | recuadro derecho | `menu_menupanel.png` |
+| **Los diálogos ya corren** (15) | recuadro ancho | `juego_dialogo.png` |
+| **Dirección de arte e interfaces** (10) | recuadro derecho | `juego_menu.png` |
 | **Mapa 0 funcionando** (14) | recuadro izquierdo | `mapa0_trazado.png` |
 | **Mapa 0 funcionando** (14) | recuadro derecho | `mapa0_juego.png` |
 
@@ -47,8 +48,9 @@ diapositiva de animación.
 | 12 | Producción | Tres sprints, 26 features, presupuesto |
 | 13 | Avance | Estado real del Sprint 1 |
 | 14 | Capturas | El Mapa 0 corriendo |
-| 15 | Lo que sigue | Cierre del Sprint 1 y Sprint 2 |
-| 16 | Cierre | Dos velas |
+| 15 | Los diálogos ya corren | Captura real con la caja de diálogo de don Aurelio |
+| 16 | Lo que sigue | Cierre del Sprint 1 y Sprint 2 |
+| 17 | Cierre | Dos velas |
 
 **Cada diapositiva trae notas del orador** con qué decir y qué recalcar; se ven en
 el modo presentador.

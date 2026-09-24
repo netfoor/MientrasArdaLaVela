@@ -289,10 +289,10 @@ namespace MientrasArdaLaVela.EditorTools
             var aviso = Hijo(go.transform, "Prompt");
             var tmp = Comp<TextMeshPro>(aviso);
             tmp.text = "[E] Examinar";
-            tmp.fontSize = 2.5f;
+            tmp.fontSize = 5f;            // ~16 px en pantalla a PPU 32
             tmp.alignment = TextAlignmentOptions.Center;
             tmp.color = Color.white;
-            tmp.rectTransform.sizeDelta = new Vector2(6f, 1f);
+            tmp.rectTransform.sizeDelta = new Vector2(8f, 1.2f);
             tmp.sortingOrder = OrdenNiebla + 1;
             aviso.SetActive(false);
 
@@ -676,11 +676,21 @@ namespace MientrasArdaLaVela.EditorTools
         static GameObject Hijo(Transform padre, string nombre)
         {
             var t = padre.Find(nombre);
-            if (t != null) return t.gameObject;
+            if (t != null)
+            {
+                // Normaliza también lo que ya existía: una construcción anterior pudo dejar
+                // la escala inflada. Si el llamador quiere otra escala, la pone después.
+                t.localScale = Vector3.one;
+                return t.gameObject;
+            }
             var go = new GameObject(nombre);
             Undo.RegisterCreatedObjectUndo(go, $"Crear {nombre}");
             Undo.SetTransformParent(go.transform, padre, $"Anidar {nombre}");
             go.transform.localPosition = Vector3.zero;
+            // SetTransformParent conserva la escala de MUNDO. Bajo un Canvas, cuyo transform
+            // lleva el factor de escala de la interfaz, eso le mete al hijo una escala
+            // compensatoria (3x con referencia 1920x1080): el HUD salía gigante y encimado.
+            go.transform.localScale = Vector3.one;
             return go;
         }
 
