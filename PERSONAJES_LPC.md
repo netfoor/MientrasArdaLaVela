@@ -1,5 +1,30 @@
 # Personajes con el generador LPC (Sprint 1, tarea F01 "Descargar e importar recursos abiertos")
 
+> ## ✅ DESCARGADO E IMPORTADO (2026-09-23)
+>
+> Las 13 hojas están en `Assets/_Proyecto/Art/Personajes/` y **cortadas en sprites**
+> (36 por hoja: el bloque de caminata, 4 direcciones × 9 cuadros, con el pivote en los
+> pies). Los tilesets están en `Art/Tilesets/`. Atribución completa en `CREDITOS.txt`.
+>
+> **Nueve sustituciones**, porque el generador no tenía lo que pide el documento:
+> sin gorro de panadero para don Ernesto; bombín en vez de sombrero para el espíritu de
+> don Aurelio; sin rebozo para Ámbar (capa lisa morada); sin sudadera para Lucía 19;
+> sin overol ni zapatos en los cuerpos *child*; traje de boda compuesto a mano para
+> Aurelio 42; cabeza de anciano con arrugas en vez de complexión robusta; "Braid2" para
+> Rosa; y **Jewfro para Cuco en sus tres edades**, porque el peinado despeinado no
+> existe en cuerpo *child* y hacía falta que se leyera como la misma persona.
+>
+> **Dos retoques propios sobre los PNG**, anotados en `CREDITOS.txt`: el recoloreado de
+> ojos a café dejó 336 px de cian en el rabillo de cada ojo de `aurelio_69` y
+> `aurelio_espiritu`; se sustituyeron por el blanco de ojo de la propia paleta LPC.
+>
+> **Las licencias son mixtas y capa por capa** (CC-BY, CC-BY-SA, OGA-BY, GPL 3.0). No hay
+> una sola licencia que cubra cada personaje. La pantalla de créditos del juego muestra
+> `CREDITOS.txt` completo con scroll: no quites esa atribución.
+>
+> **Tizne sigue pendiente de recolorear**: `tizne_dog.png` trae cuatro variantes y la más
+> oscura ya es casi negra, pero el xoloitzcuintle no está puesto en ninguna escena.
+
 Generador: *Universal LPC Spritesheet Character Generator* (repositorio LiberatedPixelCup en GitHub; tiene versión web en GitHub Pages).
 Por cada personaje: arma las capas, exporta el PNG completo y **copia el texto de créditos/licencias que muestra el generador** a `CREDITOS.txt`.
 Guarda los PNG en `Assets/_Proyecto/Art/Personajes/`. Solo necesitamos la animación **walk** (y la pose 0 como reposo).

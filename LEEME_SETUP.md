@@ -6,9 +6,25 @@ Fuente de verdad: `RomeroMantillaFortino_diseño.docx` (v1.1) y `RomeroMantillaF
 Cada tarea de abajo corresponde a una fila del **Sprint 1 Backlog**. Al terminarla, cambia su Estado a
 "Terminado" y registra el esfuerzo restante del día.
 
+> ## ✅ ESTE MONTAJE YA ESTÁ HECHO (2026-09-27)
+>
+> Las secciones 1 a 4 están completas y **automatizadas**: las dos escenas se generan con
+> código, no se montan a mano. Este archivo se conserva como **especificación** — es contra
+> lo que comprueban los verificadores — pero ya no hay que seguirlo paso a paso.
+>
+> - Reconstruir: menú **Mientras arda la vela → Construir jerarquía Mapa 0 / Construir MainMenu**
+> - Comprobar: `./tools/unity.sh todo`
+> - Estado completo y desviaciones: **`ESTADO.md`**
+>
+> Cada sección lleva abajo una nota de cómo quedó.
+
 ---
 
 ## 1. Crear el proyecto (F01)
+
+> ✅ **Hecho.** Proyecto creado sobre Unity 6000.6.0f1 con la plantilla Universal 2D,
+> Git inicializado y `Assets/_Proyecto` en su sitio. **Falta el `git push`**: no se ha
+> dado la URL del repositorio.
 
 1. Unity Hub → *New project* → Unity 6 LTS → plantilla **Universal 2D** → nombre `MientrasArdaLaVela`.
 2. Cierra Unity y copia dentro del proyecto la carpeta `Assets/_Proyecto` y el archivo `.gitignore` de este paquete.
@@ -23,6 +39,11 @@ Cada tarea de abajo corresponde a una fila del **Sprint 1 Backlog**. Al terminar
    ```
 
 ## 2. Paquetes
+> ✅ **Hecho.** Input System 1.19, 2D Tilemap + Extras, uGUI/TMP 2.6, URP 17.6,
+> Test Framework y Yarn Spinner 3.2.8 (registro OpenUPM). *Active Input Handling* en
+> Input System Package (New). **Cinemachine quedó en 6.6.0, no 3.1.7**: Unity 6.6 la trae
+> integrada y tiene prioridad; es la misma línea renumerada y la API coincide.
+
 
 En *Window → Package Manager* verifica o instala:
 
@@ -37,12 +58,29 @@ En *Window → Package Manager* verifica o instala:
 Si la consola muestra errores de compilación antes de instalar Yarn Spinner, es normal: `DialogueBridge.cs` depende de él.
 
 ## 3. Ajustes de pixel art
+> ✅ **Hecho y automatizado.** `Editor/PixelArtImporter.cs` aplica PPU 32, Point y sin
+> compresión a todo lo que entre en `Art/`, más `maxTextureSize 4096` (sin eso Unity
+> reescalaría las hojas LPC de 832×3456 y rompería la rejilla de 64 px). Capa
+> **Interactable** creada en el índice 8.
+
 
 - *Project Settings → Graphics / URP*: el renderer del template ya es **2D Renderer** (necesario para Light2D).
 - Para cada sprite/tileset importado: **Pixels Per Unit = 32**, **Filter Mode = Point (no filter)**, **Compression = None**.
 - *Project Settings → Tags and Layers*: crea la capa **Interactable**.
 
 ## 4. Escenas
+> ✅ **Hecho.** Las dos escenas existen y están en el Build en el orden correcto
+> (MainMenu primero). **No se montaron a mano**: las generan `Editor/Mapa0Builder.cs` y
+> `Editor/MainMenuBuilder.cs`, y `Editor/Mapa0Verificador.cs` y `MainMenuVerificador.cs`
+> comprueban ~150 detalles de las secciones 4.1 y 4.2 de este archivo.
+>
+> Dos diferencias respecto a lo escrito abajo:
+> - **4.2.2 la luz global está en 0.14, no en 0.25.** Bajada el 2026-09-24 porque con los
+>   tilesets definitivos, que son claros, a 0.25 no se lee como noche. Está en la constante
+>   `LuzNocturna`. **Hay que actualizar este documento o revertir el valor.**
+> - **4.2.5 el prefab de Yarn Spinner ya no se arrastra a mano**: el constructor lo
+>   instancia, le asigna el Yarn Project y le añade el `DialogueBridge`.
+
 
 Crea en `Assets/_Proyecto/Scenes`: `MainMenu` y `Mapa0_Ofrenda`. Agrégalas en *File → Build Profiles → Scene List*
 en ese orden (MainMenu primero). Los nombres deben coincidir con `SceneNames.cs`.
@@ -89,6 +127,11 @@ en ese orden (MainMenu primero). Los nombres deben coincidir con `SceneNames.cs`
 12. HUD: Canvas con **FragmentCounterUI** (nombre del mapa, "0/4" y 4 imágenes de rombo).
 
 ## 5. Prueba de aceptación del Sprint 1 (Pruebas Alfa)
+> **Jugada el 2026-09-27: los puntos 1 a 6 pasan** (Fortino llegó a 4/4 fragmentos, lo que
+> exige la Luz de vela para el sombrero y la niebla disipada para los pétalos).
+> **Falta confirmar el punto 7** (salir y elegir Continuar).
+> Los hallazgos están en `Docs/BUGLIST_SPRINT1.md`: 13 registrados, 10 corregidos.
+
 
 - [ ] Desde MainMenu: cualquier tecla → menú; Nueva partida carga la ofrenda y se reproduce el prólogo.
 - [ ] Ámbar camina en 4 direcciones con teclado y gamepad, no atraviesa paredes, la cámara no sale del mapa.
