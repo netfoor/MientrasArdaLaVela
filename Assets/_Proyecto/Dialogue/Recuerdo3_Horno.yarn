@@ -1,0 +1,132 @@
+title: R3_Escena
+---
+// Escena 4 del guion: INT. OBRADOR DE LA ESPIGA — NOCHE — 31 DE OCTUBRE DE 1966.
+<<esperar 0.6>>
+Ámbar: No se ve nada. Esto ya no es niebla ligera, don Aurelio.
+Don Aurelio: La Espiga... de noche. No quiero estar aquí, muchacha.
+<<camara_punto 10.5 3.6 1.2>>
+Eco: Cuco se quedó dormido. Cuco se quedó dormido.
+<<camara_punto 19 9.6 1.5>>
+Eco: Cuco se quedó dormido.
+Don Aurelio: Así fue. Así me lo contaron siempre.
+<<camara_jugador 1>>
+Ámbar: (Tres Ecos repiten lo mismo. Empieza por el cuarto de los hermanos, al norte.)
+===
+
+title: R3_Cuarto
+---
+Ámbar: La niebla del cuarto es tan espesa que no deja pasar.
+Ámbar: (Acércate y mantén F. La luz del farol puede abrirla.)
+===
+
+title: R3_Frag_Cama
+---
+Ámbar: Dos camas. La de Cuco está deshecha: alguien durmió en ella.
+Ámbar: La de usted está tendida. Nadie se acostó ahí esa noche.
+Don Aurelio: ...
+===
+
+title: R3_Frag_Nota
+---
+Ámbar: Una nota sobre el buró: «Te veo en el atrio a las once. Rosa».
+Ámbar: Usted no estaba aquí esa noche.
+Don Aurelio: No... no.
+===
+
+title: R3_Frag_Lena
+---
+Ámbar: La boca del horno está retacada de leña. Mucha más de la que se usa en una noche.
+Don Aurelio: Para que aguantara solo... un rato nomás.
+===
+
+title: R3_Eco_Falso
+---
+Eco: Cuco se quedó dormido. Cuco se quedó dormido.
+Ámbar: (El Eco no deja pasar. Necesito algo de esta noche que lo desmienta.)
+===
+
+title: R3_Eco1_Verdad
+---
+Eco: Cuco se quedó dorm...
+Ámbar: Cuco sí estaba en su cama. El que no estaba era Aurelio.
+Don Aurelio: Mi cama... tendida.
+===
+
+title: R3_Eco2_Verdad
+---
+Eco: Cuco se quedó...
+Ámbar: Aurelio salió a ver a Rosa al atrio. A las once.
+===
+
+title: R3_Eco3_Verdad
+---
+Eco: Cuco se...
+Ámbar: Alguien retacó el horno de leña para que aguantara solo, y se fue.
+Don Aurelio: Yo. Le eché más leña al horno para que aguantara y me salí nomás un rato.
+===
+
+title: R3_Revelacion
+---
+// La revelación: cinemática actuada con cámara, latidos y fuego.
+<<sonido S15>>
+<<camara_punto 17 12.5 1.5>>
+Ámbar: El Olvido se retira... Aquí fue.
+<<sonido S11>>
+<<camara Ernesto 1>>
+Don Ernesto: ¡Aurelio! ¡AURELIO! ¡El horno!
+Don Ernesto: (Se sostiene las manos quemadas.)
+<<aparecer Refugio23>>
+<<camara Refugio23 0>>
+<<mover Refugio23 21.5 12.3>>
+<<mirar Refugio23 izquierda>>
+Refugio (23 años): ¡Apá! ¡Sus manos!
+<<mirar Refugio23 arriba>>
+<<esperar 0.8>>
+Ámbar: Mira hacia el cuarto. Sabe que la cama de su hermano está vacía.
+<<fragmento R3_mirada>>
+<<mirar Refugio23 izquierda>>
+<<sonido S15>>
+Refugio (23 años): Fui yo, apá. Me quedé dormido.
+<<camara Ernesto 0.8>>
+Don Ernesto: Vete de esta casa. Y no vuelvas.
+<<camara Refugio23 0>>
+<<mover Refugio23 27.5 12.8>>
+<<desaparecer Refugio23>>
+<<aparecer Aurelio20>>
+<<camara Aurelio20 1>>
+<<mirar Aurelio20 izquierda>>
+Aurelio (20 años): ...
+Ámbar: Llegó por la puerta de atrás. Vio a su hermano irse... y no dijo nada.
+Don Aurelio: Sesenta años le eché la culpa... y el que se quedó callado fui yo.
+<<camara_jugador 1.2>>
+===
+
+title: R3_Ernesto
+---
+Don Ernesto: (Se mira las manos. No vuelve a decir palabra.)
+Don Aurelio: Mi papá no volvió a hornear.
+===
+
+title: R3_Aurelio20
+---
+Aurelio (20 años): (Mira la puerta por donde se fue su hermano.)
+Don Aurelio: Pude haberlo detenido. Pude haber dicho la verdad.
+===
+
+title: R3_Memento_Bloqueado
+---
+Don Aurelio: Ahí, en la ceniza... todavía no puedo mirar.
+Ámbar: (Reúne los cuatro fragmentos del recuerdo.)
+===
+
+title: R3_Memento_Activar
+---
+Ámbar: Algo brilla entre la ceniza, donde estaba Refugio. Una canica azul.
+Don Aurelio: Es la de Cuco. Se le cayó esa noche... y yo la levanté.
+===
+
+title: R3_Mosaico_Resuelto
+---
+Don Aurelio: Me la regaló en el campo de cempasúchil. Yo tenía nueve años y me había perdido.
+Ámbar: Entonces ahí vamos, don Aurelio. Al principio de todo.
+===

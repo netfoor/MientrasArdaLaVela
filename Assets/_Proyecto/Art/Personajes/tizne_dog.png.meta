@@ -364,1849 +364,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tizne_dog_0
+      name: tizne_right_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 226
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 73f88a7ad237b0ae0800000000000000
-      internalID: -1582044204167033033
+      spriteID: 3e574e2ecdc6b9aaa12a3ae11dbdf511
+      internalID: -2063622256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_1
+      name: tizne_right_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 226
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c1d48a454366f9f30800000000000000
-      internalID: 4584495320631102748
+      spriteID: b9266c4834ff27781882dc5b224274e3
+      internalID: -2026055765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_2
+      name: tizne_right_2
       rect:
         serializedVersion: 2
-        x: 66
-        y: 226
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7e816a6fa8919ffb0800000000000000
-      internalID: -4613628258630100761
+      spriteID: 87b1726953ea7bdc6db2a8fec4f062c8
+      internalID: -1376444321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_3
+      name: tizne_up_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 230
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8a7d159d2b7fc9a00800000000000000
-      internalID: 764758384268400552
+      spriteID: fe4f646dfda9bbffccd59db51ad04bb3
+      internalID: -2138759647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_4
+      name: tizne_up_1
       rect:
         serializedVersion: 2
-        x: 130
-        y: 226
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 130ecc2d99aea5fa0800000000000000
-      internalID: -5811074422780665807
+      spriteID: debcdee87cc706656fbfb155c4e6224d
+      internalID: -70649012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_5
+      name: tizne_up_2
       rect:
         serializedVersion: 2
-        x: 161
-        y: 226
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e4d5ab2716cf18a50800000000000000
-      internalID: 6521771230876032334
+      spriteID: 8b72f3f731e9d2b40e093d9b10368efa
+      internalID: 87382626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_6
+      name: tizne_down_0
       rect:
         serializedVersion: 2
-        x: 194
-        y: 226
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9ee1535979379790800000000000000
-      internalID: -7523481459247419749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_7
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 230
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7fe13d4cb00b16740800000000000000
-      internalID: 5143585814027116279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_8
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 226
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0846fbb4cbaa03cb0800000000000000
-      internalID: -4886217869995580288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_9
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 226
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b8c77ba030d099cf0800000000000000
-      internalID: -245150397999121269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_10
-      rect:
-        serializedVersion: 2
-        x: 322
-        y: 226
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a75c903b5b99c660800000000000000
-      internalID: 7406621878147372964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_11
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 230
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95ad57a2429c127f0800000000000000
-      internalID: -639008514941527463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_12
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 226
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d23765ae8715aeb20800000000000000
-      internalID: 3164431267950654253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_13
-      rect:
-        serializedVersion: 2
-        x: 417
-        y: 226
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21ff7abb4169e87e0800000000000000
-      internalID: -1761305388463423726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_14
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 226
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 272f5cc2eae8c3960800000000000000
-      internalID: 7583092751311696498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_15
-      rect:
-        serializedVersion: 2
-        x: 484
-        y: 230
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3929ca438db7e5280800000000000000
-      internalID: -9052662032441240941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_16
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 195
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 708f8a468ba9602b0800000000000000
-      internalID: -5618633368344659961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_17
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 196
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1f989e158f3f2d60800000000000000
-      internalID: 7867576915016064798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_18
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 195
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf595884c57c56a50800000000000000
-      internalID: 6513831635228923387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_19
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 207
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a69759eb283a71dd0800000000000000
-      internalID: -2515362084924589718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_20
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 201
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 626766799e63f5e50800000000000000
-      internalID: 6800214339248092710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_21
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 195
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 629df98e831243140800000000000000
-      internalID: 4698416839558945062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_22
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 196
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b080a06560b9b8ab0800000000000000
-      internalID: -5004736109376567285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_23
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 195
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dfb83e4850c220ef0800000000000000
-      internalID: -143503835906470915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_24
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 207
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc51f6c752fed8360800000000000000
-      internalID: 7173652725751551435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_25
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 201
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39cff68ec4d7e5d10800000000000000
-      internalID: 2116266644181351571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_26
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 195
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 53e7b72d7d3903670800000000000000
-      internalID: 8516469450516168245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_27
-      rect:
-        serializedVersion: 2
-        x: 298
-        y: 196
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4ff4d96c45434d410800000000000000
-      internalID: 1500882114535313396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_28
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 195
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4415199fb0553450800000000000000
-      internalID: 6067844856788882506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_29
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 207
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5846a3b8201cc1820800000000000000
-      internalID: 2890397277534971013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_30
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 201
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7e1e098b000fdf490800000000000000
-      internalID: -7710743101101252121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_31
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 195
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40a5c32d1193bda70800000000000000
-      internalID: 8852732241231239684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_32
-      rect:
-        serializedVersion: 2
-        x: 426
-        y: 196
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ec87bf5b5317d2b0800000000000000
-      internalID: -5559953931796771613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_33
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 195
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a9589f008eb9221f0800000000000000
-      internalID: -1071122340609686118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_34
-      rect:
-        serializedVersion: 2
-        x: 484
-        y: 207
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c50bdda0449284c50800000000000000
-      internalID: 6649610222029353052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_35
-      rect:
-        serializedVersion: 2
-        x: 498
-        y: 201
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14914c354909549d0800000000000000
-      internalID: -2790665427351234239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_36
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 161
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f69347f51ddaa6970800000000000000
-      internalID: 8748996340881832303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_37
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 161
-        width: 13
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd4f352c9aa1b8470800000000000000
-      internalID: 8397835246574499036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_38
-      rect:
-        serializedVersion: 2
-        x: 74
+        x: 384
         y: 160
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 44abb4f44b1fcaa10800000000000000
-      internalID: 1922176897707129412
+      spriteID: 3a514a2755611cf34d2e6a5e48e45c94
+      internalID: 1834066722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_39
+      name: tizne_down_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 162
-        width: 29
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b3d24770f86d40000800000000000000
-      internalID: 1361809700564283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_40
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 161
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8a0b8d45791a28d30800000000000000
-      internalID: 4432282654621610152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_41
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 161
-        width: 13
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20bf345181f362090800000000000000
-      internalID: -8059685110464382206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_42
-      rect:
-        serializedVersion: 2
-        x: 202
+        x: 416
         y: 160
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e31df6068af52c030800000000000000
-      internalID: 3513475836079493438
+      spriteID: 6267dc3d83e40ac1c1290b97bb36446c
+      internalID: 267954273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_43
+      name: tizne_down_2
       rect:
         serializedVersion: 2
-        x: 226
-        y: 162
-        width: 29
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ae71d569f5b74c00800000000000000
-      internalID: 884875934561304226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_44
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 161
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75a8622408c79c600800000000000000
-      internalID: 489058924853889623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_45
-      rect:
-        serializedVersion: 2
-        x: 298
-        y: 161
-        width: 13
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0309861405bef5480800000000000000
-      internalID: -8908142807988269008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_46
-      rect:
-        serializedVersion: 2
-        x: 330
+        x: 448
         y: 160
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1541040a4eac3bdb0800000000000000
-      internalID: -4777251696420055983
+      spriteID: cfa85a0ebd19b1e0588d31e6f62c2dc8
+      internalID: -622693063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_47
+      name: tizne_left_0
       rect:
         serializedVersion: 2
-        x: 354
-        y: 162
-        width: 29
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 94f8872cf7bfd53f0800000000000000
-      internalID: -910295023516872887
+      spriteID: 6520ea14149f948b5af83bb2e38bd62b
+      internalID: 1762889472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_48
+      name: tizne_left_1
       rect:
         serializedVersion: 2
-        x: 394
-        y: 161
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: be5e1bcf61f843f90800000000000000
-      internalID: -6974792593998486037
+      spriteID: e162e6b22bc578e622157cfc71fee501
+      internalID: 220525529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tizne_dog_49
+      name: tizne_left_2
       rect:
         serializedVersion: 2
-        x: 426
-        y: 161
-        width: 13
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3130680bce59b560800000000000000
-      internalID: 7329994094634086714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_50
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 160
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 105b20533ae3e85f0800000000000000
-      internalID: -752595217034332927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_51
-      rect:
-        serializedVersion: 2
-        x: 482
-        y: 162
-        width: 29
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 018062609414b93f0800000000000000
-      internalID: -893048319211337712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_52
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 130
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c5396ab95fd132c0800000000000000
-      internalID: -4453532980020169272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_53
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 130
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ebc0ede4c54741160800000000000000
-      internalID: 6995344061022211262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_54
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 130
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 671041aea8bca84e0800000000000000
-      internalID: -1978545288782806666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_55
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 134
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c68e6bc372100650800000000000000
-      internalID: 6196973375805359809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_56
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 130
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72b100f0081fe8a10800000000000000
-      internalID: 1913732423988812583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_57
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 130
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af23f520109260bd0800000000000000
-      internalID: -2664397045231570182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_58
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 130
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51cb239fc5ca3d4e0800000000000000
-      internalID: -1958031897658213355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_59
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 134
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 90d351894f63b7b80800000000000000
-      internalID: -8396056656150708983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_60
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 130
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1b2486fb544bc890800000000000000
-      internalID: -7436775197903672545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_61
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 130
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c441608629db890a0800000000000000
-      internalID: -6874536394672958388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_62
-      rect:
-        serializedVersion: 2
-        x: 322
-        y: 130
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8a3c59b642790610800000000000000
-      internalID: 1587925991707916938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_63
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 134
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f7da9cdb67bede30800000000000000
-      internalID: 4530259949071816691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_64
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 130
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 00df006b155ca0400800000000000000
-      internalID: 291262080655359232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_65
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 130
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9bcac472b1dbe770800000000000000
-      internalID: 8641230874434259871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_66
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 130
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 090c4b97f54952020800000000000000
-      internalID: 2316420721136681104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_67
-      rect:
-        serializedVersion: 2
-        x: 482
-        y: 134
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96f74689a33a53370800000000000000
-      internalID: 8301720960187531113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_68
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 99
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 574314f29427bf340800000000000000
-      internalID: 4898634678346527861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_69
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 99
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0266d6ad7c6216720800000000000000
-      internalID: 2837591880025073184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_70
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 99
-        width: 13
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca93085a92cc98d00800000000000000
-      internalID: 975535273544792492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_71
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 97
-        width: 13
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c83ad169ff7f186b0800000000000000
-      internalID: -5295679009703746676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_72
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 99
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2220d4e33df1dfba0800000000000000
-      internalID: -6053647331972283870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_73
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 99
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0e61ff2f570d8290800000000000000
-      internalID: -7886639267048231414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_74
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 99
-        width: 13
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e747a56b880530ae0800000000000000
-      internalID: -1584334095799126914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_75
-      rect:
-        serializedVersion: 2
-        x: 234
-        y: 97
-        width: 13
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b14ff41562584570800000000000000
-      internalID: 8451095294858183091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_76
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 99
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4de42906869225e10800000000000000
-      internalID: 2184854297501650644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_77
-      rect:
-        serializedVersion: 2
-        x: 298
-        y: 99
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 175beae40a1dbd450800000000000000
-      internalID: 6114711405530625393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_78
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 99
-        width: 13
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d02a778d70c33580800000000000000
-      internalID: -8848517197476519722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_79
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 97
-        width: 13
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7b377d846b17ecd0800000000000000
-      internalID: -2529022547061163137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_80
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 99
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 739668697920eed60800000000000000
-      internalID: 7921271644679989559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_81
-      rect:
-        serializedVersion: 2
-        x: 426
-        y: 99
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6056935bd3012700800000000000000
-      internalID: 513696073032028266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_82
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 99
-        width: 13
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c10d395392f290c30800000000000000
-      internalID: 4326040771105116188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tizne_dog_83
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 97
-        width: 13
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c230f4adc228cd360800000000000000
-      internalID: 7195769433783993132
+      spriteID: a79a212e1f9382096eccacce90a3e8a4
+      internalID: -1821417724
       vertices: []
       indices: 
       edges: []
@@ -2215,7 +631,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9ade8da0a02f25962852bca12e8219e8
     internalID: 0
     vertices: []
     indices: 
@@ -2309,6 +725,18 @@ TextureImporter:
       tizne_dog_82: 4326040771105116188
       tizne_dog_83: 7195769433783993132
       tizne_dog_9: -245150397999121269
+      tizne_down_0: 1834066722
+      tizne_down_1: 267954273
+      tizne_down_2: -622693063
+      tizne_left_0: 1762889472
+      tizne_left_1: 220525529
+      tizne_left_2: -1821417724
+      tizne_right_0: -2063622256
+      tizne_right_1: -2026055765
+      tizne_right_2: -1376444321
+      tizne_up_0: -2138759647
+      tizne_up_1: -70649012
+      tizne_up_2: 87382626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

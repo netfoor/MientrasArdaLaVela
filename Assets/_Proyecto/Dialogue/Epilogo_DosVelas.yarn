@@ -1,0 +1,54 @@
+title: E_Escena
+---
+// Escena 6 del guion: INT. CASA DE LA FAMILIA CUAUTLE, SALA — MADRUGADA — 2 DE NOVIEMBRE DE 2025.
+<<esperar 0.8>>
+<<camara_punto 5 19 1.5>>
+Ámbar: La vela de la ofrenda está casi consumida.
+<<camara Aurelio 1>>
+Don Aurelio: (Mira el pan de dos piezas.)
+Don Aurelio: Muchacha, ¿me haces un último favor? Prende otra vela.
+Don Aurelio: Nadie le puso ofrenda a mi hermano.
+<<camara_jugador 1>>
+Ámbar: (Acércate a la ofrenda y enciende la segunda vela.)
+===
+
+title: E_Aurelio
+---
+Don Aurelio: La vela ya casi no alcanza, muchacha. Prende la otra.
+===
+
+title: E_Vela
+---
+<<sonido S08>>
+<<aparecer Vela2>>
+<<musica M08>>
+Ámbar: Para Refugio Cuautle. Que esta luz le enseñe el camino.
+<<camara_punto 17.5 4 2>>
+Ámbar: Mire, don Aurelio... el otro camino de pétalos.
+<<aparecer Refugio>>
+<<camara Refugio 0>>
+<<mover Refugio 17.5 4.5>>
+<<mover Refugio 17.5 18.3>>
+<<mover Refugio 9 18.3>>
+<<mirar Refugio izquierda>>
+<<mirar Aurelio derecha>>
+<<camara_punto 8.3 18.3 1>>
+Don Aurelio: Perdóname, Cuco. Tú cargaste con lo mío.
+Refugio: Te dije que te iba a encontrar con una vela, Lelo.
+Ámbar: (Los hermanos comparten el pan de dos piezas.)
+<<esperar 1.5>>
+<<camara Refugio 0>>
+<<caminar Aurelio 16.8 18.3>>
+<<mover Refugio 17.5 18.3>>
+<<caminar Aurelio 16.8 5>>
+<<mover Refugio 17.5 5>>
+<<desaparecer Aurelio>>
+<<desaparecer Refugio>>
+<<camara Lucia 1.2>>
+<<mirar Lucia arriba>>
+Lucía: (Despierta y mira la ofrenda.) ...¿Dos velas?
+Ámbar: (Tizne mueve la cola.)
+<<esperar 1>>
+<<fundido negro 3>>
+<<creditos>>
+===

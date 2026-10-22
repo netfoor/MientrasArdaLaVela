@@ -35,6 +35,49 @@ namespace MientrasArdaLaVela.EditorTools
         }
 
 
+        /// <summary>Recuerdo 1 (F14): trazado completo y vista de juego. tools/unity.sh capturar.</summary>
+        [MenuItem("Mientras arda la vela/Capturar Recuerdo 1")]
+        public static void CapturarRecuerdo1() =>
+            CapturarRecuerdo("Recuerdo1_Panaderia", "recuerdo1", new Vector3(15f, 9f, -10f), 9.5f);
+
+        [MenuItem("Mientras arda la vela/Capturar Recuerdo 2")]
+        public static void CapturarRecuerdo2() =>
+            CapturarRecuerdo("Recuerdo2_Boda", "recuerdo2", new Vector3(17f, 9f, -10f), 9.5f);
+
+        [MenuItem("Mientras arda la vela/Capturar Recuerdo 3")]
+        public static void CapturarRecuerdo3() =>
+            CapturarRecuerdo("Recuerdo3_Horno", "recuerdo3", new Vector3(15f, 9f, -10f), 9.5f);
+
+        [MenuItem("Mientras arda la vela/Capturar Recuerdo 4")]
+        public static void CapturarRecuerdo4() =>
+            CapturarRecuerdo("Recuerdo4_Campo", "recuerdo4", new Vector3(16f, 10f, -10f), 10.5f);
+
+        static void CapturarRecuerdo(string escena, string prefijo, Vector3 centro, float tam)
+        {
+            string ruta = $"Assets/_Proyecto/Scenes/{escena}.unity";
+            if (!File.Exists(ruta)) { Debug.LogError($"[Captura] No existe {ruta}."); return; }
+            if (EditorSceneManager.GetActiveScene().path != ruta)
+                EditorSceneManager.OpenScene(ruta, OpenSceneMode.Single);
+            string destino = System.Environment.GetEnvironmentVariable("CAPTURA_DIR") ?? "/tmp";
+            Directory.CreateDirectory(destino);
+
+            var luz = GameObject.Find("Global Light 2D")?.GetComponent<Light2D>();
+            float intensidad = luz != null ? luz.intensity : 0f;
+            Color color = luz != null ? luz.color : Color.white;
+            if (luz != null) { luz.intensity = 1f; luz.color = Color.white; }
+            // Las nieblas se ocultan en el trazado para ver lo que hay debajo.
+            var nieblas = Object.FindObjectsByType<OblivionFog>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+            foreach (var n in nieblas) n.gameObject.SetActive(false);
+            Render(centro, tam, 1600, 900, $"{destino}/{prefijo}_trazado.png");
+            foreach (var n in nieblas) n.gameObject.SetActive(true);
+            if (luz != null) { luz.intensity = intensidad; luz.color = color; }
+
+            var ambar = GameObject.Find("Ambar");
+            RenderConMainCamera(ambar != null ? ambar.transform.position : new Vector3(centro.x, centro.y, 0f),
+                                $"{destino}/{prefijo}_juego.png");
+            Debug.Log($"[Captura] PNG escritos en {destino}");
+        }
+
         /// <summary>Usa la Main Camera de la escena, para que apliquen las luces 2D y el Pixel Perfect.</summary>
         static void RenderConMainCamera(Vector3 centro, string archivo)
         {

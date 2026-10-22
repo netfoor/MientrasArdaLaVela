@@ -35,6 +35,7 @@ namespace MientrasArdaLaVela
         IEnumerator Resolve()
         {
             GameManager.Instance.ResolveEcho(echoId);
+            Sonidos.Play("S04");
             var srs = GetComponentsInChildren<SpriteRenderer>();
             foreach (var col in GetComponentsInChildren<Collider2D>()) col.enabled = false;
             for (float t = 0; t < fadeTime; t += Time.deltaTime)

@@ -14,7 +14,11 @@ namespace MientrasArdaLaVela
         public override void Interact(PlayerInteractor player)
         {
             string node = talked && !string.IsNullOrEmpty(repeatNode) ? repeatNode : yarnNode;
-            if (DialogueBridge.Instance != null && DialogueBridge.Instance.Play(node)) talked = true;
+            if (DialogueBridge.Instance != null && DialogueBridge.Instance.Play(node))
+            {
+                talked = true;
+                if (GameManager.Instance != null) GameManager.Instance.MarkTalked(yarnNode);   // logro "Todas las voces" (F23)
+            }
         }
     }
 }

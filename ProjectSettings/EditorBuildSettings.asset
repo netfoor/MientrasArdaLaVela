@@ -11,5 +11,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Proyecto/Scenes/Mapa0_Ofrenda.unity
     guid: f4892b6df8ff9055a92c2d38afbf7657
+  - enabled: 1
+    path: Assets/_Proyecto/Scenes/Recuerdo1_Panaderia.unity
+    guid: 60aab8f8ae2c265218d51d7d8d54a33e
+  - enabled: 1
+    path: Assets/_Proyecto/Scenes/Recuerdo2_Boda.unity
+    guid: 5d3e1b4b5b5303835a81af8543e3516a
+  - enabled: 1
+    path: Assets/_Proyecto/Scenes/Recuerdo3_Horno.unity
+    guid: 154940ea17f200ce4a755bcc8d5a33d5
+  - enabled: 1
+    path: Assets/_Proyecto/Scenes/Recuerdo4_Campo.unity
+    guid: b407e71318a8df735aa815bb5d3ffc02
+  - enabled: 1
+    path: Assets/_Proyecto/Scenes/Epilogo_DosVelas.unity
+    guid: 964c85e97eb95f6b991ad1c98c324fde
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

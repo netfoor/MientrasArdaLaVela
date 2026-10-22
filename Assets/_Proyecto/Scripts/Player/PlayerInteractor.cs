@@ -1,5 +1,7 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 namespace MientrasArdaLaVela
 {
@@ -35,8 +37,22 @@ namespace MientrasArdaLaVela
                 }
             }
 
-            if (current != null && GameInput.Interact.WasPressedThisFrame())
+            if (current != null && GameInput.Interact.WasPressedThisFrame() && !ClicSobreInterfaz())
+            {
+                Sonidos.Play("S02", 0.7f, 0.05f);   // clic de examinar (S02, F22)
                 current.Interact(this);
+            }
+        }
+
+        /// <summary>
+        /// B07: un clic de mouse sobre un botón o panel de la interfaz (diario, pausa)
+        /// no debe interactuar también con el objeto del mundo que esté cerca.
+        /// Solo aplica al mouse: E, Espacio y el botón A siguen funcionando siempre.
+        /// </summary>
+        static bool ClicSobreInterfaz()
+        {
+            if (!(GameInput.Interact.activeControl?.device is Mouse)) return false;
+            return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
         }
 
         Interactable FindNearest()
