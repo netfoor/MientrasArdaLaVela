@@ -13,6 +13,8 @@ namespace MientrasArdaLaVela
     {
         [SerializeField] float speed = 3.2f;          // unidades por segundo (1 unidad = 1 tile de 32 px)
         [SerializeField] Animator animator;
+        [Tooltip("Distancia entre pasos (S01). Una zancada de Ámbar mide poco menos de medio tile.")]
+        [SerializeField] float zancada = 0.45f;
 
         static readonly int MoveX = Animator.StringToHash("MoveX");
         static readonly int MoveY = Animator.StringToHash("MoveY");
@@ -21,6 +23,7 @@ namespace MientrasArdaLaVela
         Rigidbody2D rb;
         Vector2 input;
         Vector2 lastDir = Vector2.down;
+        float recorrido;                              // para el sonido de los pasos (F22)
 
         public Vector2 FacingDirection => lastDir;
         /// <summary>Bloqueos externos (diálogo, puzle, pausa).</summary>
@@ -58,6 +61,22 @@ namespace MientrasArdaLaVela
                 animator.SetFloat(MoveY, lastDir.y);
                 animator.SetFloat(Speed, input.sqrMagnitude);
             }
+
+            Pasos();
+        }
+
+        /// <summary>
+        /// Pasos de Ámbar (S01, F22). Se cuentan por distancia recorrida, no por tiempo: así la
+        /// cadencia acompaña a la animación de caminata y no suena nada mientras está quieta.
+        /// El tono varía ±8 % para que dos pasos seguidos no sean el mismo golpe.
+        /// </summary>
+        void Pasos()
+        {
+            if (input == Vector2.zero) { recorrido = zancada * 0.5f; return; }   // el primer paso suena pronto
+            recorrido += speed * Time.deltaTime;
+            if (recorrido < zancada) return;
+            recorrido = 0f;
+            Sonidos.Play("S01", 0.30f, 0.08f);
         }
 
         void FixedUpdate()

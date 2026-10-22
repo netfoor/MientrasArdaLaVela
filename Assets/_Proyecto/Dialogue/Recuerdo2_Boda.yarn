@@ -1,0 +1,119 @@
+title: R2_Escena
+---
+// Escena 3 del guion: EXT. PATIO DE LA CASA CUAUTLE — NOCHE — 1988. Cinemática en el motor.
+<<esperar 0.6>>
+Ámbar: Música, papel picado... una boda.
+Don Aurelio: La boda de mi Marisol. Mil novecientos ochenta y ocho.
+<<camara Marisol 1>>
+Marisol: ¡Papá! Ya van a partir el pastel, no se me desaparezca.
+<<camara Aurelio42 0.8>>
+<<mover Aurelio42 15.5 9.6>>
+<<mirar Aurelio42 arriba>>
+Aurelio (42 años): ¿Y esa silla vacía junto a la mía? ¿Para quién es, Rosa?
+<<camara Rosa 1>>
+<<mirar Rosa derecha>>
+Rosa: Hoy no, Aurelio. Hoy es el día de tu hija.
+<<camara_punto 15.5 12.5 1.2>>
+Ámbar: (El Olvido se tragó la mesa principal. Algo pasó ahí que don Aurelio no quiere recordar.)
+<<camara_jugador 1>>
+===
+
+title: R2_Frag_Rosa
+---
+Rosa: Lo invité yo, Aurelio. Es el tío de tu hija. Ya pasaron veinte años.
+Don Aurelio: Rosa siempre creyó que las cosas se arreglan poniendo un plato más en la mesa.
+Ámbar: Mire: la niebla de la mesa principal se está abriendo.
+===
+
+title: R2_Frag_Tarjeta
+---
+Ámbar: Una tarjeta de lugar, escrita a mano con la letra de Rosa: «Refugio».
+Don Aurelio: Le guardó el lugar a mi derecha. Donde se sienta la familia.
+===
+
+title: R2_Eco1_Falso
+---
+Eco: Nadie invitó a Refugio a esta boda. Nadie lo quería aquí.
+Ámbar: (El Eco tapa la entrada del zaguán. Algo de esta fiesta lo desmiente.)
+===
+
+title: R2_Eco1_Verdad
+---
+Eco: Nadie invitó a Ref...
+Ámbar: Rosa lo invitó. Hasta le guardó un lugar con su nombre.
+Don Aurelio: ...Y yo quité la tarjeta antes de que empezara la cena.
+===
+
+title: R2_Zaguan
+---
+Ámbar: Por aquí entró el mensajero del telégrafo.
+Ámbar: (Hay papeles rotos en el suelo, pero el Olvido los esconde. Alza el farol con F.)
+===
+
+title: R2_Frag_Telegrama
+---
+Ámbar: Pedazos de un telegrama... «Llego mañana. Cuco».
+Aurelio (42 años): «Llego mañana. Cuco»... Por su culpa mi papá no volvió a hornear. En esta casa ya no tengo hermano.
+Ámbar: Don Aurelio, usted dice «por su culpa» como quien repite una oración aprendida.
+Don Aurelio: ...
+===
+
+title: R2_Eco2_Falso
+---
+Eco: Refugio nunca quiso volver. Se fue y nunca quiso volver.
+Ámbar: (Este Eco no deja pasar al jardín.)
+===
+
+title: R2_Eco2_Verdad
+---
+Eco: Refugio nunca quiso vol...
+Ámbar: Aquí dice «Llego mañana». Él sí quería volver.
+Don Aurelio: Y yo le mandé decir que no se molestara.
+===
+
+title: R2_Frag_Brindis
+---
+Ámbar: Copas servidas... y una rota en el suelo.
+<<sonido S14>>
+Invitado: (Desde lejos) Por los que están... y por los que faltan...
+Don Aurelio: Ahí interrumpí el brindis. Tiré la copa y la música se calló.
+===
+
+title: R2_Aurelio42
+---
+Aurelio (42 años): (Se afloja la corbata y mira hacia el zaguán.)
+Don Aurelio: Esa noche no bailé con mi hija.
+===
+
+title: R2_Marisol
+---
+Marisol: Mi mamá me dijo que hoy iba a conocer a alguien de la familia. No me quiso decir a quién.
+===
+
+title: R2_Invitado
+---
+Invitado: ¡Que vivan los novios! ...Oiga, ¿y el hermano de Aurelio? ¿No que venía?
+===
+
+title: R2_Nino
+---
+Niño: ¡Ya van a partir el pastel!
+===
+
+title: R2_Memento_Bloqueado
+---
+Don Aurelio: En la mesa principal hay algo mío... todavía no.
+Ámbar: (Reúne los cuatro fragmentos del recuerdo.)
+===
+
+title: R2_Memento_Activar
+---
+Ámbar: Una cajita de cerillos de La Espiga, con una esquina quemada. ¿Qué hace aquí, en su boda?
+Don Aurelio: La traía en el saco. Desde el sesenta y seis la cargué siempre.
+===
+
+title: R2_Mosaico_Resuelto
+---
+Don Aurelio: Esta caja estaba en el obrador la noche del horno.
+Ámbar: Entonces vamos a esa noche, don Aurelio. Treinta y uno de octubre de mil novecientos sesenta y seis.
+===

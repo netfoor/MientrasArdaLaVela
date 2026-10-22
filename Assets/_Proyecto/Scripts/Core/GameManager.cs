@@ -17,6 +17,7 @@ namespace MientrasArdaLaVela
         public event Action<string> FragmentCollected;
         public event Action<string> EchoResolved;
         public event Action<string> MapCompleted;
+        public event Action<string> PetalCollected;
 
         /// <summary>Crea el GameManager si se abre una escena de juego directamente desde el editor.</summary>
         public static GameManager Ensure()
@@ -99,6 +100,15 @@ namespace MientrasArdaLaVela
             Save();
         }
 
+        // ---------- Diálogos de una sola vez (B10) ----------
+        public bool HasSeenDialogue(string id) => !string.IsNullOrEmpty(id) && Data.seenDialogues.Contains(id);
+        public void MarkDialogueSeen(string id)
+        {
+            if (string.IsNullOrEmpty(id) || Data.seenDialogues.Contains(id)) return;
+            Data.seenDialogues.Add(id);
+            Save();
+        }
+
         // ---------- Ecos ----------
         public bool IsEchoResolved(string id) => Data.resolvedEchoes.Contains(id);
         public void ResolveEcho(string id)
@@ -107,6 +117,45 @@ namespace MientrasArdaLaVela
             Data.resolvedEchoes.Add(id);
             Save();
             EchoResolved?.Invoke(id);
+            Logros.Revisar(Data);
+        }
+
+        // ---------- Pétalos de cempasúchil (F24) ----------
+        public bool HasPetal(string id) => !string.IsNullOrEmpty(id) && Data.petals.Contains(id);
+
+        public void CollectPetal(string id)
+        {
+            if (string.IsNullOrEmpty(id) || Data.petals.Contains(id)) return;
+            Data.petals.Add(id);
+            Save();
+            PetalCollected?.Invoke(id);
+            Logros.Revisar(Data);
+        }
+
+        /// <summary>Pétalos reunidos de un mapa (prefijo "M0_", "R1_"...) o, con null, de todo el juego.</summary>
+        public int CountPetals(string mapPrefix = null)
+        {
+            int n = 0;
+            foreach (var p in Data.petals) if (mapPrefix == null || p.StartsWith(mapPrefix)) n++;
+            return n;
+        }
+
+        // ---------- Personajes (logro "Todas las voces", F23) ----------
+        public bool HasTalked(string node) => !string.IsNullOrEmpty(node) && Data.talked.Contains(node);
+        public void MarkTalked(string node)
+        {
+            if (string.IsNullOrEmpty(node) || Data.talked.Contains(node)) return;
+            Data.talked.Add(node);
+            Save();
+            Logros.Revisar(Data);
+        }
+
+        // ---------- Mosaicos (F12) ----------
+        /// <summary>Cuenta una pista de Tizne dentro de un mosaico (logro "sin pistas").</summary>
+        public void RegisterMosaicHint()
+        {
+            Data.mosaicHints++;
+            Save();
         }
 
         // ---------- Mapas ----------
@@ -117,6 +166,7 @@ namespace MientrasArdaLaVela
             Data.completedMaps.Add(mapId);
             Save();
             MapCompleted?.Invoke(mapId);
+            Logros.Revisar(Data);   // F23: los logros de historia salen de los mapas completados
         }
     }
 }

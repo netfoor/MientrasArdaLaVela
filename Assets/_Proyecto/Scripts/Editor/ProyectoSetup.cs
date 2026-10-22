@@ -29,6 +29,15 @@ namespace MientrasArdaLaVela.EditorTools
             AssetDatabase.Refresh();
         }
 
+        /// <summary>Recompila el Yarn Project: úsalo si un .yarn nuevo no aparece en el juego.</summary>
+        [MenuItem("Mientras arda la vela/Setup/Reimportar diálogos (Yarn)")]
+        public static void ReimportarDialogos()
+        {
+            AssetDatabase.ImportAsset(RutaYarnProject, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ForceSynchronousImport);
+            var yp = AssetDatabase.LoadAssetAtPath<Yarn.Unity.YarnProject>(RutaYarnProject);
+            Debug.Log(yp != null ? $"[Yarn] Proyecto recompilado: {System.Linq.Enumerable.Count(yp.NodeNames)} nodos." : "[Yarn] No se encontró el Yarn Project.");
+        }
+
         [MenuItem("Mientras arda la vela/Setup/Crear Yarn Project")]
         public static void CrearYarnProject()
         {

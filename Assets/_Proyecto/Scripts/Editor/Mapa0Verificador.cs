@@ -32,11 +32,14 @@ namespace MientrasArdaLaVela.EditorTools
             VerificarCamara();
             VerificarMemoryMap();
             VerificarFragmentos();
+            Ok("Cinco pétalos de cempasúchil M0_petalo1..5 (F24)", VerificadorRecuerdo.PetalosOk("M0", out var dp), dp);
             VerificarNiebla();
             VerificarMemento();
             VerificarLucia();
             VerificarTriggers();
             VerificarHUD();
+            VerificarTizne();
+            VerificarMosaico();
             VerificarDialogueSystem();
             VerificarNodosYarn();
 
@@ -66,6 +69,7 @@ namespace MientrasArdaLaVela.EditorTools
                 Ok("Paredes: TilemapCollider2D en modo Merge",
                    tc != null && tc.compositeOperation == Collider2D.CompositeOperation.Merge);
             }
+            Ok("Muros sólidos (todos los tiles de Paredes con collider)", MurosSolidos(out var dm), dm);
             var deco = grid.transform.Find("Decoracion");
             Ok("Decoracion SIN collider", deco != null && deco.GetComponent<TilemapCollider2D>() == null);
         }
@@ -205,7 +209,15 @@ namespace MientrasArdaLaVela.EditorTools
             Ok("Memento: lockedNode = M0_Memento_Bloqueado", b == "M0_Memento_Bloqueado", b);
             Ok("Memento: activateNode = M0_Memento_Activar", a == "M0_Memento_Activar", a);
             Ok("Memento: glow asignado", so.FindProperty("glow").objectReferenceValue != null);
-            nodosUsados.Add(b); nodosUsados.Add(a);
+            string r = so.FindProperty("solvedNode").stringValue;
+            Ok("Memento: solvedNode = M0_Mosaico_Resuelto", r == "M0_Mosaico_Resuelto", r);
+            var img = so.FindProperty("mosaicImage").objectReferenceValue as Sprite;
+            Ok("Memento: imagen del mosaico asignada (F12)", img != null);
+            if (img != null)
+                Ok("  la imagen se divide en 4 × 4 piezas exactas",
+                   (int)img.rect.width % 4 == 0 && (int)img.rect.height % 4 == 0 && Mathf.Approximately(img.rect.width, img.rect.height),
+                   $"{img.rect.width}×{img.rect.height}");
+            nodosUsados.Add(b); nodosUsados.Add(a); nodosUsados.Add(r);
         }
 
         static void VerificarLucia()
@@ -258,6 +270,47 @@ namespace MientrasArdaLaVela.EditorTools
             Ok("HUD: los 4 rombos asignados", todos);
         }
 
+        static void VerificarTizne()
+        {
+            var go = Buscar("Tizne"); if (go == null) return;
+            var t = go.GetComponent<Tizne>();
+            if (!Ok("Tizne: componente Tizne (F11)", t != null)) return;
+            var so = new SerializedObject(t);
+            var ambar = GameObject.Find("Ambar");
+            Ok("Tizne: target = Ámbar", ambar != null && so.FindProperty("target").objectReferenceValue == ambar.transform);
+            Ok("Tizne: SpriteRenderer asignado", so.FindProperty("spriteRenderer").objectReferenceValue != null);
+            foreach (var campo in new[] { "walkUp", "walkLeft", "walkDown", "walkRight" })
+            {
+                var arr = so.FindProperty(campo);
+                bool llenos = arr != null && arr.arraySize == 3;
+                for (int i = 0; llenos && i < 3; i++) llenos = arr.GetArrayElementAtIndex(i).objectReferenceValue != null;
+                Ok($"  {campo}: 3 cuadros", llenos, arr != null ? arr.arraySize.ToString() : "null");
+            }
+            Ok("Tizne: espera de 20 s (Tabla 22)", Mathf.Approximately(so.FindProperty("cooldown").floatValue, 20f),
+               so.FindProperty("cooldown").floatValue.ToString());
+            Ok("Tizne: burbuja de ladrido asignada", so.FindProperty("barkBubble").objectReferenceValue != null);
+            Ok("Tizne: SIN collider (sigue la estela y cruza la niebla)", go.GetComponent<Collider2D>() == null);
+
+            var hud = GameObject.Find("HUD");
+            var ui = hud != null ? hud.GetComponent<TizneHintUI>() : null;
+            Ok("HUD: TizneHintUI con etiqueta", ui != null && new SerializedObject(ui).FindProperty("label").objectReferenceValue != null);
+        }
+
+        static void VerificarMosaico()
+        {
+            var go = Buscar("Mosaico"); if (go == null) return;
+            var p = go.GetComponent<MosaicPuzzle>();
+            if (!Ok("Mosaico: componente MosaicPuzzle (F12)", p != null)) return;
+            var c = go.GetComponent<Canvas>();
+            Ok("Mosaico: Canvas overlay por encima del HUD", c != null && c.renderMode == RenderMode.ScreenSpaceOverlay && c.sortingOrder > 0);
+            Ok("Mosaico: GraphicRaycaster (clic en las piezas)", go.GetComponent<UnityEngine.UI.GraphicRaycaster>() != null);
+            var so = new SerializedObject(p);
+            foreach (var campo in new[] { "panel", "board", "titleText", "statusText", "hintText" })
+                Ok($"  {campo} asignado", so.FindProperty(campo).objectReferenceValue != null);
+            var panel = so.FindProperty("panel").objectReferenceValue as GameObject;
+            Ok("Mosaico: el panel empieza oculto", panel != null && !panel.activeSelf);
+        }
+
         static void VerificarDialogueSystem()
         {
             var runner = Object.FindAnyObjectByType<Yarn.Unity.DialogueRunner>();
@@ -280,6 +333,27 @@ namespace MientrasArdaLaVela.EditorTools
             var existentes = new HashSet<string>(yp.NodeNames);
             foreach (var n in nodosUsados.Distinct().Where(s => !string.IsNullOrEmpty(s)))
                 Ok($"Nodo Yarn '{n}' existe en el proyecto", existentes.Contains(n));
+        }
+
+        /// <summary>Todos los tiles de "Paredes" deben tener collider (bug del 2026-09-27: se atravesaban).</summary>
+        static bool MurosSolidos(out string detalle)
+        {
+            detalle = "sin Grid/Paredes";
+            var t = GameObject.Find("Grid")?.transform.Find("Paredes");
+            var tm = t != null ? t.GetComponent<UnityEngine.Tilemaps.Tilemap>() : null;
+            if (tm == null) return false;
+            int total = 0, sinCollider = 0;
+            foreach (var pos in tm.cellBounds.allPositionsWithin)
+            {
+                if (!tm.HasTile(pos)) continue;
+                total++;
+                if (tm.GetColliderType(pos) == UnityEngine.Tilemaps.Tile.ColliderType.None) sinCollider++;
+            }
+            var comp = tm.GetComponent<CompositeCollider2D>();
+            int caminos = comp != null ? comp.pathCount : -1;
+            detalle = $"{sinCollider} de {total} sin collider; composite con {caminos} contornos";
+            // B17: un composite guardado sin contornos no bloquea nada en juego.
+            return total > 0 && sinCollider == 0 && (comp == null || caminos > 0);
         }
 
         // ---------- utilidades ----------

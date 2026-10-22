@@ -40,6 +40,9 @@ namespace MientrasArdaLaVela.EditorTools
         static readonly Vector3 PosSombrero = new Vector3( 3.5f, 11.5f, 0f);
         static readonly Vector3 PosLucia    = new Vector3(13.5f, 12.5f, 0f);
         static readonly Vector3 PosNiebla   = new Vector3(18.0f,  8.5f, 0f);
+        static readonly Vector3 PosTizne    = new Vector3( 8.3f, 15.3f, 0f);   // a la izquierda de Ámbar
+
+        const string RutaMosaico = "Assets/_Proyecto/Art/Mosaicos/mosaico_M0.png";
 
         // ---------- Colores de relleno ----------
         static readonly Color ColSuelo   = new Color(0.44f, 0.34f, 0.26f);
@@ -52,12 +55,13 @@ namespace MientrasArdaLaVela.EditorTools
         static readonly Color ColFragmento = new Color(0.95f, 0.85f, 0.45f);
         static readonly Color ColMementoC  = new Color(0.90f, 0.70f, 0.35f);
         static readonly Color ColNiebla    = new Color(0.55f, 0.55f, 0.58f);
+        static readonly Color ColTizne     = new Color(0.18f, 0.16f, 0.20f);
 
         /// <summary>
         /// Intensidad de la luz global (noche). El LEEME §4.2.2 fija 0.25, valor pensado cuando
         /// los tiles eran cuadros de color oscuros; con la duela y la piedra definitivas, que son
         /// mucho más claras, a 0.25 la escena se lee como una habitación iluminada y el charco
-        /// del farol se pierde. Si el Documento de Diseño ha de mandar, vuelve a poner 0.25f.
+        /// del farol se pierde. El Documento de Diseño v1.2 y el LEEME ya recogen el 0.14.
         /// </summary>
         const float LuzNocturna = 0.14f;
 
@@ -111,17 +115,22 @@ namespace MientrasArdaLaVela.EditorTools
             ConstruirTilemaps();
             ConstruirLuzGlobal();
             var ambar = ConstruirAmbar();
+            ConstruirTizne(ambar);
             ConstruirCamara(ambar);
             ConstruirMemoryMap();
             ConstruirFragmentos();
+            // Pétalos coleccionables (F24): rincones de la sala, la cocina y el patio.
+            ConstructorEscena.Petalos("M0", new Vector3(15.5f, 19.5f, 0f), new Vector3(33.5f, 11.5f, 0f), new Vector3(26.5f, 13.5f, 0f), new Vector3(7.5f, 2.5f, 0f), new Vector3(28.5f, 5.5f, 0f));
             ConstruirNiebla();
             ConstruirMemento();
             ConstruirLucia();
             ConstruirTriggers();
             ConstruirDecorado();
             ConstruirHUD();
+            ConstruirMosaico();
             ConstruirDialogueSystem();
 
+            ColisionesTilemap.Regenerar(GameObject.Find("Grid"));   // B17: geometría antes de guardar
             Undo.SetCurrentGroupName("Construir jerarquía Mapa 0");
             Undo.CollapseUndoOperations(grupo);
             EditorSceneManager.MarkSceneDirty(escena);
@@ -164,6 +173,7 @@ namespace MientrasArdaLaVela.EditorTools
         {
             var grid = Raiz("Grid");
             Comp<Grid>(grid);
+            Comp<ColisionesTilemap>(grid);   // B17: colliders reconstruidos al cargar
 
             var suelo = CapaTilemap(grid, "Suelo", OrdenSuelo, conCollider: false);
             var paredes = CapaTilemap(grid, "Paredes", OrdenSuelo, conCollider: true, composite: true);
@@ -179,8 +189,8 @@ namespace MientrasArdaLaVela.EditorTools
 
             var tSueloCasa  = T("suelo_casa",  ColSuelo);
             var tSueloPatio = T("suelo_patio", ColPatio);
-            var tMuroArriba = T("muro_arriba", ColPared);
-            var tMuroCara   = T("muro_cara",   ColPared);
+            var tMuroArriba = T("muro_arriba", ColPared, collider: true);   // sin esto los muros no bloquean
+            var tMuroCara   = T("muro_cara",   ColPared, collider: true);
             var tMueble     = T("mueble",      ColMueble);
             var tDeco       = T("petalos",     ColDeco);
             var tDecoRalo   = hayArte ? T("petalos_ralo", ColDeco) : tDeco;
@@ -488,6 +498,7 @@ namespace MientrasArdaLaVela.EditorTools
             }
 
             Comp<DialogueBridge>(existente.gameObject);
+            ConstructorEscena.TicDeTexto(existente);   // S05, F22
         }
 
         // ============================ MemoryMap ============================
@@ -602,8 +613,15 @@ namespace MientrasArdaLaVela.EditorTools
             Set(mem,
                 ("lockedNode", "M0_Memento_Bloqueado"),
                 ("activateNode", "M0_Memento_Activar"),
+                ("solvedNode", "M0_Mosaico_Resuelto"),
                 ("glow", brillo),
-                ("promptText", "[E] Examinar"));
+                ("promptText", "[E] Examinar"),
+                ("mosaicTitle", "El pan de muerto de dos piezas"));
+
+            // Imagen del mosaico (F12). Si falta, el Memento se salta el puzle con un aviso.
+            var imagen = AssetDatabase.LoadAssetAtPath<Sprite>(RutaMosaico);
+            if (imagen == null) Debug.LogWarning($"[Mapa0] Falta la imagen del mosaico en {RutaMosaico}.");
+            Set(mem, ("mosaicImage", imagen));
         }
 
         // ============================ Lucía ============================
@@ -693,6 +711,20 @@ namespace MientrasArdaLaVela.EditorTools
                 rombos[i] = img;
             }
 
+            // Aviso de la pista de Tizne (F11), abajo a la izquierda.
+            var pista = Hijo(go.transform, "PistaTizne");
+            var prt = Comp<RectTransform>(pista);
+            prt.anchorMin = prt.anchorMax = prt.pivot = new Vector2(0f, 0f);
+            prt.anchoredPosition = new Vector2(40f, 36f);
+            prt.sizeDelta = new Vector2(720f, 50f);
+            var tp = Comp<TextMeshProUGUI>(pista);
+            tp.text = "[H] Tizne: olfatear";
+            tp.fontSize = 32f;
+            tp.alignment = TextAlignmentOptions.BottomLeft;
+            tp.color = new Color(1f, 0.86f, 0.55f);
+            var th = Comp<TizneHintUI>(go);
+            Set(th, ("label", tp));
+
             var ui = Comp<FragmentCounterUI>(go);
             Set(ui, ("mapNameText", nombreMapa), ("counterText", contador),
                     ("emptySlot", vacio), ("filledSlot", lleno));
@@ -712,6 +744,111 @@ namespace MientrasArdaLaVela.EditorTools
             t.fontSize = tam;
             t.color = Color.white;
             t.alignment = TextAlignmentOptions.Left;
+            return t;
+        }
+
+        // ============================ Tizne (F11) ============================
+        static void ConstruirTizne(GameObject ambar)
+        {
+            var go = Raiz("Tizne");
+            go.transform.position = PosTizne;
+
+            var sr = Comp<SpriteRenderer>(go);
+            var frente = HojaTizne.Cuadros("down");
+            sr.sprite = frente != null ? frente[0] : PlaceholderArt.Sprite("tizne", ColTizne);
+            sr.sortingOrder = OrdenAmbar - 1;
+            // Sin collider a propósito: sigue la estela de Ámbar y, al olfatear, puede entrar
+            // en la niebla (Documento de Diseño, personaje Tizne).
+
+            var ladrido = Hijo(go.transform, "Ladrido");
+            ladrido.transform.localPosition = new Vector3(0f, 1.05f, 0f);
+            var tmp = Comp<TextMeshPro>(ladrido);
+            tmp.text = "¡Guau!";
+            tmp.fontSize = 4f;
+            tmp.alignment = TextAlignmentOptions.Center;
+            tmp.color = new Color(1f, 0.88f, 0.55f);
+            tmp.rectTransform.sizeDelta = new Vector2(4f, 1f);
+            tmp.sortingOrder = OrdenNiebla + 1;
+            ladrido.SetActive(false);
+
+            var t = Comp<Tizne>(go);
+            Set(t, ("target", ambar.transform), ("spriteRenderer", sr), ("barkBubble", ladrido));
+            foreach (var dir in new[] { "up", "left", "down", "right" })
+            {
+                var cuadros = HojaTizne.Cuadros(dir);
+                string campo = "walk" + char.ToUpperInvariant(dir[0]) + dir.Substring(1);
+                if (cuadros != null) SetArray(t, campo, cuadros);
+                else Debug.LogWarning($"[Mapa0] Tizne sin cuadros '{dir}': falta cortar tizne_dog.png.");
+            }
+            var variantes = HojaTizne.CuadrosVariantes();   // accesorios (F23)
+            if (variantes != null) SetArray(t, "variantes", variantes);
+        }
+
+        // ============================ Puzle de mosaico (F12) ============================
+        /// <summary>
+        /// Canvas del puzle, oculto hasta que el Memento lo abre. Las 16 piezas las crea
+        /// MosaicPuzzle al abrirse, con la imagen del memento de turno.
+        /// </summary>
+        static void ConstruirMosaico()
+        {
+            var go = Raiz("Mosaico");
+            var canvas = Comp<Canvas>(go);
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            canvas.sortingOrder = 50;                          // sobre el HUD
+            var escala = Comp<CanvasScaler>(go);
+            escala.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            escala.referenceResolution = new Vector2(1920f, 1080f);
+            escala.matchWidthOrHeight = 1f;                    // manda el alto: el tablero siempre cabe
+            Comp<GraphicRaycaster>(go);
+
+            var panel = Hijo(go.transform, "Panel");
+            var prt = Comp<RectTransform>(panel);
+            prt.anchorMin = Vector2.zero; prt.anchorMax = Vector2.one;
+            prt.offsetMin = prt.offsetMax = Vector2.zero;
+            var fondo = Comp<Image>(panel);
+            fondo.color = new Color(0.04f, 0.03f, 0.06f, 0.94f);
+
+            var tablero = Hijo(panel.transform, "Tablero");
+            var trt = Comp<RectTransform>(tablero);
+            trt.anchorMin = trt.anchorMax = trt.pivot = new Vector2(0.5f, 0.5f);
+            trt.anchoredPosition = new Vector2(0f, -6f);
+            trt.sizeDelta = new Vector2(830f, 830f);
+
+            var titulo = TextoPuzle(panel.transform, "Titulo", "", 50f,
+                                    new Vector2(0.5f, 1f), new Vector2(0f, -18f), new Vector2(1600f, 70f),
+                                    TextAlignmentOptions.Center, new Color(1f, 0.86f, 0.55f));
+            var estado = TextoPuzle(panel.transform, "Estado", "Piezas en su lugar: 0/16", 34f,
+                                    new Vector2(0f, 0.5f), new Vector2(60f, 40f), new Vector2(460f, 120f),
+                                    TextAlignmentOptions.Left, Color.white);
+            var pista = TextoPuzle(panel.transform, "Pista", "[H] Pista de Tizne", 30f,
+                                   new Vector2(0f, 0.5f), new Vector2(60f, -60f), new Vector2(460f, 120f),
+                                   TextAlignmentOptions.Left, new Color(1f, 0.86f, 0.55f));
+            TextoPuzle(panel.transform, "Controles",
+                       "Flechas, WASD o mouse: elegir pieza   ·   Q / E o clic izq. / der.: girar   ·   R: reiniciar   ·   Esc: salir",
+                       28f, new Vector2(0.5f, 0f), new Vector2(0f, 14f), new Vector2(1800f, 50f),
+                       TextAlignmentOptions.Center, new Color(0.8f, 0.8f, 0.85f));
+
+            var puzle = Comp<MosaicPuzzle>(go);
+            Set(puzle, ("panel", panel), ("board", trt), ("titleText", titulo),
+                       ("statusText", estado), ("hintText", pista));
+
+            panel.SetActive(false);
+        }
+
+        static TMP_Text TextoPuzle(Transform padre, string nombre, string texto, float tam, Vector2 ancla,
+                                   Vector2 pos, Vector2 tamRect, TextAlignmentOptions alin, Color color)
+        {
+            var go = Hijo(padre, nombre);
+            var rt = Comp<RectTransform>(go);
+            rt.anchorMin = rt.anchorMax = rt.pivot = ancla;
+            rt.anchoredPosition = pos;
+            rt.sizeDelta = tamRect;
+            var t = Comp<TextMeshProUGUI>(go);
+            t.text = texto;
+            t.fontSize = tam;
+            t.alignment = alin;
+            t.color = color;
+            t.raycastTarget = false;
             return t;
         }
 

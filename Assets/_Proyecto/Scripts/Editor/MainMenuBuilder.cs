@@ -58,14 +58,14 @@ namespace MientrasArdaLaVela.EditorTools
 
             var canvas = ConstruirCanvas();
             var title = ConstruirTitlePanel(canvas.transform);
-            var (menuPanel, btnNueva, btnContinuar) = ConstruirMenuPanel(canvas.transform, menu);
+            var (menuPanel, btnNueva, btnContinuar, btnGaleria) = ConstruirMenuPanel(canvas.transform, menu);
             var credits = ConstruirCreditsPanel(canvas.transform, menu);
             var options = ConstruirPanelTexto(canvas.transform, "OptionsPanel", "Opciones",
                 "Volumen, tamaño de texto y controles se agregan en el Sprint 2 (F17).", menu);
 
             Set(menu, ("titlePanel", title), ("menuPanel", menuPanel),
                       ("creditsPanel", credits), ("optionsPanel", options),
-                      ("continueButton", btnContinuar), ("firstSelected", btnNueva));
+                      ("continueButton", btnContinuar), ("galleryButton", btnGaleria), ("firstSelected", btnNueva));
 
             // Estado inicial: sólo el título. En juego lo fija MainMenu.Start(),
             // pero así la escena también se ve bien al abrirla en el editor.
@@ -152,21 +152,24 @@ namespace MientrasArdaLaVela.EditorTools
             return panel;
         }
 
-        static (GameObject, Button, Button) ConstruirMenuPanel(Transform padre, MainMenu menu)
+        static (GameObject, Button, Button, Button) ConstruirMenuPanel(Transform padre, MainMenu menu)
         {
             var panel = Panel(padre, "MenuPanel");
             Texto(panel.transform, "Titulo", "MIENTRAS ARDA LA VELA", 72f, ColAcento,
-                  new Vector2(0f, 340f), new Vector2(1600f, 140f), TextAlignmentOptions.Center);
+                  new Vector2(0f, 380f), new Vector2(1600f, 140f), TextAlignmentOptions.Center);
 
-            var nueva     = Boton(panel.transform, "BtnNuevaPartida", "Nueva partida", new Vector2(0f,  140f), menu.OnNewGame);
-            var continuar = Boton(panel.transform, "BtnContinuar",    "Continuar",     new Vector2(0f,   40f), menu.OnContinue);
-            var opciones  = Boton(panel.transform, "BtnOpciones",     "Opciones",      new Vector2(0f,  -60f), menu.OnOptions);
-            var creditos  = Boton(panel.transform, "BtnCreditos",     "Créditos",      new Vector2(0f, -160f), menu.OnCredits);
-            var salir     = Boton(panel.transform, "BtnSalir",        "Salir",         new Vector2(0f, -260f), menu.OnQuit);
+            // Siete botones con 92 px de separación (F23 añade Logros y Galería de bocetos).
+            var nueva     = Boton(panel.transform, "BtnNuevaPartida", "Nueva partida",      new Vector2(0f,  230f), menu.OnNewGame);
+            var continuar = Boton(panel.transform, "BtnContinuar",    "Continuar",          new Vector2(0f,  138f), menu.OnContinue);
+            var opciones  = Boton(panel.transform, "BtnOpciones",     "Opciones",           new Vector2(0f,   46f), menu.OnOptions);
+            var logros    = Boton(panel.transform, "BtnLogros",       "Logros",             new Vector2(0f,  -46f), menu.OnAchievements);
+            var galeria   = Boton(panel.transform, "BtnGaleria",      "Galería de bocetos", new Vector2(0f, -138f), menu.OnGallery);
+            var creditos  = Boton(panel.transform, "BtnCreditos",     "Créditos",           new Vector2(0f, -230f), menu.OnCredits);
+            var salir     = Boton(panel.transform, "BtnSalir",        "Salir",              new Vector2(0f, -322f), menu.OnQuit);
 
             // Navegación explícita con gamepad/teclado
-            Encadenar(new[] { nueva, continuar, opciones, creditos, salir });
-            return (panel, nueva, continuar);
+            Encadenar(new[] { nueva, continuar, opciones, logros, galeria, creditos, salir });
+            return (panel, nueva, continuar, galeria);
         }
 
 

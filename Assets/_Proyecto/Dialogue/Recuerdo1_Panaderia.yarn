@@ -1,0 +1,102 @@
+title: R1_Escena
+---
+// Escena 2 del guion: INT. PANADERÍA LA ESPIGA — DÍA — 2015. Cinemática actuada en el motor.
+<<esperar 0.6>>
+<<sonido S13>>
+Ámbar: Estamos dentro de su recuerdo, don Aurelio. Ellos no pueden vernos.
+Don Aurelio: La Espiga... el último día que abrí la puerta.
+<<camara Aurelio69 1>>
+<<mover Aurelio69 5.5 13.4>>
+<<mirar Aurelio69 izquierda>>
+<<mirar Marisol derecha>>
+Aurelio (69 años): Ten, mija. Cuarenta y cinco años abriendo esta puerta. Ya le toca a otra mano.
+Marisol: Ay, papá. La Espiga va a seguir oliendo a usted.
+<<camara Lucia9 0>>
+<<caminar Lucia9 14.5 15.3>>
+<<esperar 1.3>>
+<<mirar Lucia9 arriba>>
+Lucía: Abuelo, ¿por qué la foto está cortada? ¿Quién estaba del otro lado?
+<<camara_punto 10 14.6 1>>
+<<mirar Aurelio69 derecha>>
+Aurelio (69 años): Nadie, mija. Ande, ayúdele a su mamá con las charolas.
+<<mirar Lucia9 abajo>>
+Don Aurelio: Esa foto la corté yo. Y no me acuerdo por qué.
+<<camara_jugador 1>>
+Ámbar: (El Olvido cubre la trastienda y la calle. Busca lo que falta de este día.)
+===
+
+title: R1_Frag_Foto
+---
+Ámbar: La fotografía está cortada con tijeras, derechito. Del otro lado apenas se ve un hombro... y el ala de un sombrero de palma.
+Don Aurelio: El sombrero de la ofrenda. El que me cuidaba del sol.
+===
+
+title: R1_Frag_Pregunta
+---
+Lucía: Abuelo... mi mamá dice que tenías un hermano. El tío Cuco.
+Aurelio (69 años): ...
+Don Aurelio: Yo no tuve hermano. Bueno... tuve. Pero él escogió irse.
+Ámbar: Mire, la niebla de la trastienda se está levantando.
+===
+
+title: R1_Trastienda
+---
+Ámbar: Aquí huele a harina vieja. El horno ya casi no calienta.
+Ámbar: (Algo brilla débilmente entre las cajas. Alza el farol con F.)
+===
+
+title: R1_Frag_Lata
+---
+Ámbar: Una lata de galletas, de las de antes... llena de cartas.
+Ámbar: Todas para usted. Todas del mismo remitente: Refugio Cuautle. Y ninguna abierta.
+Don Aurelio: Llegaban cada noviembre. Nunca quise saber qué decían.
+===
+
+title: R1_Eco_Falso
+---
+Eco: Aurelio no tiene hermanos. Nunca tuvo. Aurelio no tiene hermanos.
+Ámbar: (El Eco repite lo mismo una y otra vez y no deja pasar a la calle. Algo de este recuerdo lo desmiente.)
+===
+
+title: R1_Eco_Verdad
+---
+Eco: Aurelio no tiene herm...
+Ámbar: Entonces, ¿quién le escribió todas estas cartas?
+Don Aurelio: ...Mi hermano. Cuco.
+===
+
+title: R1_Frag_Charola
+---
+Ámbar: Una charola con dos piezas de pan apartadas, junto a la puerta. Nadie las tocó en todo el día.
+Don Aurelio: Las ponía ahí por si alguien pasaba. Treinta años poniéndolas... y nunca pasó.
+===
+
+title: R1_Aurelio69
+---
+Aurelio (69 años): (Pasa la mano por el mostrador, despacio, como despidiéndose.)
+Don Aurelio: Ese viejo terco soy yo.
+===
+
+title: R1_Marisol
+---
+Marisol: Papá, ¿seguro que no quiere quedarse con una llave?
+Don Aurelio: Mi hija. Siempre me dio más de lo que le pedí.
+===
+
+title: R1_Memento_Bloqueado
+---
+Don Aurelio: Hay algo en el mostrador... todavía no me atrevo a verlo.
+Ámbar: (Reúne los cuatro fragmentos del recuerdo.)
+===
+
+title: R1_Memento_Activar
+---
+Ámbar: Bajo el vidrio del mostrador... la otra mitad de la fotografía.
+Don Aurelio: La guardé ahí para no verla. Y para no perderla.
+===
+
+title: R1_Mosaico_Resuelto
+---
+Don Aurelio: Somos Cuco y yo, frente a La Espiga. Él tenía veintitrés años.
+Ámbar: Entonces vamos más atrás, don Aurelio. A la última vez que alguien le guardó un lugar en la mesa.
+===

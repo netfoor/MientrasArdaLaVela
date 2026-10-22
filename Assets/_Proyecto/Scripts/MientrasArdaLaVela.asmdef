@@ -7,7 +7,8 @@
         "UnityEngine.UI",
         "Unity.RenderPipelines.Universal.Runtime",
         "Unity.RenderPipelines.Universal.2D.Runtime",
-        "YarnSpinner.Unity"
+        "YarnSpinner.Unity",
+        "Unity.Cinemachine"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

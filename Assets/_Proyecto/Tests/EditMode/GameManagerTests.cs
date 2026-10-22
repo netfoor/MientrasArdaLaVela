@@ -158,6 +158,28 @@ namespace MientrasArdaLaVela.Tests
             Assert.IsTrue(gm.IsRevealed("M0_sombrero_rev"));
         }
 
+        [Test]
+        public void B10_los_dialogos_vistos_no_se_mezclan_con_los_objetos_revelados()
+        {
+            var gm = GameManager.Instance;
+            gm.MarkDialogueSeen("M0_prologo");
+            gm.MarkDialogueSeen("M0_prologo");
+
+            Assert.AreEqual(1, gm.Data.seenDialogues.Count);
+            Assert.IsTrue(gm.HasSeenDialogue("M0_prologo"));
+            Assert.IsFalse(gm.IsRevealed("M0_prologo"));
+            Assert.AreEqual(0, gm.Data.revealed.Count);
+        }
+
+        [Test]
+        public void RegisterMosaicHint_cuenta_y_autoguarda()
+        {
+            GameManager.Instance.RegisterMosaicHint();
+            GameManager.Instance.RegisterMosaicHint();
+            Assert.AreEqual(2, GameManager.Instance.Data.mosaicHints);
+            Assert.AreEqual(2, SaveSystem.Load().mosaicHints, "La pista debe quedar guardada (logro sin pistas, F23).");
+        }
+
         // ---------- Persistencia ----------
         [Test]
         public void Reunir_un_fragmento_autoguarda_en_disco()
@@ -175,6 +197,34 @@ namespace MientrasArdaLaVela.Tests
             var primero = GameManager.Instance;
             var segundo = GameManager.Ensure();
             Assert.AreSame(primero, segundo, "Ensure debe devolver la instancia que ya existe.");
+        }
+
+        // ---------- Pétalos y personajes (F23/F24) ----------
+        [Test]
+        public void CollectPetal_CuentaPorMapaSinRepetir()
+        {
+            var gm = GameManager.Instance;
+            string avisado = null;
+            gm.PetalCollected += id => avisado = id;
+            gm.CollectPetal("R1_petalo1");
+            gm.CollectPetal("R1_petalo1");
+            gm.CollectPetal("R2_petalo3");
+            Assert.AreEqual("R2_petalo3", avisado);
+            Assert.AreEqual(1, gm.CountPetals("R1_"));
+            Assert.AreEqual(2, gm.CountPetals());
+            Assert.IsTrue(gm.HasPetal("R2_petalo3"));
+            Logros.OlvidarEnMemoria();
+        }
+
+        [Test]
+        public void MarkTalked_SeGuardaUnaVez()
+        {
+            var gm = GameManager.Instance;
+            gm.MarkTalked("R1_Marisol");
+            gm.MarkTalked("R1_Marisol");
+            Assert.AreEqual(1, gm.Data.talked.Count);
+            Assert.IsTrue(gm.HasTalked("R1_Marisol"));
+            Logros.OlvidarEnMemoria();
         }
     }
 }

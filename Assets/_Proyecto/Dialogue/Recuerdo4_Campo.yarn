@@ -1,0 +1,80 @@
+title: R4_Escena
+---
+// EXT. CAMPO DE CEMPASÚCHIL — ATARDECER — 1955.
+<<esperar 0.6>>
+Ámbar: Flores de cempasúchil hasta donde alcanza la vista... y está atardeciendo.
+Don Aurelio: El campo de las afueras. Mil novecientos cincuenta y cinco. Yo tenía nueve años.
+<<camara Aurelio9 1.5>>
+Aurelio (9 años): (Llora entre las flores, que le quedan más altas que la cabeza.)
+Don Aurelio: Me perdí siguiendo a una mariposa. Cuando quise volver, ya no sabía por dónde.
+<<camara_jugador 1>>
+Ámbar: (La niebla aquí es ligera. Se irá retirando sola, conforme usted recuerde.)
+===
+
+title: R4_Frag_Huellas
+---
+Ámbar: Huellas pequeñitas, de huarache de niño. Van y vienen, como de alguien que no sabe a dónde ir.
+Don Aurelio: Las mías. Anduve en círculos hasta que se hizo de noche.
+===
+
+title: R4_Frag_Vela
+---
+Ámbar: Cera fresca sobre una piedra. Alguien se detuvo aquí a volver a encender una vela.
+Don Aurelio: Cuco. Salió a buscarme con la vela de la cocina. Solo, de noche.
+===
+
+title: R4_Encuentro
+---
+// Escena 5 del guion: la promesa.
+<<camara Aurelio9 1>>
+Aurelio (9 años): (Solloza.)
+<<aparecer Refugio12>>
+<<camara Refugio12 0>>
+<<mover Refugio12 12 12.6>>
+<<mirar Refugio12 izquierda>>
+<<mirar Aurelio9 derecha>>
+Refugio (12 años): ¡Aquí estás, Lelo! Ya te andaban buscando hasta con perros.
+Aurelio (9 años): Pensé que nadie iba a venir.
+Refugio (12 años): Mira, te regalo mi canica azul.
+<<fragmento R4_canica>>
+<<camara_punto 16 15.5 1.5>>
+Ámbar: El Olvido se retira del pirul...
+<<caminar Aurelio9 15.5 14.6>>
+<<mover Refugio12 16.8 14.6>>
+<<mirar Refugio12 arriba>>
+<<mirar Aurelio9 arriba>>
+Don Aurelio: Nos sentamos bajo el pirul a esperar a que llegaran por nosotros.
+<<camara_jugador 1>>
+===
+
+title: R4_Frag_Promesa
+---
+Refugio (12 años): Pa que no se te olvide, Lelo: si uno se pierde, el otro lo busca con una vela.
+Aurelio (9 años): ¿Aunque uno esté muy lejos?
+Refugio (12 años): Aunque esté re lejos.
+Don Aurelio: ...Y yo nunca lo busqué. Ni cuando se fue, ni cuando se murió.
+===
+
+title: R4_Aurelio9
+---
+Aurelio (9 años): (Aprieta algo en el puño.)
+Don Aurelio: Me daba miedo la oscuridad. Él nunca le tuvo miedo a nada.
+===
+
+title: R4_Memento_Bloqueado
+---
+Don Aurelio: Todavía falta algo bajo el pirul.
+Ámbar: (Reúne los cuatro fragmentos del recuerdo.)
+===
+
+title: R4_Memento_Activar
+---
+Ámbar: La promesa, don Aurelio. Él la cumplió toda la vida.
+Don Aurelio: Ahora me toca a mí.
+===
+
+title: R4_Mosaico_Resuelto
+---
+Don Aurelio: Muchacha... ya sé para qué vine.
+Ámbar: Entonces volvamos a la ofrenda. Todavía arde la vela.
+===

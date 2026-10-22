@@ -22,6 +22,10 @@ namespace MientrasArdaLaVela
         public static InputAction Journal { get; private set; }
         public static InputAction Pause   { get; private set; }
         public static InputAction AnyKey  { get; private set; }
+        // Puzle de mosaico (F12, Tabla 6 del Documento de Diseño). La selección usa Move.
+        public static InputAction RotateLeft  { get; private set; }
+        public static InputAction RotateRight { get; private set; }
+        public static InputAction ResetPuzzle { get; private set; }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         static void Init()
@@ -35,6 +39,9 @@ namespace MientrasArdaLaVela
             Journal  = new InputAction("Journal",  InputActionType.Button);
             Pause    = new InputAction("Pause",    InputActionType.Button);
             AnyKey   = new InputAction("AnyKey",   InputActionType.Button);
+            RotateLeft  = new InputAction("RotateLeft",  InputActionType.Button);
+            RotateRight = new InputAction("RotateRight", InputActionType.Button);
+            ResetPuzzle = new InputAction("ResetPuzzle", InputActionType.Button);
 
             Move.AddCompositeBinding("2DVector")
                 .With("Up", "<Keyboard>/w").With("Down", "<Keyboard>/s")
@@ -67,14 +74,25 @@ namespace MientrasArdaLaVela
             AnyKey.AddBinding("<Gamepad>/buttonSouth");
             AnyKey.AddBinding("<Gamepad>/start");
 
+            // Puzle: girar a la izquierda / derecha y reiniciar. El clic izquierdo/derecho sobre
+            // una pieza lo atiende MosaicPiece con el EventSystem, no estas acciones.
+            RotateLeft.AddBinding("<Keyboard>/q");
+            RotateLeft.AddBinding("<Gamepad>/leftShoulder");
+            RotateRight.AddBinding("<Keyboard>/e");
+            RotateRight.AddBinding("<Gamepad>/rightShoulder");
+            ResetPuzzle.AddBinding("<Keyboard>/r");
+            ResetPuzzle.AddBinding("<Gamepad>/buttonWest");
+
             Move.Enable(); Interact.Enable(); Candle.Enable(); Hint.Enable();
             Journal.Enable(); Pause.Enable(); AnyKey.Enable();
+            RotateLeft.Enable(); RotateRight.Enable(); ResetPuzzle.Enable();
         }
 
         /// <summary>Desecha las acciones de la partida anterior, si las hubiera.</summary>
         static void Liberar()
         {
-            foreach (var a in new[] { Move, Interact, Candle, Hint, Journal, Pause, AnyKey })
+            foreach (var a in new[] { Move, Interact, Candle, Hint, Journal, Pause, AnyKey,
+                                      RotateLeft, RotateRight, ResetPuzzle })
             {
                 if (a == null) continue;
                 a.Disable();

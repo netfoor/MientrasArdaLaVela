@@ -48,7 +48,7 @@ namespace MientrasArdaLaVela.EditorTools
             {
                 var so = new SerializedObject(menuGo.GetComponent<MainMenu>());
                 foreach (var campo in new[] { "titlePanel", "menuPanel", "creditsPanel", "optionsPanel",
-                                              "continueButton", "firstSelected" })
+                                              "continueButton", "galleryButton", "firstSelected" })
                     Ok($"  '{campo}' asignado", so.FindProperty(campo).objectReferenceValue != null);
             }
             Ok("Objeto GameManager con el script",
@@ -69,6 +69,8 @@ namespace MientrasArdaLaVela.EditorTools
                 ("MenuPanel/BtnNuevaPartida", "OnNewGame"),
                 ("MenuPanel/BtnContinuar",    "OnContinue"),
                 ("MenuPanel/BtnOpciones",     "OnOptions"),
+                ("MenuPanel/BtnLogros",       "OnAchievements"),
+                ("MenuPanel/BtnGaleria",      "OnGallery"),
                 ("MenuPanel/BtnCreditos",     "OnCredits"),
                 ("MenuPanel/BtnSalir",        "OnQuit"),
                 ("CreditsPanel/BtnVolver",    "OnBack"),

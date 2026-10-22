@@ -20,7 +20,7 @@ namespace MientrasArdaLaVela
         void Start()
         {
             GetComponent<Collider2D>().isTrigger = true;
-            if (!string.IsNullOrEmpty(saveId) && GameManager.Ensure().IsRevealed(saveId)) done = true;
+            if (!string.IsNullOrEmpty(saveId) && GameManager.Ensure().HasSeenDialogue(saveId)) done = true;
             if (playOnStart) StartCoroutine(DispararCuandoHayaDialogo());
         }
 
@@ -38,6 +38,8 @@ namespace MientrasArdaLaVela
                 Debug.LogError($"[DialogueTrigger] No apareció ningún DialogueBridge; '{yarnNode}' no se reproducirá.", this);
                 yield break;
             }
+            // Si venimos de una transición de recuerdo, espera a que termine de abrirse.
+            while (SceneTransition.Busy) yield return null;
             // Un cuadro más para que el DialogueRunner termine de montar sus presentadores.
             yield return null;
             Fire();
@@ -54,7 +56,7 @@ namespace MientrasArdaLaVela
             if (DialogueBridge.Instance.Play(yarnNode))
             {
                 done = true;
-                if (!string.IsNullOrEmpty(saveId)) GameManager.Instance.MarkRevealed(saveId);
+                if (!string.IsNullOrEmpty(saveId)) GameManager.Instance.MarkDialogueSeen(saveId);
             }
         }
     }

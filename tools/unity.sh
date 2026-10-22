@@ -7,7 +7,13 @@
 #   verificar          los tres verificadores (Mapa 0, MainMenu, Animator)
 #   pruebas            las pruebas EditMode
 #   construir-mapa0    reconstruye y guarda Mapa0_Ofrenda
-#   construir-menu     reconstruye y guarda MainMenu
+#   construir-menu     reconstruye y guarda MainMenu (hazlo cada vez que cambie CREDITOS.txt)
+#   construir-recuerdo1  construye y guarda Recuerdo1_Panaderia y la añade a la lista de escenas
+#   construir-recuerdo2  construye y guarda Recuerdo2_Boda
+#   construir-recuerdo3  construye y guarda Recuerdo3_Horno
+#   construir-recuerdo4  construye y guarda Recuerdo4_Campo
+#   construir-epilogo  construye y guarda Epilogo_DosVelas
+#   construir-todo     Mapa 0, MainMenu, los recuerdos y el epílogo
 #   capturar           renderiza ambas escenas a PNG (usa un display virtual)
 #   animator           regenera clips y controller de Ámbar
 #   cortar-hojas       corta las 13 hojas de personaje en sprites
@@ -63,6 +69,11 @@ case "$orden" in
     correr verif-mapa0   Mapa0Verificador.Verificar          || r=1
     correr verif-menu    MainMenuVerificador.Verificar       || r=1
     correr verif-animator AmbarAnimatorVerificador.Verificar || r=1
+    correr verif-recuerdo1 Recuerdo1Verificador.Verificar    || r=1
+    correr verif-recuerdo2 Recuerdo2Verificador.Verificar    || r=1
+    correr verif-recuerdo3 Recuerdo3Verificador.Verificar    || r=1
+    correr verif-recuerdo4 Recuerdo4Verificador.Verificar    || r=1
+    correr verif-epilogo   EpilogoVerificador.Verificar      || r=1
     exit $r ;;
   pruebas)
     log="$LOGS/pruebas.log"; res="$LOGS/resultados.xml"
@@ -82,12 +93,27 @@ PY
     exit $? ;;
   construir-mapa0) correr construir-mapa0 Mapa0Builder.CrearEscenaYConstruir ;;
   construir-menu)  correr construir-menu  MainMenuBuilder.CrearEscenaYConstruir ;;
+  construir-recuerdo1) correr construir-recuerdo1 Recuerdo1Builder.CrearEscenaYConstruir ;;
+  construir-recuerdo2) correr construir-recuerdo2 Recuerdo2Builder.CrearEscenaYConstruir ;;
+  construir-recuerdo3) correr construir-recuerdo3 Recuerdo3Builder.CrearEscenaYConstruir ;;
+  construir-recuerdo4) correr construir-recuerdo4 Recuerdo4Builder.CrearEscenaYConstruir ;;
+  construir-epilogo)   correr construir-epilogo   EpilogoBuilder.CrearEscenaYConstruir ;;
+  construir-todo)
+    r=0
+    correr construir-mapa0     Mapa0Builder.CrearEscenaYConstruir     || r=1
+    correr construir-menu      MainMenuBuilder.CrearEscenaYConstruir  || r=1
+    correr construir-recuerdo1 Recuerdo1Builder.CrearEscenaYConstruir || r=1
+    correr construir-recuerdo2 Recuerdo2Builder.CrearEscenaYConstruir || r=1
+    correr construir-recuerdo3 Recuerdo3Builder.CrearEscenaYConstruir || r=1
+    correr construir-recuerdo4 Recuerdo4Builder.CrearEscenaYConstruir || r=1
+    correr construir-epilogo   EpilogoBuilder.CrearEscenaYConstruir   || r=1
+    exit $r ;;
   animator)        correr animator        AmbarAnimator.Generar ;;
   cortar-hojas)    correr cortar-hojas    HojaLPC.CortarTodas ;;
   capturar)
     command -v xvfb-run >/dev/null || { echo "✗ falta xvfb-run"; exit 127; }
     dir="${CAPTURA_DIR:-$PROYECTO/Logs/capturas}"; mkdir -p "$dir"
-    for par in "cap-mapa0:Mapa0Captura.Capturar" "cap-menu:MainMenuCaptura.Capturar"; do
+    for par in "cap-mapa0:Mapa0Captura.Capturar" "cap-menu:MainMenuCaptura.Capturar" "cap-recuerdo1:Mapa0Captura.CapturarRecuerdo1" "cap-recuerdo2:Mapa0Captura.CapturarRecuerdo2" "cap-recuerdo3:Mapa0Captura.CapturarRecuerdo3" "cap-recuerdo4:Mapa0Captura.CapturarRecuerdo4"; do
       n="${par%%:*}"; m="${par#*:}"; echo "→ $n"
       CAPTURA_DIR="$dir" xvfb-run -a --server-args="-screen 0 1920x1080x24" \
         "$UNITY" -batchmode -quit -projectPath "$PROYECTO" -logFile "$LOGS/$n.log" \
@@ -101,6 +127,11 @@ PY
     correr verif-mapa0    Mapa0Verificador.Verificar          || r=1
     correr verif-menu     MainMenuVerificador.Verificar       || r=1
     correr verif-animator AmbarAnimatorVerificador.Verificar  || r=1
+    correr verif-recuerdo1 Recuerdo1Verificador.Verificar     || r=1
+    correr verif-recuerdo2 Recuerdo2Verificador.Verificar     || r=1
+    correr verif-recuerdo3 Recuerdo3Verificador.Verificar     || r=1
+    correr verif-recuerdo4 Recuerdo4Verificador.Verificar     || r=1
+    correr verif-epilogo   EpilogoVerificador.Verificar       || r=1
     "$0" pruebas || r=1
     exit $r ;;
   *) sed -n '2,20p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; exit 1 ;;

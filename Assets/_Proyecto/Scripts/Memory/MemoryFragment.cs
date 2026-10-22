@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace MientrasArdaLaVela
@@ -16,6 +17,18 @@ namespace MientrasArdaLaVela
         [SerializeField] AudioSource collectSfx; // S03
 
         public string FragmentId => fragmentId;
+        public bool Collected => GameManager.Instance != null && GameManager.Instance.HasFragment(fragmentId);
+
+        // Registro de los fragmentos de la escena, para que Tizne olfatee el más cercano (F11).
+        // Incluye los que siguen ocultos bajo un Revealable: justo esos son los que más cuesta encontrar.
+        static readonly List<MemoryFragment> registrados = new List<MemoryFragment>();
+        public static IReadOnlyList<MemoryFragment> All => registrados;
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void ReiniciarRegistro() => registrados.Clear();   // Reload Domain está desactivado
+
+        void Awake() => registrados.Add(this);
+        void OnDestroy() => registrados.Remove(this);
         public override bool CanInteract => base.CanInteract && !GameManager.Instance.HasFragment(fragmentId);
 
         void Start()
@@ -34,6 +47,7 @@ namespace MientrasArdaLaVela
         {
             GameManager.Instance.CollectFragment(fragmentId);
             if (collectSfx != null) collectSfx.Play();
+            else Sonidos.Play("S03");   // destello cristalino ascendente
             if (sparkle != null) StartCoroutine(HideSparkle());
         }
 

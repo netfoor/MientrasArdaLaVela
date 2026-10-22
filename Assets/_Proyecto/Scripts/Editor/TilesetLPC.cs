@@ -8,7 +8,7 @@ using UnityEngine.Tilemaps;
 namespace MientrasArdaLaVela.EditorTools
 {
     /// <summary>
-    /// Recorta de los tilesets de OpenGameArt sólo los tiles que usa el Mapa 0 y los
+    /// Recorta de los tilesets de OpenGameArt sólo los tiles que usan los mapas y los
     /// convierte en assets Tile. Las hojas se cortan en una sola pasada por textura.
     ///
     /// Coordenadas: (columna, fila) contando desde la ESQUINA SUPERIOR IZQUIERDA de la hoja,
@@ -33,6 +33,11 @@ namespace MientrasArdaLaVela.EditorTools
             ["mueble"]       = (Interior,  0,  6),   // alacena
             ["petalos"]      = (Plantas,   0,  7),   // pétalos naranjas (cempasúchil)
             ["petalos_ralo"] = (Plantas,   1,  7),   // los mismos, más dispersos
+            // --- Recuerdo 1: la panadería (F14) ---
+            ["suelo_losa"]       = (Interior, 0, 4),  // losa ajedrezada del salón de venta
+            ["mostrador"]        = (Interior, 5, 3),  // cubierta del mostrador
+            ["mostrador_frente"] = (Interior, 5, 4),  // frente del mostrador
+            ["estante"]          = (Interior, 2, 7),  // repisa con charolas y platos
         };
 
         /// <summary>Sprites sueltos (no tiles) que usan los objetos de la escena.</summary>
@@ -42,6 +47,20 @@ namespace MientrasArdaLaVela.EditorTools
             ["velas"]    = (Castillo,  2, 14),   // candelabro de la ofrenda
             ["estufa"]   = (Casa,      1, 11),   // fogón encendido de la cocina
             ["maceta"]   = (Casa,      7,  7),   // planta del patio
+            // --- Recuerdo 1: la panadería (F14) ---
+            ["horno"]    = (Interior, 12,  5),   // horno de ladrillo apagándose
+            ["reloj"]    = (Interior,  1, 10),   // reloj de pared
+            ["lampara"]  = (Interior, 11,  0),   // lámpara colgante
+            ["frascos"]  = (Interior,  7,  4),   // frascos sobre el mostrador
+            ["mesa"]     = (Interior, 13,  2),   // mesa redonda de la trastienda
+            ["cajas"]    = (Interior,  3,  8),   // cajas de la trastienda
+            ["vitrina"]  = (Casa,     12,  1),   // vitrina de pan
+            ["silla"]    = (Casa,      7,  4),
+            // --- Recuerdo 3: el obrador y el cuarto de los hermanos (F19) ---
+            ["horno_fuego"] = (Interior, 11, 4),   // horno encendido
+            ["cama_1"] = (Casa, 14, 6), ["cama_2"] = (Casa, 15, 6),   // cabecera
+            ["cama_3"] = (Casa, 14, 7), ["cama_4"] = (Casa, 15, 7),   // cobija
+            ["cama_5"] = (Casa, 14, 8), ["cama_6"] = (Casa, 15, 8),   // pie
         };
 
         static Dictionary<string, Sprite> cache;
@@ -80,7 +99,9 @@ namespace MientrasArdaLaVela.EditorTools
                     rect = new Rect(e.Value.cx * Lado, alto - (e.Value.cy + 1) * Lado, Lado, Lado),
                     alignment = SpriteAlignment.Center,
                     pivot = new Vector2(0.5f, 0.5f),
-                    spriteID = GUID.Generate(),
+                    // Estable por nombre (antes GUID.Generate): volver a cortar una hoja para
+                    // añadir tiles de otro mapa no cambia la identidad de los ya usados.
+                    spriteID = IdEstable(e.Key),
                 }).ToArray();
                 prov.SetSpriteRects(rects);
                 prov.Apply();
@@ -119,6 +140,13 @@ namespace MientrasArdaLaVela.EditorTools
             if (nuevo) AssetDatabase.CreateAsset(tile, ruta);
             else EditorUtility.SetDirty(tile);
             return tile;
+        }
+
+        static GUID IdEstable(string nombre)
+        {
+            using var md5 = System.Security.Cryptography.MD5.Create();
+            var bytes = md5.ComputeHash(System.Text.Encoding.UTF8.GetBytes("MientrasArdaLaVela/tile/" + nombre));
+            return new GUID(string.Concat(bytes.Select(b => b.ToString("x2"))));
         }
 
         public static bool HayArte() => AssetDatabase.LoadAssetAtPath<Texture2D>(Interior) != null

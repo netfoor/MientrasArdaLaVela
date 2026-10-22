@@ -12,6 +12,7 @@ title: M0_TutorialVela
 ---
 Ámbar: Aquí no se ve nada... La niebla gris es el Olvido: lo que don Aurelio no quiere mirar.
 Ámbar: (Mantén F para alzar el farol. La Luz de vela revela los recuerdos escondidos.)
+Ámbar: (Si no sabes por dónde seguir, presiona H: Tizne olfatea el recuerdo más cercano.)
 ===
 
 title: M0_TutorialNiebla
@@ -60,4 +61,10 @@ title: M0_Lucia
 ---
 Ámbar: Lucía, su nieta. Se quedó dormida cuidando la vela.
 Don Aurelio: Igualita a su abuela. Siempre la primera en recordar.
+===
+
+title: M0_Mosaico_Resuelto
+---
+Don Aurelio: Dos piezas en la charola... y la segunda siempre se quedaba ahí, sin que nadie se la comiera.
+Ámbar: Esa segunda pieza tenía dueño, don Aurelio. Vamos a buscarlo.
 ===
