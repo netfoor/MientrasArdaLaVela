@@ -75,9 +75,9 @@ Si la consola muestra errores de compilación antes de instalar Yarn Spinner, es
 > comprueban ~150 detalles de las secciones 4.1 y 4.2 de este archivo.
 >
 > Dos diferencias respecto a lo escrito abajo:
-> - **4.2.2 la luz global está en 0.14, no en 0.25.** Bajada el 2026-09-24 porque con los
->   tilesets definitivos, que son claros, a 0.25 no se lee como noche. Está en la constante
->   `LuzNocturna`. **Hay que actualizar este documento o revertir el valor.**
+> - **4.2.2 la luz global está en 0.14.** Bajada el 2026-09-24 porque con los tilesets
+>   definitivos, que son claros, a 0.25 no se lee como noche. Ya registrado en el Documento
+>   de Diseño v1.2 y corregido abajo.
 > - **4.2.5 el prefab de Yarn Spinner ya no se arrastra a mano**: el constructor lo
 >   instancia, le asigna el Yarn Project y le añade el `DialogueBridge`.
 
@@ -97,7 +97,7 @@ en ese orden (MainMenu primero). Los nombres deben coincidir con `SceneNames.cs`
 ### 4.2 Mapa0_Ofrenda (F02–F08, F10)
 1. **Grid** con Tilemaps: `Suelo`, `Paredes` (con *Tilemap Collider 2D* + *Composite Collider 2D*, Rigidbody2D Static),
    `Muebles` (con collider), `Decoracion` (sin collider). Zonas: sala con ofrenda, cocina y patio (Figura 8 del documento).
-2. **Global Light 2D** con intensidad 0.25 (noche).
+2. **Global Light 2D** con intensidad 0.14 (noche). *(Era 0.25; cambiado en el Documento de Diseño v1.2.)*
 3. **Ámbar**: sprite/Animator + `Rigidbody2D` (Dynamic, Gravity 0, Interpolate) + `CapsuleCollider2D` pequeño a los pies +
    **PlayerMovement** + **PlayerInteractor** (Interactable Mask = Interactable; Prompt = un TMP World Space con "[E] Examinar") +
    hijo `Farol` con **Light2D** (Point, color ámbar) y en Ámbar el script **CandleLight** apuntando a esa luz.
@@ -130,7 +130,7 @@ en ese orden (MainMenu primero). Los nombres deben coincidir con `SceneNames.cs`
 > **Jugada el 2026-09-27: los puntos 1 a 6 pasan** (Fortino llegó a 4/4 fragmentos, lo que
 > exige la Luz de vela para el sombrero y la niebla disipada para los pétalos).
 > **Falta confirmar el punto 7** (salir y elegir Continuar).
-> Los hallazgos están en `Docs/BUGLIST_SPRINT1.md`: 13 registrados, 10 corregidos.
+> Los hallazgos están en `Docs/BUGLIST_SPRINT1.md`: 13 registrados, **13 corregidos** (2026-09-27).
 
 
 - [ ] Desde MainMenu: cualquier tecla → menú; Nueva partida carga la ofrenda y se reproduce el prólogo.
