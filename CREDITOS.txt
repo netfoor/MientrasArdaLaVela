@@ -1,3 +1,10 @@
+ARTE ORIGINAL DEL PROYECTO
+Imágenes de los mosaicos, papel picado y llama de la vela: Fortino Romero Mantilla.
+Pétalo de cempasúchil y Galería de bocetos (Art/Resources/Galeria/): Fortino Romero Mantilla.
+Efectos de sonido S02–S16 (Audio/Resources/Audio/): Fortino Romero Mantilla.
+Música original M01–M08 (Audio/Resources/Musica/), tema «Mientras arda la vela» y variaciones: Fortino Romero Mantilla.
+Arte del campo (pirul, flores, huellas, vela): Fortino Romero Mantilla.
+
 MIENTRAS ARDA LA VELA
 Diseño, programación e integración: Fortino Romero Mantilla
 Universidad Tecnológica de Puebla — Ingeniería de Software
@@ -1627,6 +1634,7 @@ Fuente: https://opengameart.org/content/lpc-cats-and-dogs
 Créditos literales del generador/página:
 Copyright/Attribution Notice: "[LPC] Cats and Dogs" Artist: bluecarrot16 License: CC-BY 3.0 / GPL 3.0 / GPL 2.0 / OGA-BY 3.0 Please link to opengameart: http://opengameart.org/content/lpc-cats-and-dogs
 Descripción: Cats and Dogs in the style of the Liberated Pixel Cup; walk animations in all 4 directions and some bonus sleeping images and eating animations. Four colors each.
+Obras derivadas: tizne_collar.png, tizne_sombrero.png y tizne_ambos.png — variante negra de esta hoja con collar y sombrero de palma dibujados encima por Fortino Romero Mantilla; se distribuyen con la misma licencia que la hoja original.
 
 --- Interior de casa ("[LPC] House Insides") ---
 Archivo(s): tileset_interior/house_inside.png

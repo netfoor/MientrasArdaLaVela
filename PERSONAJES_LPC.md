@@ -22,8 +22,14 @@
 > una sola licencia que cubra cada personaje. La pantalla de créditos del juego muestra
 > `CREDITOS.txt` completo con scroll: no quites esa atribución.
 >
-> **Tizne sigue pendiente de recolorear**: `tizne_dog.png` trae cuatro variantes y la más
-> oscura ya es casi negra, pero el xoloitzcuintle no está puesto en ninguna escena.
+> **Tizne ya está en el Mapa 0 (F11, 2026-09-27)**: se usa la variante negra de `tizne_dog.png`
+> (columnas 12 a 14), sin recolorear. La corta `Editor/HojaTizne.cs` en 12 sprites de 32 px
+> (`tizne_<dir>_<n>`), y `Mapa0Builder` lo hace solo si hace falta.
+
+> **Falta Marisol** (hija de Aurelio, ~45 años en 2015, Recuerdo 1). Mientras no exista
+> `marisol_walk.png`, el Recuerdo 1 usa la hoja de Rosa con un tinte ligero. Para cambiarla:
+> exporta la hoja con el generador, guárdala como `Art/Personajes/marisol_walk.png`, corre
+> *Cortar todas las hojas de personaje* y cambia `"rosa_40"` por `"marisol"` en `Recuerdo1Builder.cs`.
 
 Generador: *Universal LPC Spritesheet Character Generator* (repositorio LiberatedPixelCup en GitHub; tiene versión web en GitHub Pages).
 Por cada personaje: arma las capas, exporta el PNG completo y **copia el texto de créditos/licencias que muestra el generador** a `CREDITOS.txt`.

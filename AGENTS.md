@@ -1,8 +1,11 @@
 # Contexto del proyecto (leer antes de cualquier cambio)
 
 > **Estado actual: `ESTADO.md`.** Léelo primero: dice qué está implementado, qué falta
-> y las desviaciones conscientes respecto al Documento de Diseño. El Sprint 1 (F01–F10)
-> está hecho y jugado; el Sprint 2 no se ha empezado.
+> y las desviaciones conscientes respecto al Documento de Diseño. Resumen al 2026-10-22: el
+> juego se puede jugar de principio a fin; **F01–F24 están hechas** (F22 cerrada el 2026-10-22)
+> y quedan **F25 (pulido)** y **F26 (build para Windows)**, más probar los tres códigos secretos.
+> No confíes en el Feature Log del Excel para saber el estado: sus hojas de resumen tienen
+> valores cacheados sin recalcular.
 
 **Juego:** *Mientras arda la vela* — aventura narrativa 2D top-down (estilo *To the Moon*) ambientada en Día de Muertos.
 **Autor:** Fortino Romero Mantilla (UTP). **Motor:** Unity 6 LTS, URP 2D Renderer, C#.
@@ -22,7 +25,33 @@ Si algo del código contradice el Documento de Diseño, gana el documento; avisa
 - `Player/` PlayerMovement (Rigidbody2D.linearVelocity, 4 direcciones, `Locked`), PlayerInteractor, CandleLight.
 - `Interaction/` Interactable (base), DialogueInteractable, DialogueTrigger.
 - `Memory/` MemoryFragment, Revealable, OblivionFog, Echo, Memento.
-- `UI/` MainMenu, FragmentCounterUI.
+- `UI/` MainMenu, FragmentCounterUI, TizneHintUI.
+- `Companion/Tizne` sigue a Ámbar por su estela; Olfatear con H (20 s de espera), `TryUseHint()` para el puzle.
+- `Puzzle/MosaicPuzzle` + `MosaicPiece` puzle 4 × 4 de rotación; `Open(imagen, título, mapId, alResolver, alCancelar)`.
+- `Core/SceneTransition` fundido a blanco entre recuerdos (`SceneTransition.Go(escena)`), se crea solo.
+- Flujo del memento: activateNode → mosaico → `CompleteMap` (autoguarda) → solvedNode → transición a `nextScene`.
+- `UI/InterfazGlobal` se crea sola en tiempo de ejecución (no la montan los constructores): pausa (Esc),
+  Diario (Tab), Opciones y la vela de progreso. Congela con `Time.timeScale = 0`.
+- `Core/Diario` es el texto del Diario: **al construir un recuerdo nuevo, añade ahí sus fragmentos y Ecos**
+  (el verificador del recuerdo lo exige). `Core/Ajustes` guarda las opciones en PlayerPrefs.
+- `Core/Musica` música por escena con fundido cruzado (`Musica.Tocar`, `Temporal`/`Restaurar` para el
+  mosaico, comando `<<musica M08>>`). Piezas en `Audio/Resources/Musica/`, generadas por `tools/arte/musica.py`.
+- `Core/ColisionesTilemap` en el Grid: reconstruye los colliders al cargar (B17). Todo constructor nuevo
+  debe llamar a `ConstructorEscena.GuardarYRegistrar`, que genera la geometría antes de guardar.
+- `Core/Sonidos.Play("S03", vol, tono)` efectos de un disparo desde `Audio/Resources/Audio/`
+  (sintetizados con `tools/arte/sonidos*.py`); cuatro fuentes en rueda y tono variable. **Si falta
+  el clip no suena nada y no avisa**: por eso `SonidosTests` comprueba que exista todo lo invocado.
+  Los niveles de la mezcla están en una sola tabla, en la cabecera de `Sonidos.cs`: si regeneras un
+  clip, mide su RMS y rehaz su ganancia.
+- `Core/Ambiente` lecho en bucle por escena (S10, la vela del menú, la ofrenda y el epílogo); se
+  crea solo, como la música. `Core/SonidoTexto` es el tic por letra (S05): se engancha a la máquina
+  de escribir de Yarn con un `ActionMarkupHandler` y lo registra `ConstructorEscena.TicDeTexto`,
+  que **todo constructor con diálogo debe llamar** (el del Mapa 0 también).
+- `Cinematica/CinematicCommands` comandos de Yarn para cinemáticas en el motor: `mover`, `caminar`, `mirar`,
+  `aparecer`, `desaparecer`, `esperar`, `fundido`, `abrir`, `vineta`, `quitar_vineta`,
+  `camara`, `camara_punto`, `camara_jugador`, `sonido`, `fragmento`.
+- `OblivionFog` modo `Candle`: niebla que se abre al acercar la Luz de vela (Recuerdo 3).
+  `Cinematica/CinematicActor` en cada personaje que actúa (id sin espacios, p. ej. `Aurelio69`).
 
 ## Herramientas de editor (Scripts/Editor, namespace `MientrasArdaLaVela.EditorTools`)
 Las escenas **se generan con código, no se montan a mano**. Si cambias el trazado o el
@@ -30,9 +59,13 @@ contenido de una escena, cambia su constructor y vuelve a ejecutarlo; no edites 
 escena a mano, o el siguiente que corra el constructor te lo pisa.
 
 - `Mapa0Builder` / `MainMenuBuilder` construyen cada escena (idempotentes, con Undo).
+- `ConstructorEscena` son las piezas comunes para los recuerdos (Ámbar, Tizne, cámara, NPC, Eco,
+  niebla, memento, HUD, mosaico, diálogo). `Recuerdo1Builder` la usa; el Mapa 0 conserva su
+  constructor propio porque ya está verificado. Ojo: `Tizne`, `Memento` y `MemoryMap` son también
+  tipos, así que desde otro constructor se llaman como `ConstructorEscena.Tizne(...)`.
 - `Mapa0Verificador` / `MainMenuVerificador` / `AmbarAnimatorVerificador` comprueban el
   resultado contra `LEEME_SETUP.md`. **Si tocas una escena, corre su verificador.**
-- `AmbarAnimator`, `HojaLPC` (corta hojas LPC), `TilesetLPC` (recorta tiles),
+- `AmbarAnimator`, `HojaLPC` (corta hojas LPC), `HojaTizne` (corta el perro), `TilesetLPC` (recorta tiles),
   `PixelArtImporter`, `PlaceholderArt`, `ProyectoSetup`.
 - `Mapa0Captura` / `MainMenuCaptura` renderizan las escenas a PNG: sirven para revisar
   sin abrir el editor.
@@ -63,5 +96,12 @@ No des por bueno un cambio de escena sin correr el verificador o mirar la captur
   escala del hijo. Normaliza `localScale` después de emparentar.
 - **En Yarn Spinner 3.x `StartDialogue` es asíncrono** y `IsDialogueRunning` tarda en
   ponerse a true; no lo uses para bloquear al jugador en el mismo cuadro.
+- **El MainMenu copia `CREDITOS.txt` dentro de la escena.** Si tocas los créditos, corre
+  `./tools/unity.sh construir-menu` o el verificador del menú fallará (pasó el 2026-09-27).
 - **Unity vacía `Temp/` al arrancar**: no guardes ahí nada que quieras conservar.
-- Registra cada defecto que encuentres en `Docs/BUGLIST_SPRINT1.md` con archivo y línea.
+- Registra cada defecto que encuentres en la buglist del sprint en curso (`Docs/BUGLIST_SPRINT1.md`
+  para el 1) con archivo y línea, y cópialo a la hoja Buglist del Excel.
+- **La E es a la vez Interactuar y "girar a la derecha" en el puzle.** El puzle ignora la entrada
+  del cuadro en que se abre; conserva esa guarda si tocas el flujo del memento.
+- Imágenes de mosaico: 256 × 256 (64 px de dibujo × 4) en `Art/Mosaicos/`, cada cuarto con algo
+  asimétrico o la pieza no se puede orientar. El script que dibujó la del pan está en `tools/arte/`.
