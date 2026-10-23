@@ -171,6 +171,20 @@ namespace MientrasArdaLaVela.EditorTools
                 Adorno(p, "Cajas", "cajas", new Vector3(12.5f, 7.5f, 0f), solido: true);
                 Adorno(p, "Estante", "estante", new Vector3(20.5f, 15.5f, 0f), OrdenMueble);
                 Adorno(p, "Maceta", "maceta", new Vector3(8.5f, 5.6f, 0f), solido: true);
+
+                // El obrador ocupa 16 x 7 tiles en cada mitad y tenía cuatro cosas: se veía
+                // como una bodega vacía, no como el taller donde Aurelio amasaba de madrugada.
+                Adorno(p, "MesaAmasado1", "mesa", new Vector3(19.5f, 5.4f, 0f), solido: true);
+                Adorno(p, "MesaAmasado2", "mesa", new Vector3(21.5f, 5.4f, 0f), solido: true);
+                Adorno(p, "FrascosObrador", "frascos", new Vector3(23.5f, 7.5f, 0f), OrdenMueble + 1);
+                Adorno(p, "CajasObrador", "cajas", new Vector3(27.5f, 4.5f, 0f), solido: true);
+                Adorno(p, "EstanteFondo", "estante", new Vector3(26.5f, 15.5f, 0f), OrdenMueble);
+                Adorno(p, "CostalesFondo", "pan", new Vector3(12.5f, 11.5f, 0f), solido: true);
+                Adorno(p, "LamparaObrador", "lampara", new Vector3(17.5f, 15.6f, 0f), OrdenObjeto);
+
+                // La entrada de la casa, por donde llega Ámbar.
+                Adorno(p, "MesaEntrada", "mesa", new Vector3(8.5f, 2.6f, 0f), solido: true);
+                Adorno(p, "SillaEntrada", "silla", new Vector3(7.5f, 2.7f, 0f));
             }
             AdornoSprite(p, "Lena", "Assets/_Proyecto/Art/Objetos/lena.png", new Vector3(16.5f, 8.2f, 0f), OrdenMueble + 1);
 

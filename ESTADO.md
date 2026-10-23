@@ -66,7 +66,7 @@ existan y que todo sonido invocado en el código o en los diálogos tenga su cli
 | F22 | Música y efectos | 3 | ✅ Hecho (2026-10-22). M01–M08 por escena y los 14 efectos de la Tabla 27 completos y mezclados. **Falta oírlo jugando** |
 | F23 | Logros y códigos secretos | 3 | ✅ Jugado: 8 de los 9 logros desbloqueados el 2026-10-06. 🟡 **Los 3 códigos secretos no se han tecleado nunca** |
 | F24 | Pétalos coleccionables | 3 | ✅ Jugado: 25/25 pétalos recogidos el 2026-10-06 |
-| F25 | Pulido | 3 | 🟡 Arte propio de los 16 fragmentos, los 5 mementos, los rombos del HUD, el destello, el camino de pétalos del Mapa 0 y las dos hojas de Marisol. Ritmo y textos revisados y B17 confirmado jugando. Falta: mapas más detallados |
+| F25 | Pulido | 3 | ✅ Hecha (2026-10-23). Arte propio de los 16 fragmentos, los 5 mementos, los rombos del HUD, el destello, el camino de pétalos, las dos hojas de Marisol, el campo de cempasúchil y la calle de La Espiga; los seis mapas repasados y poblados. Ritmo y textos revisados, B17 confirmado. Queda suelta una idea del documento: la ofrenda de siete niveles del Mapa 0 sigue siendo una mesa |
 | F26 | Build para Windows | 3 | 🟡 Compila: 258 MB, 7 escenas, `Builds/Windows/MientrasArdaLaVela.exe`. **Falta probarlo en un segundo equipo** |
 
 ## Prueba de aceptación del Sprint 1 (`LEEME_SETUP.md` §5)
@@ -155,9 +155,9 @@ una sola sesión de juego (empezando por MainMenu):
    el brindis del Recuerdo 2. Si algo tapa a los demás, los niveles están en una sola tabla, en
    el comentario de cabecera de `Core/Sonidos.cs`.
 3. **Probar el .exe en un segundo equipo con Windows** (F26); con eso queda cerrada.
-4. Lo que resta de F25: **mapas más detallados**. El ritmo y los textos se revisaron el
-   2026-10-23 (557 renglones de diálogo, sin cambios: el juego se jugó entero y el ritmo
-   convenció) y B17 quedó confirmado en esa misma partida.
+4. F25 quedó cerrada el 2026-10-23. Lo único que sigue abierto de ese apartado es una idea
+   del Documento de Diseño que nunca se llevó a la escena: la **ofrenda de siete niveles** del
+   Mapa 0, que hoy es una mesa con veladoras.
 
 ### Qué se agregó en F22 (2026-10-22)
 - `tools/arte/sonidos_f22.py`: los **cinco efectos que faltaban** de la Tabla 27 — S01 pasos,
@@ -258,11 +258,16 @@ Los fragmentos, los mementos, los rombos del contador y el destello **ya son art
 (F25, `tools/arte/objetos_f25.py`), igual que las cinco imágenes de mosaico
 (`Art/Mosaicos/mosaico_M0…R4.png`), el **camino de pétalos** del Mapa 0
 (`tools/arte/camino_petalos.py`) y las **dos hojas de Marisol** (`tools/arte/marisol.py`).
-Lo que sigue pendiente de arte son los mapas más detallados.
+Los seis mapas se repasaron el 2026-10-23 uno por uno, mirando la captura de cada escena:
+el **campo de cempasúchil** (`tools/arte/campo_f25.py`) pasó de un recorte de plantas repetido
+en diagonales sobre empedrado a ocho matas sembradas con ruido sobre tierra labrada, con barda
+de piedra de campo; la **calle de La Espiga** (`tools/arte/calle_f25.py`) ganó banqueta, letrero,
+el cartel de CERRADO en la puerta, faroles y cajas de reparto; y la trastienda, el zaguán de la
+boda y el obrador del Recuerdo 3 se amueblaron con los tilesets que ya estaban.
 
 ### Sprint 3 (31/10 – 20/11)
-F23 logros y códigos y F24 pétalos: escritos (arriba). De F25 pulido queda **mapas más
-detallados** e investigar las ofrendas de siete niveles; de F26, probar el .exe en otro equipo.
+F23 logros y códigos y F24 pétalos: escritos (arriba). F25 pulido quedó cerrada el 2026-10-23;
+de F26 falta probar el .exe en otro equipo.
 
 **Música y efectos (F22, cerrado el 2026-10-22):** compuesta en código (`tools/arte/musica.py`): un solo tema en re menor que cambia
 por recuerdo — M01 guitarra y marimba, M02 guitarra sola, M03 vals de piano, M04 son en 6/8 con

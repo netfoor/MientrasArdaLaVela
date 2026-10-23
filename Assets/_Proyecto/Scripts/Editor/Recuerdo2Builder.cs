@@ -179,6 +179,20 @@ namespace MientrasArdaLaVela.EditorTools
                 Adorno(p, "MesaBrindis", "mesa", new Vector3(2.5f, 12.4f, 0f), OrdenMueble);
                 Adorno(p, "Maceta1", "maceta", new Vector3(6.5f, 3.6f, 0f), solido: true);
                 Adorno(p, "Maceta2", "maceta", new Vector3(24.5f, 3.6f, 0f), solido: true);
+                // Dos mesas más en los extremos: el patio es de 20 x 12 y se veía despoblado
+                // para una boda. El centro se deja libre a propósito: ahí se baila y ahí ocurre
+                // la cinemática del brindis.
+                Adorno(p, "MesaEsquina1", "mesa", new Vector3(7.5f, 8.4f, 0f), solido: true);
+                Adorno(p, "SillaEsq1", "silla", new Vector3(7.5f, 7.5f, 0f));
+                Adorno(p, "MesaEsquina2", "mesa", new Vector3(23.5f, 9.4f, 0f), solido: true);
+                Adorno(p, "SillaEsq2", "silla", new Vector3(23.5f, 8.5f, 0f));
+
+                // El zaguán: es por donde entró el telegrama, y estaba vacío salvo el fragmento.
+                Adorno(p, "MesaZaguan", "mesa", new Vector3(29.5f, 8.4f, 0f), solido: true);
+                Adorno(p, "SillaZaguan", "silla", new Vector3(28.5f, 6.6f, 0f));
+                Adorno(p, "CajasZaguan", "cajas", new Vector3(31.5f, 6.5f, 0f), solido: true);
+                Adorno(p, "VitrinaZaguan", "vitrina", new Vector3(27.5f, 9.5f, 0f), solido: true);
+                Adorno(p, "LamparaZaguan", "lampara", new Vector3(30.5f, 9.5f, 0f), OrdenObjeto);
             }
 
             // Papel picado: dos tiras sobre el patio, por encima de los personajes (cuelga).
