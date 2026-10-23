@@ -141,8 +141,7 @@ namespace MientrasArdaLaVela.EditorTools
         static void ConstruirPersonajes()
         {
             Npc("Aurelio42", PosAurelio, "aurelio_42", "Aurelio42", "arriba", "R2_Aurelio42", "[E] Mirar");
-            // Provisional: la novia usa la hoja de Lucía de 19 años (no hay hoja de Marisol).
-            Npc("Marisol", PosMarisol, "lucia_19", "Marisol", "abajo", "R2_Marisol", "[E] Mirar");
+            Npc("Marisol", PosMarisol, "marisol_novia", "Marisol", "abajo", "R2_Marisol", "[E] Mirar");
             Npc("Invitado", new Vector3(21.5f, 6.3f, 0f), "ernesto", "Invitado", "izquierda", "R2_Invitado",
                 "[E] Escuchar", new Color(0.8f, 0.85f, 1f));
             Npc("Nino", new Vector3(22.5f, 9.3f, 0f), "lucia_9", "Nino", "abajo", "R2_Nino", "[E] Escuchar",

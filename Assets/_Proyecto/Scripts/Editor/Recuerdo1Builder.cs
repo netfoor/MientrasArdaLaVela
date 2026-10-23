@@ -138,9 +138,7 @@ namespace MientrasArdaLaVela.EditorTools
         static void ConstruirPersonajes()
         {
             Npc("Aurelio69", PosAurelio, "aurelio_69", "Aurelio69", "abajo", "R1_Aurelio69", "[E] Mirar");
-            // Provisional: no hay hoja de Marisol; se usa la de Rosa con otro tono (ver PERSONAJES_LPC.md).
-            Npc("Marisol", PosMarisol, "rosa_40", "Marisol", "abajo", "R1_Marisol", "[E] Mirar",
-                new Color(0.92f, 0.96f, 1f));
+            Npc("Marisol", PosMarisol, "marisol_45", "Marisol", "abajo", "R1_Marisol", "[E] Mirar");
 
             // Lucía es a la vez personaje de la escena y fragmento: su pregunta (R1_pregunta).
             var lucia = Npc("Lucia9", PosLucia, "lucia_9", "Lucia9", "arriba");

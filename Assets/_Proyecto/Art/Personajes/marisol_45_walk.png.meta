@@ -1,0 +1,2368 @@
+fileFormatVersion: 2
+guid: c2bf991def2016b13a875d6830f7059e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8635442462738743554
+    second: marisol_45_walk_0
+  - first:
+      213: 2185452630020635702
+    second: marisol_45_walk_1
+  - first:
+      213: 7458164989923003032
+    second: marisol_45_walk_2
+  - first:
+      213: 3784911381318667671
+    second: marisol_45_walk_3
+  - first:
+      213: 1999621746970335733
+    second: marisol_45_walk_4
+  - first:
+      213: -4867360629913435507
+    second: marisol_45_walk_5
+  - first:
+      213: 7815206653688079122
+    second: marisol_45_walk_6
+  - first:
+      213: -2203712540730808193
+    second: marisol_45_walk_7
+  - first:
+      213: 2159027495634273353
+    second: marisol_45_walk_8
+  - first:
+      213: 101081627714051714
+    second: marisol_45_walk_9
+  - first:
+      213: 5403189907792257874
+    second: marisol_45_walk_10
+  - first:
+      213: -1561794205688421246
+    second: marisol_45_walk_11
+  - first:
+      213: -5796579775171097203
+    second: marisol_45_walk_12
+  - first:
+      213: -3619898580470789983
+    second: marisol_45_walk_13
+  - first:
+      213: 1839322676688145697
+    second: marisol_45_walk_14
+  - first:
+      213: 7529315244465446200
+    second: marisol_45_walk_15
+  - first:
+      213: 7136677098616568617
+    second: marisol_45_walk_16
+  - first:
+      213: 8075469426895641994
+    second: marisol_45_walk_17
+  - first:
+      213: -628031813508464168
+    second: marisol_45_walk_18
+  - first:
+      213: -6928970990694491444
+    second: marisol_45_walk_19
+  - first:
+      213: -3250607279167704525
+    second: marisol_45_walk_20
+  - first:
+      213: -2938256062369274583
+    second: marisol_45_walk_21
+  - first:
+      213: -4237157235201746337
+    second: marisol_45_walk_22
+  - first:
+      213: 1270091765715190373
+    second: marisol_45_walk_23
+  - first:
+      213: 4737962725759758762
+    second: marisol_45_walk_24
+  - first:
+      213: -4138906714599645420
+    second: marisol_45_walk_25
+  - first:
+      213: 8537156588566574057
+    second: marisol_45_walk_26
+  - first:
+      213: -2702743889856016256
+    second: marisol_45_walk_27
+  - first:
+      213: -7373954015493992325
+    second: marisol_45_walk_28
+  - first:
+      213: 3521951050459342107
+    second: marisol_45_walk_29
+  - first:
+      213: 6048144966991461448
+    second: marisol_45_walk_30
+  - first:
+      213: 6948439574027962417
+    second: marisol_45_walk_31
+  - first:
+      213: -4666795564371524674
+    second: marisol_45_walk_32
+  - first:
+      213: -847959799552710718
+    second: marisol_45_walk_33
+  - first:
+      213: -3021130911916110140
+    second: marisol_45_walk_34
+  - first:
+      213: 3357731976777744476
+    second: marisol_45_walk_35
+  - first:
+      213: -8396241501568248904
+    second: marisol_45_walk_36
+  - first:
+      213: 1100599842733440110
+    second: marisol_45_walk_37
+  - first:
+      213: -5337241476550675992
+    second: marisol_45_walk_38
+  - first:
+      213: -2955409314511982196
+    second: marisol_45_walk_39
+  - first:
+      213: -5212656634776411610
+    second: marisol_45_walk_40
+  - first:
+      213: 58953796396744608
+    second: marisol_45_walk_41
+  - first:
+      213: 2948863850637696235
+    second: marisol_45_walk_42
+  - first:
+      213: -283199516145933329
+    second: marisol_45_walk_43
+  - first:
+      213: 8310144215176787682
+    second: marisol_45_walk_44
+  - first:
+      213: -4722566334096745906
+    second: marisol_45_walk_45
+  - first:
+      213: -3540214749936958717
+    second: marisol_45_walk_46
+  - first:
+      213: -7903176936308777383
+    second: marisol_45_walk_47
+  - first:
+      213: 2762831481465884170
+    second: marisol_45_walk_48
+  - first:
+      213: 1008584387113672688
+    second: marisol_45_walk_49
+  - first:
+      213: 5914505355937593560
+    second: marisol_45_walk_50
+  - first:
+      213: 9113488524043738309
+    second: marisol_45_walk_51
+  - first:
+      213: -7793730032430097382
+    second: marisol_45_walk_52
+  - first:
+      213: 7358844777411220013
+    second: marisol_45_walk_53
+  - first:
+      213: -308764828630995363
+    second: marisol_45_walk_54
+  - first:
+      213: 8760890140585581024
+    second: marisol_45_walk_55
+  - first:
+      213: 3390816049722504890
+    second: marisol_45_walk_56
+  - first:
+      213: 2674358473289735411
+    second: marisol_45_walk_57
+  - first:
+      213: -8044429862737599386
+    second: marisol_45_walk_58
+  - first:
+      213: 4014482590884559414
+    second: marisol_45_walk_59
+  - first:
+      213: -1712302263173907554
+    second: marisol_45_walk_60
+  - first:
+      213: 132191776344329119
+    second: marisol_45_walk_61
+  - first:
+      213: 4555044522218965910
+    second: marisol_45_walk_62
+  - first:
+      213: 7172943475524084037
+    second: marisol_45_walk_63
+  - first:
+      213: 5961682198400414268
+    second: marisol_45_walk_64
+  - first:
+      213: -2887430841929152432
+    second: marisol_45_walk_65
+  - first:
+      213: -3355826326146716219
+    second: marisol_45_walk_66
+  - first:
+      213: -5558563541786124522
+    second: marisol_45_walk_67
+  - first:
+      213: -8603741160425336898
+    second: marisol_45_walk_68
+  - first:
+      213: -4033245212375811180
+    second: marisol_45_walk_69
+  - first:
+      213: -2889768118568428587
+    second: marisol_45_walk_70
+  - first:
+      213: -1444902360866325407
+    second: marisol_45_walk_71
+  - first:
+      213: -8708897991401338668
+    second: marisol_45_walk_72
+  - first:
+      213: 7133032052265811575
+    second: marisol_45_walk_73
+  - first:
+      213: -9040605414367983929
+    second: marisol_45_walk_74
+  - first:
+      213: -6702273084007873057
+    second: marisol_45_walk_75
+  - first:
+      213: 6552956569681265238
+    second: marisol_45_walk_76
+  - first:
+      213: 2543555928472368227
+    second: marisol_45_walk_77
+  - first:
+      213: 7394557013095233472
+    second: marisol_45_walk_78
+  - first:
+      213: -1207435841652172762
+    second: marisol_45_walk_79
+  - first:
+      213: 6430578668341737703
+    second: marisol_45_walk_80
+  - first:
+      213: 8104829195306858565
+    second: marisol_45_walk_81
+  - first:
+      213: -6433697061858502681
+    second: marisol_45_walk_82
+  - first:
+      213: 6346634006445635970
+    second: marisol_45_walk_83
+  - first:
+      213: 8708437109759685401
+    second: marisol_45_walk_84
+  - first:
+      213: -62422581864270701
+    second: marisol_45_walk_85
+  - first:
+      213: 6303363266304104702
+    second: marisol_45_walk_86
+  - first:
+      213: -4600039579604713850
+    second: marisol_45_walk_87
+  - first:
+      213: 7053986857974460443
+    second: marisol_45_walk_88
+  - first:
+      213: 7093045686488222938
+    second: marisol_45_walk_89
+  - first:
+      213: 8780291615299349964
+    second: marisol_45_walk_90
+  - first:
+      213: -6964756180493954509
+    second: marisol_45_walk_91
+  - first:
+      213: -7551168524658931404
+    second: marisol_45_walk_92
+  - first:
+      213: -5050953097507673487
+    second: marisol_45_walk_93
+  - first:
+      213: 4918138046242565237
+    second: marisol_45_walk_94
+  - first:
+      213: 2159556570827943771
+    second: marisol_45_walk_95
+  - first:
+      213: 1422800678929411711
+    second: marisol_45_walk_96
+  - first:
+      213: 6079137247283415023
+    second: marisol_45_walk_97
+  - first:
+      213: -7465384531028047285
+    second: marisol_45_walk_98
+  - first:
+      213: -2821016068262900159
+    second: marisol_45_walk_99
+  - first:
+      213: -7844076597060766749
+    second: marisol_45_walk_100
+  - first:
+      213: -3064184857024919953
+    second: marisol_45_walk_101
+  - first:
+      213: 4124612307205725185
+    second: marisol_45_walk_102
+  - first:
+      213: -7911375480216228197
+    second: marisol_45_walk_103
+  - first:
+      213: -3165316273616776646
+    second: marisol_45_walk_104
+  - first:
+      213: -2996348346141429847
+    second: marisol_45_walk_105
+  - first:
+      213: -8972789080362222676
+    second: marisol_45_walk_106
+  - first:
+      213: -6010678386752341165
+    second: marisol_45_walk_107
+  - first:
+      213: -8522301043824903603
+    second: marisol_45_walk_108
+  - first:
+      213: -4424627087883082428
+    second: marisol_45_walk_109
+  - first:
+      213: 6170009624616036775
+    second: marisol_45_walk_110
+  - first:
+      213: -6437596344850299851
+    second: marisol_45_walk_111
+  - first:
+      213: -794017411919367356
+    second: marisol_45_walk_112
+  - first:
+      213: 9137703342363854539
+    second: marisol_45_walk_113
+  - first:
+      213: -7191447259906722701
+    second: marisol_45_walk_114
+  - first:
+      213: 7230324503153047710
+    second: marisol_45_walk_115
+  - first:
+      213: 883731118155840243
+    second: marisol_45_walk_116
+  - first:
+      213: -2569960914579970737
+    second: marisol_45_walk_117
+  - first:
+      213: -1872357940032810133
+    second: marisol_45_walk_118
+  - first:
+      213: 1761350764412323660
+    second: marisol_45_walk_119
+  - first:
+      213: 2802413703000906923
+    second: marisol_45_walk_120
+  - first:
+      213: 1122628254436729105
+    second: marisol_45_walk_121
+  - first:
+      213: -2367151997142099720
+    second: marisol_45_walk_122
+  - first:
+      213: 4287657902968483064
+    second: marisol_45_walk_123
+  - first:
+      213: 8598276989135181405
+    second: marisol_45_walk_124
+  - first:
+      213: -7479809871374256331
+    second: marisol_45_walk_125
+  - first:
+      213: 1157782216435689294
+    second: marisol_45_walk_126
+  - first:
+      213: 194202857279969225
+    second: marisol_45_walk_127
+  - first:
+      213: -2306931701578938912
+    second: marisol_45_walk_128
+  - first:
+      213: -5839153484231114813
+    second: marisol_45_walk_129
+  - first:
+      213: -4570097814490948033
+    second: marisol_45_walk_130
+  - first:
+      213: 7328361881913225289
+    second: marisol_45_walk_131
+  - first:
+      213: -7269207928742709686
+    second: marisol_45_walk_132
+  - first:
+      213: 8158869565675834537
+    second: marisol_45_walk_133
+  - first:
+      213: -7297570763074016156
+    second: marisol_45_walk_134
+  - first:
+      213: -1023371312682301668
+    second: marisol_45_walk_135
+  - first:
+      213: -8210701417922417651
+    second: marisol_45_walk_136
+  - first:
+      213: -3740118059305443469
+    second: marisol_45_walk_137
+  - first:
+      213: -8549631961827390412
+    second: marisol_45_walk_138
+  - first:
+      213: 5286843764572737332
+    second: marisol_45_walk_139
+  - first:
+      213: -4281910115654400447
+    second: marisol_45_walk_140
+  - first:
+      213: 8815757338266612243
+    second: marisol_45_walk_141
+  - first:
+      213: 6884080494392132673
+    second: marisol_45_walk_142
+  - first:
+      213: -8540517485448340135
+    second: marisol_45_walk_143
+  - first:
+      213: -5004002074615956511
+    second: marisol_45_walk_144
+  - first:
+      213: 5665797805810480909
+    second: marisol_45_walk_145
+  - first:
+      213: -3458829978710506094
+    second: marisol_45_walk_146
+  - first:
+      213: -7529368618867142096
+    second: marisol_45_walk_147
+  - first:
+      213: 6644110338687937561
+    second: marisol_45_walk_148
+  - first:
+      213: -5872999795405269362
+    second: marisol_45_walk_149
+  - first:
+      213: 4600534473954428599
+    second: marisol_45_walk_150
+  - first:
+      213: -393725099433644314
+    second: marisol_45_walk_151
+  - first:
+      213: -7562585294256127580
+    second: marisol_45_walk_152
+  - first:
+      213: 7140442558282708030
+    second: marisol_45_walk_153
+  - first:
+      213: -2135513078662706507
+    second: marisol_45_walk_154
+  - first:
+      213: 5951263707339570484
+    second: marisol_45_walk_155
+  - first:
+      213: 3337278520173147993
+    second: marisol_45_walk_156
+  - first:
+      213: -26025017065328156
+    second: marisol_45_walk_157
+  - first:
+      213: 5386716808314186874
+    second: marisol_45_walk_158
+  - first:
+      213: -2749362292973110347
+    second: marisol_45_walk_159
+  - first:
+      213: 7150487585049026709
+    second: marisol_45_walk_160
+  - first:
+      213: 1768436465060091711
+    second: marisol_45_walk_161
+  - first:
+      213: -1346498181807238344
+    second: marisol_45_walk_162
+  - first:
+      213: -5551817824424004121
+    second: marisol_45_walk_163
+  - first:
+      213: 9131542444963308012
+    second: marisol_45_walk_164
+  - first:
+      213: 5643371406523787487
+    second: marisol_45_walk_165
+  - first:
+      213: 3328926645393563144
+    second: marisol_45_walk_166
+  - first:
+      213: -555876912365878631
+    second: marisol_45_walk_167
+  - first:
+      213: 1636440949452959133
+    second: marisol_45_walk_168
+  - first:
+      213: -4945633303448847351
+    second: marisol_45_walk_169
+  - first:
+      213: 949352220463252169
+    second: marisol_45_walk_170
+  - first:
+      213: 7969976580681850292
+    second: marisol_45_walk_171
+  - first:
+      213: 7988931190163693765
+    second: marisol_45_walk_172
+  - first:
+      213: -7335531407378700266
+    second: marisol_45_walk_173
+  - first:
+      213: 4872899841413051718
+    second: marisol_45_walk_174
+  - first:
+      213: 6381286822207518347
+    second: marisol_45_walk_175
+  - first:
+      213: -1904144698292364986
+    second: marisol_45_walk_176
+  - first:
+      213: 5887940260818837654
+    second: marisol_45_walk_177
+  - first:
+      213: -4089891493146231451
+    second: marisol_45_walk_178
+  - first:
+      213: 6442854421520863489
+    second: marisol_45_walk_179
+  - first:
+      213: 1279538046009304753
+    second: marisol_45_walk_180
+  - first:
+      213: 4781473840587941142
+    second: marisol_45_walk_181
+  - first:
+      213: 6506793723384869971
+    second: marisol_45_walk_182
+  - first:
+      213: 3930424724262859442
+    second: marisol_45_walk_183
+  - first:
+      213: -8865740892952957785
+    second: marisol_45_walk_184
+  - first:
+      213: -7884850826111821242
+    second: marisol_45_walk_185
+  - first:
+      213: 1716101354172371569
+    second: marisol_45_walk_186
+  - first:
+      213: 6722134559159485545
+    second: marisol_45_walk_187
+  - first:
+      213: -6340415871326073368
+    second: marisol_45_walk_188
+  - first:
+      213: 455300747922458839
+    second: marisol_45_walk_189
+  - first:
+      213: -6286166274696001734
+    second: marisol_45_walk_190
+  - first:
+      213: -2578379231802847426
+    second: marisol_45_walk_191
+  - first:
+      213: 3380893391623579903
+    second: marisol_45_walk_192
+  - first:
+      213: -8593539985114626851
+    second: marisol_45_walk_193
+  - first:
+      213: -313355698127648005
+    second: marisol_45_walk_194
+  - first:
+      213: -3240418737084914225
+    second: marisol_45_walk_195
+  - first:
+      213: -8473248020474398552
+    second: marisol_45_walk_196
+  - first:
+      213: -3448760105336125494
+    second: marisol_45_walk_197
+  - first:
+      213: 8640065275830369675
+    second: marisol_45_walk_198
+  - first:
+      213: -7224322679976978157
+    second: marisol_45_walk_199
+  - first:
+      213: -102462723782499472
+    second: marisol_45_walk_200
+  - first:
+      213: 8468524335812412883
+    second: marisol_45_walk_201
+  - first:
+      213: 5552170705209417565
+    second: marisol_45_walk_202
+  - first:
+      213: -4180762366401040162
+    second: marisol_45_walk_203
+  - first:
+      213: -9088843801398166761
+    second: marisol_45_walk_204
+  - first:
+      213: -601016681570652802
+    second: marisol_45_walk_205
+  - first:
+      213: -1973218873298168125
+    second: marisol_45_walk_206
+  - first:
+      213: -4895441992868396561
+    second: marisol_45_walk_207
+  - first:
+      213: 5833270809238556469
+    second: marisol_45_walk_208
+  - first:
+      213: -373478236700888893
+    second: marisol_45_walk_209
+  - first:
+      213: -5540460697740090114
+    second: marisol_45_walk_210
+  - first:
+      213: 5002268772620026937
+    second: marisol_45_walk_211
+  - first:
+      213: 7219643176354842862
+    second: marisol_45_walk_212
+  - first:
+      213: 1410428067929093523
+    second: marisol_45_walk_213
+  - first:
+      213: 2221950276808194293
+    second: marisol_45_walk_214
+  - first:
+      213: -4464737682994938294
+    second: marisol_45_walk_215
+  - first:
+      213: 4427130677172037584
+    second: marisol_45_walk_216
+  - first:
+      213: 4042671827846112004
+    second: marisol_45_walk_217
+  - first:
+      213: -3232700642098077422
+    second: marisol_45_walk_218
+  - first:
+      213: -7493732760303252302
+    second: marisol_45_walk_219
+  - first:
+      213: -2085781018767244854
+    second: marisol_45_walk_220
+  - first:
+      213: 6133605416219042496
+    second: marisol_45_walk_221
+  - first:
+      213: -4750737056820163275
+    second: marisol_45_walk_222
+  - first:
+      213: -7218578911423764352
+    second: marisol_45_walk_223
+  - first:
+      213: 9082356257043342787
+    second: marisol_45_walk_224
+  - first:
+      213: -4046039110031004214
+    second: marisol_45_walk_225
+  - first:
+      213: -4250381646147078627
+    second: marisol_45_walk_226
+  - first:
+      213: -894889975968691304
+    second: marisol_45_walk_227
+  - first:
+      213: -2397618356378348622
+    second: marisol_45_walk_228
+  - first:
+      213: -247080503649291011
+    second: marisol_45_walk_229
+  - first:
+      213: -3002129601512852388
+    second: marisol_45_walk_230
+  - first:
+      213: 3465382496108965811
+    second: marisol_45_walk_231
+  - first:
+      213: -1957968022871405937
+    second: marisol_45_walk_232
+  - first:
+      213: 6645019615248635428
+    second: marisol_45_walk_233
+  - first:
+      213: 8312741544616341834
+    second: marisol_45_walk_234
+  - first:
+      213: 8793061592466109205
+    second: marisol_45_walk_235
+  - first:
+      213: 6154753166802081641
+    second: marisol_45_walk_236
+  - first:
+      213: 6393628841429626091
+    second: marisol_45_walk_237
+  - first:
+      213: 9102318139293603497
+    second: marisol_45_walk_238
+  - first:
+      213: -1428566639013397950
+    second: marisol_45_walk_239
+  - first:
+      213: -624879846942650163
+    second: marisol_45_walk_240
+  - first:
+      213: -3931241167356157333
+    second: marisol_45_walk_241
+  - first:
+      213: 6498111301839012573
+    second: marisol_45_walk_242
+  - first:
+      213: -3664673669521380951
+    second: marisol_45_walk_243
+  - first:
+      213: -4631574987964233095
+    second: marisol_45_walk_244
+  - first:
+      213: 5792992277440988781
+    second: marisol_45_walk_245
+  - first:
+      213: -4657243686384090239
+    second: marisol_45_walk_246
+  - first:
+      213: 2778813848379292116
+    second: marisol_45_walk_247
+  - first:
+      213: 4133448178405209248
+    second: marisol_45_walk_248
+  - first:
+      213: -2237602439746954435
+    second: marisol_45_walk_249
+  - first:
+      213: -7015685083695782674
+    second: marisol_45_walk_250
+  - first:
+      213: -1139182949732661434
+    second: marisol_45_walk_251
+  - first:
+      213: -4141035706096458824
+    second: marisol_45_walk_252
+  - first:
+      213: 8297047130413992636
+    second: marisol_45_walk_253
+  - first:
+      213: -8256908730686822782
+    second: marisol_45_walk_254
+  - first:
+      213: -236471835236755537
+    second: marisol_45_walk_255
+  - first:
+      213: -4603914891419232448
+    second: marisol_45_walk_256
+  - first:
+      213: 7463031435085847566
+    second: marisol_45_walk_257
+  - first:
+      213: -8090192702590505434
+    second: marisol_45_walk_258
+  - first:
+      213: -9001736995512300662
+    second: marisol_45_walk_259
+  - first:
+      213: -7584828838422420185
+    second: marisol_45_walk_260
+  - first:
+      213: 7023808149585074012
+    second: marisol_45_walk_261
+  - first:
+      213: 4653912623496872110
+    second: marisol_45_walk_262
+  - first:
+      213: 1239535169665939900
+    second: marisol_45_walk_263
+  - first:
+      213: -2366863474105388707
+    second: marisol_45_walk_264
+  - first:
+      213: 6463865150483053674
+    second: marisol_45_walk_265
+  - first:
+      213: 3778592304202283880
+    second: marisol_45_walk_266
+  - first:
+      213: -690443822481835100
+    second: marisol_45_walk_267
+  - first:
+      213: -8331324867280209097
+    second: marisol_45_walk_268
+  - first:
+      213: -6798706116564309327
+    second: marisol_45_walk_269
+  - first:
+      213: -6791405509647982878
+    second: marisol_45_walk_270
+  - first:
+      213: -4598172773723552281
+    second: marisol_45_walk_271
+  - first:
+      213: 6836403307946486240
+    second: marisol_45_walk_272
+  - first:
+      213: -8950422226385685609
+    second: marisol_45_walk_273
+  - first:
+      213: 2953505223582597545
+    second: marisol_45_walk_274
+  - first:
+      213: -6817232244432637359
+    second: marisol_45_walk_275
+  - first:
+      213: -5297478054730625251
+    second: marisol_45_walk_276
+  - first:
+      213: 6542458362023982261
+    second: marisol_45_walk_277
+  - first:
+      213: 8253642531088842499
+    second: marisol_45_walk_278
+  - first:
+      213: -3894644130993467601
+    second: marisol_45_walk_279
+  - first:
+      213: 7132759172445675963
+    second: marisol_45_walk_280
+  - first:
+      213: 1032577887724614348
+    second: marisol_45_walk_281
+  - first:
+      213: 1050781477556475474
+    second: marisol_45_walk_282
+  - first:
+      213: -6491737474654529167
+    second: marisol_45_walk_283
+  - first:
+      213: -282108318163904963
+    second: marisol_45_walk_284
+  - first:
+      213: -8237157573688317748
+    second: marisol_45_walk_285
+  - first:
+      213: -4569950105287843739
+    second: marisol_45_walk_286
+  - first:
+      213: 7851398998089395220
+    second: marisol_45_walk_287
+  - first:
+      213: 7253976903977294674
+    second: marisol_45_walk_288
+  - first:
+      213: -4836795685159398887
+    second: marisol_45_walk_289
+  - first:
+      213: -1318730703442733061
+    second: marisol_45_walk_290
+  - first:
+      213: 1413165176461243320
+    second: marisol_45_walk_291
+  - first:
+      213: -8726878469913132916
+    second: marisol_45_walk_292
+  - first:
+      213: -7995110684822913679
+    second: marisol_45_walk_293
+  - first:
+      213: 7456934423043829525
+    second: marisol_45_walk_294
+  - first:
+      213: -3224134148779388034
+    second: marisol_45_walk_295
+  - first:
+      213: -6670613123091250810
+    second: marisol_45_walk_296
+  - first:
+      213: 5373504417959306380
+    second: marisol_45_walk_297
+  - first:
+      213: -4059272493643770280
+    second: marisol_45_walk_298
+  - first:
+      213: -4710567596517359673
+    second: marisol_45_walk_299
+  - first:
+      213: -8734283658867681320
+    second: marisol_45_walk_300
+  - first:
+      213: -7857589880370709158
+    second: marisol_45_walk_301
+  - first:
+      213: 8054963657545096411
+    second: marisol_45_walk_302
+  - first:
+      213: 7501828054445491275
+    second: marisol_45_walk_303
+  - first:
+      213: 8867579520730871894
+    second: marisol_45_walk_304
+  - first:
+      213: -1375447852784669731
+    second: marisol_45_walk_305
+  - first:
+      213: -5735090075924027200
+    second: marisol_45_walk_306
+  - first:
+      213: -4363992730712034865
+    second: marisol_45_walk_307
+  - first:
+      213: -6485890133618411971
+    second: marisol_45_walk_308
+  - first:
+      213: 8128316968613497077
+    second: marisol_45_walk_309
+  - first:
+      213: -8574919372704419027
+    second: marisol_45_walk_310
+  - first:
+      213: 4169075661534924158
+    second: marisol_45_walk_311
+  - first:
+      213: -11964241073651143
+    second: marisol_45_walk_312
+  - first:
+      213: -3652006196119898242
+    second: marisol_45_walk_313
+  - first:
+      213: -2086960261267209544
+    second: marisol_45_walk_314
+  - first:
+      213: -8042037260801306345
+    second: marisol_45_walk_315
+  - first:
+      213: -5598306991224036455
+    second: marisol_45_walk_316
+  - first:
+      213: 1943237632924222675
+    second: marisol_45_walk_317
+  - first:
+      213: 6829399457627407119
+    second: marisol_45_walk_318
+  - first:
+      213: -5212434521206655218
+    second: marisol_45_walk_319
+  - first:
+      213: 1997461375761923173
+    second: marisol_45_walk_320
+  - first:
+      213: -454397967630699653
+    second: marisol_45_walk_321
+  - first:
+      213: 8710271774391776418
+    second: marisol_45_walk_322
+  - first:
+      213: 8846893308155252623
+    second: marisol_45_walk_323
+  - first:
+      213: -5136772188809645318
+    second: marisol_45_walk_324
+  - first:
+      213: -4254966000563751464
+    second: marisol_45_walk_325
+  - first:
+      213: 8188374503075903994
+    second: marisol_45_walk_326
+  - first:
+      213: -2132598157824314664
+    second: marisol_45_walk_327
+  - first:
+      213: 7357618568212135048
+    second: marisol_45_walk_328
+  - first:
+      213: 5933254056853167334
+    second: marisol_45_walk_329
+  - first:
+      213: -998505538140905364
+    second: marisol_45_walk_330
+  - first:
+      213: -7520421749533031281
+    second: marisol_45_walk_331
+  - first:
+      213: -7343030139606830385
+    second: marisol_45_walk_332
+  - first:
+      213: -1220191857836581804
+    second: marisol_45_walk_333
+  - first:
+      213: 6298718667087378622
+    second: marisol_45_walk_334
+  - first:
+      213: 8938844532898419044
+    second: marisol_45_walk_335
+  - first:
+      213: 2474162019948898413
+    second: marisol_45_walk_336
+  - first:
+      213: -3817344213890324904
+    second: marisol_45_walk_337
+  - first:
+      213: -1344341150276633025
+    second: marisol_45_walk_338
+  - first:
+      213: -8526309654504020551
+    second: marisol_45_walk_339
+  - first:
+      213: 6625184746671884249
+    second: marisol_45_walk_340
+  - first:
+      213: 8077768214457023614
+    second: marisol_45_walk_341
+  - first:
+      213: -1520399218860865131
+    second: marisol_45_walk_342
+  - first:
+      213: -7032685543550708951
+    second: marisol_45_walk_343
+  - first:
+      213: -7027773890019091795
+    second: marisol_45_walk_344
+  - first:
+      213: -712990610727009647
+    second: marisol_45_walk_345
+  - first:
+      213: 3865433565466063048
+    second: marisol_45_walk_346
+  - first:
+      213: 1768029099262650349
+    second: marisol_45_walk_347
+  - first:
+      213: -4792709430701958224
+    second: marisol_45_walk_348
+  - first:
+      213: 9064632075199665160
+    second: marisol_45_walk_349
+  - first:
+      213: 6047679588331566903
+    second: marisol_45_walk_350
+  - first:
+      213: 2331512954035533271
+    second: marisol_45_walk_351
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: marisol_45_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c651f719dea072dc0995a77a1c76e50
+      internalID: 299469810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_up_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c78a320f594a065ab7b4ae13af9c569
+      internalID: 606146227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_up_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95b2fafad8b121262f729593c4f4e51
+      internalID: -1623615679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_up_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9c704bc59fccfb9f029d2c75959d44
+      internalID: -1118334451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_up_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3284d7218b15f15c74c80de111bbe1f
+      internalID: -253404738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_up_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7615d9b3a4e8fa9a1cf976927fc7ce43
+      internalID: -841851717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_up_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb3f3ce561c7f6639a8ad95e5d4e092
+      internalID: -999367254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_up_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1d9d07586c76418b204ae4a2d69cf2
+      internalID: -169279014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_up_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38469d72e6f3b50003bb912c0b540878
+      internalID: -859100047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2933b494d4c130ba5c405dd7e8ab36b9
+      internalID: -18640600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_left_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2902e557e8a7e0a42fe8bb6ae31eb24
+      internalID: 1204676373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_left_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995cdb88790c50416bfd17d52afc28a1
+      internalID: -2003382066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_left_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbc9d20085b649db2ab24af32e1ee23
+      internalID: -537346180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_left_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b559222f57d000737548a0cb8b4554c
+      internalID: -165081814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_left_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a33fc6b0095b0687331ca23c514919
+      internalID: -1721555609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_left_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d1c8b06641c016db352149c6168d05
+      internalID: -1285242141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_left_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1c52a8326fdfae0744014d8c2a2160
+      internalID: -474484658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_left_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91f4ed9b74d4486b14e78abc4edffb1
+      internalID: -798475204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e74c89a121d4d27ea05cdf70f98d23
+      internalID: 121597488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_down_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853609e64339f60dfacbe1b6ffd27f66
+      internalID: -2133375320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_down_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624dae497f86245ba4df8462c2eca79b
+      internalID: 1108053231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_down_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb1d0f6fa88e0dcc7734db4605b12c0
+      internalID: 302898067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_down_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aa1a50f2ea5448231dfceeb9cd71f5
+      internalID: -979148443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_down_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68056f4014e328f017ead51a273f17ee
+      internalID: 282450808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_down_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a3a4a4a6e0a66f8545a5e038266b05
+      internalID: 1144745776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_down_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aec2f0bcf08baf582717d748e2c237f
+      internalID: 1869732530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_down_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a465d8e0fa8b5b96f33e3dcf41c561
+      internalID: -1387790599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06d7b1e4140d92ad206309a2fbec9eb
+      internalID: -1894149636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_right_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e18ce5f3f179691dff3c316564f7d00
+      internalID: 1875019296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_right_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7d9885bb14d6a6386cc6867d1b2074
+      internalID: 1289659377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_right_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a182d20f9f616df21a394d8ff620cd5
+      internalID: 850928028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_right_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e3516738c1831f02bb58c6d060f29e
+      internalID: -876928473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_right_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abb6a420510c20503d8ebe9b183b78e
+      internalID: -243978959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_right_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0360ea842addcfcb9fcdc0da2c5cd0
+      internalID: 948615054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_right_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49ca020c00f2496aced9ead9948bc7b
+      internalID: -1482864778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_45_right_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc122148a90ea2a5b958683613f6fc63
+      internalID: -1042917779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 83a70cebd11156c6095f86d1da9af5fa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      marisol_45_down_0: 121597488
+      marisol_45_down_1: -2133375320
+      marisol_45_down_2: 1108053231
+      marisol_45_down_3: 302898067
+      marisol_45_down_4: -979148443
+      marisol_45_down_5: 282450808
+      marisol_45_down_6: 1144745776
+      marisol_45_down_7: 1869732530
+      marisol_45_down_8: -1387790599
+      marisol_45_left_0: -18640600
+      marisol_45_left_1: 1204676373
+      marisol_45_left_2: -2003382066
+      marisol_45_left_3: -537346180
+      marisol_45_left_4: -165081814
+      marisol_45_left_5: -1721555609
+      marisol_45_left_6: -1285242141
+      marisol_45_left_7: -474484658
+      marisol_45_left_8: -798475204
+      marisol_45_right_0: -1894149636
+      marisol_45_right_1: 1875019296
+      marisol_45_right_2: 1289659377
+      marisol_45_right_3: 850928028
+      marisol_45_right_4: -876928473
+      marisol_45_right_5: -243978959
+      marisol_45_right_6: 948615054
+      marisol_45_right_7: -1482864778
+      marisol_45_right_8: -1042917779
+      marisol_45_up_0: 299469810
+      marisol_45_up_1: 606146227
+      marisol_45_up_2: -1623615679
+      marisol_45_up_3: -1118334451
+      marisol_45_up_4: -253404738
+      marisol_45_up_5: -841851717
+      marisol_45_up_6: -999367254
+      marisol_45_up_7: -169279014
+      marisol_45_up_8: -859100047
+      marisol_45_walk_0: -8635442462738743554
+      marisol_45_walk_1: 2185452630020635702
+      marisol_45_walk_10: 5403189907792257874
+      marisol_45_walk_100: -7844076597060766749
+      marisol_45_walk_101: -3064184857024919953
+      marisol_45_walk_102: 4124612307205725185
+      marisol_45_walk_103: -7911375480216228197
+      marisol_45_walk_104: -3165316273616776646
+      marisol_45_walk_105: -2996348346141429847
+      marisol_45_walk_106: -8972789080362222676
+      marisol_45_walk_107: -6010678386752341165
+      marisol_45_walk_108: -8522301043824903603
+      marisol_45_walk_109: -4424627087883082428
+      marisol_45_walk_11: -1561794205688421246
+      marisol_45_walk_110: 6170009624616036775
+      marisol_45_walk_111: -6437596344850299851
+      marisol_45_walk_112: -794017411919367356
+      marisol_45_walk_113: 9137703342363854539
+      marisol_45_walk_114: -7191447259906722701
+      marisol_45_walk_115: 7230324503153047710
+      marisol_45_walk_116: 883731118155840243
+      marisol_45_walk_117: -2569960914579970737
+      marisol_45_walk_118: -1872357940032810133
+      marisol_45_walk_119: 1761350764412323660
+      marisol_45_walk_12: -5796579775171097203
+      marisol_45_walk_120: 2802413703000906923
+      marisol_45_walk_121: 1122628254436729105
+      marisol_45_walk_122: -2367151997142099720
+      marisol_45_walk_123: 4287657902968483064
+      marisol_45_walk_124: 8598276989135181405
+      marisol_45_walk_125: -7479809871374256331
+      marisol_45_walk_126: 1157782216435689294
+      marisol_45_walk_127: 194202857279969225
+      marisol_45_walk_128: -2306931701578938912
+      marisol_45_walk_129: -5839153484231114813
+      marisol_45_walk_13: -3619898580470789983
+      marisol_45_walk_130: -4570097814490948033
+      marisol_45_walk_131: 7328361881913225289
+      marisol_45_walk_132: -7269207928742709686
+      marisol_45_walk_133: 8158869565675834537
+      marisol_45_walk_134: -7297570763074016156
+      marisol_45_walk_135: -1023371312682301668
+      marisol_45_walk_136: -8210701417922417651
+      marisol_45_walk_137: -3740118059305443469
+      marisol_45_walk_138: -8549631961827390412
+      marisol_45_walk_139: 5286843764572737332
+      marisol_45_walk_14: 1839322676688145697
+      marisol_45_walk_140: -4281910115654400447
+      marisol_45_walk_141: 8815757338266612243
+      marisol_45_walk_142: 6884080494392132673
+      marisol_45_walk_143: -8540517485448340135
+      marisol_45_walk_144: -5004002074615956511
+      marisol_45_walk_145: 5665797805810480909
+      marisol_45_walk_146: -3458829978710506094
+      marisol_45_walk_147: -7529368618867142096
+      marisol_45_walk_148: 6644110338687937561
+      marisol_45_walk_149: -5872999795405269362
+      marisol_45_walk_15: 7529315244465446200
+      marisol_45_walk_150: 4600534473954428599
+      marisol_45_walk_151: -393725099433644314
+      marisol_45_walk_152: -7562585294256127580
+      marisol_45_walk_153: 7140442558282708030
+      marisol_45_walk_154: -2135513078662706507
+      marisol_45_walk_155: 5951263707339570484
+      marisol_45_walk_156: 3337278520173147993
+      marisol_45_walk_157: -26025017065328156
+      marisol_45_walk_158: 5386716808314186874
+      marisol_45_walk_159: -2749362292973110347
+      marisol_45_walk_16: 7136677098616568617
+      marisol_45_walk_160: 7150487585049026709
+      marisol_45_walk_161: 1768436465060091711
+      marisol_45_walk_162: -1346498181807238344
+      marisol_45_walk_163: -5551817824424004121
+      marisol_45_walk_164: 9131542444963308012
+      marisol_45_walk_165: 5643371406523787487
+      marisol_45_walk_166: 3328926645393563144
+      marisol_45_walk_167: -555876912365878631
+      marisol_45_walk_168: 1636440949452959133
+      marisol_45_walk_169: -4945633303448847351
+      marisol_45_walk_17: 8075469426895641994
+      marisol_45_walk_170: 949352220463252169
+      marisol_45_walk_171: 7969976580681850292
+      marisol_45_walk_172: 7988931190163693765
+      marisol_45_walk_173: -7335531407378700266
+      marisol_45_walk_174: 4872899841413051718
+      marisol_45_walk_175: 6381286822207518347
+      marisol_45_walk_176: -1904144698292364986
+      marisol_45_walk_177: 5887940260818837654
+      marisol_45_walk_178: -4089891493146231451
+      marisol_45_walk_179: 6442854421520863489
+      marisol_45_walk_18: -628031813508464168
+      marisol_45_walk_180: 1279538046009304753
+      marisol_45_walk_181: 4781473840587941142
+      marisol_45_walk_182: 6506793723384869971
+      marisol_45_walk_183: 3930424724262859442
+      marisol_45_walk_184: -8865740892952957785
+      marisol_45_walk_185: -7884850826111821242
+      marisol_45_walk_186: 1716101354172371569
+      marisol_45_walk_187: 6722134559159485545
+      marisol_45_walk_188: -6340415871326073368
+      marisol_45_walk_189: 455300747922458839
+      marisol_45_walk_19: -6928970990694491444
+      marisol_45_walk_190: -6286166274696001734
+      marisol_45_walk_191: -2578379231802847426
+      marisol_45_walk_192: 3380893391623579903
+      marisol_45_walk_193: -8593539985114626851
+      marisol_45_walk_194: -313355698127648005
+      marisol_45_walk_195: -3240418737084914225
+      marisol_45_walk_196: -8473248020474398552
+      marisol_45_walk_197: -3448760105336125494
+      marisol_45_walk_198: 8640065275830369675
+      marisol_45_walk_199: -7224322679976978157
+      marisol_45_walk_2: 7458164989923003032
+      marisol_45_walk_20: -3250607279167704525
+      marisol_45_walk_200: -102462723782499472
+      marisol_45_walk_201: 8468524335812412883
+      marisol_45_walk_202: 5552170705209417565
+      marisol_45_walk_203: -4180762366401040162
+      marisol_45_walk_204: -9088843801398166761
+      marisol_45_walk_205: -601016681570652802
+      marisol_45_walk_206: -1973218873298168125
+      marisol_45_walk_207: -4895441992868396561
+      marisol_45_walk_208: 5833270809238556469
+      marisol_45_walk_209: -373478236700888893
+      marisol_45_walk_21: -2938256062369274583
+      marisol_45_walk_210: -5540460697740090114
+      marisol_45_walk_211: 5002268772620026937
+      marisol_45_walk_212: 7219643176354842862
+      marisol_45_walk_213: 1410428067929093523
+      marisol_45_walk_214: 2221950276808194293
+      marisol_45_walk_215: -4464737682994938294
+      marisol_45_walk_216: 4427130677172037584
+      marisol_45_walk_217: 4042671827846112004
+      marisol_45_walk_218: -3232700642098077422
+      marisol_45_walk_219: -7493732760303252302
+      marisol_45_walk_22: -4237157235201746337
+      marisol_45_walk_220: -2085781018767244854
+      marisol_45_walk_221: 6133605416219042496
+      marisol_45_walk_222: -4750737056820163275
+      marisol_45_walk_223: -7218578911423764352
+      marisol_45_walk_224: 9082356257043342787
+      marisol_45_walk_225: -4046039110031004214
+      marisol_45_walk_226: -4250381646147078627
+      marisol_45_walk_227: -894889975968691304
+      marisol_45_walk_228: -2397618356378348622
+      marisol_45_walk_229: -247080503649291011
+      marisol_45_walk_23: 1270091765715190373
+      marisol_45_walk_230: -3002129601512852388
+      marisol_45_walk_231: 3465382496108965811
+      marisol_45_walk_232: -1957968022871405937
+      marisol_45_walk_233: 6645019615248635428
+      marisol_45_walk_234: 8312741544616341834
+      marisol_45_walk_235: 8793061592466109205
+      marisol_45_walk_236: 6154753166802081641
+      marisol_45_walk_237: 6393628841429626091
+      marisol_45_walk_238: 9102318139293603497
+      marisol_45_walk_239: -1428566639013397950
+      marisol_45_walk_24: 4737962725759758762
+      marisol_45_walk_240: -624879846942650163
+      marisol_45_walk_241: -3931241167356157333
+      marisol_45_walk_242: 6498111301839012573
+      marisol_45_walk_243: -3664673669521380951
+      marisol_45_walk_244: -4631574987964233095
+      marisol_45_walk_245: 5792992277440988781
+      marisol_45_walk_246: -4657243686384090239
+      marisol_45_walk_247: 2778813848379292116
+      marisol_45_walk_248: 4133448178405209248
+      marisol_45_walk_249: -2237602439746954435
+      marisol_45_walk_25: -4138906714599645420
+      marisol_45_walk_250: -7015685083695782674
+      marisol_45_walk_251: -1139182949732661434
+      marisol_45_walk_252: -4141035706096458824
+      marisol_45_walk_253: 8297047130413992636
+      marisol_45_walk_254: -8256908730686822782
+      marisol_45_walk_255: -236471835236755537
+      marisol_45_walk_256: -4603914891419232448
+      marisol_45_walk_257: 7463031435085847566
+      marisol_45_walk_258: -8090192702590505434
+      marisol_45_walk_259: -9001736995512300662
+      marisol_45_walk_26: 8537156588566574057
+      marisol_45_walk_260: -7584828838422420185
+      marisol_45_walk_261: 7023808149585074012
+      marisol_45_walk_262: 4653912623496872110
+      marisol_45_walk_263: 1239535169665939900
+      marisol_45_walk_264: -2366863474105388707
+      marisol_45_walk_265: 6463865150483053674
+      marisol_45_walk_266: 3778592304202283880
+      marisol_45_walk_267: -690443822481835100
+      marisol_45_walk_268: -8331324867280209097
+      marisol_45_walk_269: -6798706116564309327
+      marisol_45_walk_27: -2702743889856016256
+      marisol_45_walk_270: -6791405509647982878
+      marisol_45_walk_271: -4598172773723552281
+      marisol_45_walk_272: 6836403307946486240
+      marisol_45_walk_273: -8950422226385685609
+      marisol_45_walk_274: 2953505223582597545
+      marisol_45_walk_275: -6817232244432637359
+      marisol_45_walk_276: -5297478054730625251
+      marisol_45_walk_277: 6542458362023982261
+      marisol_45_walk_278: 8253642531088842499
+      marisol_45_walk_279: -3894644130993467601
+      marisol_45_walk_28: -7373954015493992325
+      marisol_45_walk_280: 7132759172445675963
+      marisol_45_walk_281: 1032577887724614348
+      marisol_45_walk_282: 1050781477556475474
+      marisol_45_walk_283: -6491737474654529167
+      marisol_45_walk_284: -282108318163904963
+      marisol_45_walk_285: -8237157573688317748
+      marisol_45_walk_286: -4569950105287843739
+      marisol_45_walk_287: 7851398998089395220
+      marisol_45_walk_288: 7253976903977294674
+      marisol_45_walk_289: -4836795685159398887
+      marisol_45_walk_29: 3521951050459342107
+      marisol_45_walk_290: -1318730703442733061
+      marisol_45_walk_291: 1413165176461243320
+      marisol_45_walk_292: -8726878469913132916
+      marisol_45_walk_293: -7995110684822913679
+      marisol_45_walk_294: 7456934423043829525
+      marisol_45_walk_295: -3224134148779388034
+      marisol_45_walk_296: -6670613123091250810
+      marisol_45_walk_297: 5373504417959306380
+      marisol_45_walk_298: -4059272493643770280
+      marisol_45_walk_299: -4710567596517359673
+      marisol_45_walk_3: 3784911381318667671
+      marisol_45_walk_30: 6048144966991461448
+      marisol_45_walk_300: -8734283658867681320
+      marisol_45_walk_301: -7857589880370709158
+      marisol_45_walk_302: 8054963657545096411
+      marisol_45_walk_303: 7501828054445491275
+      marisol_45_walk_304: 8867579520730871894
+      marisol_45_walk_305: -1375447852784669731
+      marisol_45_walk_306: -5735090075924027200
+      marisol_45_walk_307: -4363992730712034865
+      marisol_45_walk_308: -6485890133618411971
+      marisol_45_walk_309: 8128316968613497077
+      marisol_45_walk_31: 6948439574027962417
+      marisol_45_walk_310: -8574919372704419027
+      marisol_45_walk_311: 4169075661534924158
+      marisol_45_walk_312: -11964241073651143
+      marisol_45_walk_313: -3652006196119898242
+      marisol_45_walk_314: -2086960261267209544
+      marisol_45_walk_315: -8042037260801306345
+      marisol_45_walk_316: -5598306991224036455
+      marisol_45_walk_317: 1943237632924222675
+      marisol_45_walk_318: 6829399457627407119
+      marisol_45_walk_319: -5212434521206655218
+      marisol_45_walk_32: -4666795564371524674
+      marisol_45_walk_320: 1997461375761923173
+      marisol_45_walk_321: -454397967630699653
+      marisol_45_walk_322: 8710271774391776418
+      marisol_45_walk_323: 8846893308155252623
+      marisol_45_walk_324: -5136772188809645318
+      marisol_45_walk_325: -4254966000563751464
+      marisol_45_walk_326: 8188374503075903994
+      marisol_45_walk_327: -2132598157824314664
+      marisol_45_walk_328: 7357618568212135048
+      marisol_45_walk_329: 5933254056853167334
+      marisol_45_walk_33: -847959799552710718
+      marisol_45_walk_330: -998505538140905364
+      marisol_45_walk_331: -7520421749533031281
+      marisol_45_walk_332: -7343030139606830385
+      marisol_45_walk_333: -1220191857836581804
+      marisol_45_walk_334: 6298718667087378622
+      marisol_45_walk_335: 8938844532898419044
+      marisol_45_walk_336: 2474162019948898413
+      marisol_45_walk_337: -3817344213890324904
+      marisol_45_walk_338: -1344341150276633025
+      marisol_45_walk_339: -8526309654504020551
+      marisol_45_walk_34: -3021130911916110140
+      marisol_45_walk_340: 6625184746671884249
+      marisol_45_walk_341: 8077768214457023614
+      marisol_45_walk_342: -1520399218860865131
+      marisol_45_walk_343: -7032685543550708951
+      marisol_45_walk_344: -7027773890019091795
+      marisol_45_walk_345: -712990610727009647
+      marisol_45_walk_346: 3865433565466063048
+      marisol_45_walk_347: 1768029099262650349
+      marisol_45_walk_348: -4792709430701958224
+      marisol_45_walk_349: 9064632075199665160
+      marisol_45_walk_35: 3357731976777744476
+      marisol_45_walk_350: 6047679588331566903
+      marisol_45_walk_351: 2331512954035533271
+      marisol_45_walk_36: -8396241501568248904
+      marisol_45_walk_37: 1100599842733440110
+      marisol_45_walk_38: -5337241476550675992
+      marisol_45_walk_39: -2955409314511982196
+      marisol_45_walk_4: 1999621746970335733
+      marisol_45_walk_40: -5212656634776411610
+      marisol_45_walk_41: 58953796396744608
+      marisol_45_walk_42: 2948863850637696235
+      marisol_45_walk_43: -283199516145933329
+      marisol_45_walk_44: 8310144215176787682
+      marisol_45_walk_45: -4722566334096745906
+      marisol_45_walk_46: -3540214749936958717
+      marisol_45_walk_47: -7903176936308777383
+      marisol_45_walk_48: 2762831481465884170
+      marisol_45_walk_49: 1008584387113672688
+      marisol_45_walk_5: -4867360629913435507
+      marisol_45_walk_50: 5914505355937593560
+      marisol_45_walk_51: 9113488524043738309
+      marisol_45_walk_52: -7793730032430097382
+      marisol_45_walk_53: 7358844777411220013
+      marisol_45_walk_54: -308764828630995363
+      marisol_45_walk_55: 8760890140585581024
+      marisol_45_walk_56: 3390816049722504890
+      marisol_45_walk_57: 2674358473289735411
+      marisol_45_walk_58: -8044429862737599386
+      marisol_45_walk_59: 4014482590884559414
+      marisol_45_walk_6: 7815206653688079122
+      marisol_45_walk_60: -1712302263173907554
+      marisol_45_walk_61: 132191776344329119
+      marisol_45_walk_62: 4555044522218965910
+      marisol_45_walk_63: 7172943475524084037
+      marisol_45_walk_64: 5961682198400414268
+      marisol_45_walk_65: -2887430841929152432
+      marisol_45_walk_66: -3355826326146716219
+      marisol_45_walk_67: -5558563541786124522
+      marisol_45_walk_68: -8603741160425336898
+      marisol_45_walk_69: -4033245212375811180
+      marisol_45_walk_7: -2203712540730808193
+      marisol_45_walk_70: -2889768118568428587
+      marisol_45_walk_71: -1444902360866325407
+      marisol_45_walk_72: -8708897991401338668
+      marisol_45_walk_73: 7133032052265811575
+      marisol_45_walk_74: -9040605414367983929
+      marisol_45_walk_75: -6702273084007873057
+      marisol_45_walk_76: 6552956569681265238
+      marisol_45_walk_77: 2543555928472368227
+      marisol_45_walk_78: 7394557013095233472
+      marisol_45_walk_79: -1207435841652172762
+      marisol_45_walk_8: 2159027495634273353
+      marisol_45_walk_80: 6430578668341737703
+      marisol_45_walk_81: 8104829195306858565
+      marisol_45_walk_82: -6433697061858502681
+      marisol_45_walk_83: 6346634006445635970
+      marisol_45_walk_84: 8708437109759685401
+      marisol_45_walk_85: -62422581864270701
+      marisol_45_walk_86: 6303363266304104702
+      marisol_45_walk_87: -4600039579604713850
+      marisol_45_walk_88: 7053986857974460443
+      marisol_45_walk_89: 7093045686488222938
+      marisol_45_walk_9: 101081627714051714
+      marisol_45_walk_90: 8780291615299349964
+      marisol_45_walk_91: -6964756180493954509
+      marisol_45_walk_92: -7551168524658931404
+      marisol_45_walk_93: -5050953097507673487
+      marisol_45_walk_94: 4918138046242565237
+      marisol_45_walk_95: 2159556570827943771
+      marisol_45_walk_96: 1422800678929411711
+      marisol_45_walk_97: 6079137247283415023
+      marisol_45_walk_98: -7465384531028047285
+      marisol_45_walk_99: -2821016068262900159
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

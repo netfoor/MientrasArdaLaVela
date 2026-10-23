@@ -210,7 +210,9 @@ namespace MientrasArdaLaVela.EditorTools
             var tSueloPatio = T("suelo_patio", ColPatio);
             var tMuroArriba = T("muro_arriba", ColPared, collider: true);   // sin esto los muros no bloquean
             var tMuroCara   = T("muro_cara",   ColPared, collider: true);
-            var tMueble     = T("mueble",      ColMueble);
+            // La capa Muebles lleva TilemapCollider2D, pero sin esto el tile pedía ColliderType.None
+            // y la mesa de la cocina y la base de la ofrenda se podían atravesar (ver B17).
+            var tMueble     = T("mueble",      ColMueble, collider: true);
             // Pétalos: arte propio (tools/arte/camino_petalos.py). El recorte del tileset de
             // plantas que se usaba antes parecía hierba suelta y repetía siempre el mismo cuadro.
             var tPetalos = new[]
@@ -271,7 +273,9 @@ namespace MientrasArdaLaVela.EditorTools
             for (int y = 4; y <= 17; y++) Petalos(17, y);                 // sala, pasillo y patio
             foreach (var t in RamaIzquierda) Petalos(t.x, t.y);
             foreach (var t in RamaDerecha) Petalos(t.x, t.y);
-            foreach (var t in CruzOfrenda) Petalos(t.x, t.y);
+            // La cruz va toda con el tile denso: con la densidad alterna del camino se perdía
+            // su forma, que es lo único que la distingue del tramo que llega hasta ella.
+            foreach (var t in CruzOfrenda) deco.SetTile(new Vector3Int(t.x, t.y, 0), tPetalos[0]);
 
             // Flores enteras donde la escena las pide: el punto en que el camino se parte (ahí
             // está el fragmento), el centro de la cruz y el final de cada rama.

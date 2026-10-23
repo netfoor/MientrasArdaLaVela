@@ -17,24 +17,28 @@ import pathlib, math
 
 DESTINO = pathlib.Path(__file__).resolve().parents[2] / 'Assets/_Proyecto/Art/Objetos'
 
-# Cempasúchil: del naranja quemado al amarillo de vela.
-OSC = (182, 78, 18, 255)
-MED = (238, 134, 26, 255)
-CLA = (255, 190, 62, 255)
-ROJ = (156, 58, 20, 255)      # algún pétalo más maduro, para que no sea un solo naranja
+# Cempasúchil: del naranja quemado al amarillo de vela. Los tonos son claros a propósito:
+# el Mapa 0 y el epílogo pasan de noche, con la luz global muy baja, y una primera versión
+# más apagada desaparecía sobre la duela en cuanto se miraba a la escala del juego.
+OSC = (214, 104, 24, 255)
+MED = (250, 158, 40, 255)
+CLA = (255, 212, 104, 255)
+ROJ = (206, 82, 34, 255)      # algún pétalo más maduro, para que no sea un solo naranja
 
 
 def petalo(px, x, y, giro, tono):
-    """Una gota de 4x3 px. 'giro' 0-3 la recuesta en una de las cuatro diagonales."""
+    """Una gota de 5x4 px, caída en diagonal. 'giro' 0-3 la recuesta hacia un lado u otro."""
     base, luz = (ROJ, MED) if tono == 2 else (OSC, CLA if tono else MED)
-    cuerpo = [(0, 0), (1, 0), (2, 0), (1, 1), (2, 1), (3, 1)]
-    brillo = [(1, 0), (2, 1)]
-    for dx, dy in cuerpo:
-        if giro == 1:   dx, dy = dy, dx
-        elif giro == 2: dx, dy = -dx, dy
-        elif giro == 3: dx, dy = dy, -dx
+    cuerpo = [(2, 0), (3, 0), (1, 1), (2, 1), (3, 1), (4, 1),
+              (0, 2), (1, 2), (2, 2), (3, 2), (0, 3), (1, 3)]
+    brillo = [(2, 1), (1, 2)]
+    for odx, ody in cuerpo:
+        dx, dy = odx, ody
+        if giro == 1:   dx, dy = ody, odx
+        elif giro == 2: dx, dy = -odx, ody
+        elif giro == 3: dx, dy = ody, -odx
         if 0 <= x + dx < 32 and 0 <= y + dy < 32:
-            px[x + dx, y + dy] = luz if (dx, dy) in brillo and giro == 0 else base
+            px[x + dx, y + dy] = luz if (odx, ody) in brillo else base
 
 
 def flor(px, x, y):
