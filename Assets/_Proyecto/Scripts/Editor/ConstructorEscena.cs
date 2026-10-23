@@ -576,6 +576,28 @@ namespace MientrasArdaLaVela.EditorTools
             return sp;
         }
 
+        /// <summary>
+        /// Convierte una pieza de Art/Objetos en un Tile reutilizable (sin collider), guardado
+        /// en Art/Tiles. Es lo que permite pintar con arte propio una capa de decoración, en vez
+        /// de depender de un recorte del tileset LPC.
+        /// </summary>
+        public static TileBase TileObjeto(string archivo)
+        {
+            string clave = System.IO.Path.GetFileNameWithoutExtension(archivo);
+            string ruta = $"Assets/_Proyecto/Art/Tiles/{clave}.asset";
+            var tile = AssetDatabase.LoadAssetAtPath<UnityEngine.Tilemaps.Tile>(ruta);
+            var sp = Objeto(archivo);
+            if (sp == null) return tile;
+
+            bool nuevo = tile == null;
+            if (nuevo) tile = ScriptableObject.CreateInstance<UnityEngine.Tilemaps.Tile>();
+            tile.sprite = sp;
+            tile.colliderType = UnityEngine.Tilemaps.Tile.ColliderType.None;
+            if (nuevo) AssetDatabase.CreateAsset(tile, ruta);
+            else EditorUtility.SetDirty(tile);
+            return tile;
+        }
+
         public static void AdornoSprite(Transform padre, string nombre, string ruta, Vector3 pos, int orden)
         {
             var sp = AssetDatabase.LoadAssetAtPath<Sprite>(ruta);
