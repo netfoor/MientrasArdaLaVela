@@ -2,10 +2,11 @@
 
 > **Estado actual: `ESTADO.md`.** Léelo primero: dice qué está implementado, qué falta
 > y las desviaciones conscientes respecto al Documento de Diseño. Resumen al 2026-10-23: el
-> juego se puede jugar de principio a fin; **F01–F24 están hechas**, de F25 solo falta detallar
-> más los mapas (el arte propio de fragmentos, mementos, camino de pétalos y Marisol ya está) y
-> F26 **ya compila** (`Builds/Windows/`). Lo que falta es teclear los tres códigos secretos y
-> probar el .exe en un segundo equipo.
+> juego se puede jugar de principio a fin; **F01–F25 están hechas** y F26 **ya compila**
+> (`Builds/Windows/`). Lo que falta es teclear los tres códigos secretos y probar el .exe en un
+> segundo equipo. El arte propio se dibuja con los scripts de `tools/arte/` (un script por
+> tanda: objetos, camino de pétalos, campo, calle, Marisol); si tocas uno, vuelve a construir
+> la escena que lo usa y **mira la captura**: varios defectos de esta tanda sólo se veían ahí.
 > No confíes en el Feature Log del Excel para saber el estado: sus hojas de resumen tienen
 > valores cacheados sin recalcular.
 

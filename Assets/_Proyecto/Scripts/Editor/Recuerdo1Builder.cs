@@ -19,6 +19,7 @@ namespace MientrasArdaLaVela.EditorTools
     {
         const string Ruta = "Assets/_Proyecto/Scenes/Recuerdo1_Panaderia.unity";
         const string RutaMosaico = "Assets/_Proyecto/Art/Mosaicos/mosaico_R1.png";
+        const string Obj = "Assets/_Proyecto/Art/Objetos/";
 
         static readonly RectInt Salon      = new RectInt(2, 7, 16, 10);
         static readonly RectInt Trastienda = new RectInt(19, 7, 10, 10);
@@ -133,6 +134,13 @@ namespace MientrasArdaLaVela.EditorTools
             // Repisas con charolas contra el muro del fondo.
             Pintar(c.Muebles, new RectInt(3, 16, 5, 1), estante);
             Pintar(c.Muebles, new RectInt(20, 16, 3, 1), estante);
+
+            // Banqueta frente a la fachada (tools/arte/calle_f25.py): separa la calle del
+            // edificio, que es lo que le faltaba a esa franja para no parecer un descampado.
+            var banqueta = TileObjeto("banqueta_borde.png");
+            if (banqueta != null)
+                for (int x = Calle.xMin + 1; x < Calle.xMax - 1; x++)
+                    c.Suelo.SetTile(new Vector3Int(x, Calle.yMax - 1, 0), banqueta);
         }
 
         static void ConstruirPersonajes()
@@ -165,8 +173,20 @@ namespace MientrasArdaLaVela.EditorTools
 
         static void ConstruirDecorado()
         {
-            if (!TilesetLPC.HayArte()) return;
             var p = Raiz("Decorado").transform;
+
+            // --- La calle. El letrero y el cartel dicen, sin una línea de diálogo, que en 2015
+            // La Espiga ya está cerrada: es el dato con el que abre el recuerdo.
+            // Van colgados de la fachada (y = 6), no de la banqueta: a media altura parecían
+            // flotar sobre la calle.
+            AdornoSprite(p, "Letrero", Obj + "letrero_espiga.png", new Vector3(12f, 6.1f, 0f), OrdenMueble + 2);
+            AdornoSprite(p, "CartelCerrado", Obj + "cartel_cerrado.png", new Vector3(9.5f, 6f, 0f), OrdenMueble + 2);
+            AdornoSprite(p, "Farol1", Obj + "farol.png", new Vector3(4.5f, 3.9f, 0f), OrdenMueble);
+            AdornoSprite(p, "Farol2", Obj + "farol.png", new Vector3(24.5f, 3.9f, 0f), OrdenMueble);
+            AdornoSprite(p, "CajasReparto", Obj + "cajas_reparto.png", new Vector3(16.5f, 3.6f, 0f), OrdenMueble);
+            AdornoSprite(p, "CajasReparto2", Obj + "cajas_reparto.png", new Vector3(6.5f, 3.6f, 0f), OrdenMueble);
+
+            if (!TilesetLPC.HayArte()) return;
             Adorno(p, "Reloj", "reloj", new Vector3(10.5f, 16.5f, 0f));
             Adorno(p, "Vitrina", "vitrina", new Vector3(16.5f, 15.5f, 0f), solido: true);
             Adorno(p, "Frascos", "frascos", new Vector3(5.5f, 12.5f, 0f), OrdenMueble + 1);
@@ -177,6 +197,13 @@ namespace MientrasArdaLaVela.EditorTools
             Adorno(p, "Banca", "mesa", new Vector3(21.5f, 2.5f, 0f), OrdenMueble);
             Adorno(p, "Maceta", "maceta", new Vector3(11.5f, 3.5f, 0f));
             Adorno(p, "Maceta2", "maceta", new Vector3(7.5f, 3.5f, 0f));
+            // La trastienda: donde se amasaba. Estaba casi vacía.
+            Adorno(p, "LamparaTras", "lampara", new Vector3(25.5f, 16.6f, 0f), OrdenObjeto);
+            Adorno(p, "FrascosTras", "frascos", new Vector3(20.5f, 15.5f, 0f), OrdenMueble + 1);
+            Adorno(p, "CajasTras", "cajas", new Vector3(19.5f, 9.5f, 0f), solido: true);
+            Adorno(p, "SillaTras", "silla", new Vector3(22.5f, 10.6f, 0f));
+            Adorno(p, "CostalesTras", "pan", new Vector3(25.5f, 9.5f, 0f), solido: true);
+
             // Mesita para clientes en el salón, que se veía vacío.
             Adorno(p, "MesaSalon", "mesa", new Vector3(4.5f, 8.5f, 0f), solido: true);
             Adorno(p, "Silla1", "silla", new Vector3(3.5f, 8.6f, 0f));
