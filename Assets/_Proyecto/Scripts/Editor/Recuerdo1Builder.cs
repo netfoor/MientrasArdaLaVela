@@ -84,7 +84,7 @@ namespace MientrasArdaLaVela.EditorTools
                    OblivionFog.Unlock.Fragment, "R1_pregunta");
             Eco("Eco_NoTieneHermanos", PosEco, "aurelio_69", "R1_eco", "R1_lata", "R1_Eco_Falso", "R1_Eco_Verdad");
             Niebla("Niebla Calle", new Vector3(15f, 3f, 0f), new Vector2(28f, 4f), OblivionFog.Unlock.Echo, "R1_eco");
-            ConstructorEscena.Memento("Memento_Fotografia", PosMemento, null, "R1_Memento_Bloqueado", "R1_Memento_Activar",
+            ConstructorEscena.Memento("Memento_Fotografia", PosMemento, ConstructorEscena.Objeto("memento_foto.png"), "R1_Memento_Bloqueado", "R1_Memento_Activar",
                     "R1_Mosaico_Resuelto", RutaMosaico, "La fotografía de La Espiga");
 
             var triggers = Raiz("Triggers");
@@ -148,7 +148,7 @@ namespace MientrasArdaLaVela.EditorTools
             destello.transform.localPosition = new Vector3(0f, 2.1f, 0f);
             destello.transform.localScale = new Vector3(0.35f, 0.35f, 1f);
             var srd = Comp<SpriteRenderer>(destello);
-            srd.sprite = PlaceholderArt.Sprite("destello", Color.white, borde: false);
+            srd.sprite = ConstructorEscena.Objeto("destello.png") ?? PlaceholderArt.Sprite("destello", Color.white, borde: false);
             srd.sortingOrder = OrdenObjeto + 1;
             Set(Comp<MemoryFragment>(lucia), ("fragmentId", "R1_pregunta"), ("yarnNode", "R1_Frag_Pregunta"),
                 ("sparkle", destello), ("promptText", "[E] Escuchar a Lucía"));
@@ -157,9 +157,12 @@ namespace MientrasArdaLaVela.EditorTools
         static void ConstruirFragmentos()
         {
             var padre = Raiz("Fragmentos").transform;
-            Fragmento(padre, "Frag_Foto", PosFoto, "R1_foto", "R1_Frag_Foto", oculto: false);
-            Fragmento(padre, "Frag_Lata", PosLata, "R1_lata", "R1_Frag_Lata", oculto: true);
-            Fragmento(padre, "Frag_Charola", PosCharola, "R1_charola", "R1_Frag_Charola", oculto: false);
+            Fragmento(padre, "Frag_Foto", PosFoto, "R1_foto", "R1_Frag_Foto", oculto: false,
+                      sprite: ConstructorEscena.Objeto("frag_foto_rota.png"));
+            Fragmento(padre, "Frag_Lata", PosLata, "R1_lata", "R1_Frag_Lata", oculto: true,
+                      sprite: ConstructorEscena.Objeto("frag_lata.png"));
+            Fragmento(padre, "Frag_Charola", PosCharola, "R1_charola", "R1_Frag_Charola", oculto: false,
+                      sprite: ConstructorEscena.Objeto("frag_charola.png"));
         }
 
         static void ConstruirDecorado()

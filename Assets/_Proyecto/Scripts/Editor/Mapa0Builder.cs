@@ -518,20 +518,26 @@ namespace MientrasArdaLaVela.EditorTools
         static void ConstruirFragmentos()
         {
             var padre = Raiz("Fragmentos");
-            Fragmento(padre.transform, "Frag_Foto", PosFoto, "M0_foto", "M0_Frag_Foto", oculto: false);
-            Fragmento(padre.transform, "Frag_Delantal", PosDelantal, "M0_delantal", "M0_Frag_Delantal", oculto: false);
-            Fragmento(padre.transform, "Frag_Petalos", PosPetalos, "M0_petalos", "M0_Frag_Petalos", oculto: false);
-            Fragmento(padre.transform, "Frag_Sombrero", PosSombrero, "M0_sombrero", "M0_Frag_Sombrero", oculto: true);
+            // Arte propio de cada fragmento (F25): los cuatro eran el mismo cuadro de color.
+            Fragmento(padre.transform, "Frag_Foto", PosFoto, "M0_foto", "M0_Frag_Foto", oculto: false,
+                      sprite: ConstructorEscena.Objeto("frag_foto_joven.png"));
+            Fragmento(padre.transform, "Frag_Delantal", PosDelantal, "M0_delantal", "M0_Frag_Delantal", oculto: false,
+                      sprite: ConstructorEscena.Objeto("frag_delantal.png"));
+            Fragmento(padre.transform, "Frag_Petalos", PosPetalos, "M0_petalos", "M0_Frag_Petalos", oculto: false,
+                      sprite: ConstructorEscena.Objeto("frag_petalos.png"));
+            Fragmento(padre.transform, "Frag_Sombrero", PosSombrero, "M0_sombrero", "M0_Frag_Sombrero", oculto: true,
+                      sprite: ConstructorEscena.Objeto("frag_sombrero.png"));
         }
 
-        static void Fragmento(Transform padre, string nombre, Vector3 pos, string id, string nodo, bool oculto)
+        static void Fragmento(Transform padre, string nombre, Vector3 pos, string id, string nodo, bool oculto,
+                              Sprite sprite = null)
         {
             var go = Hijo(padre, nombre);
             go.transform.position = pos;
             go.layer = LayerMask.NameToLayer("Interactable");
 
             var sr = Comp<SpriteRenderer>(go);
-            sr.sprite = PlaceholderArt.Sprite("fragmento", ColFragmento);
+            sr.sprite = sprite != null ? sprite : PlaceholderArt.Sprite("fragmento", ColFragmento);
             sr.sortingOrder = OrdenObjeto;
 
             var col = Comp<BoxCollider2D>(go);
@@ -543,7 +549,7 @@ namespace MientrasArdaLaVela.EditorTools
             destello.transform.localPosition = new Vector3(0f, 0.6f, 0f);
             destello.transform.localScale = new Vector3(0.35f, 0.35f, 1f);
             var srd = Comp<SpriteRenderer>(destello);
-            srd.sprite = PlaceholderArt.Sprite("destello", Color.white, borde: false);
+            srd.sprite = ConstructorEscena.Objeto("destello.png") ?? PlaceholderArt.Sprite("destello", Color.white, borde: false);
             srd.sortingOrder = OrdenObjeto + 1;
 
             var frag = Comp<MemoryFragment>(go);
@@ -592,7 +598,8 @@ namespace MientrasArdaLaVela.EditorTools
             go.layer = LayerMask.NameToLayer("Interactable");
 
             var sr = Comp<SpriteRenderer>(go);
-            sr.sprite = (TilesetLPC.HayArte() ? TilesetLPC.Sprite("pan") : null)
+            sr.sprite = ConstructorEscena.Objeto("memento_pan.png")
+                        ?? (TilesetLPC.HayArte() ? TilesetLPC.Sprite("pan") : null)
                         ?? PlaceholderArt.Sprite("memento", ColMementoC);
             sr.sortingOrder = OrdenObjeto;
 

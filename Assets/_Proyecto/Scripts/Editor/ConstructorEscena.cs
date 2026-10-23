@@ -399,7 +399,7 @@ namespace MientrasArdaLaVela.EditorTools
             destello.transform.localPosition = new Vector3(0f, sprite != null ? sprite.bounds.extents.y + 0.35f : 0.6f, 0f);
             destello.transform.localScale = new Vector3(0.35f, 0.35f, 1f);
             var srd = Comp<SpriteRenderer>(destello);
-            srd.sprite = PlaceholderArt.Sprite("destello", Color.white, borde: false);
+            srd.sprite = Objeto("destello.png") ?? PlaceholderArt.Sprite("destello", Color.white, borde: false);
             srd.sortingOrder = OrdenObjeto + 1;
 
             Set(Comp<MemoryFragment>(go), ("fragmentId", id), ("yarnNode", nodo), ("sparkle", destello),
@@ -565,6 +565,17 @@ namespace MientrasArdaLaVela.EditorTools
         }
 
         /// <summary>Adorno con un sprite suelto del proyecto (arte propio, p. ej. papel picado).</summary>
+        /// <summary>
+        /// Arte propio de objetos (`Art/Objetos`, dibujado por `tools/arte/objetos_f25.py`).
+        /// Devuelve null y avisa si falta, para que quien lo pida caiga en su relleno de color.
+        /// </summary>
+        public static Sprite Objeto(string archivo)
+        {
+            var sp = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/_Proyecto/Art/Objetos/" + archivo);
+            if (sp == null) Debug.LogWarning($"[Escena] Falta el arte Art/Objetos/{archivo}; se usa un cuadro de color.");
+            return sp;
+        }
+
         public static void AdornoSprite(Transform padre, string nombre, string ruta, Vector3 pos, int orden)
         {
             var sp = AssetDatabase.LoadAssetAtPath<Sprite>(ruta);
@@ -600,8 +611,11 @@ namespace MientrasArdaLaVela.EditorTools
                                  new Vector2(560f, 56f), TextAlignmentOptions.Left, Color.white);
 
             var rombos = new Object[4];
-            var vacio = PlaceholderArt.Sprite("rombo_vacio", new Color(0.35f, 0.35f, 0.40f), borde: false);
-            var lleno = PlaceholderArt.Sprite("rombo_lleno", ColFragmento, borde: false);
+            // Rombos del HUD: arte propio (Art/UI), con el relleno de color como respaldo.
+            var vacio = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/_Proyecto/Art/UI/rombo_vacio.png")
+                        ?? PlaceholderArt.Sprite("rombo_vacio", new Color(0.35f, 0.35f, 0.40f), borde: false);
+            var lleno = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/_Proyecto/Art/UI/rombo_lleno.png")
+                        ?? PlaceholderArt.Sprite("rombo_lleno", ColFragmento, borde: false);
             for (int i = 0; i < 4; i++)
             {
                 var r = Hijo(panel.transform, $"Rombo{i}");

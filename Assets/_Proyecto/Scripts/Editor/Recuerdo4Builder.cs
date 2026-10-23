@@ -69,7 +69,8 @@ namespace MientrasArdaLaVela.EditorTools
                       AssetDatabase.LoadAssetAtPath<Sprite>(Obj + "huellas.png"));
             Fragmento(frag, "Frag_Vela", PosVela, "R4_vela", "R4_Frag_Vela", true,
                       AssetDatabase.LoadAssetAtPath<Sprite>(Obj + "vela_cabo.png"));
-            Fragmento(frag, "Frag_Promesa", PosPromesa, "R4_promesa", "R4_Frag_Promesa", false);
+            Fragmento(frag, "Frag_Promesa", PosPromesa, "R4_promesa", "R4_Frag_Promesa", false,
+                      ConstructorEscena.Objeto("frag_promesa.png"));
             // Pétalos coleccionables (F24): repartidos por el campo, algunos entre las matas altas.
             Petalos("R4", new Vector3(28.5f, 3.5f, 0f), new Vector3(2.5f, 7.5f, 0f), new Vector3(22.5f, 5.5f, 0f), new Vector3(6.5f, 12.5f, 0f), new Vector3(24.5f, 17.5f, 0f));
             // "La canica regalada" (R4_canica) la entrega la cinemática del encuentro.
@@ -81,7 +82,7 @@ namespace MientrasArdaLaVela.EditorTools
             foreach (var go in new[] { GameObject.Find("Niebla Franja media"), GameObject.Find("Niebla Franja alta"), GameObject.Find("Niebla Arbol") })
                 go.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.55f);   // olvido ligero
 
-            ConstructorEscena.Memento("Memento_Promesa", PosMemento, null,
+            ConstructorEscena.Memento("Memento_Promesa", PosMemento, ConstructorEscena.Objeto("memento_promesa.png"),
                                       "R4_Memento_Bloqueado", "R4_Memento_Activar", "R4_Mosaico_Resuelto",
                                       RutaMosaico, "La promesa");
 

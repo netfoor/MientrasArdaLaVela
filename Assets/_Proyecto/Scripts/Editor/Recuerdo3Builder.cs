@@ -75,9 +75,12 @@ namespace MientrasArdaLaVela.EditorTools
 
             ConstruirPersonajes();
             var frag = Raiz("Fragmentos").transform;
-            Fragmento(frag, "Frag_Cama", PosCama, "R3_cama", "R3_Frag_Cama", oculto: false);
-            Fragmento(frag, "Frag_Nota", PosNota, "R3_nota", "R3_Frag_Nota", oculto: true);
-            Fragmento(frag, "Frag_Lena", PosLena, "R3_lena", "R3_Frag_Lena", oculto: false);
+            Fragmento(frag, "Frag_Cama", PosCama, "R3_cama", "R3_Frag_Cama", oculto: false,
+                      sprite: ConstructorEscena.Objeto("frag_cama.png"));
+            Fragmento(frag, "Frag_Nota", PosNota, "R3_nota", "R3_Frag_Nota", oculto: true,
+                      sprite: ConstructorEscena.Objeto("frag_nota.png"));
+            Fragmento(frag, "Frag_Lena", PosLena, "R3_lena", "R3_Frag_Lena", oculto: false,
+                      sprite: ConstructorEscena.Objeto("lena.png"));
             // Pétalos coleccionables (F24): entrada, cuarto, obrador y fondo.
             Petalos("R3", new Vector3(8.5f, 2.5f, 0f), new Vector3(8.5f, 10.5f, 0f), new Vector3(27.5f, 2.5f, 0f), new Vector3(13.5f, 2.5f, 0f), new Vector3(12.5f, 11.5f, 0f));
             // El 4.º fragmento (R3_mirada, "la mirada de Refugio") lo entrega la cinemática.
@@ -92,7 +95,7 @@ namespace MientrasArdaLaVela.EditorTools
             Niebla("Niebla Fondo", new Vector3(20f, 13.15f, 0f), new Vector2(16.4f, 6.1f),
                    OblivionFog.Unlock.Echo, "R3_eco3");
 
-            ConstructorEscena.Memento("Memento_Canica", PosMemento, null, "R3_Memento_Bloqueado", "R3_Memento_Activar",
+            ConstructorEscena.Memento("Memento_Canica", PosMemento, ConstructorEscena.Objeto("memento_canica.png"), "R3_Memento_Bloqueado", "R3_Memento_Activar",
                                       "R3_Mosaico_Resuelto", RutaMosaico, "La canica azul de Refugio");
 
             var triggers = Raiz("Triggers").transform;

@@ -14,6 +14,8 @@
 #   construir-recuerdo4  construye y guarda Recuerdo4_Campo
 #   construir-epilogo  construye y guarda Epilogo_DosVelas
 #   construir-todo     Mapa 0, MainMenu, los recuerdos y el epílogo
+#   build-windows      compila el juego para Windows 10/11 en Builds/Windows (F26)
+#   build-linux        compila para Linux, para probarlo en esta máquina
 #   capturar           renderiza ambas escenas a PNG (usa un display virtual)
 #   animator           regenera clips y controller de Ámbar
 #   cortar-hojas       corta las 13 hojas de personaje en sprites
@@ -108,6 +110,8 @@ PY
     correr construir-recuerdo4 Recuerdo4Builder.CrearEscenaYConstruir || r=1
     correr construir-epilogo   EpilogoBuilder.CrearEscenaYConstruir   || r=1
     exit $r ;;
+  build-windows)   correr build-windows   Build.Windows ;;
+  build-linux)     correr build-linux     Build.Linux ;;
   animator)        correr animator        AmbarAnimator.Generar ;;
   cortar-hojas)    correr cortar-hojas    HojaLPC.CortarTodas ;;
   capturar)
