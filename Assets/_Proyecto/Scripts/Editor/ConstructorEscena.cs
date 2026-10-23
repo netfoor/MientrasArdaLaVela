@@ -581,7 +581,7 @@ namespace MientrasArdaLaVela.EditorTools
         /// en Art/Tiles. Es lo que permite pintar con arte propio una capa de decoración, en vez
         /// de depender de un recorte del tileset LPC.
         /// </summary>
-        public static TileBase TileObjeto(string archivo)
+        public static TileBase TileObjeto(string archivo, bool collider = false)
         {
             string clave = System.IO.Path.GetFileNameWithoutExtension(archivo);
             string ruta = $"Assets/_Proyecto/Art/Tiles/{clave}.asset";
@@ -592,7 +592,8 @@ namespace MientrasArdaLaVela.EditorTools
             bool nuevo = tile == null;
             if (nuevo) tile = ScriptableObject.CreateInstance<UnityEngine.Tilemaps.Tile>();
             tile.sprite = sp;
-            tile.colliderType = UnityEngine.Tilemaps.Tile.ColliderType.None;
+            tile.colliderType = collider ? UnityEngine.Tilemaps.Tile.ColliderType.Grid
+                                         : UnityEngine.Tilemaps.Tile.ColliderType.None;
             if (nuevo) AssetDatabase.CreateAsset(tile, ruta);
             else EditorUtility.SetDirty(tile);
             return tile;
