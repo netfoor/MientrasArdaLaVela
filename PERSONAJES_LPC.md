@@ -26,10 +26,14 @@
 > (columnas 12 a 14), sin recolorear. La corta `Editor/HojaTizne.cs` en 12 sprites de 32 px
 > (`tizne_<dir>_<n>`), y `Mapa0Builder` lo hace solo si hace falta.
 
-> **Falta Marisol** (hija de Aurelio, ~45 años en 2015, Recuerdo 1). Mientras no exista
-> `marisol_walk.png`, el Recuerdo 1 usa la hoja de Rosa con un tinte ligero. Para cambiarla:
-> exporta la hoja con el generador, guárdala como `Art/Personajes/marisol_walk.png`, corre
-> *Cortar todas las hojas de personaje* y cambia `"rosa_40"` por `"marisol"` en `Recuerdo1Builder.cs`.
+> **Marisol ya tiene hoja propia (2026-10-23).** El generador no ofrecía un personaje que
+> sirviera para la hija de Aurelio, así que el Recuerdo 1 la mostraba con la hoja de Rosa —su
+> madre— tintada, y el Recuerdo 2 con la de Lucía de 19 años, que es la nieta del epílogo: tres
+> personajes se veían iguales. Ahora `marisol_45_walk.png` (Recuerdo 1) y `marisol_novia_walk.png`
+> (Recuerdo 2) salen de recolorear dos rampas de la hoja de Rosa —cabello y vestido— con
+> `tools/arte/marisol.py`, conservando el sombreado. Un tinte del SpriteRenderer no servía:
+> multiplica la hoja entera, también la piel y los ojos. Si cambias las hojas, corre
+> *Cortar todas las hojas de personaje* y vuelve a construir los Recuerdos 1 y 2.
 
 Generador: *Universal LPC Spritesheet Character Generator* (repositorio LiberatedPixelCup en GitHub; tiene versión web en GitHub Pages).
 Por cada personaje: arma las capas, exporta el PNG completo y **copia el texto de créditos/licencias que muestra el generador** a `CREDITOS.txt`.

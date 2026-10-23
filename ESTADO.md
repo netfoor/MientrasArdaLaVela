@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Última actualización: **2026-10-22 (noche)** · rama `main` · repositorio
+Última actualización: **2026-10-23** · rama `main` · repositorio
 [netfoor/MientrasArdaLaVela](https://github.com/netfoor/MientrasArdaLaVela) (privado)
 
 > Este archivo es el resumen de **qué está hecho y qué no**. Si eres un agente que
@@ -15,9 +15,11 @@
 Los Sprints 1 y 2 están cerrados y **el juego completo se puede jugar de principio a fin**.
 Del Sprint 3, F19–F24 están **hechas y jugadas**: la partida del 2026-10-06 llegó al epílogo
 con 20/20 fragmentos, **25/25 pétalos** y **8 de los 9 logros**. F22 (música y efectos) se
-cerró el 2026-10-22 con los cinco efectos que faltaban y la mezcla medida. Ese mismo día **F25
-avanzó** (los fragmentos, los mementos, los rombos del HUD y el destello dejaron de ser cuadros
-de color) y **F26 compiló**: hay un ejecutable de Windows de 258 MB en `Builds/Windows/`.
+cerró el 2026-10-22 con los cinco efectos que faltaban y la mezcla medida, y **F26 compiló**:
+hay un ejecutable de Windows de 258 MB en `Builds/Windows/`. **F25 va muy avanzada**: los
+fragmentos, los mementos, los rombos del HUD y el destello dejaron de ser cuadros de color
+(2026-10-22) y el 2026-10-23 se rehicieron el camino de pétalos del Mapa 0 y las dos hojas de
+Marisol. El juego **se jugó entero de nuevo el 2026-10-23**, con la música y los efectos puestos.
 
 Lo que falta para cerrar: **jugarlo entero una vez** (sonido, códigos secretos y el build en un
 segundo equipo), el resto del pulido de F25, y abrir el Excel de producción en Excel para que
@@ -64,7 +66,7 @@ existan y que todo sonido invocado en el código o en los diálogos tenga su cli
 | F22 | Música y efectos | 3 | ✅ Hecho (2026-10-22). M01–M08 por escena y los 14 efectos de la Tabla 27 completos y mezclados. **Falta oírlo jugando** |
 | F23 | Logros y códigos secretos | 3 | ✅ Jugado: 8 de los 9 logros desbloqueados el 2026-10-06. 🟡 **Los 3 códigos secretos no se han tecleado nunca** |
 | F24 | Pétalos coleccionables | 3 | ✅ Jugado: 25/25 pétalos recogidos el 2026-10-06 |
-| F25 | Pulido | 3 | 🟡 Hecho el arte propio de los 16 fragmentos, los 5 mementos, los rombos del HUD y el destello. Falta ritmo y textos, la hoja propia de Marisol, mapas más detallados y confirmar B17 |
+| F25 | Pulido | 3 | 🟡 Arte propio de los 16 fragmentos, los 5 mementos, los rombos del HUD, el destello, el camino de pétalos del Mapa 0 y las dos hojas de Marisol. Ritmo y textos revisados y B17 confirmado jugando. Falta: mapas más detallados |
 | F26 | Build para Windows | 3 | 🟡 Compila: 258 MB, 7 escenas, `Builds/Windows/MientrasArdaLaVela.exe`. **Falta probarlo en un segundo equipo** |
 
 ## Prueba de aceptación del Sprint 1 (`LEEME_SETUP.md` §5)
@@ -153,8 +155,9 @@ una sola sesión de juego (empezando por MainMenu):
    el brindis del Recuerdo 2. Si algo tapa a los demás, los niveles están en una sola tabla, en
    el comentario de cabecera de `Core/Sonidos.cs`.
 3. **Probar el .exe en un segundo equipo con Windows** (F26); con eso queda cerrada.
-4. Lo que resta de F25: ritmo y textos, la hoja propia de Marisol (hoy usa la de Rosa con un
-   tinte), mapas más detallados y confirmar B17 jugando.
+4. Lo que resta de F25: **mapas más detallados**. El ritmo y los textos se revisaron el
+   2026-10-23 (557 renglones de diálogo, sin cambios: el juego se jugó entero y el ritmo
+   convenció) y B17 quedó confirmado en esa misma partida.
 
 ### Qué se agregó en F22 (2026-10-22)
 - `tools/arte/sonidos_f22.py`: los **cinco efectos que faltaban** de la Tabla 27 — S01 pasos,
@@ -205,7 +208,7 @@ una sola sesión de juego (empezando por MainMenu):
 | 7 | Diario: "Pétalos n/5" en cada página | 🟡 sin confirmar a ojo |
 | 8 | Los pétalos recogidos no reaparecen al salir y Continuar | 🟡 los 25 están guardados en la partida; falta confirmar que al Continuar no reaparecen |
 | 9 | Con los 25 pétalos, al final de los créditos aparece el camino de pétalos y el texto de Lucía | ✅ logro `camino_petalos` y mapa `EP` completado |
-| 10 | B17: confirmar que no se atraviesan muros en ningún mapa | 🟡 se jugaron los 6 mapas sin reportar muros; sin confirmación explícita |
+| 10 | B17: confirmar que no se atraviesan muros en ningún mapa | ✅ confirmado: dos partidas completas (2026-10-06 y 2026-10-23) por los 6 mapas sin atravesar un muro |
 
 Lo que marca ✅ sale de la **partida del 2026-10-06** (`~/.config/unity3d/UTP/MientrasArdaLaVela/`):
 versión 3, `completedMaps` M0–R4 y EP, 20/20 fragmentos, 5 Ecos, 25/25 pétalos, y en
@@ -253,13 +256,13 @@ El guardado pasó a la **versión 2** (lista `seenDialogues`) y, en el Sprint 3,
 ### Arte
 Los fragmentos, los mementos, los rombos del contador y el destello **ya son arte propio**
 (F25, `tools/arte/objetos_f25.py`), igual que las cinco imágenes de mosaico
-(`Art/Mosaicos/mosaico_M0…R4.png`). Lo que sigue pendiente de arte es la **hoja propia de
-Marisol** (hoy usa la de Rosa con un tinte) y los mapas más detallados.
+(`Art/Mosaicos/mosaico_M0…R4.png`), el **camino de pétalos** del Mapa 0
+(`tools/arte/camino_petalos.py`) y las **dos hojas de Marisol** (`tools/arte/marisol.py`).
+Lo que sigue pendiente de arte son los mapas más detallados.
 
 ### Sprint 3 (31/10 – 20/11)
-F23 logros y códigos y F24 pétalos: escritos (arriba). Faltan F25 pulido (mapas más
-detallados, investigar ofrendas de siete niveles, arte de fragmentos y mementos, hoja propia de
-Marisol) y F26 build para Windows.
+F23 logros y códigos y F24 pétalos: escritos (arriba). De F25 pulido queda **mapas más
+detallados** e investigar las ofrendas de siete niveles; de F26, probar el .exe en otro equipo.
 
 **Música y efectos (F22, cerrado el 2026-10-22):** compuesta en código (`tools/arte/musica.py`): un solo tema en re menor que cambia
 por recuerdo — M01 guitarra y marimba, M02 guitarra sola, M03 vals de piano, M04 son en 6/8 con
@@ -269,11 +272,14 @@ instrumentos reales (CC0/CC-BY), basta con reemplazar los .ogg de `Audio/Resourc
 mismo nombre y anotar la atribución en `CREDITOS.txt`.
 
 ### Provisional en el Recuerdo 1
-- **Marisol usa la hoja de Rosa** con un tinte (no hay `marisol_walk.png`). En el Recuerdo 2 (novia)
-  usa la de Lucía de 19; los invitados usan las de don Ernesto y Lucía niña con tinte.
+- **Marisol ya tiene hojas propias** (2026-10-23): `marisol_45_walk.png` para 2015 y
+  `marisol_novia_walk.png` para la boda de 1988, recoloreadas de la de Rosa con
+  `tools/arte/marisol.py`. Antes se veía igual que su madre en el Recuerdo 1 y que Lucía de 19
+  —la nieta del epílogo— en el Recuerdo 2. Los invitados de la boda sí siguen con las hojas de
+  don Ernesto y Lucía niña tintadas.
 - El papel picado (`Art/Objetos/`) y las imágenes de los mosaicos son arte propio, dibujado con
   los scripts de `tools/arte/`.
-- Los fragmentos y el memento siguen siendo cuadros de color, como en el Mapa 0.
+- Los fragmentos y el memento ya son arte propio (F25), como en el Mapa 0.
 - Los muebles salen de los tilesets LPC que ya estaban (mostrador, repisas, vitrina, horno).
 
 ### Entrega

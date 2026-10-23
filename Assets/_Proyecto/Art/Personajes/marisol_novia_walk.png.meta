@@ -1,0 +1,2368 @@
+fileFormatVersion: 2
+guid: e99be07f3732b64edbb4259c3fd9093a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7722051355018844038
+    second: marisol_novia_walk_0
+  - first:
+      213: 2699822435778207601
+    second: marisol_novia_walk_1
+  - first:
+      213: 8403089239546222007
+    second: marisol_novia_walk_2
+  - first:
+      213: -277582765123464976
+    second: marisol_novia_walk_3
+  - first:
+      213: -7763574552006592796
+    second: marisol_novia_walk_4
+  - first:
+      213: 5844643704767502992
+    second: marisol_novia_walk_5
+  - first:
+      213: -1087588367006728328
+    second: marisol_novia_walk_6
+  - first:
+      213: 2286427918268699308
+    second: marisol_novia_walk_7
+  - first:
+      213: -6942791649907839392
+    second: marisol_novia_walk_8
+  - first:
+      213: 2758665811994114774
+    second: marisol_novia_walk_9
+  - first:
+      213: -5637658076262301808
+    second: marisol_novia_walk_10
+  - first:
+      213: -8690477602004201712
+    second: marisol_novia_walk_11
+  - first:
+      213: -8214346844759424956
+    second: marisol_novia_walk_12
+  - first:
+      213: 3450441312585252377
+    second: marisol_novia_walk_13
+  - first:
+      213: 3972802255935948823
+    second: marisol_novia_walk_14
+  - first:
+      213: 3695265152097535922
+    second: marisol_novia_walk_15
+  - first:
+      213: -8889462699681912566
+    second: marisol_novia_walk_16
+  - first:
+      213: -2516143586691336108
+    second: marisol_novia_walk_17
+  - first:
+      213: -7205808215379460712
+    second: marisol_novia_walk_18
+  - first:
+      213: -8349477464473615001
+    second: marisol_novia_walk_19
+  - first:
+      213: 4199244102044302618
+    second: marisol_novia_walk_20
+  - first:
+      213: 8857953196789028084
+    second: marisol_novia_walk_21
+  - first:
+      213: -2455579771317220321
+    second: marisol_novia_walk_22
+  - first:
+      213: 3779194115361776561
+    second: marisol_novia_walk_23
+  - first:
+      213: -4184234281241470199
+    second: marisol_novia_walk_24
+  - first:
+      213: -5669450246480821408
+    second: marisol_novia_walk_25
+  - first:
+      213: 1720260517754424482
+    second: marisol_novia_walk_26
+  - first:
+      213: -822100675325104797
+    second: marisol_novia_walk_27
+  - first:
+      213: 5556568110432598494
+    second: marisol_novia_walk_28
+  - first:
+      213: 8806723721296985162
+    second: marisol_novia_walk_29
+  - first:
+      213: 3944310080689641455
+    second: marisol_novia_walk_30
+  - first:
+      213: -2842052991544097537
+    second: marisol_novia_walk_31
+  - first:
+      213: -5521576446239369439
+    second: marisol_novia_walk_32
+  - first:
+      213: -6587512537833881813
+    second: marisol_novia_walk_33
+  - first:
+      213: -8761807885140659607
+    second: marisol_novia_walk_34
+  - first:
+      213: 7354070822288137921
+    second: marisol_novia_walk_35
+  - first:
+      213: 1445739227631779876
+    second: marisol_novia_walk_36
+  - first:
+      213: -4862950020580101931
+    second: marisol_novia_walk_37
+  - first:
+      213: 4124896340969279887
+    second: marisol_novia_walk_38
+  - first:
+      213: -1859903743128023571
+    second: marisol_novia_walk_39
+  - first:
+      213: -7079020876022835834
+    second: marisol_novia_walk_40
+  - first:
+      213: -6720466968079227114
+    second: marisol_novia_walk_41
+  - first:
+      213: -7297190045159170719
+    second: marisol_novia_walk_42
+  - first:
+      213: -3901150993870115370
+    second: marisol_novia_walk_43
+  - first:
+      213: 2705735933679068964
+    second: marisol_novia_walk_44
+  - first:
+      213: 5937831112550373586
+    second: marisol_novia_walk_45
+  - first:
+      213: -4490622743962160364
+    second: marisol_novia_walk_46
+  - first:
+      213: -3193767821256101009
+    second: marisol_novia_walk_47
+  - first:
+      213: -8263034986165859362
+    second: marisol_novia_walk_48
+  - first:
+      213: 3847187611947805073
+    second: marisol_novia_walk_49
+  - first:
+      213: 5558865990866841410
+    second: marisol_novia_walk_50
+  - first:
+      213: -1572411275747832494
+    second: marisol_novia_walk_51
+  - first:
+      213: 5182336457611337651
+    second: marisol_novia_walk_52
+  - first:
+      213: -2454546639907047312
+    second: marisol_novia_walk_53
+  - first:
+      213: -362285810098701996
+    second: marisol_novia_walk_54
+  - first:
+      213: -4145391002635955678
+    second: marisol_novia_walk_55
+  - first:
+      213: -587889225058447636
+    second: marisol_novia_walk_56
+  - first:
+      213: 8128919500626242583
+    second: marisol_novia_walk_57
+  - first:
+      213: -4950612156253154209
+    second: marisol_novia_walk_58
+  - first:
+      213: -6263372128053686805
+    second: marisol_novia_walk_59
+  - first:
+      213: 2052646263610200599
+    second: marisol_novia_walk_60
+  - first:
+      213: -1110608284635872772
+    second: marisol_novia_walk_61
+  - first:
+      213: 7158885098344463299
+    second: marisol_novia_walk_62
+  - first:
+      213: 4973108524353159567
+    second: marisol_novia_walk_63
+  - first:
+      213: -8341670452897209796
+    second: marisol_novia_walk_64
+  - first:
+      213: -6059037963786835964
+    second: marisol_novia_walk_65
+  - first:
+      213: 6855641310953194363
+    second: marisol_novia_walk_66
+  - first:
+      213: 7962618417783077825
+    second: marisol_novia_walk_67
+  - first:
+      213: -7228154046100995562
+    second: marisol_novia_walk_68
+  - first:
+      213: -1363112277579757851
+    second: marisol_novia_walk_69
+  - first:
+      213: -7295644193614608267
+    second: marisol_novia_walk_70
+  - first:
+      213: 2271567686275214363
+    second: marisol_novia_walk_71
+  - first:
+      213: -7582261690467123820
+    second: marisol_novia_walk_72
+  - first:
+      213: 2851720733542441277
+    second: marisol_novia_walk_73
+  - first:
+      213: -6320713691608365401
+    second: marisol_novia_walk_74
+  - first:
+      213: 6267139883618420922
+    second: marisol_novia_walk_75
+  - first:
+      213: 1088288338767597667
+    second: marisol_novia_walk_76
+  - first:
+      213: 3126017852097565700
+    second: marisol_novia_walk_77
+  - first:
+      213: -574909482531685772
+    second: marisol_novia_walk_78
+  - first:
+      213: -7358862534759498759
+    second: marisol_novia_walk_79
+  - first:
+      213: -9215839814048618878
+    second: marisol_novia_walk_80
+  - first:
+      213: -7624456239245299437
+    second: marisol_novia_walk_81
+  - first:
+      213: 7600181759254429052
+    second: marisol_novia_walk_82
+  - first:
+      213: -4648922533436528329
+    second: marisol_novia_walk_83
+  - first:
+      213: -5737572955137069222
+    second: marisol_novia_walk_84
+  - first:
+      213: -2964838748213691254
+    second: marisol_novia_walk_85
+  - first:
+      213: -5077715658345110739
+    second: marisol_novia_walk_86
+  - first:
+      213: -4530860012871801559
+    second: marisol_novia_walk_87
+  - first:
+      213: 650666684376729049
+    second: marisol_novia_walk_88
+  - first:
+      213: -96858558218512964
+    second: marisol_novia_walk_89
+  - first:
+      213: -2568642673357474853
+    second: marisol_novia_walk_90
+  - first:
+      213: 5270323799501481017
+    second: marisol_novia_walk_91
+  - first:
+      213: 7856708204351836971
+    second: marisol_novia_walk_92
+  - first:
+      213: 4869703135702003373
+    second: marisol_novia_walk_93
+  - first:
+      213: -7312771736416927298
+    second: marisol_novia_walk_94
+  - first:
+      213: 1339186755134634324
+    second: marisol_novia_walk_95
+  - first:
+      213: 2384016314092653725
+    second: marisol_novia_walk_96
+  - first:
+      213: -3605645680728248164
+    second: marisol_novia_walk_97
+  - first:
+      213: 3943513409794226162
+    second: marisol_novia_walk_98
+  - first:
+      213: 4044200212462411006
+    second: marisol_novia_walk_99
+  - first:
+      213: 6619391473321205120
+    second: marisol_novia_walk_100
+  - first:
+      213: -2223041266716408021
+    second: marisol_novia_walk_101
+  - first:
+      213: -4640290246777680138
+    second: marisol_novia_walk_102
+  - first:
+      213: -6680059469766640668
+    second: marisol_novia_walk_103
+  - first:
+      213: -614753992145284785
+    second: marisol_novia_walk_104
+  - first:
+      213: -2490743290710255331
+    second: marisol_novia_walk_105
+  - first:
+      213: -9076283460161540183
+    second: marisol_novia_walk_106
+  - first:
+      213: -325426251444097431
+    second: marisol_novia_walk_107
+  - first:
+      213: -2456708230042862732
+    second: marisol_novia_walk_108
+  - first:
+      213: 1864481552846610695
+    second: marisol_novia_walk_109
+  - first:
+      213: 8988775645810098200
+    second: marisol_novia_walk_110
+  - first:
+      213: -3757139645090739997
+    second: marisol_novia_walk_111
+  - first:
+      213: 7515653499402639747
+    second: marisol_novia_walk_112
+  - first:
+      213: -1110935832914602176
+    second: marisol_novia_walk_113
+  - first:
+      213: 924152780892244588
+    second: marisol_novia_walk_114
+  - first:
+      213: -781696546233344453
+    second: marisol_novia_walk_115
+  - first:
+      213: -781805423319570668
+    second: marisol_novia_walk_116
+  - first:
+      213: 4422468403948121687
+    second: marisol_novia_walk_117
+  - first:
+      213: -8116331519371596411
+    second: marisol_novia_walk_118
+  - first:
+      213: -3788282037532152909
+    second: marisol_novia_walk_119
+  - first:
+      213: 465480143622388329
+    second: marisol_novia_walk_120
+  - first:
+      213: -4158797125392507032
+    second: marisol_novia_walk_121
+  - first:
+      213: -3746551068354244420
+    second: marisol_novia_walk_122
+  - first:
+      213: 8401421787735845099
+    second: marisol_novia_walk_123
+  - first:
+      213: 2886097511855914019
+    second: marisol_novia_walk_124
+  - first:
+      213: -6840063108752596641
+    second: marisol_novia_walk_125
+  - first:
+      213: -8591022323004283791
+    second: marisol_novia_walk_126
+  - first:
+      213: 6518327729124868621
+    second: marisol_novia_walk_127
+  - first:
+      213: 24874434943181508
+    second: marisol_novia_walk_128
+  - first:
+      213: 6768839770937789160
+    second: marisol_novia_walk_129
+  - first:
+      213: 3236436805827616222
+    second: marisol_novia_walk_130
+  - first:
+      213: 3715110059039883840
+    second: marisol_novia_walk_131
+  - first:
+      213: 9091235612382210857
+    second: marisol_novia_walk_132
+  - first:
+      213: -6862950624208298264
+    second: marisol_novia_walk_133
+  - first:
+      213: -8948424326178614579
+    second: marisol_novia_walk_134
+  - first:
+      213: -2362655587433317984
+    second: marisol_novia_walk_135
+  - first:
+      213: 1686025325503048874
+    second: marisol_novia_walk_136
+  - first:
+      213: -6153584799314703303
+    second: marisol_novia_walk_137
+  - first:
+      213: 7622210496147901364
+    second: marisol_novia_walk_138
+  - first:
+      213: 6309418405504302789
+    second: marisol_novia_walk_139
+  - first:
+      213: 7746066190626427129
+    second: marisol_novia_walk_140
+  - first:
+      213: 3676493144632337239
+    second: marisol_novia_walk_141
+  - first:
+      213: -7771229761659167751
+    second: marisol_novia_walk_142
+  - first:
+      213: 7906384045212675819
+    second: marisol_novia_walk_143
+  - first:
+      213: 7737051328487615283
+    second: marisol_novia_walk_144
+  - first:
+      213: -9005213529929444168
+    second: marisol_novia_walk_145
+  - first:
+      213: 2220868995047994346
+    second: marisol_novia_walk_146
+  - first:
+      213: -5467539211069300029
+    second: marisol_novia_walk_147
+  - first:
+      213: -5558852800932196556
+    second: marisol_novia_walk_148
+  - first:
+      213: 591775190036911117
+    second: marisol_novia_walk_149
+  - first:
+      213: -8752546360024292966
+    second: marisol_novia_walk_150
+  - first:
+      213: -7097550641353126037
+    second: marisol_novia_walk_151
+  - first:
+      213: 4696464760064411758
+    second: marisol_novia_walk_152
+  - first:
+      213: 2115900621255655276
+    second: marisol_novia_walk_153
+  - first:
+      213: 2970468826733725370
+    second: marisol_novia_walk_154
+  - first:
+      213: 7921319288354211924
+    second: marisol_novia_walk_155
+  - first:
+      213: -2150309535511674154
+    second: marisol_novia_walk_156
+  - first:
+      213: 8559108590700709211
+    second: marisol_novia_walk_157
+  - first:
+      213: -3347463052155203153
+    second: marisol_novia_walk_158
+  - first:
+      213: -7322399571885162612
+    second: marisol_novia_walk_159
+  - first:
+      213: 869345043377080219
+    second: marisol_novia_walk_160
+  - first:
+      213: 2119580601868858667
+    second: marisol_novia_walk_161
+  - first:
+      213: -149185107387749902
+    second: marisol_novia_walk_162
+  - first:
+      213: 5676661577326865532
+    second: marisol_novia_walk_163
+  - first:
+      213: 1682383423825108192
+    second: marisol_novia_walk_164
+  - first:
+      213: -3734601317424689084
+    second: marisol_novia_walk_165
+  - first:
+      213: 43955401961691089
+    second: marisol_novia_walk_166
+  - first:
+      213: 8700023318289357763
+    second: marisol_novia_walk_167
+  - first:
+      213: 2094108134410842960
+    second: marisol_novia_walk_168
+  - first:
+      213: -1253644178111299139
+    second: marisol_novia_walk_169
+  - first:
+      213: 6462578055158623605
+    second: marisol_novia_walk_170
+  - first:
+      213: -7583392936547188091
+    second: marisol_novia_walk_171
+  - first:
+      213: 3433888256013035331
+    second: marisol_novia_walk_172
+  - first:
+      213: 6008402374977257489
+    second: marisol_novia_walk_173
+  - first:
+      213: 7620030048001228960
+    second: marisol_novia_walk_174
+  - first:
+      213: 3611299769169140797
+    second: marisol_novia_walk_175
+  - first:
+      213: -4179987342748079774
+    second: marisol_novia_walk_176
+  - first:
+      213: -7594738838663120392
+    second: marisol_novia_walk_177
+  - first:
+      213: 3686914830365089732
+    second: marisol_novia_walk_178
+  - first:
+      213: 8986215142116550832
+    second: marisol_novia_walk_179
+  - first:
+      213: 7015034855730044128
+    second: marisol_novia_walk_180
+  - first:
+      213: -3005185488333562703
+    second: marisol_novia_walk_181
+  - first:
+      213: 6303843417759525047
+    second: marisol_novia_walk_182
+  - first:
+      213: -703597039250183612
+    second: marisol_novia_walk_183
+  - first:
+      213: -4375731815449053575
+    second: marisol_novia_walk_184
+  - first:
+      213: -1871447704874377683
+    second: marisol_novia_walk_185
+  - first:
+      213: 4536514176122559869
+    second: marisol_novia_walk_186
+  - first:
+      213: -2042552500636251231
+    second: marisol_novia_walk_187
+  - first:
+      213: 3165438240207978512
+    second: marisol_novia_walk_188
+  - first:
+      213: 7922687433191670869
+    second: marisol_novia_walk_189
+  - first:
+      213: 4279279831388191732
+    second: marisol_novia_walk_190
+  - first:
+      213: 6596089197645003685
+    second: marisol_novia_walk_191
+  - first:
+      213: 2401727152962429174
+    second: marisol_novia_walk_192
+  - first:
+      213: -8487680139611701996
+    second: marisol_novia_walk_193
+  - first:
+      213: -3718239347330383454
+    second: marisol_novia_walk_194
+  - first:
+      213: 5996874642701723243
+    second: marisol_novia_walk_195
+  - first:
+      213: 6349497435881858494
+    second: marisol_novia_walk_196
+  - first:
+      213: 599292111969769190
+    second: marisol_novia_walk_197
+  - first:
+      213: 5880908496600872637
+    second: marisol_novia_walk_198
+  - first:
+      213: 8897383739655275896
+    second: marisol_novia_walk_199
+  - first:
+      213: -6743218724277065162
+    second: marisol_novia_walk_200
+  - first:
+      213: -7290192031105845796
+    second: marisol_novia_walk_201
+  - first:
+      213: -617141304946040494
+    second: marisol_novia_walk_202
+  - first:
+      213: 2641011112683833654
+    second: marisol_novia_walk_203
+  - first:
+      213: -4751730939399086835
+    second: marisol_novia_walk_204
+  - first:
+      213: 764842081331651394
+    second: marisol_novia_walk_205
+  - first:
+      213: 3134716852918748794
+    second: marisol_novia_walk_206
+  - first:
+      213: -137430171790833512
+    second: marisol_novia_walk_207
+  - first:
+      213: -1867879400497243993
+    second: marisol_novia_walk_208
+  - first:
+      213: 4718252284673355827
+    second: marisol_novia_walk_209
+  - first:
+      213: -5709017007312944201
+    second: marisol_novia_walk_210
+  - first:
+      213: -4999664666874959640
+    second: marisol_novia_walk_211
+  - first:
+      213: -1492930732563672618
+    second: marisol_novia_walk_212
+  - first:
+      213: 5040391052665611261
+    second: marisol_novia_walk_213
+  - first:
+      213: 2781047365988864147
+    second: marisol_novia_walk_214
+  - first:
+      213: -5703683500806953659
+    second: marisol_novia_walk_215
+  - first:
+      213: -2458658191002277628
+    second: marisol_novia_walk_216
+  - first:
+      213: -8072281357728911680
+    second: marisol_novia_walk_217
+  - first:
+      213: 1728252336950343654
+    second: marisol_novia_walk_218
+  - first:
+      213: -4632802015435657795
+    second: marisol_novia_walk_219
+  - first:
+      213: 487906889561608686
+    second: marisol_novia_walk_220
+  - first:
+      213: -2421202805023393206
+    second: marisol_novia_walk_221
+  - first:
+      213: 5917125691982029664
+    second: marisol_novia_walk_222
+  - first:
+      213: 7172284368807370827
+    second: marisol_novia_walk_223
+  - first:
+      213: -2233970271817392885
+    second: marisol_novia_walk_224
+  - first:
+      213: -6088475303809044051
+    second: marisol_novia_walk_225
+  - first:
+      213: -2318365742097703527
+    second: marisol_novia_walk_226
+  - first:
+      213: 8050065817544060208
+    second: marisol_novia_walk_227
+  - first:
+      213: 3538379518402595604
+    second: marisol_novia_walk_228
+  - first:
+      213: -2207649246990230807
+    second: marisol_novia_walk_229
+  - first:
+      213: 7143074075778957884
+    second: marisol_novia_walk_230
+  - first:
+      213: 695166576136010294
+    second: marisol_novia_walk_231
+  - first:
+      213: 2395090218361666585
+    second: marisol_novia_walk_232
+  - first:
+      213: -1811078235958612346
+    second: marisol_novia_walk_233
+  - first:
+      213: 752415290865919113
+    second: marisol_novia_walk_234
+  - first:
+      213: 4661635783621195925
+    second: marisol_novia_walk_235
+  - first:
+      213: -3353610371623366911
+    second: marisol_novia_walk_236
+  - first:
+      213: 1679004931840869081
+    second: marisol_novia_walk_237
+  - first:
+      213: -5007140365169422597
+    second: marisol_novia_walk_238
+  - first:
+      213: 3971478973517221546
+    second: marisol_novia_walk_239
+  - first:
+      213: -6145257422615892479
+    second: marisol_novia_walk_240
+  - first:
+      213: 7831740888817043556
+    second: marisol_novia_walk_241
+  - first:
+      213: 5598964721489045646
+    second: marisol_novia_walk_242
+  - first:
+      213: 2140097720137423618
+    second: marisol_novia_walk_243
+  - first:
+      213: -4077283855732100228
+    second: marisol_novia_walk_244
+  - first:
+      213: -4829832644213843858
+    second: marisol_novia_walk_245
+  - first:
+      213: -2407828024557085173
+    second: marisol_novia_walk_246
+  - first:
+      213: 7438759654870631127
+    second: marisol_novia_walk_247
+  - first:
+      213: 3191896992110060850
+    second: marisol_novia_walk_248
+  - first:
+      213: 6475667472666130640
+    second: marisol_novia_walk_249
+  - first:
+      213: -430875585227038851
+    second: marisol_novia_walk_250
+  - first:
+      213: -4876278751350519632
+    second: marisol_novia_walk_251
+  - first:
+      213: 2020394484135525746
+    second: marisol_novia_walk_252
+  - first:
+      213: 3869089418850599949
+    second: marisol_novia_walk_253
+  - first:
+      213: -1332773489641583474
+    second: marisol_novia_walk_254
+  - first:
+      213: -205240237409918610
+    second: marisol_novia_walk_255
+  - first:
+      213: -965520546318747358
+    second: marisol_novia_walk_256
+  - first:
+      213: -8646911926019653337
+    second: marisol_novia_walk_257
+  - first:
+      213: -175182976406149769
+    second: marisol_novia_walk_258
+  - first:
+      213: -2956455746306944486
+    second: marisol_novia_walk_259
+  - first:
+      213: -5932209400783791305
+    second: marisol_novia_walk_260
+  - first:
+      213: 1065062413544818104
+    second: marisol_novia_walk_261
+  - first:
+      213: 7143805074483672310
+    second: marisol_novia_walk_262
+  - first:
+      213: 6643922945881803714
+    second: marisol_novia_walk_263
+  - first:
+      213: 4094849704960689134
+    second: marisol_novia_walk_264
+  - first:
+      213: 5541639214231611725
+    second: marisol_novia_walk_265
+  - first:
+      213: -5726933634406176005
+    second: marisol_novia_walk_266
+  - first:
+      213: -1208548236759332785
+    second: marisol_novia_walk_267
+  - first:
+      213: -3711703360721402308
+    second: marisol_novia_walk_268
+  - first:
+      213: 5966307477707164210
+    second: marisol_novia_walk_269
+  - first:
+      213: -89392982255728593
+    second: marisol_novia_walk_270
+  - first:
+      213: 2466789919258166981
+    second: marisol_novia_walk_271
+  - first:
+      213: -2030835530335728987
+    second: marisol_novia_walk_272
+  - first:
+      213: 7325631397668685616
+    second: marisol_novia_walk_273
+  - first:
+      213: -1249328112813458877
+    second: marisol_novia_walk_274
+  - first:
+      213: 7587885489891566592
+    second: marisol_novia_walk_275
+  - first:
+      213: 1069275823980547545
+    second: marisol_novia_walk_276
+  - first:
+      213: 2404587724423855253
+    second: marisol_novia_walk_277
+  - first:
+      213: -4245428747282191996
+    second: marisol_novia_walk_278
+  - first:
+      213: 3298697613540049254
+    second: marisol_novia_walk_279
+  - first:
+      213: 861596393248153021
+    second: marisol_novia_walk_280
+  - first:
+      213: 4459477063677868582
+    second: marisol_novia_walk_281
+  - first:
+      213: -5388214828764583211
+    second: marisol_novia_walk_282
+  - first:
+      213: -60929649096639401
+    second: marisol_novia_walk_283
+  - first:
+      213: 808435283165246224
+    second: marisol_novia_walk_284
+  - first:
+      213: 861500356835952238
+    second: marisol_novia_walk_285
+  - first:
+      213: 6675905898007441847
+    second: marisol_novia_walk_286
+  - first:
+      213: -926687065321199640
+    second: marisol_novia_walk_287
+  - first:
+      213: -412666318882323436
+    second: marisol_novia_walk_288
+  - first:
+      213: 107011633374523703
+    second: marisol_novia_walk_289
+  - first:
+      213: 6337127993584101481
+    second: marisol_novia_walk_290
+  - first:
+      213: 8808796514461617141
+    second: marisol_novia_walk_291
+  - first:
+      213: 5405816644019862443
+    second: marisol_novia_walk_292
+  - first:
+      213: 1582633567113456935
+    second: marisol_novia_walk_293
+  - first:
+      213: -1156870898531050407
+    second: marisol_novia_walk_294
+  - first:
+      213: -7529776812207164541
+    second: marisol_novia_walk_295
+  - first:
+      213: 7328268649718927409
+    second: marisol_novia_walk_296
+  - first:
+      213: 7220869635323522452
+    second: marisol_novia_walk_297
+  - first:
+      213: 7030078079235293042
+    second: marisol_novia_walk_298
+  - first:
+      213: -6029823276874077436
+    second: marisol_novia_walk_299
+  - first:
+      213: -7323504767317529844
+    second: marisol_novia_walk_300
+  - first:
+      213: -1608285707019243952
+    second: marisol_novia_walk_301
+  - first:
+      213: 6807636833510675295
+    second: marisol_novia_walk_302
+  - first:
+      213: -4295512000018035410
+    second: marisol_novia_walk_303
+  - first:
+      213: 1070149170220335225
+    second: marisol_novia_walk_304
+  - first:
+      213: 5435159604402685723
+    second: marisol_novia_walk_305
+  - first:
+      213: -6223311375483634227
+    second: marisol_novia_walk_306
+  - first:
+      213: -8205784555318447030
+    second: marisol_novia_walk_307
+  - first:
+      213: 9022063329420255264
+    second: marisol_novia_walk_308
+  - first:
+      213: -900385298850367305
+    second: marisol_novia_walk_309
+  - first:
+      213: 6354861662429206569
+    second: marisol_novia_walk_310
+  - first:
+      213: 8474760644622791513
+    second: marisol_novia_walk_311
+  - first:
+      213: -6953550828925426955
+    second: marisol_novia_walk_312
+  - first:
+      213: -5777188605687109231
+    second: marisol_novia_walk_313
+  - first:
+      213: 4340000619481131231
+    second: marisol_novia_walk_314
+  - first:
+      213: -4929278664983239696
+    second: marisol_novia_walk_315
+  - first:
+      213: -2222867108476425103
+    second: marisol_novia_walk_316
+  - first:
+      213: -7028090121619650604
+    second: marisol_novia_walk_317
+  - first:
+      213: -7755551757418745893
+    second: marisol_novia_walk_318
+  - first:
+      213: -1812410297482528059
+    second: marisol_novia_walk_319
+  - first:
+      213: 574047968982398064
+    second: marisol_novia_walk_320
+  - first:
+      213: -6573807485617951189
+    second: marisol_novia_walk_321
+  - first:
+      213: -1587030697288094579
+    second: marisol_novia_walk_322
+  - first:
+      213: -6635319425969265718
+    second: marisol_novia_walk_323
+  - first:
+      213: -7318430613802458555
+    second: marisol_novia_walk_324
+  - first:
+      213: -8887031319400421026
+    second: marisol_novia_walk_325
+  - first:
+      213: 4183504876409279582
+    second: marisol_novia_walk_326
+  - first:
+      213: -6171791597639777941
+    second: marisol_novia_walk_327
+  - first:
+      213: -2040122477631127048
+    second: marisol_novia_walk_328
+  - first:
+      213: -785147284862835997
+    second: marisol_novia_walk_329
+  - first:
+      213: -5469434089788714357
+    second: marisol_novia_walk_330
+  - first:
+      213: -8165025568557818373
+    second: marisol_novia_walk_331
+  - first:
+      213: 3916993637815565420
+    second: marisol_novia_walk_332
+  - first:
+      213: -128774138385249335
+    second: marisol_novia_walk_333
+  - first:
+      213: 5273075374635288034
+    second: marisol_novia_walk_334
+  - first:
+      213: -8652933718055676688
+    second: marisol_novia_walk_335
+  - first:
+      213: 3592069566197881042
+    second: marisol_novia_walk_336
+  - first:
+      213: 6537613222503087021
+    second: marisol_novia_walk_337
+  - first:
+      213: 2680560853259699311
+    second: marisol_novia_walk_338
+  - first:
+      213: 8521094195178373353
+    second: marisol_novia_walk_339
+  - first:
+      213: 311553780802289446
+    second: marisol_novia_walk_340
+  - first:
+      213: -1083811316403566671
+    second: marisol_novia_walk_341
+  - first:
+      213: -5656148334608813877
+    second: marisol_novia_walk_342
+  - first:
+      213: 8562347079248247355
+    second: marisol_novia_walk_343
+  - first:
+      213: -8322290064688447319
+    second: marisol_novia_walk_344
+  - first:
+      213: 6887452858782761448
+    second: marisol_novia_walk_345
+  - first:
+      213: 1793082447241304941
+    second: marisol_novia_walk_346
+  - first:
+      213: -1122452034827605303
+    second: marisol_novia_walk_347
+  - first:
+      213: -5579580996405534381
+    second: marisol_novia_walk_348
+  - first:
+      213: 3227605516995800281
+    second: marisol_novia_walk_349
+  - first:
+      213: -6655702073085952651
+    second: marisol_novia_walk_350
+  - first:
+      213: 3119847686327415188
+    second: marisol_novia_walk_351
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: marisol_novia_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcadf0372dbf5f919186fc84f383a58
+      internalID: 332382730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_up_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7589d05fa29f6ad7e3449264619fcf
+      internalID: -354581524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_up_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e553fed6e899fc27694663c3dee560
+      internalID: 11167823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_up_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eba9ce9d68721054de4ad3bfd761e4
+      internalID: -1770846369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_up_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f187617abcca16abcfaa193f4a20e88e
+      internalID: -54285168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_up_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2af2a0fffff21c4af6083b892abc70
+      internalID: -880649272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_up_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1189892ddd1dc1b3d03b7fc8a1bb33b
+      internalID: -167885442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_up_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bf1af39f740e7558d076ca8b8b404f
+      internalID: 196055063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_up_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2880
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1f6953b70eb651ebbd2aa897c62331
+      internalID: -1627392924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521eafb828d9d3ff99d98ec278d3ac73
+      internalID: 2128933505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_left_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40caa7b152179f741c8d1324be79651a
+      internalID: -255307513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_left_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a707c3573bf843ed9b11914d5cb057a5
+      internalID: 619234785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_left_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb92c9cbbc093fd1b2ab105ab9be7fb
+      internalID: -1411689288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_left_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad989524b2dff4f1b01f0cdb22af812c
+      internalID: -1421257804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_left_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c50d091b989b939915f953bb43dcf9
+      internalID: 1400665609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_left_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5a2ed0c578724b93b66c2899470f3f
+      internalID: 1454729664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_left_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5854ac107477696491fff9c2dd3b0c31
+      internalID: 643579702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_left_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe80310a33f81ad6198cbd7c3a709d00
+      internalID: -1774697234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d7c10e4b9194901a99555152f91087
+      internalID: -318442606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_down_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de543f96c19efebdb964d1fc1e766315
+      internalID: 38166499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_down_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41df0ed1c8c2f3967c2271139aefac75
+      internalID: -1648422326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_down_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848df5fdc9dec28765d3be47cda36feb
+      internalID: -1541496682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_down_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8ebe894a308960d1bbc4bec1e2bc72
+      internalID: 792686956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_down_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf253feb65b26ddf42b617297e4447d
+      internalID: 1582357544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_down_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac56e206592818d3521c698d13fac877
+      internalID: -1492450361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_down_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514d2bc4a682b6e15ecc01c832014284
+      internalID: -1938486479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_down_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3c5a8c44f4f759c3000a15353afd5a
+      internalID: -340510037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f50ae172b69b0a87e8074d2b6ef74b4
+      internalID: -304253800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_right_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bc37e9030ded4780abfd47cf9326ad
+      internalID: 177172335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_right_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67b8275f1bffaf97660a116c34abd64
+      internalID: 969610198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_right_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46013a025dc643c1103d0415fc193e9c
+      internalID: -327592173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_right_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c02166e8fa5235b4bfb35f321723b53
+      internalID: -1139787356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_right_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dcfa8c401c626eee4badb7068d0eff
+      internalID: 43221835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_right_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de5db28aa86ddb8df9458f8058ff91f
+      internalID: 502889365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_right_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385223130679928d2d4c87e5e89ae5d7
+      internalID: -2124356293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisol_novia_right_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3322e20b81ff889f6da197924bbdc9
+      internalID: 24811777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2f2b2ece25a493229a1bfd3231622585
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      marisol_novia_down_0: -318442606
+      marisol_novia_down_1: 38166499
+      marisol_novia_down_2: -1648422326
+      marisol_novia_down_3: -1541496682
+      marisol_novia_down_4: 792686956
+      marisol_novia_down_5: 1582357544
+      marisol_novia_down_6: -1492450361
+      marisol_novia_down_7: -1938486479
+      marisol_novia_down_8: -340510037
+      marisol_novia_left_0: 2128933505
+      marisol_novia_left_1: -255307513
+      marisol_novia_left_2: 619234785
+      marisol_novia_left_3: -1411689288
+      marisol_novia_left_4: -1421257804
+      marisol_novia_left_5: 1400665609
+      marisol_novia_left_6: 1454729664
+      marisol_novia_left_7: 643579702
+      marisol_novia_left_8: -1774697234
+      marisol_novia_right_0: -304253800
+      marisol_novia_right_1: 177172335
+      marisol_novia_right_2: 969610198
+      marisol_novia_right_3: -327592173
+      marisol_novia_right_4: -1139787356
+      marisol_novia_right_5: 43221835
+      marisol_novia_right_6: 502889365
+      marisol_novia_right_7: -2124356293
+      marisol_novia_right_8: 24811777
+      marisol_novia_up_0: 332382730
+      marisol_novia_up_1: -354581524
+      marisol_novia_up_2: 11167823
+      marisol_novia_up_3: -1770846369
+      marisol_novia_up_4: -54285168
+      marisol_novia_up_5: -880649272
+      marisol_novia_up_6: -167885442
+      marisol_novia_up_7: 196055063
+      marisol_novia_up_8: -1627392924
+      marisol_novia_walk_0: 7722051355018844038
+      marisol_novia_walk_1: 2699822435778207601
+      marisol_novia_walk_10: -5637658076262301808
+      marisol_novia_walk_100: 6619391473321205120
+      marisol_novia_walk_101: -2223041266716408021
+      marisol_novia_walk_102: -4640290246777680138
+      marisol_novia_walk_103: -6680059469766640668
+      marisol_novia_walk_104: -614753992145284785
+      marisol_novia_walk_105: -2490743290710255331
+      marisol_novia_walk_106: -9076283460161540183
+      marisol_novia_walk_107: -325426251444097431
+      marisol_novia_walk_108: -2456708230042862732
+      marisol_novia_walk_109: 1864481552846610695
+      marisol_novia_walk_11: -8690477602004201712
+      marisol_novia_walk_110: 8988775645810098200
+      marisol_novia_walk_111: -3757139645090739997
+      marisol_novia_walk_112: 7515653499402639747
+      marisol_novia_walk_113: -1110935832914602176
+      marisol_novia_walk_114: 924152780892244588
+      marisol_novia_walk_115: -781696546233344453
+      marisol_novia_walk_116: -781805423319570668
+      marisol_novia_walk_117: 4422468403948121687
+      marisol_novia_walk_118: -8116331519371596411
+      marisol_novia_walk_119: -3788282037532152909
+      marisol_novia_walk_12: -8214346844759424956
+      marisol_novia_walk_120: 465480143622388329
+      marisol_novia_walk_121: -4158797125392507032
+      marisol_novia_walk_122: -3746551068354244420
+      marisol_novia_walk_123: 8401421787735845099
+      marisol_novia_walk_124: 2886097511855914019
+      marisol_novia_walk_125: -6840063108752596641
+      marisol_novia_walk_126: -8591022323004283791
+      marisol_novia_walk_127: 6518327729124868621
+      marisol_novia_walk_128: 24874434943181508
+      marisol_novia_walk_129: 6768839770937789160
+      marisol_novia_walk_13: 3450441312585252377
+      marisol_novia_walk_130: 3236436805827616222
+      marisol_novia_walk_131: 3715110059039883840
+      marisol_novia_walk_132: 9091235612382210857
+      marisol_novia_walk_133: -6862950624208298264
+      marisol_novia_walk_134: -8948424326178614579
+      marisol_novia_walk_135: -2362655587433317984
+      marisol_novia_walk_136: 1686025325503048874
+      marisol_novia_walk_137: -6153584799314703303
+      marisol_novia_walk_138: 7622210496147901364
+      marisol_novia_walk_139: 6309418405504302789
+      marisol_novia_walk_14: 3972802255935948823
+      marisol_novia_walk_140: 7746066190626427129
+      marisol_novia_walk_141: 3676493144632337239
+      marisol_novia_walk_142: -7771229761659167751
+      marisol_novia_walk_143: 7906384045212675819
+      marisol_novia_walk_144: 7737051328487615283
+      marisol_novia_walk_145: -9005213529929444168
+      marisol_novia_walk_146: 2220868995047994346
+      marisol_novia_walk_147: -5467539211069300029
+      marisol_novia_walk_148: -5558852800932196556
+      marisol_novia_walk_149: 591775190036911117
+      marisol_novia_walk_15: 3695265152097535922
+      marisol_novia_walk_150: -8752546360024292966
+      marisol_novia_walk_151: -7097550641353126037
+      marisol_novia_walk_152: 4696464760064411758
+      marisol_novia_walk_153: 2115900621255655276
+      marisol_novia_walk_154: 2970468826733725370
+      marisol_novia_walk_155: 7921319288354211924
+      marisol_novia_walk_156: -2150309535511674154
+      marisol_novia_walk_157: 8559108590700709211
+      marisol_novia_walk_158: -3347463052155203153
+      marisol_novia_walk_159: -7322399571885162612
+      marisol_novia_walk_16: -8889462699681912566
+      marisol_novia_walk_160: 869345043377080219
+      marisol_novia_walk_161: 2119580601868858667
+      marisol_novia_walk_162: -149185107387749902
+      marisol_novia_walk_163: 5676661577326865532
+      marisol_novia_walk_164: 1682383423825108192
+      marisol_novia_walk_165: -3734601317424689084
+      marisol_novia_walk_166: 43955401961691089
+      marisol_novia_walk_167: 8700023318289357763
+      marisol_novia_walk_168: 2094108134410842960
+      marisol_novia_walk_169: -1253644178111299139
+      marisol_novia_walk_17: -2516143586691336108
+      marisol_novia_walk_170: 6462578055158623605
+      marisol_novia_walk_171: -7583392936547188091
+      marisol_novia_walk_172: 3433888256013035331
+      marisol_novia_walk_173: 6008402374977257489
+      marisol_novia_walk_174: 7620030048001228960
+      marisol_novia_walk_175: 3611299769169140797
+      marisol_novia_walk_176: -4179987342748079774
+      marisol_novia_walk_177: -7594738838663120392
+      marisol_novia_walk_178: 3686914830365089732
+      marisol_novia_walk_179: 8986215142116550832
+      marisol_novia_walk_18: -7205808215379460712
+      marisol_novia_walk_180: 7015034855730044128
+      marisol_novia_walk_181: -3005185488333562703
+      marisol_novia_walk_182: 6303843417759525047
+      marisol_novia_walk_183: -703597039250183612
+      marisol_novia_walk_184: -4375731815449053575
+      marisol_novia_walk_185: -1871447704874377683
+      marisol_novia_walk_186: 4536514176122559869
+      marisol_novia_walk_187: -2042552500636251231
+      marisol_novia_walk_188: 3165438240207978512
+      marisol_novia_walk_189: 7922687433191670869
+      marisol_novia_walk_19: -8349477464473615001
+      marisol_novia_walk_190: 4279279831388191732
+      marisol_novia_walk_191: 6596089197645003685
+      marisol_novia_walk_192: 2401727152962429174
+      marisol_novia_walk_193: -8487680139611701996
+      marisol_novia_walk_194: -3718239347330383454
+      marisol_novia_walk_195: 5996874642701723243
+      marisol_novia_walk_196: 6349497435881858494
+      marisol_novia_walk_197: 599292111969769190
+      marisol_novia_walk_198: 5880908496600872637
+      marisol_novia_walk_199: 8897383739655275896
+      marisol_novia_walk_2: 8403089239546222007
+      marisol_novia_walk_20: 4199244102044302618
+      marisol_novia_walk_200: -6743218724277065162
+      marisol_novia_walk_201: -7290192031105845796
+      marisol_novia_walk_202: -617141304946040494
+      marisol_novia_walk_203: 2641011112683833654
+      marisol_novia_walk_204: -4751730939399086835
+      marisol_novia_walk_205: 764842081331651394
+      marisol_novia_walk_206: 3134716852918748794
+      marisol_novia_walk_207: -137430171790833512
+      marisol_novia_walk_208: -1867879400497243993
+      marisol_novia_walk_209: 4718252284673355827
+      marisol_novia_walk_21: 8857953196789028084
+      marisol_novia_walk_210: -5709017007312944201
+      marisol_novia_walk_211: -4999664666874959640
+      marisol_novia_walk_212: -1492930732563672618
+      marisol_novia_walk_213: 5040391052665611261
+      marisol_novia_walk_214: 2781047365988864147
+      marisol_novia_walk_215: -5703683500806953659
+      marisol_novia_walk_216: -2458658191002277628
+      marisol_novia_walk_217: -8072281357728911680
+      marisol_novia_walk_218: 1728252336950343654
+      marisol_novia_walk_219: -4632802015435657795
+      marisol_novia_walk_22: -2455579771317220321
+      marisol_novia_walk_220: 487906889561608686
+      marisol_novia_walk_221: -2421202805023393206
+      marisol_novia_walk_222: 5917125691982029664
+      marisol_novia_walk_223: 7172284368807370827
+      marisol_novia_walk_224: -2233970271817392885
+      marisol_novia_walk_225: -6088475303809044051
+      marisol_novia_walk_226: -2318365742097703527
+      marisol_novia_walk_227: 8050065817544060208
+      marisol_novia_walk_228: 3538379518402595604
+      marisol_novia_walk_229: -2207649246990230807
+      marisol_novia_walk_23: 3779194115361776561
+      marisol_novia_walk_230: 7143074075778957884
+      marisol_novia_walk_231: 695166576136010294
+      marisol_novia_walk_232: 2395090218361666585
+      marisol_novia_walk_233: -1811078235958612346
+      marisol_novia_walk_234: 752415290865919113
+      marisol_novia_walk_235: 4661635783621195925
+      marisol_novia_walk_236: -3353610371623366911
+      marisol_novia_walk_237: 1679004931840869081
+      marisol_novia_walk_238: -5007140365169422597
+      marisol_novia_walk_239: 3971478973517221546
+      marisol_novia_walk_24: -4184234281241470199
+      marisol_novia_walk_240: -6145257422615892479
+      marisol_novia_walk_241: 7831740888817043556
+      marisol_novia_walk_242: 5598964721489045646
+      marisol_novia_walk_243: 2140097720137423618
+      marisol_novia_walk_244: -4077283855732100228
+      marisol_novia_walk_245: -4829832644213843858
+      marisol_novia_walk_246: -2407828024557085173
+      marisol_novia_walk_247: 7438759654870631127
+      marisol_novia_walk_248: 3191896992110060850
+      marisol_novia_walk_249: 6475667472666130640
+      marisol_novia_walk_25: -5669450246480821408
+      marisol_novia_walk_250: -430875585227038851
+      marisol_novia_walk_251: -4876278751350519632
+      marisol_novia_walk_252: 2020394484135525746
+      marisol_novia_walk_253: 3869089418850599949
+      marisol_novia_walk_254: -1332773489641583474
+      marisol_novia_walk_255: -205240237409918610
+      marisol_novia_walk_256: -965520546318747358
+      marisol_novia_walk_257: -8646911926019653337
+      marisol_novia_walk_258: -175182976406149769
+      marisol_novia_walk_259: -2956455746306944486
+      marisol_novia_walk_26: 1720260517754424482
+      marisol_novia_walk_260: -5932209400783791305
+      marisol_novia_walk_261: 1065062413544818104
+      marisol_novia_walk_262: 7143805074483672310
+      marisol_novia_walk_263: 6643922945881803714
+      marisol_novia_walk_264: 4094849704960689134
+      marisol_novia_walk_265: 5541639214231611725
+      marisol_novia_walk_266: -5726933634406176005
+      marisol_novia_walk_267: -1208548236759332785
+      marisol_novia_walk_268: -3711703360721402308
+      marisol_novia_walk_269: 5966307477707164210
+      marisol_novia_walk_27: -822100675325104797
+      marisol_novia_walk_270: -89392982255728593
+      marisol_novia_walk_271: 2466789919258166981
+      marisol_novia_walk_272: -2030835530335728987
+      marisol_novia_walk_273: 7325631397668685616
+      marisol_novia_walk_274: -1249328112813458877
+      marisol_novia_walk_275: 7587885489891566592
+      marisol_novia_walk_276: 1069275823980547545
+      marisol_novia_walk_277: 2404587724423855253
+      marisol_novia_walk_278: -4245428747282191996
+      marisol_novia_walk_279: 3298697613540049254
+      marisol_novia_walk_28: 5556568110432598494
+      marisol_novia_walk_280: 861596393248153021
+      marisol_novia_walk_281: 4459477063677868582
+      marisol_novia_walk_282: -5388214828764583211
+      marisol_novia_walk_283: -60929649096639401
+      marisol_novia_walk_284: 808435283165246224
+      marisol_novia_walk_285: 861500356835952238
+      marisol_novia_walk_286: 6675905898007441847
+      marisol_novia_walk_287: -926687065321199640
+      marisol_novia_walk_288: -412666318882323436
+      marisol_novia_walk_289: 107011633374523703
+      marisol_novia_walk_29: 8806723721296985162
+      marisol_novia_walk_290: 6337127993584101481
+      marisol_novia_walk_291: 8808796514461617141
+      marisol_novia_walk_292: 5405816644019862443
+      marisol_novia_walk_293: 1582633567113456935
+      marisol_novia_walk_294: -1156870898531050407
+      marisol_novia_walk_295: -7529776812207164541
+      marisol_novia_walk_296: 7328268649718927409
+      marisol_novia_walk_297: 7220869635323522452
+      marisol_novia_walk_298: 7030078079235293042
+      marisol_novia_walk_299: -6029823276874077436
+      marisol_novia_walk_3: -277582765123464976
+      marisol_novia_walk_30: 3944310080689641455
+      marisol_novia_walk_300: -7323504767317529844
+      marisol_novia_walk_301: -1608285707019243952
+      marisol_novia_walk_302: 6807636833510675295
+      marisol_novia_walk_303: -4295512000018035410
+      marisol_novia_walk_304: 1070149170220335225
+      marisol_novia_walk_305: 5435159604402685723
+      marisol_novia_walk_306: -6223311375483634227
+      marisol_novia_walk_307: -8205784555318447030
+      marisol_novia_walk_308: 9022063329420255264
+      marisol_novia_walk_309: -900385298850367305
+      marisol_novia_walk_31: -2842052991544097537
+      marisol_novia_walk_310: 6354861662429206569
+      marisol_novia_walk_311: 8474760644622791513
+      marisol_novia_walk_312: -6953550828925426955
+      marisol_novia_walk_313: -5777188605687109231
+      marisol_novia_walk_314: 4340000619481131231
+      marisol_novia_walk_315: -4929278664983239696
+      marisol_novia_walk_316: -2222867108476425103
+      marisol_novia_walk_317: -7028090121619650604
+      marisol_novia_walk_318: -7755551757418745893
+      marisol_novia_walk_319: -1812410297482528059
+      marisol_novia_walk_32: -5521576446239369439
+      marisol_novia_walk_320: 574047968982398064
+      marisol_novia_walk_321: -6573807485617951189
+      marisol_novia_walk_322: -1587030697288094579
+      marisol_novia_walk_323: -6635319425969265718
+      marisol_novia_walk_324: -7318430613802458555
+      marisol_novia_walk_325: -8887031319400421026
+      marisol_novia_walk_326: 4183504876409279582
+      marisol_novia_walk_327: -6171791597639777941
+      marisol_novia_walk_328: -2040122477631127048
+      marisol_novia_walk_329: -785147284862835997
+      marisol_novia_walk_33: -6587512537833881813
+      marisol_novia_walk_330: -5469434089788714357
+      marisol_novia_walk_331: -8165025568557818373
+      marisol_novia_walk_332: 3916993637815565420
+      marisol_novia_walk_333: -128774138385249335
+      marisol_novia_walk_334: 5273075374635288034
+      marisol_novia_walk_335: -8652933718055676688
+      marisol_novia_walk_336: 3592069566197881042
+      marisol_novia_walk_337: 6537613222503087021
+      marisol_novia_walk_338: 2680560853259699311
+      marisol_novia_walk_339: 8521094195178373353
+      marisol_novia_walk_34: -8761807885140659607
+      marisol_novia_walk_340: 311553780802289446
+      marisol_novia_walk_341: -1083811316403566671
+      marisol_novia_walk_342: -5656148334608813877
+      marisol_novia_walk_343: 8562347079248247355
+      marisol_novia_walk_344: -8322290064688447319
+      marisol_novia_walk_345: 6887452858782761448
+      marisol_novia_walk_346: 1793082447241304941
+      marisol_novia_walk_347: -1122452034827605303
+      marisol_novia_walk_348: -5579580996405534381
+      marisol_novia_walk_349: 3227605516995800281
+      marisol_novia_walk_35: 7354070822288137921
+      marisol_novia_walk_350: -6655702073085952651
+      marisol_novia_walk_351: 3119847686327415188
+      marisol_novia_walk_36: 1445739227631779876
+      marisol_novia_walk_37: -4862950020580101931
+      marisol_novia_walk_38: 4124896340969279887
+      marisol_novia_walk_39: -1859903743128023571
+      marisol_novia_walk_4: -7763574552006592796
+      marisol_novia_walk_40: -7079020876022835834
+      marisol_novia_walk_41: -6720466968079227114
+      marisol_novia_walk_42: -7297190045159170719
+      marisol_novia_walk_43: -3901150993870115370
+      marisol_novia_walk_44: 2705735933679068964
+      marisol_novia_walk_45: 5937831112550373586
+      marisol_novia_walk_46: -4490622743962160364
+      marisol_novia_walk_47: -3193767821256101009
+      marisol_novia_walk_48: -8263034986165859362
+      marisol_novia_walk_49: 3847187611947805073
+      marisol_novia_walk_5: 5844643704767502992
+      marisol_novia_walk_50: 5558865990866841410
+      marisol_novia_walk_51: -1572411275747832494
+      marisol_novia_walk_52: 5182336457611337651
+      marisol_novia_walk_53: -2454546639907047312
+      marisol_novia_walk_54: -362285810098701996
+      marisol_novia_walk_55: -4145391002635955678
+      marisol_novia_walk_56: -587889225058447636
+      marisol_novia_walk_57: 8128919500626242583
+      marisol_novia_walk_58: -4950612156253154209
+      marisol_novia_walk_59: -6263372128053686805
+      marisol_novia_walk_6: -1087588367006728328
+      marisol_novia_walk_60: 2052646263610200599
+      marisol_novia_walk_61: -1110608284635872772
+      marisol_novia_walk_62: 7158885098344463299
+      marisol_novia_walk_63: 4973108524353159567
+      marisol_novia_walk_64: -8341670452897209796
+      marisol_novia_walk_65: -6059037963786835964
+      marisol_novia_walk_66: 6855641310953194363
+      marisol_novia_walk_67: 7962618417783077825
+      marisol_novia_walk_68: -7228154046100995562
+      marisol_novia_walk_69: -1363112277579757851
+      marisol_novia_walk_7: 2286427918268699308
+      marisol_novia_walk_70: -7295644193614608267
+      marisol_novia_walk_71: 2271567686275214363
+      marisol_novia_walk_72: -7582261690467123820
+      marisol_novia_walk_73: 2851720733542441277
+      marisol_novia_walk_74: -6320713691608365401
+      marisol_novia_walk_75: 6267139883618420922
+      marisol_novia_walk_76: 1088288338767597667
+      marisol_novia_walk_77: 3126017852097565700
+      marisol_novia_walk_78: -574909482531685772
+      marisol_novia_walk_79: -7358862534759498759
+      marisol_novia_walk_8: -6942791649907839392
+      marisol_novia_walk_80: -9215839814048618878
+      marisol_novia_walk_81: -7624456239245299437
+      marisol_novia_walk_82: 7600181759254429052
+      marisol_novia_walk_83: -4648922533436528329
+      marisol_novia_walk_84: -5737572955137069222
+      marisol_novia_walk_85: -2964838748213691254
+      marisol_novia_walk_86: -5077715658345110739
+      marisol_novia_walk_87: -4530860012871801559
+      marisol_novia_walk_88: 650666684376729049
+      marisol_novia_walk_89: -96858558218512964
+      marisol_novia_walk_9: 2758665811994114774
+      marisol_novia_walk_90: -2568642673357474853
+      marisol_novia_walk_91: 5270323799501481017
+      marisol_novia_walk_92: 7856708204351836971
+      marisol_novia_walk_93: 4869703135702003373
+      marisol_novia_walk_94: -7312771736416927298
+      marisol_novia_walk_95: 1339186755134634324
+      marisol_novia_walk_96: 2384016314092653725
+      marisol_novia_walk_97: -3605645680728248164
+      marisol_novia_walk_98: 3943513409794226162
+      marisol_novia_walk_99: 4044200212462411006
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

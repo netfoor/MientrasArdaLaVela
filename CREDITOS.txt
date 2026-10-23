@@ -1272,6 +1272,19 @@ feet/shoes/basic/thin/walk.png
 		- http://opengameart.org/content/lpc-clothing-updates
 		- https://opengameart.org/content/lpc-expanded-socks-shoes
 
+--- Personaje LPC: Marisol (45 y novia) — derivada propia de Rosa ---
+Archivo(s): marisol_45_walk.png, marisol_novia_walk.png
+Autor(es): los mismos de rosa_40_walk.png (ver el bloque anterior), más el recoloreado propio.
+Licencia: la MISMA mixta por capa de rosa_40_walk.png; al ser obra derivada se conservan todas
+  las licencias y la atribución completa de esa hoja.
+Modificación propia (2026-10-23): el generador no ofrecía un personaje distinto para Marisol, la
+  hija de don Aurelio, y el juego la mostraba con la hoja de su propia madre. Se partió de
+  rosa_40_walk.png y se recolorearon dos rampas respetando el sombreado original, con
+  tools/arte/marisol.py: el cabello (3 tonos) pasa a castaño en las dos hojas, para que se lea
+  como la misma persona en 1988 y en 2015; el vestido (5 tonos) pasa a verde jade en
+  marisol_45_walk.png y a color hueso en marisol_novia_walk.png. No se añadió ni se quitó
+  ningún píxel: es el mismo dibujo con otra paleta.
+
 --- Personaje LPC: Lucía (9) ---
 Archivo(s): lucia_9_walk.png
 Autor(es): bluecarrot16, Benjamin K. Smith (BenCreating), ElizaWy, MuffinElZangano, Durrani, Nila122, kheftel, Stephen Challener (Redshrike), JaidynReiman

@@ -1,10 +1,11 @@
 # Contexto del proyecto (leer antes de cualquier cambio)
 
 > **Estado actual: `ESTADO.md`.** Léelo primero: dice qué está implementado, qué falta
-> y las desviaciones conscientes respecto al Documento de Diseño. Resumen al 2026-10-22: el
-> juego se puede jugar de principio a fin; **F01–F24 están hechas**, F25 va a medias (el arte
-> propio de fragmentos y mementos ya está) y F26 **ya compila** (`Builds/Windows/`). Lo que falta
-> es jugarlo entero: sonido, los tres códigos secretos y el .exe en un segundo equipo.
+> y las desviaciones conscientes respecto al Documento de Diseño. Resumen al 2026-10-23: el
+> juego se puede jugar de principio a fin; **F01–F24 están hechas**, de F25 solo falta detallar
+> más los mapas (el arte propio de fragmentos, mementos, camino de pétalos y Marisol ya está) y
+> F26 **ya compila** (`Builds/Windows/`). Lo que falta es teclear los tres códigos secretos y
+> probar el .exe en un segundo equipo.
 > No confíes en el Feature Log del Excel para saber el estado: sus hojas de resumen tienen
 > valores cacheados sin recalcular.
 
@@ -69,6 +70,10 @@ escena a mano, o el siguiente que corra el constructor te lo pisa.
 - `ConstructorEscena.Objeto("frag_lata.png")` carga el arte propio de `Art/Objetos` (lo dibuja
   `tools/arte/objetos_f25.py`) y avisa si falta, cayendo en un cuadro de color. **Ningún
   fragmento, memento ni rombo debe volver a quedarse con el relleno.**
+- `ConstructorEscena.TileObjeto("camino_denso.png")` convierte una pieza de `Art/Objetos` en un
+  Tile sin collider: así se pinta con arte propio una capa de decoración. Lo usa el camino de
+  pétalos del Mapa 0. Si redibujas esos tiles, acuérdate de que el Mapa 0 y el epílogo son de
+  noche: con poca luz, los tonos apagados desaparecen sobre la duela.
 - `Build.Windows` / `Build.Linux` compilan tomando las escenas de Build Profiles; fallan si la
   primera no es MainMenu. No cambies `productName`: la ruta de la partida guardada se forma con él.
 - `AmbarAnimator`, `HojaLPC` (corta hojas LPC), `HojaTizne` (corta el perro), `TilesetLPC` (recorta tiles),
