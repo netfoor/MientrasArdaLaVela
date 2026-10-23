@@ -105,24 +105,62 @@ namespace MientrasArdaLaVela.EditorTools
         static void ConstruirTilemaps()
         {
             var c = Tilemaps();
-            var tierra = Tile("suelo_patio", new Color(0.40f, 0.46f, 0.26f));
-            var cerca = Tile("muro_arriba", new Color(0.36f, 0.33f, 0.30f), collider: true);
-            var cercaCara = Tile("muro_cara", new Color(0.36f, 0.33f, 0.30f), collider: true);
-            var petalos = Tile("petalos", new Color(0.85f, 0.45f, 0.10f));
-            var ralo = Tile("petalos_ralo", new Color(0.85f, 0.45f, 0.10f));
+            // Tierra labrada propia (tools/arte/campo_f25.py): el empedrado del patio que se
+            // usaba antes no es suelo de campo, y el Documento de Diseño pide el dorado del
+            // atardecer de 1955. El surco cada cuatro filas le da dirección al sembradío.
+            var tierra = TileObjeto("campo_tierra.png") ?? Tile("suelo_patio", new Color(0.55f, 0.43f, 0.27f));
+            var surco  = TileObjeto("campo_tierra_surco.png") ?? tierra;
+            // Barda de piedra de campo, no el sillar de castillo del tileset: esto es una
+            // parcela a las afueras del pueblo, y el muro se ve en casi toda la vuelta del mapa.
+            var cerca = TileObjeto("campo_barda_arriba.png", collider: true)
+                        ?? Tile("muro_arriba", new Color(0.36f, 0.33f, 0.30f), collider: true);
+            var cercaCara = TileObjeto("campo_barda.png", collider: true)
+                        ?? Tile("muro_cara", new Color(0.36f, 0.33f, 0.30f), collider: true);
+            var matas = new UnityEngine.Tilemaps.TileBase[8];
+            for (int k = 0; k < matas.Length; k++) matas[k] = TileObjeto($"campo_mata_{k}.png");
+            var brote = TileObjeto("campo_brote.png");
 
             var transitable = new HashSet<Vector2Int>();
-            Pintar(c.Suelo, Campo, tierra, transitable);
-            Muros(c.Paredes, transitable, null, cerca, cercaCara);   // cerca de piedra alrededor del campo
-
-            // Surcos de cempasúchil: casi todo el campo, con veredas libres.
-            Undo.RegisterCompleteObjectUndo(c.Deco, "Deco");
+            Undo.RegisterCompleteObjectUndo(c.Suelo, "Suelo");
             for (int x = Campo.xMin; x < Campo.xMax; x++)
                 for (int y = Campo.yMin; y < Campo.yMax; y++)
                 {
-                    bool vereda = y == 3 || y == 4 || x == 12 || x == 13 || (y >= 15 && x >= 13 && x <= 19);
-                    if (!vereda && (x + y) % 3 != 0) c.Deco.SetTile(new Vector3Int(x, y, 0), (x * 7 + y) % 2 == 0 ? petalos : ralo);
+                    c.Suelo.SetTile(new Vector3Int(x, y, 0), y % 4 == 0 ? surco : tierra);
+                    transitable.Add(new Vector2Int(x, y));
                 }
+            Muros(c.Paredes, transitable, null, cerca, cercaCara);   // cerca de piedra alrededor del campo
+
+            // Sembradío: cuatro matas repartidas con ruido. Antes era (x + y) % 3, que dibuja
+            // diagonales perfectas y se lee como papel tapiz en cuanto se ve el mapa entero.
+            Undo.RegisterCompleteObjectUndo(c.Deco, "Deco");
+            if (matas[0] == null) return;
+            for (int x = Campo.xMin; x < Campo.xMax; x++)
+                for (int y = Campo.yMin; y < Campo.yMax; y++)
+                {
+                    if (Vereda(x, y)) continue;
+                    int r = Ruido(x, y);
+                    if (r % 100 > 88) continue;                       // claros del campo
+                    var pieza = r % 100 > 78 && brote != null ? brote : matas[r % matas.Length];
+                    c.Deco.SetTile(new Vector3Int(x, y, 0), pieza);
+                }
+        }
+
+        /// <summary>
+        /// Las veredas por donde camina Ámbar y donde ocurre la cinemática: la de entrada, la
+        /// que sube al norte y el claro del pirul. Sin ellas el jugador no vería por dónde ir.
+        /// </summary>
+        static bool Vereda(int x, int y)
+            => y == 3 || y == 4 || x == 12 || x == 13 || (y >= 15 && x >= 13 && x <= 19);
+
+        /// <summary>Ruido entero reproducible: mezcla x e y para que no queden líneas.</summary>
+        static int Ruido(int x, int y)
+        {
+            unchecked
+            {
+                int h = x * 374761393 + y * 668265263;
+                h = (h ^ (h >> 13)) * 1274126177;
+                return (h ^ (h >> 16)) & 0x7fffffff;
+            }
         }
 
         static void ConstruirPersonajes()
