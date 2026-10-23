@@ -19,3 +19,8 @@
 .vscode/
 .idea/
 *.DS_Store
+
+# Escenas que Unity deja al recuperarse de un cierre inesperado: las nuestras se
+# generan con los constructores, así que no hay nada que conservar aquí.
+[Aa]ssets/_Recovery/
+[Aa]ssets/_Recovery.meta

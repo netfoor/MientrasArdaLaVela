@@ -31,6 +31,25 @@ namespace MientrasArdaLaVela.EditorTools
         static readonly RectInt Pasillo = new RectInt(16, 7, 4, 3);     // bajada al patio
         static readonly RectInt Patio   = new RectInt(6, 1, 24, 6);
 
+        // ---------- Camino de pétalos (sección 5.1 del Documento de Diseño) ----------
+        // Se escribe tile a tile, cada uno compartiendo lado con el anterior: trazadas en
+        // diagonal pura, las ramas quedaban con huecos y la bifurcación se leía como dos
+        // rayas sueltas en lugar de un camino que se abre.
+        static readonly Vector2Int[] RamaIzquierda = Tiles((16, 4), (16, 3), (15, 3), (14, 3), (14, 2),
+                                                           (13, 2), (12, 2), (12, 1), (11, 1), (10, 1));
+        static readonly Vector2Int[] RamaDerecha   = Tiles((18, 4), (18, 3), (19, 3), (20, 3), (20, 2),
+                                                           (21, 2), (22, 2), (22, 1), (23, 1), (24, 1));
+        // Cruz de pétalos al pie de la ofrenda, como se pone en una casa el 1 de noviembre.
+        static readonly Vector2Int[] CruzOfrenda   = Tiles((5, 18), (5, 17), (5, 16), (5, 15), (5, 14),
+                                                           (3, 16), (4, 16), (6, 16), (7, 16));
+
+        static Vector2Int[] Tiles(params (int x, int y)[] puntos)
+        {
+            var r = new Vector2Int[puntos.Length];
+            for (int i = 0; i < puntos.Length; i++) r[i] = new Vector2Int(puntos[i].x, puntos[i].y);
+            return r;
+        }
+
         // ---------- Posiciones de los objetos (centro de tile) ----------
         static readonly Vector3 PosAmbar    = new Vector3( 9.5f, 15.5f, 0f);
         static readonly Vector3 PosMemento  = new Vector3( 4.5f, 19.5f, 0f);
@@ -192,8 +211,15 @@ namespace MientrasArdaLaVela.EditorTools
             var tMuroArriba = T("muro_arriba", ColPared, collider: true);   // sin esto los muros no bloquean
             var tMuroCara   = T("muro_cara",   ColPared, collider: true);
             var tMueble     = T("mueble",      ColMueble);
-            var tDeco       = T("petalos",     ColDeco);
-            var tDecoRalo   = hayArte ? T("petalos_ralo", ColDeco) : tDeco;
+            // Pétalos: arte propio (tools/arte/camino_petalos.py). El recorte del tileset de
+            // plantas que se usaba antes parecía hierba suelta y repetía siempre el mismo cuadro.
+            var tPetalos = new[]
+            {
+                ConstructorEscena.TileObjeto("camino_denso.png") ?? PlaceholderArt.Tile("petalos", ColDeco),
+                ConstructorEscena.TileObjeto("camino_medio.png") ?? PlaceholderArt.Tile("petalos", ColDeco),
+                ConstructorEscena.TileObjeto("camino_ralo.png")  ?? PlaceholderArt.Tile("petalos", ColDeco),
+            };
+            var tFlor = ConstructorEscena.TileObjeto("camino_flor.png") ?? tPetalos[0];
 
             // --- Suelo: interior + patio ---
             var transitable = new HashSet<Vector2Int>();
@@ -232,18 +258,24 @@ namespace MientrasArdaLaVela.EditorTools
             Pintar(muebles, new RectInt(24, 15, 5, 2), tMueble, null);   // mesa de la cocina
             Pintar(muebles, new RectInt(3, 19, 4, 1), tMueble, null);    // base de la ofrenda
 
-            // --- Decoración: camino de pétalos, del patio a la ofrenda (sin collider) ---
-            // En el patio se bifurca: es lo que Ámbar señala en el nodo M0_Frag_Petalos
-            // ("llega hasta el patio... pero se abre en dos").
+            // --- Decoración: el camino de pétalos ---
+            // Entra desde el patio, donde se abre en dos (es lo que Ámbar señala en M0_Frag_Petalos:
+            // "Lucía siempre pone uno solo. ¿Para quién será el otro?"), sube por el pasillo, cruza
+            // la sala y termina en la cruz de pétalos al pie de la ofrenda.
             Undo.RegisterCompleteObjectUndo(deco, "Decoracion Mapa 0");
-            TileBase Petalo(int n) => n % 2 == 0 ? tDeco : tDecoRalo;   // alterna para que no se note el patrón
-            for (int x = 5; x <= 17; x++) deco.SetTile(new Vector3Int(x, 18, 0), Petalo(x));   // ofrenda -> centro
-            for (int y = 4; y <= 17; y++) deco.SetTile(new Vector3Int(17, y, 0), Petalo(y));   // sala, pasillo y patio
-            for (int i = 1; i <= 5; i++)                                                        // bifurcación en el patio
-            {
-                deco.SetTile(new Vector3Int(17 - i, 4 - i > 1 ? 4 - i : 2, 0), Petalo(i));
-                deco.SetTile(new Vector3Int(17 + i, 4 - i > 1 ? 4 - i : 2, 0), Petalo(i + 1));
-            }
+            int grano = 0;
+            void Petalos(int x, int y) => deco.SetTile(new Vector3Int(x, y, 0), tPetalos[grano++ % tPetalos.Length]);
+            void Flor(int x, int y) => deco.SetTile(new Vector3Int(x, y, 0), tFlor);
+
+            for (int x = 5; x <= 17; x++) Petalos(x, 18);                 // de la ofrenda al centro de la sala
+            for (int y = 4; y <= 17; y++) Petalos(17, y);                 // sala, pasillo y patio
+            foreach (var t in RamaIzquierda) Petalos(t.x, t.y);
+            foreach (var t in RamaDerecha) Petalos(t.x, t.y);
+            foreach (var t in CruzOfrenda) Petalos(t.x, t.y);
+
+            // Flores enteras donde la escena las pide: el punto en que el camino se parte (ahí
+            // está el fragmento), el centro de la cruz y el final de cada rama.
+            Flor(17, 4); Flor(5, 16); Flor(10, 1); Flor(24, 1);
         }
 
         static Tilemap CapaTilemap(GameObject grid, string nombre, int orden, bool conCollider, bool composite = false)
