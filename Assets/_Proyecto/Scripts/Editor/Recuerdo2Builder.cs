@@ -77,9 +77,12 @@ namespace MientrasArdaLaVela.EditorTools
 
             ConstruirPersonajes();
             var frag = Raiz("Fragmentos").transform;
-            Fragmento(frag, "Frag_Tarjeta", PosTarjeta, "R2_tarjeta", "R2_Frag_Tarjeta", oculto: false);
-            Fragmento(frag, "Frag_Telegrama", PosTelegrama, "R2_telegrama", "R2_Frag_Telegrama", oculto: true);
-            Fragmento(frag, "Frag_Brindis", PosBrindis, "R2_brindis", "R2_Frag_Brindis", oculto: false);
+            Fragmento(frag, "Frag_Tarjeta", PosTarjeta, "R2_tarjeta", "R2_Frag_Tarjeta", oculto: false,
+                      sprite: ConstructorEscena.Objeto("frag_tarjeta.png"));
+            Fragmento(frag, "Frag_Telegrama", PosTelegrama, "R2_telegrama", "R2_Frag_Telegrama", oculto: true,
+                      sprite: ConstructorEscena.Objeto("frag_telegrama.png"));
+            Fragmento(frag, "Frag_Brindis", PosBrindis, "R2_brindis", "R2_Frag_Brindis", oculto: false,
+                      sprite: ConstructorEscena.Objeto("frag_copa.png"));
             // Pétalos coleccionables (F24): jardín, esquinas del patio y zaguán.
             Petalos("R2", new Vector3(1.5f, 4.5f, 0f), new Vector3(1.5f, 9.5f, 0f), new Vector3(25.5f, 13.5f, 0f), new Vector3(6.5f, 13.5f, 0f), new Vector3(32.5f, 6.5f, 0f));
 
@@ -89,7 +92,7 @@ namespace MientrasArdaLaVela.EditorTools
             Niebla("Niebla Zaguan", new Vector3(30f, 8f, 0f), new Vector2(7f, 5f), OblivionFog.Unlock.Echo, "R2_eco1");
             Eco("Eco_NuncaQuisoVolver", PosEco2, "aurelio_42", "R2_eco2", "R2_telegrama", "R2_Eco2_Falso", "R2_Eco2_Verdad");
 
-            ConstructorEscena.Memento("Memento_Cerillos", PosMemento, null, "R2_Memento_Bloqueado", "R2_Memento_Activar",
+            ConstructorEscena.Memento("Memento_Cerillos", PosMemento, ConstructorEscena.Objeto("memento_cerillos.png"), "R2_Memento_Bloqueado", "R2_Memento_Activar",
                                       "R2_Mosaico_Resuelto", RutaMosaico, "La caja de cerillos de La Espiga");
 
             var triggers = Raiz("Triggers");
@@ -151,7 +154,7 @@ namespace MientrasArdaLaVela.EditorTools
             destello.transform.localPosition = new Vector3(0f, 2.1f, 0f);
             destello.transform.localScale = new Vector3(0.35f, 0.35f, 1f);
             var srd = Comp<SpriteRenderer>(destello);
-            srd.sprite = PlaceholderArt.Sprite("destello", Color.white, borde: false);
+            srd.sprite = ConstructorEscena.Objeto("destello.png") ?? PlaceholderArt.Sprite("destello", Color.white, borde: false);
             srd.sortingOrder = OrdenObjeto + 1;
             Set(Comp<MemoryFragment>(rosa), ("fragmentId", "R2_rosa"), ("yarnNode", "R2_Frag_Rosa"),
                 ("sparkle", destello), ("promptText", "[E] Escuchar a Rosa"));

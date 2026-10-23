@@ -2,8 +2,9 @@
 
 > **Estado actual: `ESTADO.md`.** Léelo primero: dice qué está implementado, qué falta
 > y las desviaciones conscientes respecto al Documento de Diseño. Resumen al 2026-10-22: el
-> juego se puede jugar de principio a fin; **F01–F24 están hechas** (F22 cerrada el 2026-10-22)
-> y quedan **F25 (pulido)** y **F26 (build para Windows)**, más probar los tres códigos secretos.
+> juego se puede jugar de principio a fin; **F01–F24 están hechas**, F25 va a medias (el arte
+> propio de fragmentos y mementos ya está) y F26 **ya compila** (`Builds/Windows/`). Lo que falta
+> es jugarlo entero: sonido, los tres códigos secretos y el .exe en un segundo equipo.
 > No confíes en el Feature Log del Excel para saber el estado: sus hojas de resumen tienen
 > valores cacheados sin recalcular.
 
@@ -65,6 +66,11 @@ escena a mano, o el siguiente que corra el constructor te lo pisa.
   tipos, así que desde otro constructor se llaman como `ConstructorEscena.Tizne(...)`.
 - `Mapa0Verificador` / `MainMenuVerificador` / `AmbarAnimatorVerificador` comprueban el
   resultado contra `LEEME_SETUP.md`. **Si tocas una escena, corre su verificador.**
+- `ConstructorEscena.Objeto("frag_lata.png")` carga el arte propio de `Art/Objetos` (lo dibuja
+  `tools/arte/objetos_f25.py`) y avisa si falta, cayendo en un cuadro de color. **Ningún
+  fragmento, memento ni rombo debe volver a quedarse con el relleno.**
+- `Build.Windows` / `Build.Linux` compilan tomando las escenas de Build Profiles; fallan si la
+  primera no es MainMenu. No cambies `productName`: la ruta de la partida guardada se forma con él.
 - `AmbarAnimator`, `HojaLPC` (corta hojas LPC), `HojaTizne` (corta el perro), `TilesetLPC` (recorta tiles),
   `PixelArtImporter`, `PlaceholderArt`, `ProyectoSetup`.
 - `Mapa0Captura` / `MainMenuCaptura` renderizan las escenas a PNG: sirven para revisar
@@ -74,8 +80,9 @@ Todo cuelga del menú **Mientras arda la vela**.
 
 ## Cómo comprobar tu trabajo
 ```bash
-./tools/unity.sh todo      # verificadores + pruebas EditMode
-./tools/unity.sh capturar  # renderiza las escenas a PNG y míralas
+./tools/unity.sh todo            # verificadores + pruebas EditMode
+./tools/unity.sh capturar        # renderiza las escenas a PNG y míralas
+./tools/unity.sh build-windows   # compila la entrega (F26); build-linux para probar aquí
 ```
 Requiere el editor **cerrado**: Unity no admite dos instancias sobre el mismo proyecto.
 No des por bueno un cambio de escena sin correr el verificador o mirar la captura.

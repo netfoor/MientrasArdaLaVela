@@ -1,6 +1,7 @@
 # Estado del proyecto
 
-Última actualización: **2026-10-22** · rama `main`
+Última actualización: **2026-10-22 (noche)** · rama `main` · repositorio
+[netfoor/MientrasArdaLaVela](https://github.com/netfoor/MientrasArdaLaVela) (privado)
 
 > Este archivo es el resumen de **qué está hecho y qué no**. Si eres un agente que
 > retoma el trabajo: lee esto y después `AGENTS.md`. Las órdenes originales están en
@@ -14,12 +15,13 @@
 Los Sprints 1 y 2 están cerrados y **el juego completo se puede jugar de principio a fin**.
 Del Sprint 3, F19–F24 están **hechas y jugadas**: la partida del 2026-10-06 llegó al epílogo
 con 20/20 fragmentos, **25/25 pétalos** y **8 de los 9 logros**. F22 (música y efectos) se
-cerró el 2026-10-22 con los cinco efectos que faltaban y la mezcla medida. Quedan **F25
-(pulido)** y **F26 (build para Windows)**, y por probar los **tres códigos secretos**.
+cerró el 2026-10-22 con los cinco efectos que faltaban y la mezcla medida. Ese mismo día **F25
+avanzó** (los fragmentos, los mementos, los rombos del HUD y el destello dejaron de ser cuadros
+de color) y **F26 compiló**: hay un ejecutable de Windows de 258 MB en `Builds/Windows/`.
 
-Para la entrega siguen faltando dos cosas que no son código: **nada está commiteado desde el
-2026-09-27 y no hay repositorio en GitHub**, y el Excel de producción necesita abrirse en Excel
-para que recalculen sus hojas de resumen (ver "Pendiente").
+Lo que falta para cerrar: **jugarlo entero una vez** (sonido, códigos secretos y el build en un
+segundo equipo), el resto del pulido de F25, y abrir el Excel de producción en Excel para que
+recalculen sus hojas de resumen (ver "Pendiente").
 
 ## Cómo comprobarlo sin abrir Unity
 
@@ -62,8 +64,8 @@ existan y que todo sonido invocado en el código o en los diálogos tenga su cli
 | F22 | Música y efectos | 3 | ✅ Hecho (2026-10-22). M01–M08 por escena y los 14 efectos de la Tabla 27 completos y mezclados. **Falta oírlo jugando** |
 | F23 | Logros y códigos secretos | 3 | ✅ Jugado: 8 de los 9 logros desbloqueados el 2026-10-06. 🟡 **Los 3 códigos secretos no se han tecleado nunca** |
 | F24 | Pétalos coleccionables | 3 | ✅ Jugado: 25/25 pétalos recogidos el 2026-10-06 |
-| F25 | Pulido | 3 | ⬜ Sin empezar |
-| F26 | Build para Windows | 3 | ⬜ Sin empezar |
+| F25 | Pulido | 3 | 🟡 Hecho el arte propio de los 16 fragmentos, los 5 mementos, los rombos del HUD y el destello. Falta ritmo y textos, la hoja propia de Marisol, mapas más detallados y confirmar B17 |
+| F26 | Build para Windows | 3 | 🟡 Compila: 258 MB, 7 escenas, `Builds/Windows/MientrasArdaLaVela.exe`. **Falta probarlo en un segundo equipo** |
 
 ## Prueba de aceptación del Sprint 1 (`LEEME_SETUP.md` §5)
 
@@ -120,6 +122,25 @@ mensaje claro. Códigos de salida útiles para CI. Logs en `Logs/cli/`.
 
 ---
 
+## Qué se agregó en F25 y F26 (2026-10-22)
+
+- `tools/arte/objetos_f25.py`: **21 piezas de pixel art propias de 32 × 32** — los 13 fragmentos
+  que eran cuadros de color (fotografía de Aurelio joven, delantal, camino de pétalos que se
+  bifurca, sombrero de palma, fotografía rota, lata de cartas, charola con dos panes, tarjeta de
+  Refugio, pedazos del telegrama, copa rota, cama vacía, nota y la talla del árbol), los **5
+  mementos** (pan de muerto, fotografía enmarcada, caja de cerillos, canica azul y el árbol de la
+  promesa), los **dos rombos del HUD** y el **destello** que flota sobre los fragmentos, que era
+  un cuadro blanco y se notaba muchísimo. Lo que dibuja cada una sale de las Tablas 8 a 13.
+- Los constructores ya no pasan `null`: hay un cargador común, `ConstructorEscena.Objeto(...)`,
+  que avisa en consola si falta una pieza y cae en el cuadro de color. Los fragmentos de R3 y R4
+  que ya tenían arte (`lena.png`, `huellas.png`, `vela_cabo.png`) se reutilizan.
+- `Scripts/Editor/Build.cs` + `./tools/unity.sh build-windows` (y `build-linux`): compila
+  tomando las escenas de Build Profiles y **falla con un mensaje claro** si la primera no es
+  MainMenu o si falta el módulo de la plataforma. No toca `productName`: la carpeta de la
+  partida guardada se forma con él y cambiarlo dejaría huérfanas las partidas que ya existen.
+- La carpeta `MientrasArdaLaVela_BackUpThisFolder_ButDontShipItWithYourGame` que deja el build
+  son símbolos de depuración: **no se entrega**, el resto de `Builds/Windows/` sí.
+
 ## Siguiente paso: oír el sonido y teclear los códigos
 
 F22 quedó cerrada el 2026-10-22 y **nadie la ha escuchado todavía**. Lo que hay que hacer, en
@@ -131,7 +152,9 @@ una sola sesión de juego (empezando por MainMenu):
    el menú y la ofrenda, ladrido de Tizne con H, campanilla al entrar al Recuerdo 1 y copas en
    el brindis del Recuerdo 2. Si algo tapa a los demás, los niveles están en una sola tabla, en
    el comentario de cabecera de `Core/Sonidos.cs`.
-3. Después, F25 (pulido) y F26 (build para Windows).
+3. **Probar el .exe en un segundo equipo con Windows** (F26); con eso queda cerrada.
+4. Lo que resta de F25: ritmo y textos, la hoja propia de Marisol (hoy usa la de Rosa con un
+   tinte), mapas más detallados y confirmar B17 jugando.
 
 ### Qué se agregó en F22 (2026-10-22)
 - `tools/arte/sonidos_f22.py`: los **cinco efectos que faltaban** de la Tabla 27 — S01 pasos,
@@ -228,11 +251,10 @@ Sprint 1: ninguno abierto. B05, B07 y B10 se corrigieron el 2026-09-27 (ver `Doc
 El guardado pasó a la **versión 2** (lista `seenDialogues`) y, en el Sprint 3, a la **3** (lista `talked`); migra solo las partidas viejas.
 
 ### Arte
-Los **cuatro fragmentos siguen con cuadros de color**: no hay delantal ni sombrero de
-palma en lo que se descargó. Los rombos del contador también son de relleno. Es lo que más se
-ve y entra en F25.
-Las cinco imágenes de mosaico ya están dibujadas (`Art/Mosaicos/mosaico_M0…R4.png`, con sus
-scripts en `tools/arte/`).
+Los fragmentos, los mementos, los rombos del contador y el destello **ya son arte propio**
+(F25, `tools/arte/objetos_f25.py`), igual que las cinco imágenes de mosaico
+(`Art/Mosaicos/mosaico_M0…R4.png`). Lo que sigue pendiente de arte es la **hoja propia de
+Marisol** (hoy usa la de Rosa con un tinte) y los mapas más detallados.
 
 ### Sprint 3 (31/10 – 20/11)
 F23 logros y códigos y F24 pétalos: escritos (arriba). Faltan F25 pulido (mapas más
@@ -255,9 +277,9 @@ mismo nombre y anotar la atribución en `CREDITOS.txt`.
 - Los muebles salen de los tilesets LPC que ya estaban (mostrador, repisas, vitrina, horno).
 
 ### Entrega
-**Nada está commiteado desde el 2026-09-27 y no hay repositorio en GitHub.** Todo el Sprint 2 y
-el Sprint 3 (las 6 escenas nuevas, los diálogos, el audio, `Logros.cs`, `Petalo.cs`…) vive sólo
-en el disco. Es el riesgo más grande que tiene el proyecto ahora mismo, y no es técnico.
+El repositorio existe y está al día: **https://github.com/netfoor/MientrasArdaLaVela**, privado
+porque lleva los documentos de entrega y arte con licencias mixtas. `Builds/` está en
+`.gitignore`: el ejecutable no se sube, se compila con `./tools/unity.sh build-windows`.
 
 **El Excel de producción hay que abrirlo en Excel antes de entregarlo.** La hoja *Detalles del
 Proyecto* muestra "26 features Planeado / 0 Terminado" y los sprints al 0 %: son valores
