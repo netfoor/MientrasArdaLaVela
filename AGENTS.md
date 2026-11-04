@@ -111,6 +111,11 @@ No des por bueno un cambio de escena sin correr el verificador o mirar la captur
   ponerse a true; no lo uses para bloquear al jugador en el mismo cuadro.
 - **El MainMenu copia `CREDITOS.txt` dentro de la escena.** Si tocas los créditos, corre
   `./tools/unity.sh construir-menu` o el verificador del menú fallará (pasó el 2026-09-27).
+- **Lo que funciona en el editor puede no existir en el build.** El `LineAdvancer` del
+  prefab de Yarn añade su componente de entrada desde `OnValidate`, que es código de
+  editor: en una compilación no hay quien avance los diálogos (B19, encontrado jugando
+  el build del 2026-11-04, no en el editor). Por eso el avance lo pone
+  `Core/AvanceDialogo`. **Antes de entregar, juega el build, no sólo el editor.**
 - **Unity vacía `Temp/` al arrancar**: no guardes ahí nada que quieras conservar.
 - Registra cada defecto que encuentres en la buglist del sprint en curso (`Docs/BUGLIST_SPRINT1.md`
   para el 1) con archivo y línea, y cópialo a la hoja Buglist del Excel.

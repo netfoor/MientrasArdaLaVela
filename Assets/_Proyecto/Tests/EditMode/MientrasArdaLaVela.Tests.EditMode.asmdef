@@ -3,6 +3,7 @@
     "rootNamespace": "MientrasArdaLaVela.Tests",
     "references": [
         "MientrasArdaLaVela",
+        "Unity.InputSystem",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],
