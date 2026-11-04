@@ -292,10 +292,18 @@ El repositorio existe y está al día: **https://github.com/netfoor/MientrasArda
 porque lleva los documentos de entrega y arte con licencias mixtas. `Builds/` está en
 `.gitignore`: el ejecutable no se sube, se compila con `./tools/unity.sh build-windows`.
 
-**El Excel de producción hay que abrirlo en Excel antes de entregarlo.** La hoja *Detalles del
-Proyecto* muestra "26 features Planeado / 0 Terminado" y los sprints al 0 %: son valores
-cacheados que no recalcularon al escribir el archivo. El *Feature Log* sí tiene los estados
-buenos. Los burn-down de los tres sprints siguen vacíos: sólo Fortino sabe las horas.
+**El Excel de producción ya está lleno (2026-11-04).** Lo escribe
+`tools/excel_seguimiento.py`, que toma las fechas de los commits, de este archivo y de los
+`Docs/BUGLIST_SPRINT*.md`: estados del Feature Log (las 26 features), del Sprint Plan y de las
+48 tareas de los tres backlogs, el esfuerzo restante día a día de los tres burn-down y los 19
+bugs. Antes estaba **vacío**: ni un solo estado puesto, los tres burn-down sin un registro y la
+Buglist con sólo la fila de ejemplo.
+
+Los burn-down de los Sprints 2 y 3 caen a cero el primer día, y es correcto: el trabajo se
+adelantó. Las tareas del Sprint 2 estaban listas el 27 de septiembre (el sprint empezaba el 10
+de octubre) y las del 3, entre el 29 de septiembre y el 23 de octubre (empezaba el 31). Cada
+backlog lo explica en su celda A11. Conviene abrirlo una vez en Excel para que recalcule las
+hojas de resumen, aunque el archivo ya trae `fullCalcOnLoad`.
 
 ## Desviaciones conscientes (importante para la revisión)
 
@@ -323,9 +331,11 @@ buenos. Los burn-down de los tres sprints siguen vacíos: sólo Fortino sabe las
 
 - `RomeroMantillaFortino_diseño.docx` — **v1.5** (historial v1.1–v1.5; la 1.5 registra logros, códigos y pétalos). Las versiones
   anteriores están en `Docs/versiones_anteriores/`.
-- `RomeroMantillaFortino_producción.xlsx` — Sprints 1 y 2 y F01–F21 en *Terminado*; Sprint 3,
-  F22–F24 en *En desarrollo*; B01–B17 en la hoja Buglist. **Las horas diarias del burn-down
-  están vacías**: sólo Fortino sabe cuánto le dedicó cada día.
+- `RomeroMantillaFortino_producción.xlsx` — al día desde el 2026-11-04: las 26 features en
+  *Terminado*, Sprints 1 y 2 *Terminado* y el 3 *En desarrollo* (sigue abierto hasta el 20/11),
+  las 48 tareas marcadas, los tres burn-down con su esfuerzo restante por día y B01–B19 en la
+  hoja Buglist. Se regenera con `uv run --script tools/excel_seguimiento.py` + el nombre del
+  archivo; si lo editas a mano, no vuelvas a correrlo o te pisará los cambios.
 
 ## Cosas que hay que saber para no tropezar
 
