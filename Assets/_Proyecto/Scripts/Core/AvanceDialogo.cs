@@ -57,11 +57,14 @@ namespace MientrasArdaLaVela
                 avanzador = FindFirstObjectByType<LineAdvancer>(FindObjectsInactive.Include);
             if (avanzador == null) return;
 
-            // Con "separar apurar y avanzar" desactivado —como viene el prefab— esta misma
-            // llamada completa la línea si se está escribiendo y pasa a la siguiente si ya está
-            // entera. El propio LineAdvancer ignora la pulsación del cuadro en que llega el
-            // texto, así que la tecla que abre el diálogo no se come la primera línea.
-            avanzador.RequestLineHurryUp();
+            // Hay que llamar a lo mismo que llamaría el componente de entrada de Yarn, no al
+            // método público de nombre parecido: RequestLineHurryUp() sólo manda completar la
+            // línea y nunca pasa a la siguiente, así que el texto salía entero pero el diálogo
+            // se quedaba ahí clavado. OnInputHurryUpLines() mira en qué estado está la línea y
+            // avanza cuando ya terminó de escribirse. (Primera versión de este arreglo usaba el
+            // otro método y no servía de nada.)
+            avanzador.OnInputHurryUpLines();
+            avanzador.OnInputHurryUpOptions();   // mismo botón para apurar la lista de opciones
         }
     }
 }
