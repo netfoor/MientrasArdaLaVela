@@ -24,3 +24,6 @@
 # generan con los constructores, así que no hay nada que conservar aquí.
 [Aa]ssets/_Recovery/
 [Aa]ssets/_Recovery.meta
+
+# Paquete de entrega: pesa cientos de MB y se regenera con tools/armar-entrega.sh
+entregables/
