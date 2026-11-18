@@ -64,7 +64,7 @@ existan y que todo sonido invocado en el código o en los diálogos tenga su cli
 | F20 | Recuerdo 4: El campo de cempasúchil (1955) | 3 | ✅ Jugado completo (2026-09-29) |
 | F21 | Epílogo y créditos | 3 | ✅ Jugado completo (2026-09-29) |
 | F22 | Música y efectos | 3 | ✅ Hecho (2026-10-22). M01–M08 por escena y los 14 efectos de la Tabla 27 completos y mezclados. **Falta oírlo jugando** |
-| F23 | Logros y códigos secretos | 3 | ✅ Jugado: 8 de los 9 logros desbloqueados el 2026-10-06. 🟡 **Los 3 códigos secretos no se han tecleado nunca** |
+| F23 | Logros y códigos secretos | 3 | ✅ Jugado: 8 de los 9 logros desbloqueados el 2026-10-06 (falta `todas_las_voces`). Los 3 códigos quedaron cubiertos por `CodigosTests` el 2026-11-18; lo que no se ha hecho nunca es **teclearlos en el menú** |
 | F24 | Pétalos coleccionables | 3 | ✅ Jugado: 25/25 pétalos recogidos el 2026-10-06 |
 | F25 | Pulido | 3 | ✅ Hecha (2026-10-23). Arte propio de los 16 fragmentos, los 5 mementos, los rombos del HUD, el destello, el camino de pétalos, las dos hojas de Marisol, el campo de cempasúchil y la calle de La Espiga; los seis mapas repasados y poblados. Ritmo y textos revisados, B17 confirmado. Queda suelta una idea del documento: la ofrenda de siete niveles del Mapa 0 sigue siendo una mesa |
 | F26 | Build para Windows | 3 | 🟡 Compila: 258 MB, 7 escenas, `Builds/Windows/MientrasArdaLaVela.exe`. **Falta probarlo en un segundo equipo** |
