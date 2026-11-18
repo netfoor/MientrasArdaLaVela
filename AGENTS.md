@@ -89,7 +89,11 @@ Todo cuelga del menú **Mientras arda la vela**.
 ./tools/unity.sh todo            # verificadores + pruebas EditMode
 ./tools/unity.sh capturar        # renderiza las escenas a PNG y míralas
 ./tools/unity.sh build-windows   # compila la entrega (F26); build-linux para probar aquí
+./tools/capturas-juego.sh        # fotografía el JUEGO en marcha (HUD, diálogo y luz incluidos)
 ```
+`capturar` dibuja las escenas desde el editor; `capturas-juego.sh` arranca la compilación de
+Linux en una pantalla virtual y la fotografía jugando. Lo segundo es lo único que enseña
+de verdad lo que verá quien juegue, y es como se confirmó que B19 quedó corregido.
 Requiere el editor **cerrado**: Unity no admite dos instancias sobre el mismo proyecto.
 No des por bueno un cambio de escena sin correr el verificador o mirar la captura.
 
