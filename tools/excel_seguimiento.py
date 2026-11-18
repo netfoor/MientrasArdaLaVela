@@ -105,6 +105,24 @@ class Hoja:
             v = ET.SubElement(c, N + 'v')
             v.text = repr(valor) if isinstance(valor, float) else str(valor)
 
+    def cachear(self, ref, valor):
+        """
+        Cambia el valor GUARDADO de una celda de fórmula, dejando la fórmula intacta.
+
+        Hace falta porque un .xlsx guarda, junto a cada fórmula, el último resultado conocido.
+        Excel lo recalcula al abrir, pero una vista previa (Drive, Classroom, GitHub) enseña el
+        valor guardado: sin esto, el resumen seguiría diciendo "26 Planeado / 0 Terminado".
+        """
+        c = self.celda(ref, crear=False)
+        if c is None or c.find(N + 'f') is None:
+            return False
+        for v in c.findall(N + 'v'):
+            c.remove(v)
+        c.attrib.pop('t', None)
+        v = ET.SubElement(c, N + 'v')
+        v.text = repr(round(valor, 10)) if isinstance(valor, float) else str(valor)
+        return True
+
     def xml(self):
         return ET.tostring(self.raiz, encoding='UTF-8', xml_declaration=True)
 
@@ -175,15 +193,36 @@ def llenar_backlog(hoja, nombre, cierres, nota):
     estilo_dia = hoja.estilo_de('H13')
     estilo_estado = hoja.estilo_de('F24') or hoja.estilo_de('F13')
     hoja.poner('A11', nota)
+    esfuerzo = [0.0] * 22          # horas que quedaban cada día
+    tareas = [0] * 22              # tareas sin terminar cada día
     for fila, dia_cierre in cierres.items():
         horas = hoja.celda(f'G{fila}', crear=False)
         if horas is None or horas.find(N + 'v') is None:
             raise SystemExit(f'{nombre}: la fila {fila} no tiene esfuerzo estimado en G')
         estimado = float(horas.find(N + 'v').text)
         hoja.poner(f'F{fila}', 'Terminado', estilo_estado)
-        for dia in range(1, 22):                      # el día 0 (columna H) es la estimación
+        esfuerzo[0] += estimado                       # el día 0 es la estimación
+        tareas[0] += 1
+        for dia in range(1, 22):
             restante = 0.0 if dia >= dia_cierre else estimado
             hoja.poner(f'{col(7 + dia)}{fila}', restante, estilo_dia)
+            esfuerzo[dia] += restante
+            tareas[dia] += 1 if restante > 0 else 0
+
+    # Valores guardados de las filas que resumen el burn-down (y de sus copias ocultas, que
+    # alimentan las gráficas). Sin esto las gráficas saldrían con los números de antes.
+    total = esfuerzo[0]
+    pendiente = (total - esfuerzo[21]) / 21 if total else 0.0    # tendencia en horas por día
+    hoja.cachear('H3', pendiente)
+    for dia in range(22):
+        c = f'{col(7 + dia)}'
+        hoja.cachear(f'{c}5', esfuerzo[dia])
+        hoja.cachear(f'{c}45', esfuerzo[dia])
+        hoja.cachear(f'{c}6', max(0.0, total - pendiente * dia))
+        hoja.cachear(f'{c}46', max(0.0, total - pendiente * dia))
+        hoja.cachear(f'{c}8', tareas[dia])
+        hoja.cachear(f'{c}48', tareas[dia])
+    return esfuerzo, tareas
 
 
 def llenar_buglist(hoja, bugs):
@@ -242,6 +281,23 @@ def main(ruta, docs):
         llenar_backlog(h, nombre, cierres, NOTAS[nombre])
         contenido[destino[nombre]] = h.xml()
         resumen.append(f'{nombre}: {len(cierres)} tareas x 21 días')
+
+    # Hoja de resumen: cuenta los estados que se acaban de escribir. Se deja calculada porque
+    # es la primera que ve quien abre el libro, y antes decía "26 Planeado / 0 Terminado".
+    h = Hoja(contenido[destino['Detalles del Proyecto']])
+    sprints = list(PLAN.values())
+    por_sprint = {'Planeado': 'B15', 'En desarrollo': 'B16', 'Sin planear': 'B17', 'Terminado': 'B18'}
+    for estado, ref in por_sprint.items():
+        h.cachear(ref, sprints.count(estado) / len(sprints))
+    h.cachear('B19', 1)
+    features = list(FEATURES.values())
+    por_feature = {'Planeado': 'B23', 'Sin planear': 'B24', 'En desarrollo': 'B25',
+                   'Terminado': 'B26', 'Feature Creep': 'B27', 'Eliminado': 'B28'}
+    for estado, ref in por_feature.items():
+        h.cachear(ref, features.count(estado))
+    h.cachear('B29', len(features))
+    contenido[destino['Detalles del Proyecto']] = h.xml()
+    resumen.append(f'Detalles del Proyecto: {features.count("Terminado")}/{len(features)} features terminadas')
 
     h = Hoja(contenido[destino['Buglist']])
     n = llenar_buglist(h, bugs)
