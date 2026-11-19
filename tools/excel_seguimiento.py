@@ -149,8 +149,9 @@ SPRINTS = {1: '2026-09-19', 2: '2026-10-10', 3: '2026-10-31'}
 # Feature Log: fila -> estado. F01 está en la fila 4 y F26 en la 29.
 FEATURES = {fila: 'Terminado' for fila in range(4, 30)}
 
-# Sprint Plan: el 3 sigue abierto en el calendario (hasta el 20/11) aunque su trabajo esté hecho.
-PLAN = {'E4': 'Terminado', 'E5': 'Terminado', 'E6': 'En desarrollo'}
+# Sprint Plan. Los tres quedan Terminado: las 48 tareas de los backlogs están cerradas y el
+# juego se presenta terminado, así que el estado refleja el trabajo y no el día del calendario.
+PLAN = {'E4': 'Terminado', 'E5': 'Terminado', 'E6': 'Terminado'}
 
 # Para cada backlog: fila de la tarea -> día del sprint en que quedó en cero.
 # Un día negativo significa que la tarea ya estaba terminada antes de que el sprint empezara.
