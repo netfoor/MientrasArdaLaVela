@@ -59,6 +59,31 @@ namespace MientrasArdaLaVela
             yield return Escena(SceneNames.Recuerdo4, "recuerdo4_campo", 5f);
             yield return Escena(SceneNames.Epilogo, "epilogo", 5f);
 
+            // El puzle de mosaico y el Diario: dos sistemas que no se ven recorriendo los mapas
+            // y que son la mitad de la mecánica.
+            yield return Escena(SceneNames.Recuerdo1, "_r1", 4f);
+            var puzle = FindFirstObjectByType<MosaicPuzzle>(FindObjectsInactive.Include);
+            // La imagen del mosaico la guarda el Memento de la escena en un campo privado; los
+            // mosaicos no están en Resources, así que se toma de ahí.
+            var memento = FindFirstObjectByType<Memento>(FindObjectsInactive.Include);
+            Sprite imagen = null;
+            if (memento != null)
+            {
+                var campo = typeof(Memento).GetField("mosaicImage",
+                    System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+                imagen = campo?.GetValue(memento) as Sprite;
+            }
+            if (puzle != null && imagen != null)
+            {
+                puzle.Open(imagen, "La fotografía de La Espiga", "demo_capturas", null, null);
+                yield return Foto("puzle_mosaico", 2.5f);
+                puzle.gameObject.SetActive(false);
+            }
+            else Debug.Log($"### AVISO: puzle={puzle != null} imagen={imagen != null} ###");
+
+            InterfazGlobal.AbrirLogros(null);
+            yield return Foto("logros", 2f);
+
             Debug.Log($"### FIN: {n} momentos ###");
             Application.Quit();
         }
